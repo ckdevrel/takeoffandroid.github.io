@@ -14,6 +14,10 @@ class SpeakingPage extends StatelessWidget {
          SizedBox(height: 4),
          Text('CHICAGO ROBOTO (CHICAGO, USA)', style: TextStyle(color: Colors.grey, fontSize: 18)),
           SizedBox(height: 24),
+          ListView(children: <Widget>[
+            ListTile(leading: Icon(Icons.check_circle), title: MaterialButton(onPressed: () {}, child: Text('Speaker Deck'))),
+            ListTile(leading: Icon(Icons.check_circle), title: MaterialButton(onPressed: () {}, child: Text('Youtube Link')))
+          ],),
           Text('Presented at International Android conference to talk about Android studio templates '
               '\ncreation, application and its usages.', style: TextStyle(fontSize: 18)),
         ],
