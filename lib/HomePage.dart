@@ -1,7 +1,10 @@
 import 'package:flutter_web/material.dart';
 
 import 'AboutPage.dart';
+import 'AppColors.dart';
 import 'AwardsPage.dart';
+import 'OpenSourcePage.dart';
+import 'SkillsPage.dart';
 import 'SpeakingPage.dart';
 
 class HomePage extends StatefulWidget {
@@ -10,7 +13,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   int drawerPosition = 0;
 
   @override
@@ -21,51 +23,162 @@ class _HomePageState extends State<HomePage> {
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          new Drawer(
-            child: new ListView(
-              children: <Widget>[
-                new UserAccountsDrawerHeader(
-                  accountName: new Text("TakeoffAndroid"),
-                  accountEmail: new Text("takeoffandroid@gmail.com"),
-                  currentAccountPicture: Image.network("https://i.imgur.com/R0Rzcsv.png"),
-                ),
-                new ListTile(
-                    title: new Text("About"),
-                    onTap: () {
-                      setState(() {
-                        drawerPosition = 0;
-                      });
-                    }),
-                new ListTile(
-                    title: new Text("Speaking"),
-                    onTap: () {
-                      setState(() {
-                        drawerPosition = 1;
-                      });
-                    }),
-                new ListTile(
-                    title: new Text("Open Source"),
-                    onTap: () {
-                      setState(() {
-                        drawerPosition = 2;
-                      });
-                    }),
-                new ListTile(
-                    title: new Text("Skills"),
-                    onTap: () {
-                      setState(() {
-                        drawerPosition = 3;
-                      });
-                    }),
-                new ListTile(
-                    title: new Text("Awards"),
-                    onTap: () {
-                      setState(() {
-                        drawerPosition = 4;
-                      });
-                    }),
-              ],
-            ),
+          Container(
+            width: 250,
+            height: double.infinity,
+            color: AppColors.colorPrimary,
+            child: new ListView(children: <Widget>[
+              Container(
+                  decoration: BoxDecoration(
+                      color: AppColors.colorSecondary,
+                      boxShadow: [
+                        BoxShadow(color: Color.fromRGBO(2, 4, 16, 1))
+                      ]),
+                  margin: EdgeInsets.fromLTRB(0, 0, 0, 16),
+                  child: Padding(
+                    padding: const EdgeInsets.all(36.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        SizedBox(
+                            width: 90,
+                            height: 90,
+                            child: CircleAvatar(
+                              backgroundImage: NetworkImage(
+                                  'https://i.imgur.com/R0Rzcsv.png'),
+                            )),
+                        SizedBox(height: 24),
+                        new Text(
+                          "CHANDRASEKAR K",
+                          style: TextStyle(
+                              fontFamily: "Lato",
+                              fontSize: 14,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w100),
+                          textAlign: TextAlign.center,
+                        ),
+                        SizedBox(height: 4),
+                        new Text("Mobile Developer",
+                            style: TextStyle(
+                                fontFamily: "Lato",
+                                fontSize: 12,
+                                color: Color.fromRGBO(193, 191, 203, 1)),
+                            textAlign: TextAlign.center),
+                      ],
+                    ),
+                  )),
+              MaterialButton(
+                padding: EdgeInsets.fromLTRB(36, 0, 0, 0),
+                child: new Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Image.asset('images/about.png'),
+                      SizedBox(width: 16),
+                      new Text("About",
+                          textAlign: TextAlign.start,
+                          style: TextStyle(
+                              fontFamily: "Lato",
+                              fontSize: 14,
+                              color: Color.fromRGBO(207, 209, 233, 1),
+                              fontWeight: FontWeight.w100))
+                    ]),
+                onPressed: () {
+                  setState(() {
+                    drawerPosition = 0;
+                  });
+                },
+              ),
+              MaterialButton(
+                padding: EdgeInsets.fromLTRB(36, 0, 0, 0),
+                child: new Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Image.asset('images/speaking.png'),
+                      SizedBox(width: 16),
+                      new Text("Speaking",
+                          textAlign: TextAlign.start,
+                          style: TextStyle(
+                              fontFamily: "Lato",
+                              fontSize: 14,
+                              color: Color.fromRGBO(207, 209, 233, 1),
+                              fontWeight: FontWeight.w100))
+                    ]),
+                onPressed: () {
+                  setState(() {
+                    drawerPosition = 1;
+                  });
+                },
+              ),
+              MaterialButton(
+                padding: EdgeInsets.fromLTRB(36, 0, 0, 0),
+                child: new Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Image.asset('images/opensource.png'),
+                      SizedBox(width: 16),
+                      new Text("Open Source",
+                          textAlign: TextAlign.start,
+                          style: TextStyle(
+                              fontFamily: "Lato",
+                              fontSize: 14,
+                              color: Color.fromRGBO(207, 209, 233, 1),
+                              fontWeight: FontWeight.w100))
+                    ]),
+                onPressed: () {
+                  setState(() {
+                    drawerPosition = 2;
+                  });
+                },
+              ),
+              MaterialButton(
+                padding: EdgeInsets.fromLTRB(36, 0, 0, 0),
+                child: new Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Image.asset('images/skills.png'),
+                      SizedBox(width: 16),
+                      new Text("Skills",
+                          textAlign: TextAlign.start,
+                          style: TextStyle(
+                              fontFamily: "Lato",
+                              fontSize: 14,
+                              color: Color.fromRGBO(207, 209, 233, 1),
+                              fontWeight: FontWeight.w100))
+                    ]),
+                onPressed: () {
+                  setState(() {
+                    drawerPosition = 3;
+                  });
+                },
+              ),
+              MaterialButton(
+                padding: EdgeInsets.fromLTRB(36, 0, 0, 0),
+                child: new Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: <Widget>[
+                      Image.asset('images/award.png'),
+                      SizedBox(width: 16),
+                      new Text("Awards",
+                          textAlign: TextAlign.start,
+                          style: TextStyle(
+                              fontFamily: "Lato",
+                              fontSize: 14,
+                              color: Color.fromRGBO(207, 209, 233, 1),
+                              fontWeight: FontWeight.w100))
+                    ]),
+                onPressed: () {
+                  setState(() {
+                    drawerPosition = 4;
+                  });
+                },
+              )
+            ]),
           ),
           Expanded(
             child: getHomeContainer(),
@@ -75,16 +188,17 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget getHomeContainer (){
-    switch(drawerPosition) {
+//
+  Widget getHomeContainer() {
+    switch (drawerPosition) {
       case 0:
         return AboutPage();
       case 1:
         return SpeakingPage();
       case 2:
-        return AboutPage();
+        return OpenSourcePage();
       case 3:
-        return AboutPage();
+        return SkillsPage();
       case 4:
         return AwardsPage();
     }

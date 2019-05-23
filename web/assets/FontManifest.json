@@ -6,5 +6,24 @@
         "asset": "https://fonts.gstatic.com/s/materialicons/v42/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2"
       }
     ]
+  },
+  {
+    "family": "Lato",
+    "fonts": [
+      {
+        "asset": "fonts/Lato-Regular.ttf"
+      }
+    ]
+  },
+  {
+    "family": "OpenSans",
+    "fonts": [
+      {
+        "asset": "fonts/OpenSans-Regular.ttf",
+        "asset": "fonts/OpenSans-Bold.ttf",
+        "asset": "fonts/OpenSans-SemiBold.ttf"
+      }
+    ]
   }
+
 ]

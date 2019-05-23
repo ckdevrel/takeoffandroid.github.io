@@ -3,20 +3,373 @@
   <component name="ChangeListManager">
     <list default="true" id="4f9528a4-1ecc-4e2f-bf49-a25f514dd40f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/098d3ee73e6cc294616d3a2e2c3c81ad/asset_graph.json" afterPath="$PROJECT_DIR$/.dart_tool/build/098d3ee73e6cc294616d3a2e2c3c81ad/asset_graph.json" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/entrypoint/build.dart.snapshot" afterPath="$PROJECT_DIR$/.dart_tool/build/entrypoint/build.dart.snapshot" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/.dart2js.meta_module.clean" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/.dart2js.meta_module.raw" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/collection.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/algorithms.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/canonicalized_map.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/comparators.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/iterable_zip.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/priority_queue.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/utils.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/.dart2js.meta_module.clean" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/.dart2js.meta_module.raw" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/cupertino.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/foundation.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/gestures.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/io.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/physics.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/scheduler.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/services.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/activity_indicator.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/clamped_simulation.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/binding.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/.dart2js.meta_module.clean" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/.dart2js.meta_module.raw" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/.dart2js.meta_module.clean" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/.dart2js.meta_module.raw" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/meta.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.dart2js.meta_module.clean" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.dart2js.meta_module.raw" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.ddc.meta_module.clean" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.ddc.meta_module.clean" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.ddc.meta_module.raw" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.ddc.meta_module.raw" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomePage.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomePage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomePage.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomePage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomePage.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomePage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomePage.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomePage.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomePage.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomePage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomePage.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.dart2js.module" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.dill" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.js" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.js.map" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.dart.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.dart.js" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.dart.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.dart.js.tar.gz" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/pub/bin/build_runner/build_runner.dart.snapshot.dart2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/pub/bin/build_runner/graph_inspector.dart.snapshot.dart2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/main.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.dart.bootstrap.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.dart.bootstrap.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.digests" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.digests" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/.dart2js.meta_module.clean" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/.dart2js.meta_module.raw" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/typed_buffers.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/.dart2js.meta_module.clean" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/.dart2js.meta_module.raw" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/hash.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_64.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/pub/bin/sdk-version" afterPath="$PROJECT_DIR$/.dart_tool/pub/bin/sdk-version" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/.packages" afterPath="$PROJECT_DIR$/.packages" />
+      <change beforePath="$PROJECT_DIR$/build/.build.manifest" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/.packages" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/assets/FontManifest.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/main.dart.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/_internal/ddc_sdk.sum" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/_internal/strong.sum" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/amd/dart_sdk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/amd/require.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/common/dart_sdk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/common/run.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/es6/dart_sdk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/amd/dart_sdk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/amd/require.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/common/dart_sdk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/common/run.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/es6/dart_sdk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/legacy/dart_library.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/legacy/dart_sdk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/legacy/dart_library.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/legacy/dart_sdk.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/web/dart_stack_trace_mapper.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/web/ddc_web_compiler.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/analyzer/src/summary/format.fbs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/build_runner/src/server/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/build_runner/src/server/build_updates_client/hot_reload_client.dart.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/build_runner/src/server/build_updates_client/live_reload_client.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/build_runner/src/server/graph_viz.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/build_runner/src/server/graph_viz.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/build_runner/src/server/graph_viz_main.dart.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/build_web_compilers/src/dev_compiler_stack_trace/stack_trace_mapper.dart.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/flutter_web/assets/Ahem.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/flutter_web/assets/houdini_painter.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/flutter_web_ui/assets/Roboto-Regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/TESTING.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/builder/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/diagnostics.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/dill/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/kernel/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/parser/parser.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/source/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/README.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/af.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/am.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ar.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ar_DZ.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ar_EG.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/az.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/be.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/bg.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/bn.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/br.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/bs.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ca.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/chr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/cs.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/cy.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/da.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/de.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/de_AT.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/de_CH.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/el.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_AU.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_CA.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_GB.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_IE.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_IN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_ISO.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_MY.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_SG.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_US.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_ZA.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/es.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/es_419.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/es_ES.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/es_MX.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/es_US.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/et.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/eu.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/fa.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/fi.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/fil.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/fr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/fr_CA.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/fr_CH.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ga.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/gl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/gsw.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/gu.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/haw.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/he.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/hi.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/hr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/hu.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/hy.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/id.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/in.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/is.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/it.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/it_CH.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/iw.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ja.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ka.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/kk.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/km.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/kn.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ko.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ky.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ln.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/lo.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/lt.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/lv.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/mk.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ml.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/mn.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/mo.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/mr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ms.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/mt.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/my.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/nb.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ne.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/nl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/no.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/no_NO.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/or.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/pa.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/pl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ps.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/pt.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/pt_BR.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/pt_PT.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ro.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ru.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sd.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sh.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/si.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sk.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sq.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sr_Latn.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sv.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sw.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/te.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/th.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/tl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/tr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/uk.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ur.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/uz.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/vi.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/zh.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/zh_CN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/zh_HK.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/zh_TW.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/zu.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/af.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/am.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ar.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ar_DZ.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ar_EG.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/az.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/be.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/bg.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/bn.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/br.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/bs.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ca.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/chr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/cs.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/cy.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/da.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/de.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/de_AT.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/de_CH.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/el.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_AU.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_CA.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_GB.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_IE.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_IN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_ISO.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_MY.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_SG.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_US.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_ZA.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/es.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/es_419.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/es_ES.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/es_MX.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/es_US.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/et.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/eu.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/fa.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/fi.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/fil.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/fr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/fr_CA.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/fr_CH.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ga.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/gl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/gsw.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/gu.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/haw.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/he.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/hi.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/hr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/hu.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/hy.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/id.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/in.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/is.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/it.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/it_CH.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/iw.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ja.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ka.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/kk.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/km.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/kn.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ko.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ky.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ln.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/lo.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/lt.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/lv.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/mk.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ml.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/mn.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/mr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ms.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/mt.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/my.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/nb.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ne.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/nl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/no.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/no_NO.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/or.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/pa.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/pl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ps.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/pt.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/pt_BR.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/pt_PT.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ro.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ru.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/si.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sk.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sq.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sr_Latn.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sv.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sw.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ta.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/te.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/th.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/tl.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/tr.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/uk.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ur.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/uz.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/vi.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/zh.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/zh_CN.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/zh_HK.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/zh_TW.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/zu.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/kernel/binary/readme.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/kernel/target/readme.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/kernel/text/readme.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/package_resolver/src/test_package_config" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.0.0.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.1.0.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.2.0.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.3.0.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.4.0.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.5.0.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.6.0.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.7.0.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/lib/AboutPage.dart" afterPath="$PROJECT_DIR$/lib/AboutPage.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/HomePage.dart" afterPath="$PROJECT_DIR$/lib/HomePage.dart" />
       <change beforePath="$PROJECT_DIR$/lib/SpeakingPage.dart" afterPath="$PROJECT_DIR$/lib/SpeakingPage.dart" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" afterPath="$PROJECT_DIR$/pubspec.lock" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" afterPath="$PROJECT_DIR$/pubspec.yaml" />
+      <change beforePath="$PROJECT_DIR$/web/assets/FontManifest.json" afterPath="$PROJECT_DIR$/web/assets/FontManifest.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +386,28 @@
       <file leaf-file-name="HomePage.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/HomePage.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2352">
-              <caret line="88" column="19" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+            <state relative-caret-position="140">
+              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppColors.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/AppColors.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AboutPage.dart" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/AboutPage.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -42,91 +415,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AboutPage.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/AboutPage.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AwardsPage.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/AwardsPage.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image_provider.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/painting/image_provider.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11900">
-              <caret line="439" column="8" lean-forward="false" selection-start-line="439" selection-start-column="8" selection-end-line="439" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpeakingPage.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/SpeakingPage.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scroll_view.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/widgets/scroll_view.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="750" column="2" lean-forward="false" selection-start-line="750" selection-start-column="2" selection-end-line="750" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="basic.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/widgets/basic.dart">
+        <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/widgets/basic.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="226">
               <caret line="2003" column="8" lean-forward="false" selection-start-line="2003" selection-start-column="8" selection-end-line="2003" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flutter_html_view.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_html_view-0.5.11/lib/flutter_html_view.dart">
+      <file leaf-file-name="text.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web_ui/lib/src/ui/text.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            <state relative-caret-position="583">
+              <caret line="50" column="26" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="container.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/widgets/container.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="339" column="27" lean-forward="false" selection-start-line="339" selection-start-column="27" selection-end-line="339" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icon_button.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/material/icon_button.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="73" column="14" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FontManifest.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/assets/FontManifest.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="material_button.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/material/material_button.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -146,6 +499,14 @@
       <find>width</find>
       <find>elevation</find>
       <find>http://localhost:8080</find>
+      <find>url</find>
+      <find>launcher</find>
+      <find>laun</find>
+      <find>flutter</find>
+      <find>launc</find>
+      <find>fontWeight</find>
+      <find>Open Sans</find>
+      <find>open</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,12 +521,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lib/main.dart" />
-        <option value="$PROJECT_DIR$/web/assets/FontManifest.json" />
-        <option value="$PROJECT_DIR$/lib/AboutPage.dart" />
-        <option value="$PROJECT_DIR$/lib/HomePage.dart" />
         <option value="$PROJECT_DIR$/lib/AwardsPage.dart" />
+        <option value="$PROJECT_DIR$/pubspec.lock" />
         <option value="$PROJECT_DIR$/lib/SpeakingPage.dart" />
+        <option value="$PROJECT_DIR$/lib/SkillsPage.dart" />
+        <option value="$PROJECT_DIR$/lib/OpenSourcePage.dart" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/AppColors.java" />
+        <option value="$PROJECT_DIR$/lib/HomePage.dart" />
+        <option value="$PROJECT_DIR$/web/assets/FontManifest.json" />
+        <option value="$PROJECT_DIR$/lib/AppColors.dart" />
+        <option value="$PROJECT_DIR$/lib/AboutPage.dart" />
       </list>
     </option>
   </component>
@@ -191,8 +557,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,12 +571,37 @@
               <item name="takeoffandroid_portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="takeoffandroid_portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="takeoffandroid_portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="takeoffandroid_portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="takeoffandroid_portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="takeoffandroid_portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="takeoffandroid_portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="takeoffandroid_portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="takeoffandroid_portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,12 +611,15 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/assets/images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/assets/fonts" />
+      <recent name="$PROJECT_DIR$/web/assets/images" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/web/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/assets/images" />
+      <recent name="$PROJECT_DIR$/web/assets/fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -354,7 +748,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2642544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2116228" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -363,11 +757,11 @@
       <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18897216" sideWeight="0.4928717" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18736617" sideWeight="0.4928717" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -391,133 +785,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/HomePage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2352">
-          <caret line="88" column="19" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/AboutPage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/painting/image_provider.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11900">
-          <caret line="439" column="8" lean-forward="false" selection-start-line="439" selection-start-column="8" selection-end-line="439" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/painting/image_resolution.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3360">
-          <caret line="130" column="16" lean-forward="false" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/widgets/image.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8484">
-          <caret line="328" column="8" lean-forward="false" selection-start-line="328" selection-start-column="8" selection-end-line="328" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/material/user_accounts_drawer_header.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8876">
-          <caret line="330" column="15" lean-forward="false" selection-start-line="330" selection-start-column="15" selection-end-line="330" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/material/circle_avatar.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/AwardsPage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#344#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/widgets/container.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="255" column="2" lean-forward="false" selection-start-line="255" selection-start-column="2" selection-end-line="255" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/gestures/recognizer.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/material/scaffold.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="981" column="22" lean-forward="false" selection-start-line="981" selection-start-column="22" selection-end-line="981" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/FontManifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/painting/text_style.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="419" column="15" lean-forward="false" selection-start-line="419" selection-start-column="15" selection-end-line="419" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web_ui/lib/src/ui/text.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -578,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1232">
           <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -586,7 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8876">
           <caret line="330" column="15" lean-forward="false" selection-start-line="330" selection-start-column="15" selection-end-line="330" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -594,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8484">
           <caret line="328" column="8" lean-forward="false" selection-start-line="328" selection-start-column="8" selection-end-line="328" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -602,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3360">
           <caret line="130" column="16" lean-forward="false" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -610,33 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11900">
           <caret line="439" column="8" lean-forward="false" selection-start-line="439" selection-start-column="8" selection-end-line="439" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/AboutPage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/HomePage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2352">
-          <caret line="88" column="19" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -644,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +887,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="2003" column="8" lean-forward="false" selection-start-line="2003" selection-start-column="8" selection-end-line="2003" selection-end-column="8" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OpenSourcePage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-b3057c5b000e7a1ccc3588084fb24243f08966d6/packages/flutter_web/lib/src/material/material_button.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="54" column="10" lean-forward="false" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/SpeakingPage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -660,7 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,23 +922,238 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="750" column="2" lean-forward="false" selection-start-line="750" selection-start-column="2" selection-end-line="750" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/SkillsPage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/material/drawer.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="90" column="8" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/material/user_accounts_drawer_header.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="310" column="8" lean-forward="false" selection-start-line="310" selection-start-column="8" selection-end-line="310" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/painting/box_shadow.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/painting/box_decoration.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="137" column="20" lean-forward="false" selection-start-line="137" selection-start-column="20" selection-end-line="137" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/widgets/text.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="231" column="8" lean-forward="false" selection-start-line="231" selection-start-column="8" selection-end-line="231" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/painting/text_style.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18508">
+          <caret line="669" column="16" lean-forward="false" selection-start-line="669" selection-start-column="6" selection-end-line="669" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/material/circle_avatar.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/painting/image_provider.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11900">
+          <caret line="439" column="8" lean-forward="false" selection-start-line="439" selection-start-column="8" selection-end-line="439" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SpeakingPage.dart">
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/material/list_tile.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        <state relative-caret-position="6188">
+          <caret line="234" column="8" lean-forward="false" selection-start-line="234" selection-start-column="8" selection-end-line="234" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web_ui/lib/src/ui/painting.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22932">
+          <caret line="821" column="5" lean-forward="false" selection-start-line="821" selection-start-column="5" selection-end-line="821" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/material/flat_button.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2548">
+          <caret line="102" column="21" lean-forward="false" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/images/award.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="186" column="30" lean-forward="false" selection-start-line="186" selection-start-column="30" selection-end-line="186" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/widgets/image.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="328" column="8" lean-forward="false" selection-start-line="328" selection-start-column="8" selection-end-line="328" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/material/material_button.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/widgets/container.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="339" column="27" lean-forward="false" selection-start-line="339" selection-start-column="27" selection-end-line="339" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/AppColors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="252">
+          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/images/about_thumbnail.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/FontManifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/AppColors.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/HomePage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web_ui/lib/src/ui/text.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="50" column="26" lean-forward="false" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/images/about_medium.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/material/icon_button.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="73" column="14" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/widgets/basic.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="2003" column="8" lean-forward="false" selection-start-line="2003" selection-start-column="8" selection-end-line="2003" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/AboutPage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
