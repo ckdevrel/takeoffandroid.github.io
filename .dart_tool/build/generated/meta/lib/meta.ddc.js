@@ -92,11 +92,6 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = meta._Protected.prototype;
   dart.addTypeTests(meta._Protected);
-  meta._Sealed = class _Sealed extends core.Object {};
-  (meta._Sealed.new = function() {
-    ;
-  }).prototype = meta._Sealed.prototype;
-  dart.addTypeTests(meta._Sealed);
   meta._Virtual = class _Virtual extends core.Object {};
   (meta._Virtual.new = function() {
     ;
@@ -149,9 +144,6 @@ define(['dart_sdk'], function(dart_sdk) {
     /*meta.required*/get required() {
       return dart.const(new meta.Required.new());
     },
-    /*meta.sealed*/get sealed() {
-      return dart.const(new meta._Sealed.new());
-    },
     /*meta.virtual*/get virtual() {
       return dart.const(new meta._Virtual.new());
     },
@@ -164,7 +156,7 @@ define(['dart_sdk'], function(dart_sdk) {
   });
   dart.trackLibraries("packages/meta/meta", {
     "package:meta/meta.dart": meta
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/meta/meta.dart"],"names":[],"mappings":";;;;;;;IA+Oe;;;;;;;iCAGS;;;;EAAQ;;;;;;;;IAgBjB;;;;;;;gCAGQ;;;;EAAQ;;;;;;;;;;EAIR;;;;;EAIL;;;;;EAIK;;;;;EAIL;;;;;EAID;;;;;EAIK;;;;;EAIJ;;;;;EAIM;;;;;EAIG;;;;;EAIP;;;;;EAIH;;;;;EAKC;;;;;EAIa;;;;;EAIH;;;MA9QR,iBAAY;YAAS;;MAW1B,YAAO;YAAS;;MAsBX,iBAAY;YAAS;;MAY1B,YAAO;YAAS;;MAYf,cAAS;YAAS;;MAQpB,WAAM;YAAS;;MAQV,gBAAW;YAAS;;MAaxB,YAAO;YAAS;;MAeV,kBAAa;YAAS;;MAMnB,qBAAgB;YAAS;;MAkBhC,cAAS;YAAS;;MAepB,aAAQ;YAAS;;MAalB,WAAM;YAAS;;MAQd,YAAO;YAAS;;MAWH,yBAAoB;YACtC;;MAWe,sBAAiB;YAAS","file":"meta.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/meta/meta.dart"],"names":[],"mappings":";;;;;;;IA6Ne;;;;;;;iCAGS;;;;EAAQ;;;;;;;;IAgBjB;;;;;;;gCAGQ;;;;EAAQ;;;;;;;;;;EAIR;;;;;EAIL;;;;;EAIK;;;;;EAIL;;;;;EAID;;;;;EAIK;;;;;EAIJ;;;;;EAIM;;;;;EAIG;;;;;EAIP;;;;;EAIF;;;;;EAIa;;;;;EAIH;;;MAvPR,iBAAY;YAAS;;MAW1B,YAAO;YAAS;;MAsBX,iBAAY;YAAS;;MAY1B,YAAO;YAAS;;MAYf,cAAS;YAAS;;MAQpB,WAAM;YAAS;;MAQV,gBAAW;YAAS;;MAaxB,YAAO;YAAS;;MAeV,kBAAa;YAAS;;MAMnB,qBAAgB;YAAS;;MAkBhC,cAAS;YAAS;;MAepB,aAAQ;YAAS;;MAGjB,YAAO;YAAS;;MAWH,yBAAoB;YACtC;;MAWe,sBAAiB;YAAS","file":"meta.ddc.js"}');
   // Exports:
   return {
     meta: meta
