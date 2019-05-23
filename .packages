@@ -61,7 +61,6 @@ string_scanner:packages/string_scanner/
 term_glyph:packages/term_glyph/
 timing:packages/timing/
 typed_data:packages/typed_data/
-utf:packages/utf/
 vector_math:packages/vector_math/
 watcher:packages/watcher/
 web_socket_channel:packages/web_socket_channel/
