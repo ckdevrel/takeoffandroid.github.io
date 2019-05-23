@@ -1,34 +1,49 @@
 import 'package:flutter_web/material.dart';
 
+import 'components/PageParagraph.dart';
+import 'components/PageSubTitle.dart';
+import 'components/PageThumbnail.dart';
+import 'components/PageTitle.dart';
+
 class SpeakingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(48.0),
       child: new Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text('MASTERING ANDROID STUDIO TEMPLATE CREATION',
-              style: TextStyle(color: Colors.pinkAccent, fontSize: 40)),
+          PageThumbnail('images/speaking_thumbnail.png'),
+          PageTitle('MASTERING ANDROID STUDIO TEMPLATE CREATION'),
           SizedBox(height: 4),
-          Text('CHICAGO ROBOTO (CHICAGO, USA)',
-              style: TextStyle(color: Colors.grey, fontSize: 18)),
+          PageSubTitle('Chicago Roboto, Chicago, USA'),
           SizedBox(height: 24),
-          MaterialButton(onPressed: () { openLink("https://speakerdeck.com/TakeoffAndroid"); }, child: Text('Speaker Deck', style: TextStyle(color: Colors.blueAccent, fontSize: 16, decoration: TextDecoration.underline))),
-          MaterialButton(onPressed: () { openLink("https://www.youtube.com/watch?v=abbXZ20OPRI&index=14&list=PLnD_TKDSaFyXuapaScA3Q616AXvsnlq09&t=0s"); }, child: Text('Youtube Link', style: TextStyle(color: Colors.blueAccent, fontSize: 16, decoration: TextDecoration.underline))),
-          SizedBox(height: 16),
-          Text(
+          PageParagraph(
               'Presented at International Android conference to talk about Android studio templates '
-              '\ncreation, application and its usages.',
-              style: TextStyle(fontSize: 18)),
+              '\ncreation, application and its usages.'),
+          SizedBox(height: 36),
+          Container(
+            height: 50,
+            child: ListView(
+              scrollDirection: Axis.horizontal, children: <Widget>[
+              IconButton(iconSize: 40,
+                  padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                  icon: Image.asset('images/speaking_youtube.png'),
+                  onPressed: openLink("https://www.youtube.com/watch?v=abbXZ20OPRI&index=14&list=PLnD_TKDSaFyXuapaScA3Q616AXvsnlq09&t=0s")),
+              IconButton(iconSize: 40,
+                  padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                  icon: Image.asset('images/speaking_speaker_deck.png'),
+                  onPressed: openLink("https://speakerdeck.com/TakeoffAndroid")),
+            ],),
+          )
         ],
       ),
     );
   }
 
-  openLink(String url) async {
+  openLink(String url)  {
 //    if (await canLaunch(url)) {
 //      await launch(url);
 //    } else {

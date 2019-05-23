@@ -1,1 +1,1 @@
-{"isEntrypoint":true,"deps":["flutter_web|lib/material.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}
+{"isEntrypoint":true,"deps":["flutter_web|lib/material.dart","takeoffandroid_portfolio|lib/components/PageParagraph.dart","takeoffandroid_portfolio|lib/components/PageSubTitle.dart","takeoffandroid_portfolio|lib/components/PageThumbnail.dart","takeoffandroid_portfolio|lib/components/PageTitle.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}
