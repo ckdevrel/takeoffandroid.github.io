@@ -1,6 +1,10 @@
 import 'package:flutter_web/material.dart';
 
+import 'components/PageParagraph.dart';
+import 'components/OpenSourceHeader.dart';
+import 'components/PageListTile.dart';
 import 'components/PageSection.dart';
+import 'components/PageSubTitle.dart';
 import 'components/PageTitle.dart';
 
 class OpenSourcePage extends StatelessWidget {
@@ -12,185 +16,42 @@ class OpenSourcePage extends StatelessWidget {
         children: <Widget>[
           PageTitle('OPEN SOURCES'),
           SizedBox(height: 24),
-          PageSection('FLUTTER'),
-          SizedBox(height: 4),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Flutter Examples',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          SizedBox(height: 24),
-          PageSection('ANDROID STUDIO TEMPLATES'),
-          SizedBox(height: 4),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Recyclerview Template',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Material Tabs Template',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Login Template',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          SizedBox(height: 24),
-          PageSection('ANDROID'),
-          SizedBox(height: 4),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('App Intro Animation',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Material Dialog Searchview',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Material Dialog Bottomsheet',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('URL Linkview',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Seat Booking Recyclerview',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Video ChatHeads',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Material Pager Recycler Gridview',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Icon Color Changer',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Material Percent Drawer',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('SnackBar',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Material Circle Progressbar',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('MultiSelect Recycler Gallery gridview',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Spannable Textview',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Shimmer Contactsview',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
-          MaterialButton(
-              onPressed: () {
-                openLink("https://speakerdeck.com/TakeoffAndroid");
-              },
-              child: Text('Header Footer Recyclerview',
-                  style: TextStyle(
-                      color: Colors.blueAccent,
-                      fontSize: 16,
-                      decoration: TextDecoration.underline))),
+          PageSubTitle('FLUTTER'),
+          SizedBox(height: 16),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(children: <Widget>[
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Flutter Examples')))),
+              SizedBox(width: 36),
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Flutter Portfolio Web')))),
+            ]),
+          ),
+          SizedBox(height: 36),
+          PageSubTitle('ANDROID STUDIO TEMPLATES'),
+          SizedBox(height: 16),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(children: <Widget>[
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Recylerview Template')))),
+              SizedBox(width: 36),
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Material Tabs Template')))),
+              SizedBox(width: 36),
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Login Template'))))
+            ]),
+          ),
+          SizedBox(height: 36),
+          PageSubTitle('ANDROID'),
+          SizedBox(height: 16),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(children: <Widget>[
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('App Intro Animation')))),
+              SizedBox(width: 36),
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Video Chat Heads')))),
+              SizedBox(width: 36),
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Material Dialog Search view'))))
+            ]),
+          ),
         ],
       ),
     );

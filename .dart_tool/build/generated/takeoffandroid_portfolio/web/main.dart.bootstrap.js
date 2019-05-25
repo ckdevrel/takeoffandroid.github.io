@@ -57,6 +57,7 @@ let modulePaths = {
  "packages/takeoffandroid_portfolio/OpenSourcePage": "packages/takeoffandroid_portfolio/OpenSourcePage.ddc",
  "packages/takeoffandroid_portfolio/SkillsPage": "packages/takeoffandroid_portfolio/SkillsPage.ddc",
  "packages/takeoffandroid_portfolio/SpeakingPage": "packages/takeoffandroid_portfolio/SpeakingPage.ddc",
+ "packages/takeoffandroid_portfolio/components/OpenSourceHeader": "packages/takeoffandroid_portfolio/components/OpenSourceHeader.ddc",
  "packages/takeoffandroid_portfolio/components/PageGridTile": "packages/takeoffandroid_portfolio/components/PageGridTile.ddc",
  "packages/takeoffandroid_portfolio/components/PageListTile": "packages/takeoffandroid_portfolio/components/PageListTile.ddc",
  "packages/takeoffandroid_portfolio/components/PageParagraph": "packages/takeoffandroid_portfolio/components/PageParagraph.ddc",
