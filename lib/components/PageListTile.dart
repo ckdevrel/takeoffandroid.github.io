@@ -1,6 +1,7 @@
 import 'package:flutter_web/material.dart';
 
 import '../AppColors.dart';
+import 'PageSection.dart';
 
 class PageListTile extends StatelessWidget {
   String image, title;
@@ -13,7 +14,8 @@ class PageListTile extends StatelessWidget {
       height: 50,
       child: ListTile(
           leading: Image.asset(image),
-          title: Text(title, style: TextStyle(color: AppColors.colorTextBlackPrimary, fontFamily: 'OpenSans', fontWeight: FontWeight.w600, fontSize: 14))),
+          title: PageSection(title)
+      ),
     );
   }
 }

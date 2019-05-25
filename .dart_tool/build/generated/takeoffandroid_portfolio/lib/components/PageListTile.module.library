@@ -1,1 +1,1 @@
-{"isEntrypoint":true,"deps":["flutter_web|lib/material.dart","takeoffandroid_portfolio|lib/AppColors.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}
+{"isEntrypoint":true,"deps":["flutter_web|lib/material.dart","takeoffandroid_portfolio|lib/AppColors.dart","takeoffandroid_portfolio|lib/components/PageSection.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}
