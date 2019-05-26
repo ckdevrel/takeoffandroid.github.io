@@ -1,9 +1,12 @@
 import 'package:flutter_web/material.dart';
 
+import 'package:takeoffandroid_portfolio/components/space/Height16.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
 import 'components/PageGridTile.dart';
 import 'components/PageListTile.dart';
 import 'components/PageThumbnail.dart';
 import 'components/PageTitle.dart';
+import 'package:takeoffandroid_portfolio/components/space/Width36.dart';
 import 'models/SkillsModel.dart';
 
 class SkillsPage extends StatelessWidget {
@@ -23,23 +26,23 @@ class SkillsPage extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           PageTitle('SKILLS'),
-          SizedBox(height: 16),
+          Height16(),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[0].icon, skillsModel[0].text)))),
-              SizedBox(width: 36),
+              Width36(),
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[1].icon, skillsModel[1].text)))),
-              SizedBox(width: 36),
+              Width36(),
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[2].icon, skillsModel[2].text)))),
             ]),
           ),
-          SizedBox(height: 24),
+          Height24(),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[3].icon, skillsModel[3].text)))),
-              SizedBox(width: 36),
+              Width36(),
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[4].icon, skillsModel[4].text)))),
             ]),
           ),

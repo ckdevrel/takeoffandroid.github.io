@@ -6,6 +6,9 @@ import 'AwardsPage.dart';
 import 'OpenSourcePage.dart';
 import 'SkillsPage.dart';
 import 'SpeakingPage.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height4.dart';
+import 'package:takeoffandroid_portfolio/components/space/Width16.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -49,7 +52,7 @@ class _HomePageState extends State<HomePage> {
                               backgroundImage: NetworkImage(
                                   'https://i.imgur.com/R0Rzcsv.png'),
                             )),
-                        SizedBox(height: 24),
+                        Height24(),
                         new Text(
                           "CHANDRASEKAR K",
                           style: TextStyle(
@@ -59,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                               fontWeight: FontWeight.w100),
                           textAlign: TextAlign.center,
                         ),
-                        SizedBox(height: 4),
+                        Height4(),
                         new Text("Mobile Developer",
                             style: TextStyle(
                                 fontFamily: "Lato",
@@ -76,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Image.asset('images/about.png'),
-                      SizedBox(width: 16),
+                      Width16(),
                       new Text("About",
                           textAlign: TextAlign.start,
                           style: TextStyle(
@@ -98,7 +101,7 @@ class _HomePageState extends State<HomePage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Image.asset('images/speaking.png'),
-                      SizedBox(width: 16),
+                      Width16(),
                       new Text("Speaking",
                           textAlign: TextAlign.start,
                           style: TextStyle(
@@ -120,7 +123,7 @@ class _HomePageState extends State<HomePage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Image.asset('images/opensource.png'),
-                      SizedBox(width: 16),
+                      Width16(),
                       new Text("Open Source",
                           textAlign: TextAlign.start,
                           style: TextStyle(
@@ -142,7 +145,7 @@ class _HomePageState extends State<HomePage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Image.asset('images/skills.png'),
-                      SizedBox(width: 16),
+                      Width16(),
                       new Text("Skills",
                           textAlign: TextAlign.start,
                           style: TextStyle(
@@ -164,7 +167,7 @@ class _HomePageState extends State<HomePage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Image.asset('images/award.png'),
-                      SizedBox(width: 16),
+                      Width16(),
                       new Text("Awards",
                           textAlign: TextAlign.start,
                           style: TextStyle(

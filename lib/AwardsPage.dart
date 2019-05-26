@@ -1,7 +1,9 @@
 import 'package:flutter_web/material.dart';
 
+import 'package:takeoffandroid_portfolio/components/space/Height16.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height36.dart';
 import 'components/PageListTile.dart';
-import 'components/PageThumbnail.dart';
 import 'components/PageTitle.dart';
 
 class AwardsPage extends StatelessWidget {
@@ -12,18 +14,18 @@ class AwardsPage extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           PageTitle('AWARDS & CERTIFICATIONS'),
-          SizedBox(height: 16),
+          Height16(),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile('images/award_certified.png', 'Google Certified Developer')))),
-              SizedBox(width: 36),
+              Height36(),
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile('images/award_funding.png', 'Got a seed contributions and funding for my open sources')))),
-              SizedBox(width: 36),
+              Height36(),
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile('images/award_topic.png', 'First person to propose and present a topic on Android studio templates')))),
             ]),
           ),
-          SizedBox(height: 24),
+          Height24(),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[

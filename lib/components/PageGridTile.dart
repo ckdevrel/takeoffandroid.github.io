@@ -1,6 +1,7 @@
 import 'package:flutter_web/material.dart';
 
 import '../AppColors.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height16.dart';
 import 'PageSection.dart';
 
 class PageGridTile extends StatelessWidget {
@@ -13,7 +14,7 @@ class PageGridTile extends StatelessWidget {
     return Column(
       children: <Widget>[
         IconButton(iconSize: 50, icon: Image.asset(image), onPressed: () {},),
-        SizedBox(height: 16),
+        Height16(),
         PageSection(title)
       ],
     );

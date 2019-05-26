@@ -1,6 +1,9 @@
 import 'package:flutter_web/material.dart';
 
 import 'AppColors.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height36.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height4.dart';
 import 'components/PageParagraph.dart';
 import 'components/PageSubTitle.dart';
 import 'components/PageThumbnail.dart';
@@ -17,14 +20,14 @@ class AboutPage extends StatelessWidget {
         children: <Widget>[
           PageThumbnail('images/about_thumbnail.png'),
           PageTitle('CHANDRASEKAR K'),
-          SizedBox(height: 4),
+          Height4(),
           PageSubTitle('Chennai, India'),
-          SizedBox(height: 24),
+          Height24(),
           PageParagraph(
               'I am a Android Techie geek with 6+ years of experience in programming, blogging and open source contributions. '
                   '\nI have authored 15+ open sources and 20+ articles and spoken at chicago roboto 2018 Android conference. '
                   '\nIf you’d like to get in touch, feel free to say hello through any of the social links below.'),
-          SizedBox(height: 36),
+          Height36(),
           SocialView(socialIconButtons: <Widget>[
             SocialIconButton('images/about_medium.png'),
             SocialIconButton('images/about_linkedin.png'),

@@ -1,5 +1,8 @@
 import 'package:flutter_web/material.dart';
 
+import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height36.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height4.dart';
 import 'components/PageParagraph.dart';
 import 'components/PageSubTitle.dart';
 import 'components/PageThumbnail.dart';
@@ -16,13 +19,13 @@ class SpeakingPage extends StatelessWidget {
         children: <Widget>[
           PageThumbnail('images/speaking_thumbnail.png'),
           PageTitle('MASTERING ANDROID STUDIO TEMPLATE CREATION'),
-          SizedBox(height: 4),
+          Height4(),
           PageSubTitle('Chicago Roboto, Chicago, USA'),
-          SizedBox(height: 24),
+          Height24(),
           PageParagraph(
               'Presented at International Android conference to talk about Android studio templates '
               '\ncreation, application and its usages.'),
-          SizedBox(height: 36),
+          Height36(),
           SocialView(socialIconButtons: <Widget>[
             SocialIconButton('images/speaking_youtube.png'),
             SocialIconButton('images/speaking_speaker_deck.png'),

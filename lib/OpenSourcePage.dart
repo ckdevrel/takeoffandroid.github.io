@@ -1,11 +1,15 @@
 import 'package:flutter_web/material.dart';
 
+import 'package:takeoffandroid_portfolio/components/space/Height16.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
+import 'package:takeoffandroid_portfolio/components/space/Height36.dart';
 import 'components/PageParagraph.dart';
 import 'components/OpenSourceHeader.dart';
 import 'components/PageListTile.dart';
 import 'components/PageSection.dart';
 import 'components/PageSubTitle.dart';
 import 'components/PageTitle.dart';
+import 'package:takeoffandroid_portfolio/components/space/Width36.dart';
 
 class OpenSourcePage extends StatelessWidget {
   @override
@@ -15,40 +19,40 @@ class OpenSourcePage extends StatelessWidget {
       child: new ListView(
         children: <Widget>[
           PageTitle('OPEN SOURCES'),
-          SizedBox(height: 24),
+          Height24(),
           PageSubTitle('FLUTTER'),
-          SizedBox(height: 16),
+          Height16(),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Flutter Examples')))),
-              SizedBox(width: 36),
+              Width36(),
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Flutter Portfolio Web')))),
             ]),
           ),
-          SizedBox(height: 36),
+          Height36(),
           PageSubTitle('ANDROID STUDIO TEMPLATES'),
-          SizedBox(height: 16),
+          Height16(),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Recylerview Template')))),
-              SizedBox(width: 36),
+              Width36(),
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Material Tabs Template')))),
-              SizedBox(width: 36),
+              Width36(),
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Login Template'))))
             ]),
           ),
-          SizedBox(height: 36),
+          Height36(),
           PageSubTitle('ANDROID'),
-          SizedBox(height: 16),
+          Height16(),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('App Intro Animation')))),
-              SizedBox(width: 36),
+              Width36(),
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Video Chat Heads')))),
-              SizedBox(width: 36),
+              Width36(),
               SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Material Dialog Search view'))))
             ]),
           ),
