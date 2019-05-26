@@ -65,6 +65,8 @@ let modulePaths = {
  "packages/takeoffandroid_portfolio/components/PageSubTitle": "packages/takeoffandroid_portfolio/components/PageSubTitle.ddc",
  "packages/takeoffandroid_portfolio/components/PageThumbnail": "packages/takeoffandroid_portfolio/components/PageThumbnail.ddc",
  "packages/takeoffandroid_portfolio/components/PageTitle": "packages/takeoffandroid_portfolio/components/PageTitle.ddc",
+ "packages/takeoffandroid_portfolio/components/SocialIconButton": "packages/takeoffandroid_portfolio/components/SocialIconButton.ddc",
+ "packages/takeoffandroid_portfolio/components/SocialView": "packages/takeoffandroid_portfolio/components/SocialView.ddc",
  "packages/takeoffandroid_portfolio/main": "packages/takeoffandroid_portfolio/main.ddc",
  "packages/takeoffandroid_portfolio/models/SkillsModel": "packages/takeoffandroid_portfolio/models/SkillsModel.ddc",
  "packages/typed_data/typed_buffers": "packages/typed_data/typed_buffers.ddc",

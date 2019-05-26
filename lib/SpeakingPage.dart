@@ -4,6 +4,8 @@ import 'components/PageParagraph.dart';
 import 'components/PageSubTitle.dart';
 import 'components/PageThumbnail.dart';
 import 'components/PageTitle.dart';
+import 'components/SocialIconButton.dart';
+import 'components/SocialView.dart';
 
 class SpeakingPage extends StatelessWidget {
   @override
@@ -21,20 +23,10 @@ class SpeakingPage extends StatelessWidget {
               'Presented at International Android conference to talk about Android studio templates '
               '\ncreation, application and its usages.'),
           SizedBox(height: 36),
-          Container(
-            height: 50,
-            child: ListView(
-              scrollDirection: Axis.horizontal, children: <Widget>[
-              IconButton(iconSize: 40,
-                  padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
-                  icon: Image.asset('images/speaking_youtube.png'),
-                  onPressed: openLink("https://www.youtube.com/watch?v=abbXZ20OPRI&index=14&list=PLnD_TKDSaFyXuapaScA3Q616AXvsnlq09&t=0s")),
-              IconButton(iconSize: 40,
-                  padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
-                  icon: Image.asset('images/speaking_speaker_deck.png'),
-                  onPressed: openLink("https://speakerdeck.com/TakeoffAndroid")),
-            ],),
-          )
+          SocialView(socialIconButtons: <Widget>[
+            SocialIconButton('images/speaking_youtube.png'),
+            SocialIconButton('images/speaking_speaker_deck.png'),
+          ]),
         ],
       ),
     );

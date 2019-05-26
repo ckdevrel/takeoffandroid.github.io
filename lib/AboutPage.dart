@@ -5,6 +5,8 @@ import 'components/PageParagraph.dart';
 import 'components/PageSubTitle.dart';
 import 'components/PageThumbnail.dart';
 import 'components/PageTitle.dart';
+import 'components/SocialIconButton.dart';
+import 'components/SocialView.dart';
 
 class AboutPage extends StatelessWidget {
   @override
@@ -23,28 +25,12 @@ class AboutPage extends StatelessWidget {
                   '\nI have authored 15+ open sources and 20+ articles and spoken at chicago roboto 2018 Android conference. '
                   '\nIf you’d like to get in touch, feel free to say hello through any of the social links below.'),
           SizedBox(height: 36),
-          Container(
-            height: 50,
-            child: ListView(
-              scrollDirection: Axis.horizontal, children: <Widget>[
-              IconButton(iconSize: 40,
-                  padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
-                  icon: Image.asset('images/about_medium.png'),
-                  onPressed: null),
-              IconButton(iconSize: 40,
-                  padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
-                  icon: Image.asset('images/about_linkedin.png'),
-                  onPressed: null),
-              IconButton(iconSize: 40,
-                  padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
-                  icon: Image.asset('images/about_twitter.png'),
-                  onPressed: null),
-              IconButton(iconSize: 40,
-                  padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
-                  icon: Image.asset('images/about_github.png'),
-                  onPressed: null)
-            ],),
-          ),
+          SocialView(socialIconButtons: <Widget>[
+            SocialIconButton('images/about_medium.png'),
+            SocialIconButton('images/about_linkedin.png'),
+            SocialIconButton('images/about_twitter.png'),
+            SocialIconButton('images/about_github.png')
+          ]),
         ],
       ),
     );
