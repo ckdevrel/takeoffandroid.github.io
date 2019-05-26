@@ -11,9 +11,8 @@ class PageListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50,
       child: ListTile(
-          leading: Image.asset(image),
+          leading: Image.asset(image, width: 50, height: 50),
           title: PageSection(title)
       ),
     );

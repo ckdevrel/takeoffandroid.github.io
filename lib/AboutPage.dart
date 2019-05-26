@@ -11,10 +11,7 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(48.0),
-      child: new Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.max,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: new ListView(
         children: <Widget>[
           PageThumbnail('images/about_thumbnail.png'),
           PageTitle('CHANDRASEKAR K'),

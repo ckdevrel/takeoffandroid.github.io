@@ -10,10 +10,7 @@ class SpeakingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(48.0),
-      child: new Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.max,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: new ListView(
         children: <Widget>[
           PageThumbnail('images/speaking_thumbnail.png'),
           PageTitle('MASTERING ANDROID STUDIO TEMPLATE CREATION'),

@@ -20,29 +20,28 @@ class SkillsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(48.0),
-      child: new Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        mainAxisSize: MainAxisSize.max,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: ListView(
         children: <Widget>[
-          PageThumbnail('images/award_thumbnail.png'),
           PageTitle('SKILLS'),
           SizedBox(height: 16),
-          Expanded(
-            child: GridView.count(
-              childAspectRatio: 3,
-              shrinkWrap: true,
-              controller: new ScrollController(keepScrollOffset: false),
-              crossAxisCount: 3,
-              mainAxisSpacing: 5,
-              children: <Widget>[
-                PageGridTile(skillsModel[0].icon, skillsModel[0].text),
-                PageGridTile(skillsModel[1].icon, skillsModel[1].text),
-                PageGridTile(skillsModel[2].icon, skillsModel[2].text),
-                PageGridTile(skillsModel[3].icon, skillsModel[3].text),
-                PageGridTile(skillsModel[4].icon, skillsModel[4].text),
-              ],
-            ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(children: <Widget>[
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[0].icon, skillsModel[0].text)))),
+              SizedBox(width: 36),
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[1].icon, skillsModel[1].text)))),
+              SizedBox(width: 36),
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[2].icon, skillsModel[2].text)))),
+            ]),
+          ),
+          SizedBox(height: 24),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(children: <Widget>[
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[3].icon, skillsModel[3].text)))),
+              SizedBox(width: 36),
+              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[4].icon, skillsModel[4].text)))),
+            ]),
           ),
         ],
       ),
