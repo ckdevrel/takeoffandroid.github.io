@@ -1,6 +1,8 @@
 import 'package:flutter_web/material.dart';
 
-import 'HomePage.dart';
+import 'HomeMobilePage.dart';
+import 'HomeWebPage.dart';
+import 'ResponsiveWidget.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: HomePage(),
+      home: ResponsiveWidget(largeScreen: HomeWebPage(), smallScreen: HomeMobilePage(), mediumScreen: HomeMobilePage())
     );
   }
 }
