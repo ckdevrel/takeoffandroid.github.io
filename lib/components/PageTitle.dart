@@ -1,6 +1,7 @@
 import 'package:flutter_web/material.dart';
 
 import '../AppColors.dart';
+import '../ResponsiveWidget.dart';
 
 class PageTitle extends StatelessWidget {
   String title;
@@ -13,7 +14,7 @@ class PageTitle extends StatelessWidget {
         title,
         style: TextStyle(
             color: AppColors.colorPrimary,
-            fontSize: 36,
+            fontSize: ResponsiveWidget.isLargeScreen(context) ? 36 : 16,
             fontFamily: 'OpenSans',
             fontWeight: FontWeight.bold),
       );

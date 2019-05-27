@@ -11,6 +11,8 @@ import 'components/PageSubTitle.dart';
 import 'components/PageTitle.dart';
 import 'package:takeoffandroid_portfolio/components/space/Width36.dart';
 
+import 'components/cards/CardView.dart';
+
 class OpenSourcePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -25,9 +27,9 @@ class OpenSourcePage extends StatelessWidget {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Flutter Examples')))),
+              CardView('Flutter Examples'),
               Width36(),
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Flutter Portfolio Web')))),
+              CardView('Flutter Portfolio Web')
             ]),
           ),
           Height36(),
@@ -36,11 +38,11 @@ class OpenSourcePage extends StatelessWidget {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Recylerview Template')))),
+              CardView('Recylerview Template'),
               Width36(),
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Material Tabs Template')))),
+              CardView('Material Tabs Template'),
               Width36(),
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Login Template'))))
+              CardView('Login Template'),
             ]),
           ),
           Height36(),
@@ -49,11 +51,11 @@ class OpenSourcePage extends StatelessWidget {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('App Intro Animation')))),
+              CardView('App Intro Animation'),
               Width36(),
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Video Chat Heads')))),
+              CardView('Video Chat Heads'),
               Width36(),
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph('Material Dialog Search view'))))
+              CardView('Material Dialog Search view'),
             ]),
           ),
         ],

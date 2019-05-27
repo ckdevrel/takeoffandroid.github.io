@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flutter_web|lib/material.dart","takeoffandroid_portfolio|lib/components/space/Width36.dart","takeoffandroid_portfolio|lib/components/PageListTile.dart","takeoffandroid_portfolio|lib/components/cards/CardViewIcon.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}

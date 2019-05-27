@@ -7,6 +7,9 @@ import 'components/PageListTile.dart';
 import 'components/PageThumbnail.dart';
 import 'components/PageTitle.dart';
 import 'package:takeoffandroid_portfolio/components/space/Width36.dart';
+import 'components/cards/CardViewIcon.dart';
+import 'components/cards/ThreeRowCardView.dart';
+import 'components/cards/TwoRowCardView.dart';
 import 'models/SkillsModel.dart';
 
 class SkillsPage extends StatelessWidget {
@@ -30,20 +33,20 @@ class SkillsPage extends StatelessWidget {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[0].icon, skillsModel[0].text)))),
+              CardViewIcon(skillsModel[0].icon, skillsModel[0].text),
               Width36(),
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[1].icon, skillsModel[1].text)))),
+              CardViewIcon(skillsModel[1].icon, skillsModel[1].text),
               Width36(),
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[2].icon, skillsModel[2].text)))),
+              CardViewIcon(skillsModel[2].icon, skillsModel[2].text)
             ]),
           ),
           Height24(),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[3].icon, skillsModel[3].text)))),
+              CardViewIcon(skillsModel[3].icon, skillsModel[3].text),
               Width36(),
-              SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageListTile(skillsModel[4].icon, skillsModel[4].text)))),
+              CardViewIcon(skillsModel[4].icon, skillsModel[4].text),
             ]),
           ),
         ],

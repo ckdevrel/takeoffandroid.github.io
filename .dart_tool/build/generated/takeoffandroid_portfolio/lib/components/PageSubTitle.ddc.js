@@ -1,4 +1,4 @@
-define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/animation/animation', 'packages/takeoffandroid_portfolio/AppColors', 'packages/flutter_web_ui/ui'], function(dart_sdk, animation, animation$, AppColors, ui) {
+define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/animation/animation', 'packages/takeoffandroid_portfolio/AppColors', 'packages/takeoffandroid_portfolio/ResponsiveWidget', 'packages/flutter_web_ui/ui'], function(dart_sdk, animation, animation$, AppColors, ResponsiveWidget, ui) {
   'use strict';
   const core = dart_sdk.core;
   const dart = dart_sdk.dart;
@@ -8,6 +8,7 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
   const src__widgets__framework = animation.src__widgets__framework;
   const src__painting__text_style = animation$.src__painting__text_style;
   const AppColors$ = AppColors.AppColors;
+  const ResponsiveWidget$ = ResponsiveWidget.ResponsiveWidget;
   const ui$ = ui.ui;
   const components__PageSubTitle = Object.create(dart.library);
   let const$;
@@ -22,7 +23,7 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
       this[title$] = value;
     }
     build(context) {
-      return new src__widgets__text.Text.new(this.title, {style: new src__painting__text_style.TextStyle.new({color: AppColors$.AppColors.colorTextGreyPrimary, fontSize: 15.0, fontFamily: "OpenSans", fontWeight: ui$.FontWeight.w600}), $creationLocationd_0dea112b090073317d4: const$2 || (const$2 = dart.const(new src__widgets__widget_inspector._Location.new({line: 12, column: 12, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/PageSubTitle.dart", parameterLocations: const$1 || (const$1 = dart.constList([const$ || (const$ = dart.const(new src__widgets__widget_inspector._Location.new({line: 12, column: 17, name: "data"}))), const$0 || (const$0 = dart.const(new src__widgets__widget_inspector._Location.new({line: 13, column: 9, name: "style"})))], src__widgets__widget_inspector._Location))})))});
+      return new src__widgets__text.Text.new(this.title, {style: new src__painting__text_style.TextStyle.new({color: AppColors$.AppColors.colorTextGreyPrimary, fontSize: dart.test(ResponsiveWidget$.ResponsiveWidget.isLargeScreen(context)) ? 15.0 : 13.0, fontFamily: "OpenSans", fontWeight: ui$.FontWeight.w600}), $creationLocationd_0dea112b090073317d4: const$2 || (const$2 = dart.const(new src__widgets__widget_inspector._Location.new({line: 13, column: 12, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/PageSubTitle.dart", parameterLocations: const$1 || (const$1 = dart.constList([const$ || (const$ = dart.const(new src__widgets__widget_inspector._Location.new({line: 13, column: 17, name: "data"}))), const$0 || (const$0 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 9, name: "style"})))], src__widgets__widget_inspector._Location))})))});
     }
   };
   (components__PageSubTitle.PageSubTitle.new = function(title, opts) {
@@ -43,7 +44,7 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
   }));
   dart.trackLibraries("packages/takeoffandroid_portfolio/components/PageSubTitle", {
     "package:takeoffandroid_portfolio/components/PageSubTitle.dart": components__PageSubTitle
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/components/PageSubTitle.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;IAKS;;;;;;UAKmB;AACxB,YAAO,iCAAK,oBACD,oDAA2B,qDACpB,kBACE,wBACW;IACjC;;wDATkB;;;AAAlB;;EAAwB","file":"PageSubTitle.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/components/PageSubTitle.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;IAMS;;;;;;UAKmB;AACxB,YAAO,iCAAK,oBACD,oDAA2B,+DACH,iDAAc,OAAO,KAAI,OAAK,kBAC7C,wBACW;IACjC;;wDATkB;;;AAAlB;;EAAwB","file":"PageSubTitle.ddc.js"}');
   // Exports:
   return {
     components__PageSubTitle: components__PageSubTitle
