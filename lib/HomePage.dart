@@ -10,6 +10,11 @@ import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height4.dart';
 import 'package:takeoffandroid_portfolio/components/space/Width16.dart';
 
+import 'components/drawer/DrawerImage.dart';
+import 'components/drawer/DrawerRow.dart';
+import 'components/drawer/DrawerSubTitle.dart';
+import 'components/drawer/DrawerTitle.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -45,137 +50,41 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        SizedBox(
-                            width: 90,
-                            height: 90,
-                            child: CircleAvatar(
-                              backgroundImage: NetworkImage(
-                                  'https://i.imgur.com/R0Rzcsv.png'),
-                            )),
+                        DrawerImage(),
                         Height24(),
-                        new Text(
-                          "CHANDRASEKAR K",
-                          style: TextStyle(
-                              fontFamily: "Lato",
-                              fontSize: 14,
-                              color: Colors.white,
-                              fontWeight: FontWeight.w100),
-                          textAlign: TextAlign.center,
-                        ),
+                        DrawerTitle(),
                         Height4(),
-                        new Text("Mobile Developer",
-                            style: TextStyle(
-                                fontFamily: "Lato",
-                                fontSize: 12,
-                                color: Color.fromRGBO(193, 191, 203, 1)),
-                            textAlign: TextAlign.center),
+                        DrawerSubTitle(),
                       ],
                     ),
                   )),
-              MaterialButton(
-                padding: EdgeInsets.fromLTRB(36, 0, 0, 0),
-                child: new Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: <Widget>[
-                      Image.asset('images/about.png'),
-                      Width16(),
-                      new Text("About",
-                          textAlign: TextAlign.start,
-                          style: TextStyle(
-                              fontFamily: "Lato",
-                              fontSize: 14,
-                              color: Color.fromRGBO(207, 209, 233, 1),
-                              fontWeight: FontWeight.w100))
-                    ]),
-                onPressed: () {
-                  setState(() {
-                    drawerPosition = 0;
-                  });
-                },
-              ),
-              MaterialButton(
-                padding: EdgeInsets.fromLTRB(36, 0, 0, 0),
-                child: new Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: <Widget>[
-                      Image.asset('images/speaking.png'),
-                      Width16(),
-                      new Text("Speaking",
-                          textAlign: TextAlign.start,
-                          style: TextStyle(
-                              fontFamily: "Lato",
-                              fontSize: 14,
-                              color: Color.fromRGBO(207, 209, 233, 1),
-                              fontWeight: FontWeight.w100))
-                    ]),
+              DrawerRow("About", 'images/about.png', onPressed: () {
+                setState(() {
+                  drawerPosition = 0;
+                });
+              }),
+             DrawerRow("Speaking", 'images/speaking.png',
                 onPressed: () {
                   setState(() {
                     drawerPosition = 1;
                   });
                 },
               ),
-              MaterialButton(
-                padding: EdgeInsets.fromLTRB(36, 0, 0, 0),
-                child: new Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: <Widget>[
-                      Image.asset('images/opensource.png'),
-                      Width16(),
-                      new Text("Open Source",
-                          textAlign: TextAlign.start,
-                          style: TextStyle(
-                              fontFamily: "Lato",
-                              fontSize: 14,
-                              color: Color.fromRGBO(207, 209, 233, 1),
-                              fontWeight: FontWeight.w100))
-                    ]),
+            DrawerRow("Open Source", 'images/opensource.png',
                 onPressed: () {
                   setState(() {
                     drawerPosition = 2;
                   });
                 },
               ),
-              MaterialButton(
-                padding: EdgeInsets.fromLTRB(36, 0, 0, 0),
-                child: new Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: <Widget>[
-                      Image.asset('images/skills.png'),
-                      Width16(),
-                      new Text("Skills",
-                          textAlign: TextAlign.start,
-                          style: TextStyle(
-                              fontFamily: "Lato",
-                              fontSize: 14,
-                              color: Color.fromRGBO(207, 209, 233, 1),
-                              fontWeight: FontWeight.w100))
-                    ]),
+             DrawerRow("Skills", 'images/skills.png',
                 onPressed: () {
                   setState(() {
                     drawerPosition = 3;
                   });
                 },
               ),
-              MaterialButton(
-                padding: EdgeInsets.fromLTRB(36, 0, 0, 0),
-                child: new Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: <Widget>[
-                      Image.asset('images/award.png'),
-                      Width16(),
-                      new Text("Awards",
-                          textAlign: TextAlign.start,
-                          style: TextStyle(
-                              fontFamily: "Lato",
-                              fontSize: 14,
-                              color: Color.fromRGBO(207, 209, 233, 1),
-                              fontWeight: FontWeight.w100))
-                    ]),
+             DrawerRow("Awards", 'images/award.png',
                 onPressed: () {
                   setState(() {
                     drawerPosition = 4;
