@@ -11,6 +11,6 @@ class CardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(width: 291, height: 120, child: Card(elevation: 4 ,child: Center(child: PageParagraph(text))));
+    return SizedBox(width: 291, height: 100, child: Card(elevation: 4 ,child: Center(child: PageParagraph(text))));
   }
 }

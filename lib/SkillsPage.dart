@@ -1,16 +1,11 @@
 import 'package:flutter_web/material.dart';
-
 import 'package:takeoffandroid_portfolio/components/space/Height16.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
-import 'components/PageGridTile.dart';
-import 'components/PageListTile.dart';
-import 'components/PageListView.dart';
-import 'components/PageThumbnail.dart';
-import 'components/PageTitle.dart';
 import 'package:takeoffandroid_portfolio/components/space/Width36.dart';
+
+import 'components/PageListView.dart';
+import 'components/PageTitle.dart';
 import 'components/cards/CardViewIcon.dart';
-import 'components/cards/ThreeRowCardView.dart';
-import 'components/cards/TwoRowCardView.dart';
 import 'models/SkillsModel.dart';
 
 class SkillsPage extends StatelessWidget {

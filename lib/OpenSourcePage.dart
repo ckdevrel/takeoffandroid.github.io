@@ -7,7 +7,6 @@ import 'components/PageListView.dart';
 import 'components/PageParagraph.dart';
 import 'components/OpenSourceHeader.dart';
 import 'components/PageListTile.dart';
-import 'components/PageSection.dart';
 import 'components/PageSubTitle.dart';
 import 'components/PageTitle.dart';
 import 'package:takeoffandroid_portfolio/components/space/Width36.dart';
