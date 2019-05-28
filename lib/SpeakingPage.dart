@@ -3,6 +3,7 @@ import 'package:flutter_web/material.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height36.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height4.dart';
+import 'components/PageListView.dart';
 import 'components/PageParagraph.dart';
 import 'components/PageSubTitle.dart';
 import 'components/PageThumbnail.dart';
@@ -13,8 +14,7 @@ import 'components/SocialView.dart';
 class SpeakingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(48.0),
+    return PageListView(
       child: new ListView(
         children: <Widget>[
           PageThumbnail('images/speaking_thumbnail.png'),

@@ -4,6 +4,7 @@ import 'package:takeoffandroid_portfolio/components/space/Height16.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
 import 'components/PageGridTile.dart';
 import 'components/PageListTile.dart';
+import 'components/PageListView.dart';
 import 'components/PageThumbnail.dart';
 import 'components/PageTitle.dart';
 import 'package:takeoffandroid_portfolio/components/space/Width36.dart';
@@ -24,8 +25,7 @@ class SkillsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(48.0),
+    return PageListView(
       child: ListView(
         children: <Widget>[
           PageTitle('SKILLS'),

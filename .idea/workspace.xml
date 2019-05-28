@@ -2,374 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f9528a4-1ecc-4e2f-bf49-a25f514dd40f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/components/cards/CardView.dart" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/components/cards/CardViewIcon.dart" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/components/cards/ThreeRowCardView.dart" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/components/cards/TwoRowCardView.dart" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/components/PageListView.dart" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/098d3ee73e6cc294616d3a2e2c3c81ad/asset_graph.json" afterPath="$PROJECT_DIR$/.dart_tool/build/098d3ee73e6cc294616d3a2e2c3c81ad/asset_graph.json" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.dart2js.meta_module.clean" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.dart2js.meta_module.clean" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.dart2js.meta_module.raw" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.dart2js.meta_module.raw" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.ddc.meta_module.clean" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.ddc.meta_module.clean" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.ddc.meta_module.raw" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.ddc.meta_module.raw" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.dart2js.module" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.dart2js.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.module.library" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.dill" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.js" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.js.map" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.module" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.module.library" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.dart2js.module" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.dill" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.js" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.js.map" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.module" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.module.library" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.dart2js.module" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.dill" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.js" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.js.map" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.module" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.module.library" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.dart2js.module" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageGridTile.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageGridTile.dart2js.module" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.dill" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.js" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.js.map" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.module" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.module.library" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.dart2js.module" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.dill" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.js" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.js.map" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.module" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.module.library" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/main.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/main.dart2js.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.module.library" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.dart.bootstrap.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.dart.bootstrap.js" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.digests" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.digests" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/.build.manifest" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/.packages" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/FontManifest.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Lato-Regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/OpenSans-Bold.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/OpenSans-Regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/OpenSans-SemiBold.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/about.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/about_github.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/about_linkedin.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/about_medium.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/about_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/about_twitter.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/award.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/award_certified.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/award_expertise.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/award_funding.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/award_topic.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/open_source_flutter_examples.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/open_source_login_template.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/open_source_recyclerview_template.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/open_source_tabs_template.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/opensource.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/skills.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/skills_agile.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/skills_cross.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/skills_oops.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/skills_responsive.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/skills_tdd.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/speaking.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/speaking_speaker_deck.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/speaking_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/speaking_youtube.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/main.dart.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/_internal/ddc_sdk.sum" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/_internal/strong.sum" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/amd/dart_sdk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/amd/require.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/common/dart_sdk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/common/run.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/es6/dart_sdk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/amd/dart_sdk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/amd/require.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/common/dart_sdk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/common/run.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/es6/dart_sdk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/legacy/dart_library.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/kernel/legacy/dart_sdk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/legacy/dart_library.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/legacy/dart_sdk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/web/dart_stack_trace_mapper.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/$sdk/dev_compiler/web/ddc_web_compiler.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/analyzer/src/summary/format.fbs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/build_runner/src/server/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/build_runner/src/server/build_updates_client/hot_reload_client.dart.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/build_runner/src/server/build_updates_client/live_reload_client.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/build_runner/src/server/graph_viz.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/build_runner/src/server/graph_viz.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/build_runner/src/server/graph_viz_main.dart.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/build_web_compilers/src/dev_compiler_stack_trace/stack_trace_mapper.dart.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/flutter_web/assets/Ahem.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/flutter_web/assets/houdini_painter.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/flutter_web_ui/assets/Roboto-Regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/TESTING.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/builder/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/diagnostics.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/dill/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/kernel/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/parser/parser.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/front_end/src/fasta/source/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/README.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/af.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/am.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ar.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ar_DZ.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ar_EG.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/az.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/be.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/bg.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/bn.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/br.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/bs.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ca.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/chr.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/cs.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/cy.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/da.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/de.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/de_AT.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/de_CH.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/el.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_AU.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_CA.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_GB.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_IE.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_IN.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_ISO.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_MY.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_SG.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_US.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/en_ZA.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/es.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/es_419.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/es_ES.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/es_MX.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/es_US.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/et.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/eu.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/fa.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/fi.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/fil.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/fr.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/fr_CA.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/fr_CH.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ga.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/gl.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/gsw.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/gu.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/haw.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/he.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/hi.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/hr.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/hu.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/hy.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/id.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/in.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/is.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/it.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/it_CH.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/iw.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ja.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ka.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/kk.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/km.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/kn.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ko.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ky.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ln.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/lo.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/lt.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/lv.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/mk.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ml.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/mn.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/mo.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/mr.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ms.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/mt.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/my.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/nb.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ne.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/nl.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/no.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/no_NO.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/or.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/pa.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/pl.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ps.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/pt.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/pt_BR.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/pt_PT.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ro.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ru.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sd.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sh.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/si.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sk.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sl.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sq.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sr.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sr_Latn.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sv.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/sw.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ta.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/te.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/th.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/tl.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/tr.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/uk.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/ur.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/uz.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/vi.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/zh.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/zh_CN.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/zh_HK.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/zh_TW.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/patterns/zu.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/af.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/am.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ar.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ar_DZ.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ar_EG.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/az.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/be.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/bg.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/bn.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/br.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/bs.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ca.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/chr.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/cs.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/cy.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/da.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/de.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/de_AT.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/de_CH.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/el.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_AU.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_CA.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_GB.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_IE.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_IN.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_ISO.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_MY.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_SG.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_US.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/en_ZA.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/es.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/es_419.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/es_ES.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/es_MX.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/es_US.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/et.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/eu.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/fa.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/fi.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/fil.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/fr.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/fr_CA.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/fr_CH.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ga.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/gl.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/gsw.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/gu.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/haw.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/he.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/hi.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/hr.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/hu.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/hy.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/id.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/in.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/is.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/it.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/it_CH.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/iw.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ja.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ka.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/kk.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/km.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/kn.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ko.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ky.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ln.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/lo.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/lt.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/lv.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/mk.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ml.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/mn.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/mr.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ms.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/mt.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/my.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/nb.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ne.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/nl.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/no.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/no_NO.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/or.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/pa.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/pl.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ps.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/pt.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/pt_BR.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/pt_PT.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ro.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ru.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/si.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sk.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sl.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sq.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sr.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sr_Latn.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sv.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/sw.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ta.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/te.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/th.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/tl.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/tr.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/uk.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/ur.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/uz.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/vi.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/zh.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/zh_CN.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/zh_HK.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/zh_TW.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/intl/src/data/dates/symbols/zu.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/kernel/binary/readme.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/kernel/target/readme.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/kernel/text/readme.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/package_resolver/src/test_package_config" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.0.0.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.1.0.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.2.0.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.3.0.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.4.0.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.5.0.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.6.0.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.1.7.0.yaml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/packages/pedantic/analysis_options.yaml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/lib/AboutPage.dart" afterPath="$PROJECT_DIR$/lib/AboutPage.dart" />
       <change beforePath="$PROJECT_DIR$/lib/AwardsPage.dart" afterPath="$PROJECT_DIR$/lib/AwardsPage.dart" />
       <change beforePath="$PROJECT_DIR$/lib/OpenSourcePage.dart" afterPath="$PROJECT_DIR$/lib/OpenSourcePage.dart" />
       <change beforePath="$PROJECT_DIR$/lib/SkillsPage.dart" afterPath="$PROJECT_DIR$/lib/SkillsPage.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/components/PageSubTitle.dart" afterPath="$PROJECT_DIR$/lib/components/PageSubTitle.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/components/PageTitle.dart" afterPath="$PROJECT_DIR$/lib/components/PageTitle.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/SpeakingPage.dart" afterPath="$PROJECT_DIR$/lib/SpeakingPage.dart" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -383,12 +52,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="AboutPage.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AboutPage.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/AboutPage.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="140">
+              <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageListView.dart" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/components/PageListView.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -396,28 +77,18 @@
       <file leaf-file-name="SkillsPage.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/SkillsPage.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+            <state relative-caret-position="392">
+              <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwoRowCardView.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/components/cards/TwoRowCardView.dart">
+      <file leaf-file-name="HomeWebPage.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/HomeWebPage.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThreeRowCardView.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/components/cards/ThreeRowCardView.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="140">
+              <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -426,8 +97,28 @@
       <file leaf-file-name="OpenSourcePage.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/OpenSourcePage.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1178">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="140">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpeakingPage.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/SpeakingPage.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponsiveWidget.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/ResponsiveWidget.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -443,45 +134,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CardViewIcon.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/components/cards/CardViewIcon.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AwardsPage.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/AwardsPage.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageListTile.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/components/PageListTile.dart">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
-              <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageSubTitle.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/components/PageSubTitle.dart">
+      <file leaf-file-name="HomeMobilePage.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/HomeMobilePage.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            <state relative-caret-position="752">
+              <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -545,7 +212,6 @@
         <option value="$PROJECT_DIR$/lib/components/Height36.dart" />
         <option value="$PROJECT_DIR$/lib/components/Height16.dart" />
         <option value="$PROJECT_DIR$/lib/components/Height4.dart" />
-        <option value="$PROJECT_DIR$/lib/SpeakingPage.dart" />
         <option value="$PROJECT_DIR$/lib/components/Width16.dart" />
         <option value="$PROJECT_DIR$/lib/components/Width24.dart" />
         <option value="$PROJECT_DIR$/lib/components/Width36.dart" />
@@ -567,11 +233,13 @@
         <option value="$PROJECT_DIR$/lib/components/cards/CardViewIcon.dart" />
         <option value="$PROJECT_DIR$/lib/components/cards/ThreeRowCardView.dart" />
         <option value="$PROJECT_DIR$/lib/components/cards/TwoRowCardView.dart" />
-        <option value="$PROJECT_DIR$/lib/SkillsPage.dart" />
-        <option value="$PROJECT_DIR$/lib/AwardsPage.dart" />
         <option value="$PROJECT_DIR$/lib/components/cards/CardView.dart" />
-        <option value="$PROJECT_DIR$/lib/OpenSourcePage.dart" />
         <option value="$PROJECT_DIR$/lib/AboutPage.dart" />
+        <option value="$PROJECT_DIR$/lib/AwardsPage.dart" />
+        <option value="$PROJECT_DIR$/lib/OpenSourcePage.dart" />
+        <option value="$PROJECT_DIR$/lib/SkillsPage.dart" />
+        <option value="$PROJECT_DIR$/lib/SpeakingPage.dart" />
+        <option value="$PROJECT_DIR$/lib/components/PageListView.dart" />
       </list>
     </option>
   </component>
@@ -597,6 +265,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -614,13 +286,6 @@
               <item name="takeoffandroid_portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="takeoffandroid_portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="takeoffandroid_portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="cards" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="takeoffandroid_portfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -651,10 +316,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -798,7 +459,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -811,12 +472,11 @@
       <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2642544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14507495" sideWeight="0.4867872" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25576368" sideWeight="0.4867872" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -849,6 +509,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1964668" sideWeight="0.4867872" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18736617" sideWeight="0.5132128" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Flutter Inspector" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -862,11 +523,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/assets/images/speaking_thumbnail.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/images/open_source_tabs_template.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -945,7 +601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -981,15 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SpeakingPage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,33 +704,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-291">
           <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/HomeWebPage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/components/drawer/DrawerList.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/components/drawer/DrawerList.dart" />
     <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-e2728abe0058d8a268881d82061d81e0171bbe86/packages/flutter_web/lib/src/material/scaffold.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="893" column="15" lean-forward="false" selection-start-line="893" selection-start-column="15" selection-end-line="893" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,9 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1105,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="90" column="8" lean-forward="false" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,25 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/HomeMobilePage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ResponsiveWidget.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1149,7 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1201,16 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/AwardsPage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/components/cards/CardViewIcon.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -1229,27 +819,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/AboutPage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/AwardsPage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/HomeMobilePage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/HomeWebPage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/OpenSourcePage.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1178">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="140">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ResponsiveWidget.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/SkillsPage.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        <state relative-caret-position="392">
+          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/AboutPage.dart">
+    <entry file="file://$PROJECT_DIR$/lib/SpeakingPage.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="252">
+          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/components/PageListView.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

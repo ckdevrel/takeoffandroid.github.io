@@ -3,6 +3,7 @@ import 'package:flutter_web/material.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height16.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
 import 'components/PageListTile.dart';
+import 'components/PageListView.dart';
 import 'components/PageTitle.dart';
 import 'components/cards/CardViewIcon.dart';
 import 'components/cards/ThreeRowCardView.dart';
@@ -11,8 +12,7 @@ import 'components/space/Width36.dart';
 class AwardsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(48.0),
+    return PageListView(
       child: ListView(
         children: <Widget>[
           PageTitle('AWARDS & CERTIFICATIONS'),

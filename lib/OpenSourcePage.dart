@@ -3,6 +3,7 @@ import 'package:flutter_web/material.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height16.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height36.dart';
+import 'components/PageListView.dart';
 import 'components/PageParagraph.dart';
 import 'components/OpenSourceHeader.dart';
 import 'components/PageListTile.dart';
@@ -16,8 +17,7 @@ import 'components/cards/CardView.dart';
 class OpenSourcePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(48.0),
+    return PageListView(
       child: new ListView(
         children: <Widget>[
           PageTitle('OPEN SOURCES'),
