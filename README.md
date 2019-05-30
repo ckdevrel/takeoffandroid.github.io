@@ -1,5 +1,7 @@
 # Portfolio Website Sample
 
+This is the responsive web and mobile portfolio design with minimalistic material design UI.
+
 
 ## Web UI
 ### About Page
@@ -33,3 +35,9 @@
 |Skills|Open Source|Awards|
 |:--:|:--:|:--:|
 |<a href="https://imgur.com/vbJzzVU"><img src="https://i.imgur.com/vbJzzVU.png" title="source: imgur.com" /></a> |<a href="https://imgur.com/LpfRluh"><img src="https://i.imgur.com/LpfRluh.png" title="source: imgur.com" /></a>|<a href="https://imgur.com/stl0OF2"><img src="https://i.imgur.com/stl0OF2.png" title="source: imgur.com" /></a>|
+
+Credits:
+
+Free images are used from https://undraw.co/illustrations ⭐
+
+Responsive widget implementation used from https://github.com/iampawan/myportfolio 👍
