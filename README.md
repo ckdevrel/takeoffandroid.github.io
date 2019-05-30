@@ -38,7 +38,7 @@ This is the responsive web and mobile portfolio design with minimalistic materia
 
 ## Known issues 🙌
 
-- Flutter web is still in development stage 💻 so any of the flutter plugins are not supported.
+- Flutter web is still in development stage 💻 so flutter plugins are not supported.
 - a href not working as of now 🔗
 
 ## Credits 🙏
