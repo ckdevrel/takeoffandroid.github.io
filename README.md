@@ -1,6 +1,5 @@
 # Portfolio Website Sample
 
-This is the mobile developer responsive portfolio website built using flutter web.
 
 ## Web UI
 ### About Page
