@@ -26,6 +26,11 @@ This is the mobile developer responsive portfolio website built using flutter we
 ## Mobile UI
 
 
-|.center|.start|.end|
+|Drawer|About|Speaking|
 |:--:|:--:|:--:|
 |<a href="https://imgur.com/Qoz1alB"><img src="https://i.imgur.com/Qoz1alB.png" title="source: imgur.com" /></a> |<a href="https://imgur.com/6WRirV3"><img src="https://i.imgur.com/6WRirV3.png" title="source: imgur.com" /></a>|<a href="https://imgur.com/rDgDRh0"><img src="https://i.imgur.com/rDgDRh0.png" title="source: imgur.com" /></a>|
+
+
+|Skills|Open Source|Awards|
+|:--:|:--:|:--:|
+|<a href="https://imgur.com/vbJzzVU"><img src="https://i.imgur.com/vbJzzVU.png" title="source: imgur.com" /></a> |<a href="https://imgur.com/LpfRluh"><img src="https://i.imgur.com/LpfRluh.png" title="source: imgur.com" /></a>|<a href="https://imgur.com/stl0OF2"><img src="https://i.imgur.com/stl0OF2.png" title="source: imgur.com" /></a>|
