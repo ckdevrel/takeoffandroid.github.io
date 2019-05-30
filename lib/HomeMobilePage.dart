@@ -23,7 +23,7 @@ class HomeMobilePage extends StatefulWidget {
 }
 
 class _HomeMobilePageState extends State<HomeMobilePage> {
-  int drawerPosition = 0;
+  int selectedOption = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -41,33 +41,33 @@ class _HomeMobilePageState extends State<HomeMobilePage> {
           color: AppColors.colorPrimary,
           child: new ListView(children: <Widget>[
             DrawerTopBar(),
-            DrawerRow("About", 'images/about.png', onPressed: () {
+            DrawerRow(selectedOption == 0, "About", 'images/drawer_about.png', onPressed: () {
               loadPage(context, 0);
             }),
-            DrawerRow(
+            DrawerRow(selectedOption == 1,
               "Speaking",
-              'images/speaking.png',
+              'images/drawer_speaking.png',
               onPressed: () {
                 loadPage(context, 1);
               },
             ),
-            DrawerRow(
+            DrawerRow(selectedOption == 2,
               "Open Source",
-              'images/opensource.png',
+              'images/drawer_open_source.png',
               onPressed: () {
                 loadPage(context, 2);
               },
             ),
-            DrawerRow(
+            DrawerRow(selectedOption == 3,
               "Skills",
-              'images/skills.png',
+              'images/drawer_skills.png',
               onPressed: () {
                 loadPage(context, 3);
               },
             ),
-            DrawerRow(
+            DrawerRow(selectedOption == 4,
               "Awards",
-              'images/award.png',
+              'images/drawer_award.png',
               onPressed: () {
                 loadPage(context, 4);
               },
@@ -75,14 +75,14 @@ class _HomeMobilePageState extends State<HomeMobilePage> {
           ]),
         ),
       ),
-      body: ContentFrame(drawerPosition),
+      body: ContentFrame(selectedOption),
     );
   }
 
   void loadPage(BuildContext context, int drawerPosition) {
     Navigator.pop(context);
     setState(() {
-      this.drawerPosition = drawerPosition;
+      this.selectedOption = drawerPosition;
     });
   }
 }

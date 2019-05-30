@@ -23,7 +23,7 @@ class HomeWebPage extends StatefulWidget {
 }
 
 class _HomeWebPageState extends State<HomeWebPage> {
-  int drawerPosition = 0;
+  int selectedOption = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -40,51 +40,51 @@ class _HomeWebPageState extends State<HomeWebPage> {
             color: AppColors.colorPrimary,
             child: new ListView(children: <Widget>[
               DrawerTopBar(),
-              DrawerRow("About", 'images/about.png', onPressed: () {
+              DrawerRow(selectedOption == 0, "About", 'images/drawer_about.png', onPressed: () {
                 setState(() {
-                  drawerPosition = 0;
+                  selectedOption = 0;
                 });
               }),
-              DrawerRow(
+              DrawerRow(selectedOption == 1,
                 "Speaking",
-                'images/speaking.png',
+                'images/drawer_speaking.png',
                 onPressed: () {
                   setState(() {
-                    drawerPosition = 1;
+                    selectedOption = 1;
                   });
                 },
               ),
-              DrawerRow(
+              DrawerRow(selectedOption == 2,
                 "Open Source",
-                'images/opensource.png',
+                'images/drawer_open_source.png',
                 onPressed: () {
                   setState(() {
-                    drawerPosition = 2;
+                    selectedOption = 2;
                   });
                 },
               ),
-              DrawerRow(
+              DrawerRow(selectedOption == 3,
                 "Skills",
-                'images/skills.png',
+                'images/drawer_skills.png',
                 onPressed: () {
                   setState(() {
-                    drawerPosition = 3;
+                    selectedOption = 3;
                   });
                 },
               ),
-              DrawerRow(
+              DrawerRow(selectedOption == 4,
                 "Awards",
-                'images/award.png',
+                'images/drawer_award.png',
                 onPressed: () {
                   setState(() {
-                    drawerPosition = 4;
+                    selectedOption = 4;
                   });
                 },
               )
             ]),
           ),
           Expanded(
-            child: ContentFrame(drawerPosition),
+            child: ContentFrame(selectedOption),
           )
         ],
       ),

@@ -1,10 +1,11 @@
-define(['dart_sdk', 'packages/flutter_web/material', 'packages/flutter_web/animation', 'packages/takeoffandroid_portfolio/components/space/Width16', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/animation/animation'], function(dart_sdk, material, animation, Width16, ui, animation$) {
+define(['dart_sdk', 'packages/flutter_web/material', 'packages/takeoffandroid_portfolio/AppColors', 'packages/flutter_web/animation', 'packages/takeoffandroid_portfolio/components/space/Width16', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/animation/animation'], function(dart_sdk, material, AppColors, animation, Width16, ui, animation$) {
   'use strict';
   const core = dart_sdk.core;
   const _interceptors = dart_sdk._interceptors;
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
   const src__material__material_button = material.src__material__material_button;
+  const AppColors$ = AppColors.AppColors;
   const src__painting__edge_insets = animation.src__painting__edge_insets;
   const src__widgets__basic = animation.src__widgets__basic;
   const src__rendering__flex = animation.src__rendering__flex;
@@ -37,6 +38,7 @@ define(['dart_sdk', 'packages/flutter_web/material', 'packages/flutter_web/anima
   let const$16;
   let const$17;
   let const$18;
+  let const$19;
   components__drawer__DrawerRow.DrawerRow = class DrawerRow extends src__widgets__framework.StatelessWidget {
     get icon() {
       return this[icon$];
@@ -56,13 +58,20 @@ define(['dart_sdk', 'packages/flutter_web/material', 'packages/flutter_web/anima
     set onPressed(value) {
       this[onPressed$] = value;
     }
+    get isSelected() {
+      return this[isSelected$];
+    }
+    set isSelected(value) {
+      this[isSelected$] = value;
+    }
     build(context) {
-      return new src__material__material_button.MaterialButton.new({padding: new src__painting__edge_insets.EdgeInsets.fromLTRB(36.0, 0.0, 0.0, 0.0), child: new src__widgets__basic.Row.new({crossAxisAlignment: src__rendering__flex.CrossAxisAlignment.center, mainAxisAlignment: src__rendering__flex.MainAxisAlignment.start, children: JSArrayOfWidget().of([new src__widgets__image.Image.asset(this.icon, {$creationLocationd_0dea112b090073317d4: const$1 || (const$1 = dart.const(new src__widgets__widget_inspector._Location.new({line: 21, column: 19, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerRow.dart", parameterLocations: const$0 || (const$0 = dart.constList([const$ || (const$ = dart.const(new src__widgets__widget_inspector._Location.new({line: 21, column: 25, name: "name"})))], src__widgets__widget_inspector._Location))})))}), new components__space__Width16.Width16.new({$creationLocationd_0dea112b090073317d4: const$3 || (const$3 = dart.const(new src__widgets__widget_inspector._Location.new({line: 22, column: 13, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerRow.dart", parameterLocations: const$2 || (const$2 = dart.constList([], src__widgets__widget_inspector._Location))})))}), new src__widgets__text.Text.new(this.title, {textAlign: ui$.TextAlign.start, style: new src__painting__text_style.TextStyle.new({fontFamily: "Lato", fontSize: 14.0, color: new ui$.Color.fromRGBO(207, 209, 233, 1.0), fontWeight: ui$.FontWeight.w100}), $creationLocationd_0dea112b090073317d4: const$8 || (const$8 = dart.const(new src__widgets__widget_inspector._Location.new({line: 23, column: 17, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerRow.dart", parameterLocations: const$7 || (const$7 = dart.constList([const$4 || (const$4 = dart.const(new src__widgets__widget_inspector._Location.new({line: 23, column: 22, name: "data"}))), const$5 || (const$5 = dart.const(new src__widgets__widget_inspector._Location.new({line: 24, column: 17, name: "textAlign"}))), const$6 || (const$6 = dart.const(new src__widgets__widget_inspector._Location.new({line: 25, column: 17, name: "style"})))], src__widgets__widget_inspector._Location))})))})]), $creationLocationd_0dea112b090073317d4: const$13 || (const$13 = dart.const(new src__widgets__widget_inspector._Location.new({line: 17, column: 18, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerRow.dart", parameterLocations: const$12 || (const$12 = dart.constList([const$9 || (const$9 = dart.const(new src__widgets__widget_inspector._Location.new({line: 18, column: 11, name: "crossAxisAlignment"}))), const$10 || (const$10 = dart.const(new src__widgets__widget_inspector._Location.new({line: 19, column: 11, name: "mainAxisAlignment"}))), const$11 || (const$11 = dart.const(new src__widgets__widget_inspector._Location.new({line: 20, column: 11, name: "children"})))], src__widgets__widget_inspector._Location))})))}), onPressed: this.onPressed, $creationLocationd_0dea112b090073317d4: const$18 || (const$18 = dart.const(new src__widgets__widget_inspector._Location.new({line: 15, column: 12, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerRow.dart", parameterLocations: const$17 || (const$17 = dart.constList([const$14 || (const$14 = dart.const(new src__widgets__widget_inspector._Location.new({line: 16, column: 7, name: "padding"}))), const$15 || (const$15 = dart.const(new src__widgets__widget_inspector._Location.new({line: 17, column: 7, name: "child"}))), const$16 || (const$16 = dart.const(new src__widgets__widget_inspector._Location.new({line: 31, column: 7, name: "onPressed"})))], src__widgets__widget_inspector._Location))})))});
+      return new src__material__material_button.MaterialButton.new({color: dart.test(this.isSelected) ? AppColors$.AppColors.colorSecondary : null, padding: new src__painting__edge_insets.EdgeInsets.fromLTRB(36.0, 0.0, 0.0, 0.0), child: new src__widgets__basic.Row.new({crossAxisAlignment: src__rendering__flex.CrossAxisAlignment.center, mainAxisAlignment: src__rendering__flex.MainAxisAlignment.start, children: JSArrayOfWidget().of([new src__widgets__image.Image.asset(this.icon, {$creationLocationd_0dea112b090073317d4: const$1 || (const$1 = dart.const(new src__widgets__widget_inspector._Location.new({line: 25, column: 19, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerRow.dart", parameterLocations: const$0 || (const$0 = dart.constList([const$ || (const$ = dart.const(new src__widgets__widget_inspector._Location.new({line: 25, column: 25, name: "name"})))], src__widgets__widget_inspector._Location))})))}), new components__space__Width16.Width16.new({$creationLocationd_0dea112b090073317d4: const$3 || (const$3 = dart.const(new src__widgets__widget_inspector._Location.new({line: 26, column: 13, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerRow.dart", parameterLocations: const$2 || (const$2 = dart.constList([], src__widgets__widget_inspector._Location))})))}), new src__widgets__text.Text.new(this.title, {textAlign: ui$.TextAlign.start, style: new src__painting__text_style.TextStyle.new({fontFamily: "Lato", fontSize: 14.0, color: new ui$.Color.fromRGBO(207, 209, 233, 1.0), fontWeight: ui$.FontWeight.w100}), $creationLocationd_0dea112b090073317d4: const$8 || (const$8 = dart.const(new src__widgets__widget_inspector._Location.new({line: 27, column: 17, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerRow.dart", parameterLocations: const$7 || (const$7 = dart.constList([const$4 || (const$4 = dart.const(new src__widgets__widget_inspector._Location.new({line: 27, column: 22, name: "data"}))), const$5 || (const$5 = dart.const(new src__widgets__widget_inspector._Location.new({line: 28, column: 17, name: "textAlign"}))), const$6 || (const$6 = dart.const(new src__widgets__widget_inspector._Location.new({line: 29, column: 17, name: "style"})))], src__widgets__widget_inspector._Location))})))})]), $creationLocationd_0dea112b090073317d4: const$13 || (const$13 = dart.const(new src__widgets__widget_inspector._Location.new({line: 21, column: 18, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerRow.dart", parameterLocations: const$12 || (const$12 = dart.constList([const$9 || (const$9 = dart.const(new src__widgets__widget_inspector._Location.new({line: 22, column: 11, name: "crossAxisAlignment"}))), const$10 || (const$10 = dart.const(new src__widgets__widget_inspector._Location.new({line: 23, column: 11, name: "mainAxisAlignment"}))), const$11 || (const$11 = dart.const(new src__widgets__widget_inspector._Location.new({line: 24, column: 11, name: "children"})))], src__widgets__widget_inspector._Location))})))}), onPressed: this.onPressed, $creationLocationd_0dea112b090073317d4: const$19 || (const$19 = dart.const(new src__widgets__widget_inspector._Location.new({line: 18, column: 12, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerRow.dart", parameterLocations: const$18 || (const$18 = dart.constList([const$14 || (const$14 = dart.const(new src__widgets__widget_inspector._Location.new({line: 19, column: 7, name: "color"}))), const$15 || (const$15 = dart.const(new src__widgets__widget_inspector._Location.new({line: 20, column: 7, name: "padding"}))), const$16 || (const$16 = dart.const(new src__widgets__widget_inspector._Location.new({line: 21, column: 7, name: "child"}))), const$17 || (const$17 = dart.const(new src__widgets__widget_inspector._Location.new({line: 35, column: 7, name: "onPressed"})))], src__widgets__widget_inspector._Location))})))});
     }
   };
-  (components__drawer__DrawerRow.DrawerRow.new = function(title, icon, opts) {
+  (components__drawer__DrawerRow.DrawerRow.new = function(isSelected, title, icon, opts) {
     let onPressed = opts && 'onPressed' in opts ? opts.onPressed : null;
     let $creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[isSelected$] = isSelected;
     this[title$] = title;
     this[icon$] = icon;
     this[onPressed$] = onPressed;
@@ -73,6 +82,7 @@ define(['dart_sdk', 'packages/flutter_web/material', 'packages/flutter_web/anima
   const icon$ = Symbol("DrawerRow.icon");
   const title$ = Symbol("DrawerRow.title");
   const onPressed$ = Symbol("DrawerRow.onPressed");
+  const isSelected$ = Symbol("DrawerRow.isSelected");
   dart.setMethodSignature(components__drawer__DrawerRow.DrawerRow, () => ({
     __proto__: dart.getMethods(components__drawer__DrawerRow.DrawerRow.__proto__),
     build: dart.fnType(src__widgets__framework.Widget, [src__widgets__framework.BuildContext])
@@ -81,11 +91,12 @@ define(['dart_sdk', 'packages/flutter_web/material', 'packages/flutter_web/anima
     __proto__: dart.getFields(components__drawer__DrawerRow.DrawerRow.__proto__),
     icon: dart.fieldType(core.String),
     title: dart.fieldType(core.String),
-    onPressed: dart.fieldType(dart.fnType(dart.dynamic, []))
+    onPressed: dart.fieldType(dart.fnType(dart.dynamic, [])),
+    isSelected: dart.fieldType(core.bool)
   }));
   dart.trackLibraries("packages/takeoffandroid_portfolio/components/drawer/DrawerRow", {
     "package:takeoffandroid_portfolio/components/drawer/DrawerRow.dart": components__drawer__DrawerRow
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerRow.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAKS;;;;;;IAAM;;;;;;IAEF;;;;;;UAMe;AACxB,YAAO,iEACe,mDAAS,MAAI,KAAG,KAAG,aAC5B,qDACgC,mEACF,wDACnB,sBACV,oCAAM,meACZ,4YACI,gCAAK,wBACgB,4BACd,yDACS,kBACF,aACG,uBAAS,KAAK,KAAK,KAAK,kBACd,++CAE1B;IAEf;;0DAtBe,OAAY;QAAY;;IAAxB;IAAY;IAAY;AAAvC;;EAAkD","file":"DrawerRow.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerRow.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAOS;;;;;;IAAM;;;;;;IAEF;;;;;;IAEN;;;;;;UAKqB;AACxB,YAAO,yEACE,mBAAuB,sCAAiB,eAC3B,mDAAS,MAAI,KAAG,KAAG,aAC5B,qDACgC,mEACF,wDACnB,sBACV,oCAAM,meACZ,4YACI,gCAAK,wBACgB,4BACd,yDACS,kBACF,aACG,uBAAS,KAAK,KAAK,KAAK,kBACd,++CAE1B;IAEf;;0DAvBe,YAAiB,OAAY;QAAa;;IAA1C;IAAiB;IAAY;IAAa;AAAzD;;EAAoE","file":"DrawerRow.ddc.js"}');
   // Exports:
   return {
     components__drawer__DrawerRow: components__drawer__DrawerRow

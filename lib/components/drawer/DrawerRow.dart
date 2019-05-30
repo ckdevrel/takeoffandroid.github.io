@@ -1,18 +1,22 @@
 import 'package:flutter_web/material.dart';
 import 'package:takeoffandroid_portfolio/components/space/Width16.dart';
 
+import '../../AppColors.dart';
+
 class DrawerRow extends StatelessWidget {
 
   String icon, title;
 
   Function() onPressed;
 
+  bool isSelected;
 
-  DrawerRow(this.title, this.icon, {this.onPressed});
+  DrawerRow(this.isSelected, this.title, this.icon,  {this.onPressed});
 
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
+      color: isSelected ? AppColors.colorSecondary : null,
       padding: EdgeInsets.fromLTRB(36, 0, 0, 0),
       child: new Row(
           crossAxisAlignment: CrossAxisAlignment.center,
