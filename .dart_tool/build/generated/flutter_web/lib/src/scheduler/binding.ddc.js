@@ -1,4 +1,4 @@
-define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/collection/src/priority_queue', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/services/clipboard', 'packages/flutter_web/services'], function(dart_sdk, assertions, priority_queue, ui, clipboard, services) {
+define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/collection/src/priority_queue', 'packages/flutter_web/src/services/clipboard', 'packages/flutter_web_ui/ui', 'packages/flutter_web/services'], function(dart_sdk, assertions, priority_queue, clipboard, ui, services) {
   'use strict';
   const core = dart_sdk.core;
   const async = dart_sdk.async;
@@ -9,13 +9,13 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
   const src__foundation__assertions = assertions.src__foundation__assertions;
+  const src__foundation__diagnostics = assertions.src__foundation__diagnostics;
   const src__foundation__print = assertions.src__foundation__print;
   const src__foundation__debug = assertions.src__foundation__debug;
-  const src__foundation__profile = assertions.src__foundation__profile;
   const src__foundation__binding = assertions.src__foundation__binding;
   const src__priority_queue = priority_queue.src__priority_queue;
-  const ui$ = ui.ui;
   const src__services__system_channels = clipboard.src__services__system_channels;
+  const ui$ = ui.ui;
   const src__services__binding = services.src__services__binding;
   const src__scheduler__debug = Object.create(dart.library);
   const src__scheduler__priority = Object.create(dart.library);
@@ -23,20 +23,20 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const $abs = dartx.abs;
   const $sign = dartx.sign;
   const $compareTo = dartx.compareTo;
-  const $trimRight = dartx.trimRight;
-  const $split = dartx.split;
-  const $forEach = dartx.forEach;
   const $length = dartx.length;
   const $_set = dartx._set;
   const $remove = dartx.remove;
   const $keys = dartx.keys;
   const $_get = dartx._get;
+  const $trimRight = dartx.trimRight;
+  const $split = dartx.split;
   const $join = dartx.join;
   const $add = dartx.add;
   const $round = dartx.round;
   const $toString = dartx.toString;
   const $padRight = dartx.padRight;
   const $padLeft = dartx.padLeft;
+  const $forEach = dartx.forEach;
   const $clear = dartx.clear;
   const $times = dartx['*'];
   let VoidTobool = () => (VoidTobool = dart.constFn(dart.fnType(core.bool, [])))();
@@ -52,21 +52,119 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   let VoidToFutureOfdouble = () => (VoidToFutureOfdouble = dart.constFn(dart.fnType(FutureOfdouble(), [])))();
   let FutureOfNull = () => (FutureOfNull = dart.constFn(async.Future$(core.Null)))();
   let doubleToFutureOfNull = () => (doubleToFutureOfNull = dart.constFn(dart.fnType(FutureOfNull(), [core.double])))();
-  let StringBufferToNull = () => (StringBufferToNull = dart.constFn(dart.fnType(core.Null, [core.StringBuffer])))();
+  let SyncIterableOfDiagnosticsStackTrace = () => (SyncIterableOfDiagnosticsStackTrace = dart.constFn(_js_helper.SyncIterable$(src__foundation__assertions.DiagnosticsStackTrace)))();
+  let IterableOfDiagnosticsStackTrace = () => (IterableOfDiagnosticsStackTrace = dart.constFn(core.Iterable$(src__foundation__assertions.DiagnosticsStackTrace)))();
+  let VoidToIterableOfDiagnosticsStackTrace = () => (VoidToIterableOfDiagnosticsStackTrace = dart.constFn(dart.fnType(IterableOfDiagnosticsStackTrace(), [])))();
   let LinkedHashMapOfint$_FrameCallbackEntry = () => (LinkedHashMapOfint$_FrameCallbackEntry = dart.constFn(collection.LinkedHashMap$(core.int, src__scheduler__binding._FrameCallbackEntry)))();
+  let SyncIterableOfDiagnosticsNode = () => (SyncIterableOfDiagnosticsNode = dart.constFn(_js_helper.SyncIterable$(src__foundation__diagnostics.DiagnosticsNode)))();
+  let IterableOfDiagnosticsNode = () => (IterableOfDiagnosticsNode = dart.constFn(core.Iterable$(src__foundation__diagnostics.DiagnosticsNode)))();
+  let VoidToIterableOfDiagnosticsNode = () => (VoidToIterableOfDiagnosticsNode = dart.constFn(dart.fnType(IterableOfDiagnosticsNode(), [])))();
   let CompleterOfvoid = () => (CompleterOfvoid = dart.constFn(async.Completer$(dart.void)))();
   let DurationToNull = () => (DurationToNull = dart.constFn(dart.fnType(core.Null, [core.Duration])))();
   let VoidToFutureOfNull = () => (VoidToFutureOfNull = dart.constFn(dart.fnType(FutureOfNull(), [])))();
   let intAnd_FrameCallbackEntryToNull = () => (intAnd_FrameCallbackEntryToNull = dart.constFn(dart.fnType(core.Null, [core.int, src__scheduler__binding._FrameCallbackEntry])))();
   let ListOfDurationTovoid = () => (ListOfDurationTovoid = dart.constFn(core.List$(DurationTovoid())))();
   let IdentityMapOfString$dynamic = () => (IdentityMapOfString$dynamic = dart.constFn(_js_helper.IdentityMap$(core.String, dart.dynamic)))();
-  src__scheduler__debug.debugAssertAllSchedulerVarsUnset = function(reason) {
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C0() {
+      return C0 = dart.const({
+        __proto__: src__scheduler__priority.Priority.prototype,
+        [_value$]: 0
+      });
+    },
+    get C1() {
+      return C1 = dart.const({
+        __proto__: src__scheduler__priority.Priority.prototype,
+        [_value$]: 100000
+      });
+    },
+    get C2() {
+      return C2 = dart.const({
+        __proto__: src__scheduler__priority.Priority.prototype,
+        [_value$]: 200000
+      });
+    },
+    get C3() {
+      return C3 = dart.const({
+        __proto__: src__scheduler__binding.SchedulerPhase.prototype,
+        index: 0,
+        [_name$]: "SchedulerPhase.idle"
+      });
+    },
+    get C4() {
+      return C4 = dart.const({
+        __proto__: src__scheduler__binding.SchedulerPhase.prototype,
+        index: 1,
+        [_name$]: "SchedulerPhase.transientCallbacks"
+      });
+    },
+    get C5() {
+      return C5 = dart.const({
+        __proto__: src__scheduler__binding.SchedulerPhase.prototype,
+        index: 2,
+        [_name$]: "SchedulerPhase.midFrameMicrotasks"
+      });
+    },
+    get C6() {
+      return C6 = dart.const({
+        __proto__: src__scheduler__binding.SchedulerPhase.prototype,
+        index: 3,
+        [_name$]: "SchedulerPhase.persistentCallbacks"
+      });
+    },
+    get C7() {
+      return C7 = dart.const({
+        __proto__: src__scheduler__binding.SchedulerPhase.prototype,
+        index: 4,
+        [_name$]: "SchedulerPhase.postFrameCallbacks"
+      });
+    },
+    get C8() {
+      return C8 = dart.constList([C3 || CT.C3, C4 || CT.C4, C5 || CT.C5, C6 || CT.C6, C7 || CT.C7], src__scheduler__binding.SchedulerPhase);
+    },
+    get C9() {
+      return C9 = dart.fn(src__scheduler__binding.defaultSchedulingStrategy, __Tobool());
+    },
+    get C10() {
+      return C10 = dart.fn(src__scheduler__binding.SchedulerBinding._taskSorter, _TaskEntryAnd_TaskEntryToint());
+    },
+    get C11() {
+      return C11 = dart.const({
+        __proto__: ui$.AppLifecycleState.prototype,
+        index: 0,
+        [_name]: "AppLifecycleState.resumed"
+      });
+    },
+    get C12() {
+      return C12 = dart.const({
+        __proto__: ui$.AppLifecycleState.prototype,
+        index: 1,
+        [_name]: "AppLifecycleState.inactive"
+      });
+    },
+    get C13() {
+      return C13 = dart.const({
+        __proto__: ui$.AppLifecycleState.prototype,
+        index: 2,
+        [_name]: "AppLifecycleState.paused"
+      });
+    },
+    get C14() {
+      return C14 = dart.const({
+        __proto__: ui$.AppLifecycleState.prototype,
+        index: 3,
+        [_name]: "AppLifecycleState.suspending"
+      });
+    }
+  });
+  src__scheduler__debug.debugAssertAllSchedulerVarsUnset = function debugAssertAllSchedulerVarsUnset(reason) {
     if (!dart.test(dart.fn(() => {
       if (dart.test(src__scheduler__debug.debugPrintBeginFrameBanner) || dart.test(src__scheduler__debug.debugPrintEndFrameBanner)) {
-        dart.throw(new src__foundation__assertions.FlutterError.new(reason));
+        dart.throw(src__foundation__assertions.FlutterError.new(reason));
       }
       return true;
-    }, VoidTobool())())) dart.assertFailed();
+    }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/debug.dart", 62, 10, "() {\n    if (debugPrintBeginFrameBanner || debugPrintEndFrameBanner) {\n      throw new FlutterError(reason);\n    }\n    return true;\n  }()");
     return true;
   };
   dart.defineLazy(src__scheduler__debug, {
@@ -84,13 +182,16 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     set debugPrintScheduleFrameStacks(_) {}
   });
   const _value$ = dart.privateName(src__scheduler__priority, "_value");
+  let C0;
+  let C1;
+  let C2;
   src__scheduler__priority.Priority = class Priority extends core.Object {
     get value() {
       return this[_value$];
     }
     ['+'](offset) {
-      if (offset[$abs]() > dart.notNull(src__scheduler__priority.Priority.kMaxOffset)) {
-        offset = dart.notNull(src__scheduler__priority.Priority.kMaxOffset) * offset[$sign];
+      if (offset[$abs]() > 10000) {
+        offset = 10000 * offset[$sign];
       }
       return new src__scheduler__priority.Priority.__(dart.notNull(this[_value$]) + dart.notNull(offset));
     }
@@ -112,19 +213,20 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getGetters(src__scheduler__priority.Priority.__proto__),
     value: core.int
   }));
+  dart.setLibraryUri(src__scheduler__priority.Priority, "package:flutter_web/src/scheduler/priority.dart");
   dart.setFieldSignature(src__scheduler__priority.Priority, () => ({
     __proto__: dart.getFields(src__scheduler__priority.Priority.__proto__),
     [_value$]: dart.finalFieldType(core.int)
   }));
   dart.defineLazy(src__scheduler__priority.Priority, {
     /*src__scheduler__priority.Priority.idle*/get idle() {
-      return dart.const(new src__scheduler__priority.Priority.__(0));
+      return C0 || CT.C0;
     },
     /*src__scheduler__priority.Priority.animation*/get animation() {
-      return dart.const(new src__scheduler__priority.Priority.__(100000));
+      return C1 || CT.C1;
     },
     /*src__scheduler__priority.Priority.touch*/get touch() {
-      return dart.const(new src__scheduler__priority.Priority.__(200000));
+      return C2 || CT.C2;
     },
     /*src__scheduler__priority.Priority.kMaxOffset*/get kMaxOffset() {
       return 10000;
@@ -142,9 +244,13 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       }
       run() {
         let t0;
-        developer.Timeline.timeSync(core.Null, (t0 = this.debugLabel, t0 == null ? "Scheduled Task" : t0), dart.fn(() => {
+        if (!false) {
+          developer.Timeline.timeSync(core.Null, (t0 = this.debugLabel, t0 == null ? "Scheduled Task" : t0), dart.fn(() => {
+            this.completer.complete(this.task());
+          }, VoidToNull()), {flow: this.flow != null ? developer.Flow.step(this.flow.id) : null});
+        } else {
           this.completer.complete(this.task());
-        }, VoidToNull()), {flow: this.flow != null ? developer.Flow.step(this.flow.id) : null});
+        }
       }
     }
     (_TaskEntry.new = function(task, priority, debugLabel, flow) {
@@ -157,7 +263,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       if (!dart.test(dart.fn(() => {
         this.debugStack = core.StackTrace.current;
         return true;
-      }, VoidTobool())())) dart.assertFailed();
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 65, 12, "() {\n      debugStack = StackTrace.current;\n      return true;\n    }()");
       this.completer = CompleterOfT().new();
     }).prototype = _TaskEntry.prototype;
     dart.addTypeTests(_TaskEntry);
@@ -167,6 +273,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       __proto__: dart.getMethods(_TaskEntry.__proto__),
       run: dart.fnType(dart.void, [])
     }));
+    dart.setLibraryUri(_TaskEntry, "package:flutter_web/src/scheduler/binding.dart");
     dart.setFieldSignature(_TaskEntry, () => ({
       __proto__: dart.getFields(_TaskEntry.__proto__),
       task: dart.finalFieldType(dart.fnType(T, [])),
@@ -189,18 +296,19 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       if (dart.test(rescheduling)) {
         if (!dart.test(dart.fn(() => {
           if (src__scheduler__binding._FrameCallbackEntry.debugCurrentCallbackStack == null) {
-            dart.throw(new src__foundation__assertions.FlutterError.new("scheduleFrameCallback called with rescheduling true, but no callback is in scope.\n" + "The \"rescheduling\" argument should only be set to true if the " + "callback is being reregistered from within the callback itself, " + "and only then if the callback itself is entirely synchronous. " + "If this is the initial registration of the callback, or if the " + "callback is asynchronous, then do not use the \"rescheduling\" " + "argument."));
+            dart.throw(src__foundation__assertions.FlutterError.new("scheduleFrameCallback called with rescheduling true, but no callback is in scope.\n" + "The \"rescheduling\" argument should only be set to true if the " + "callback is being reregistered from within the callback itself, " + "and only then if the callback itself is entirely synchronous. " + "If this is the initial registration of the callback, or if the " + "callback is asynchronous, then do not use the \"rescheduling\" " + "argument."));
           }
           return true;
-        }, VoidTobool())())) dart.assertFailed();
+        }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 98, 16, "() {\n          if (debugCurrentCallbackStack == null) {\n            throw FlutterError(\n                'scheduleFrameCallback called with rescheduling true, but no callback is in scope.\\n'\n                'The \"rescheduling\" argument should only be set to true if the '\n                'callback is being reregistered from within the callback itself, '\n                'and only then if the callback itself is entirely synchronous. '\n                'If this is the initial registration of the callback, or if the '\n                'callback is asynchronous, then do not use the \"rescheduling\" '\n                'argument.');\n          }\n          return true;\n        }()");
         this.debugStack = src__scheduler__binding._FrameCallbackEntry.debugCurrentCallbackStack;
       } else {
         this.debugStack = core.StackTrace.current;
       }
       return true;
-    }, VoidTobool())())) dart.assertFailed();
+    }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 96, 12, "() {\n      if (rescheduling) {\n        assert(() {\n          if (debugCurrentCallbackStack == null) {\n            throw FlutterError(\n                'scheduleFrameCallback called with rescheduling true, but no callback is in scope.\\n'\n                'The \"rescheduling\" argument should only be set to true if the '\n                'callback is being reregistered from within the callback itself, '\n                'and only then if the callback itself is entirely synchronous. '\n                'If this is the initial registration of the callback, or if the '\n                'callback is asynchronous, then do not use the \"rescheduling\" '\n                'argument.');\n          }\n          return true;\n        }());\n        debugStack = debugCurrentCallbackStack;\n      } else {\n        // TODO(ianh): trim the frames from this library, so that the call to scheduleFrameCallback is the top one\n        debugStack = StackTrace.current;\n      }\n      return true;\n    }()");
   }).prototype = src__scheduler__binding._FrameCallbackEntry.prototype;
   dart.addTypeTests(src__scheduler__binding._FrameCallbackEntry);
+  dart.setLibraryUri(src__scheduler__binding._FrameCallbackEntry, "package:flutter_web/src/scheduler/binding.dart");
   dart.setFieldSignature(src__scheduler__binding._FrameCallbackEntry, () => ({
     __proto__: dart.getFields(src__scheduler__binding._FrameCallbackEntry.__proto__),
     callback: dart.finalFieldType(dart.fnType(dart.void, [core.Duration])),
@@ -213,6 +321,12 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     set debugCurrentCallbackStack(_) {}
   });
   const _name$ = dart.privateName(src__scheduler__binding, "_name");
+  let C3;
+  let C4;
+  let C5;
+  let C6;
+  let C7;
+  let C8;
   src__scheduler__binding.SchedulerPhase = class SchedulerPhase extends core.Object {
     toString() {
       return this[_name$];
@@ -224,20 +338,23 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     ;
   }).prototype = src__scheduler__binding.SchedulerPhase.prototype;
   dart.addTypeTests(src__scheduler__binding.SchedulerPhase);
+  dart.setLibraryUri(src__scheduler__binding.SchedulerPhase, "package:flutter_web/src/scheduler/binding.dart");
   dart.setFieldSignature(src__scheduler__binding.SchedulerPhase, () => ({
     __proto__: dart.getFields(src__scheduler__binding.SchedulerPhase.__proto__),
     index: dart.finalFieldType(core.int),
     [_name$]: dart.finalFieldType(core.String)
   }));
   dart.defineExtensionMethods(src__scheduler__binding.SchedulerPhase, ['toString']);
-  src__scheduler__binding.SchedulerPhase.idle = dart.const(new src__scheduler__binding.SchedulerPhase.new(0, "SchedulerPhase.idle"));
-  src__scheduler__binding.SchedulerPhase.transientCallbacks = dart.const(new src__scheduler__binding.SchedulerPhase.new(1, "SchedulerPhase.transientCallbacks"));
-  src__scheduler__binding.SchedulerPhase.midFrameMicrotasks = dart.const(new src__scheduler__binding.SchedulerPhase.new(2, "SchedulerPhase.midFrameMicrotasks"));
-  src__scheduler__binding.SchedulerPhase.persistentCallbacks = dart.const(new src__scheduler__binding.SchedulerPhase.new(3, "SchedulerPhase.persistentCallbacks"));
-  src__scheduler__binding.SchedulerPhase.postFrameCallbacks = dart.const(new src__scheduler__binding.SchedulerPhase.new(4, "SchedulerPhase.postFrameCallbacks"));
-  src__scheduler__binding.SchedulerPhase.values = dart.constList([src__scheduler__binding.SchedulerPhase.idle, src__scheduler__binding.SchedulerPhase.transientCallbacks, src__scheduler__binding.SchedulerPhase.midFrameMicrotasks, src__scheduler__binding.SchedulerPhase.persistentCallbacks, src__scheduler__binding.SchedulerPhase.postFrameCallbacks], src__scheduler__binding.SchedulerPhase);
+  src__scheduler__binding.SchedulerPhase.idle = C3 || CT.C3;
+  src__scheduler__binding.SchedulerPhase.transientCallbacks = C4 || CT.C4;
+  src__scheduler__binding.SchedulerPhase.midFrameMicrotasks = C5 || CT.C5;
+  src__scheduler__binding.SchedulerPhase.persistentCallbacks = C6 || CT.C6;
+  src__scheduler__binding.SchedulerPhase.postFrameCallbacks = C7 || CT.C7;
+  src__scheduler__binding.SchedulerPhase.values = C8 || CT.C8;
   const _lifecycleState = dart.privateName(src__scheduler__binding, "_lifecycleState");
+  let C9;
   const _taskQueue = dart.privateName(src__scheduler__binding, "_taskQueue");
+  let C10;
   const _hasRequestedAnEventLoopCallback = dart.privateName(src__scheduler__binding, "_hasRequestedAnEventLoopCallback");
   const _nextFrameCallbackId = dart.privateName(src__scheduler__binding, "_nextFrameCallbackId");
   const _transientCallbacks = dart.privateName(src__scheduler__binding, "_transientCallbacks");
@@ -261,6 +378,11 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const _handleDrawFrame = dart.privateName(src__scheduler__binding, "_handleDrawFrame");
   const _handleLifecycleMessage = dart.privateName(src__scheduler__binding, "_handleLifecycleMessage");
   const _setFramesEnabledState = dart.privateName(src__scheduler__binding, "_setFramesEnabledState");
+  const _name = dart.privateName(ui$, "_name");
+  let C11;
+  let C12;
+  let C13;
+  let C14;
   const _ensureEventLoopCallback = dart.privateName(src__scheduler__binding, "_ensureEventLoopCallback");
   const _runTasks = dart.privateName(src__scheduler__binding, "_runTasks");
   const _adjustForEpoch = dart.privateName(src__scheduler__binding, "_adjustForEpoch");
@@ -303,15 +425,15 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
           src__foundation__print.debugPrint("No transient callback is currently executing.");
         }
         return true;
-      }, VoidTobool())())) dart.assertFailed();
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 547, 12, " assert(() {\n      if (_FrameCallbackEntry.debugCurrentCallbackStack != null) {\n        debugPrint(\n            'When the current transient callback was registered, this was the stack:');\n        debugPrint(FlutterError.defaultStackFilter(_FrameCallbackEntry\n                .debugCurrentCallbackStack\n                .toString()\n                .trimRight()\n                .split('\\n'))\n            .join('\\n'));\n      } else {\n        debugPrint('No transient callback is currently executing.');\n      }\n      return true;");
     }
     static _debugDescribeTimeStamp(timeStamp, buffer) {
       if (dart.notNull(timeStamp.inDays) > 0) buffer.write(dart.str(timeStamp.inDays) + "d ");
-      if (dart.notNull(timeStamp.inHours) > 0) buffer.write(dart.str(dart.notNull(timeStamp.inHours) - dart.notNull(timeStamp.inDays) * dart.notNull(core.Duration.hoursPerDay)) + "h ");
-      if (dart.notNull(timeStamp.inMinutes) > 0) buffer.write(dart.str(dart.notNull(timeStamp.inMinutes) - dart.notNull(timeStamp.inHours) * dart.notNull(core.Duration.minutesPerHour)) + "m ");
-      if (dart.notNull(timeStamp.inSeconds) > 0) buffer.write(dart.str(dart.notNull(timeStamp.inSeconds) - dart.notNull(timeStamp.inMinutes) * dart.notNull(core.Duration.secondsPerMinute)) + "s ");
-      buffer.write(dart.str(dart.notNull(timeStamp.inMilliseconds) - dart.notNull(timeStamp.inSeconds) * dart.notNull(core.Duration.millisecondsPerSecond)));
-      let microseconds = dart.notNull(timeStamp.inMicroseconds) - dart.notNull(timeStamp.inMilliseconds) * dart.notNull(core.Duration.microsecondsPerMillisecond);
+      if (dart.notNull(timeStamp.inHours) > 0) buffer.write(dart.str(dart.notNull(timeStamp.inHours) - dart.notNull(timeStamp.inDays) * 24) + "h ");
+      if (dart.notNull(timeStamp.inMinutes) > 0) buffer.write(dart.str(dart.notNull(timeStamp.inMinutes) - dart.notNull(timeStamp.inHours) * 60) + "m ");
+      if (dart.notNull(timeStamp.inSeconds) > 0) buffer.write(dart.str(dart.notNull(timeStamp.inSeconds) - dart.notNull(timeStamp.inMinutes) * 60) + "s ");
+      buffer.write(dart.str(dart.notNull(timeStamp.inMilliseconds) - dart.notNull(timeStamp.inSeconds) * 1000));
+      let microseconds = dart.notNull(timeStamp.inMicroseconds) - dart.notNull(timeStamp.inMilliseconds) * 1000;
       if (microseconds > 0) buffer.write("." + microseconds[$toString]()[$padLeft](3, "0"));
       buffer.write("ms");
     }
@@ -326,14 +448,14 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     initInstances() {
       super.initInstances();
       src__scheduler__binding.SchedulerBinding._instance = this;
-      ui$.window.onBeginFrame = dart.bind(this, _handleBeginFrame);
-      ui$.window.onDrawFrame = dart.bind(this, _handleDrawFrame);
+      this.window.onBeginFrame = dart.bind(this, _handleBeginFrame);
+      this.window.onDrawFrame = dart.bind(this, _handleDrawFrame);
       src__services__system_channels.SystemChannels.lifecycle.setMessageHandler(dart.bind(this, _handleLifecycleMessage));
+      this.readInitialLifecycleStateFromNativeWindow();
     }
     initServiceExtensions() {
       super.initServiceExtensions();
-      let isReleaseMode = false;
-      if (!dart.test(isReleaseMode)) {
+      if (!false) {
         this.registerNumericServiceExtension({name: "timeDilation", getter: dart.fn(() => async.async(core.double, function*() {
             return src__scheduler__binding.timeDilation;
           }), VoidToFutureOfdouble()), setter: dart.fn(value => async.async(core.Null, function*() {
@@ -344,18 +466,23 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     get lifecycleState() {
       return this[_lifecycleState];
     }
+    readInitialLifecycleStateFromNativeWindow() {
+      if (this[_lifecycleState] == null && src__scheduler__binding.SchedulerBinding._parseAppLifecycleMessage(this.window.initialLifecycleState) != null) {
+        this[_handleLifecycleMessage](this.window.initialLifecycleState);
+      }
+    }
     handleAppLifecycleStateChanged(state) {
-      if (!(state != null)) dart.assertFailed();
+      if (!(state != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 262, 12, "state != null");
       this[_lifecycleState] = state;
       switch (state) {
-        case ui$.AppLifecycleState.resumed:
-        case ui$.AppLifecycleState.inactive:
+        case C11 || CT.C11:
+        case C12 || CT.C12:
         {
           this[_setFramesEnabledState](true);
           break;
         }
-        case ui$.AppLifecycleState.paused:
-        case ui$.AppLifecycleState.suspending:
+        case C13 || CT.C13:
+        case C14 || CT.C14:
         {
           this[_setFramesEnabledState](false);
           break;
@@ -363,8 +490,10 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       }
     }
     [_handleLifecycleMessage](message) {
-      this.handleAppLifecycleStateChanged(src__scheduler__binding.SchedulerBinding._parseAppLifecycleMessage(message));
-      return null;
+      return async.async(core.String, (function* _handleLifecycleMessage() {
+        this.handleAppLifecycleStateChanged(src__scheduler__binding.SchedulerBinding._parseAppLifecycleMessage(message));
+        return null;
+      }).bind(this));
     }
     scheduleTask(T, task, priority, opts) {
       let debugLabel = opts && 'debugLabel' in opts ? opts.debugLabel : null;
@@ -380,8 +509,8 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       if (dart.test(this[_taskQueue].isNotEmpty)) this[_ensureEventLoopCallback]();
     }
     [_ensureEventLoopCallback]() {
-      if (!!dart.test(this.locked)) dart.assertFailed();
-      if (!dart.test(this[_taskQueue].isNotEmpty)) dart.assertFailed();
+      if (!!dart.test(this.locked)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 355, 12, "!locked");
+      if (!dart.test(this[_taskQueue].isNotEmpty)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 356, 12, "_taskQueue.isNotEmpty");
       if (dart.test(this[_hasRequestedAnEventLoopCallback])) return;
       this[_hasRequestedAnEventLoopCallback] = true;
       async.Timer.run(dart.bind(this, _runTasks));
@@ -404,11 +533,10 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
           if (!dart.test(dart.fn(() => {
             callbackStack = entry.debugStack;
             return true;
-          }, VoidTobool())())) dart.assertFailed();
-          src__foundation__assertions.FlutterError.reportError(new src__foundation__assertions.FlutterErrorDetails.new({exception: exception, stack: exceptionStack, library: "scheduler library", context: "during a task callback", informationCollector: callbackStack == null ? null : dart.fn(information => {
-              information.writeln("\nThis exception was thrown in the context of a task callback. " + "When the task callback was _registered_ (as opposed to when the " + "exception was thrown), this was the stack:");
-              src__foundation__assertions.FlutterError.defaultStackFilter(dart.toString(callbackStack)[$trimRight]()[$split]("\n"))[$forEach](dart.bind(information, 'writeln'));
-            }, StringBufferToNull())}));
+          }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 389, 16, "() {\n          callbackStack = entry.debugStack;\n          return true;\n        }()");
+          src__foundation__assertions.FlutterError.reportError(new src__foundation__assertions.FlutterErrorDetails.new({exception: exception, stack: exceptionStack, library: "scheduler library", context: new src__foundation__assertions.ErrorDescription.new("during a task callback"), informationCollector: callbackStack == null ? null : dart.fn(() => new (SyncIterableOfDiagnosticsStackTrace()).new(function*() {
+              yield new src__foundation__assertions.DiagnosticsStackTrace.new("\nThis exception was thrown in the context of a scheduler callback. " + "When the scheduler callback was _registered_ (as opposed to when the " + "exception was thrown), this was the stack", callbackStack);
+            }), VoidToIterableOfDiagnosticsStackTrace())}));
         }
         return this[_taskQueue].isNotEmpty;
       }
@@ -425,7 +553,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       return this[_nextFrameCallbackId];
     }
     cancelFrameCallbackWithId(id) {
-      if (!(dart.notNull(id) > 0)) dart.assertFailed();
+      if (!(dart.notNull(id) > 0)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 466, 12, "id > 0");
       this[_transientCallbacks][$remove](id);
       this[_removedIds].add(id);
     }
@@ -434,21 +562,20 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
         if (dart.notNull(this.transientCallbackCount) > 0) {
           let count = this.transientCallbackCount;
           let callbacks = LinkedHashMapOfint$_FrameCallbackEntry().from(this[_transientCallbacks]);
-          src__foundation__assertions.FlutterError.reportError(new src__foundation__assertions.FlutterErrorDetails.new({exception: reason, library: "scheduler library", informationCollector: dart.fn(information => {
+          src__foundation__assertions.FlutterError.reportError(new src__foundation__assertions.FlutterErrorDetails.new({exception: reason, library: "scheduler library", informationCollector: dart.fn(() => new (SyncIterableOfDiagnosticsNode()).new(function*() {
               if (count === 1) {
-                information.writeln("There was one transient callback left. " + "The stack trace for when it was registered is as follows:");
+                yield new src__foundation__assertions.ErrorDescription.new("There was one transient callback left. " + "The stack trace for when it was registered is as follows:");
               } else {
-                information.writeln("There were " + dart.str(count) + " transient callbacks left. " + "The stack traces for when they were registered are as follows:");
+                yield new src__foundation__assertions.ErrorDescription.new("There were " + dart.str(count) + " transient callbacks left. " + "The stack traces for when they were registered are as follows:");
               }
               for (let id of callbacks[$keys]) {
                 let entry = callbacks[$_get](id);
-                information.writeln("── callback " + dart.str(id) + " ──");
-                src__foundation__assertions.FlutterError.defaultStackFilter(dart.toString(entry.debugStack)[$trimRight]()[$split]("\n"))[$forEach](dart.bind(information, 'writeln'));
+                yield new src__foundation__assertions.DiagnosticsStackTrace.new("── callback " + dart.str(id) + " ──", entry.debugStack, {showSeparator: false});
               }
-            }, StringBufferToNull())}));
+            }), VoidToIterableOfDiagnosticsNode())}));
         }
         return true;
-      }, VoidTobool())())) dart.assertFailed();
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 492, 12, "() {\n      if (transientCallbackCount > 0) {\n        // We cache the values so that we can produce them later\n        // even if the information collector is called after\n        // the problem has been resolved.\n        final int count = transientCallbackCount;\n        final Map<int, _FrameCallbackEntry> callbacks =\n            Map<int, _FrameCallbackEntry>.from(_transientCallbacks);\n        FlutterError.reportError(FlutterErrorDetails(\n          exception: reason,\n          library: 'scheduler library',\n          informationCollector: () sync* {\n            if (count == 1) {\n              // TODO(jacobr): I have added an extra line break in this case.\n              yield ErrorDescription('There was one transient callback left. '\n                  'The stack trace for when it was registered is as follows:');\n            } else {\n              yield ErrorDescription(\n                  'There were $count transient callbacks left. '\n                  'The stack traces for when they were registered are as follows:');\n            }\n            for (int id in callbacks.keys) {\n              final _FrameCallbackEntry entry = callbacks[id];\n              yield DiagnosticsStackTrace(\n                  '── callback $id ──', entry.debugStack,\n                  showSeparator: false);\n            }\n          },\n        ));\n      }\n      return true;");
       return true;
     }
     addPersistentFrameCallback(callback) {
@@ -484,15 +611,15 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     }
     ensureVisualUpdate() {
       switch (this.schedulerPhase) {
-        case src__scheduler__binding.SchedulerPhase.idle:
-        case src__scheduler__binding.SchedulerPhase.postFrameCallbacks:
+        case C3 || CT.C3:
+        case C7 || CT.C7:
         {
           this.scheduleFrame();
           return;
         }
-        case src__scheduler__binding.SchedulerPhase.transientCallbacks:
-        case src__scheduler__binding.SchedulerPhase.midFrameMicrotasks:
-        case src__scheduler__binding.SchedulerPhase.persistentCallbacks:
+        case C4 || CT.C4:
+        case C5 || CT.C5:
+        case C6 || CT.C6:
         {
           return;
         }
@@ -503,8 +630,8 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       if (!dart.test(dart.fn(() => {
         if (dart.test(src__scheduler__debug.debugPrintScheduleFrameStacks)) src__foundation__assertions.debugPrintStack({label: "scheduleFrame() called. Current phase is " + dart.str(this.schedulerPhase) + "."});
         return true;
-      }, VoidTobool())())) dart.assertFailed();
-      ui$.window.scheduleFrame();
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 706, 12, " assert(() {\n      if (debugPrintScheduleFrameStacks)\n        debugPrintStack(\n            label: 'scheduleFrame() called. Current phase is $schedulerPhase.');\n      return true;");
+      this.window.scheduleFrame();
       this[_hasScheduledFrame] = true;
     }
     scheduleForcedFrame() {
@@ -512,8 +639,8 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       if (!dart.test(dart.fn(() => {
         if (dart.test(src__scheduler__debug.debugPrintScheduleFrameStacks)) src__foundation__assertions.debugPrintStack({label: "scheduleForcedFrame() called. Current phase is " + dart.str(this.schedulerPhase) + "."});
         return true;
-      }, VoidTobool())())) dart.assertFailed();
-      ui$.window.scheduleFrame();
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 737, 12, " assert(() {\n      if (debugPrintScheduleFrameStacks)\n        debugPrintStack(\n            label:\n                'scheduleForcedFrame() called. Current phase is $schedulerPhase.');\n      return true;");
+      this.window.scheduleFrame();
       this[_hasScheduledFrame] = true;
     }
     scheduleWarmUpFrame() {
@@ -522,11 +649,11 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       developer.Timeline.startSync("Warm-up frame");
       let hadScheduledFrame = this[_hasScheduledFrame];
       async.Timer.run(dart.fn(() => {
-        if (!dart.test(this[_warmUpFrame])) dart.assertFailed();
+        if (!dart.test(this[_warmUpFrame])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 773, 14, " assert(_war");
         this.handleBeginFrame(null);
       }, VoidToNull()));
       async.Timer.run(dart.fn(() => {
-        if (!dart.test(this[_warmUpFrame])) dart.assertFailed();
+        if (!dart.test(this[_warmUpFrame])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 777, 14, " assert(_war");
         this.handleDrawFrame();
         this.resetEpoch();
         this[_warmUpFrame] = false;
@@ -546,12 +673,12 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       return new core.Duration.new({microseconds: (dart.notNull(rawDurationSinceEpoch.inMicroseconds) / dart.notNull(src__scheduler__binding.timeDilation))[$round]() + dart.notNull(this[_epochStart].inMicroseconds)});
     }
     get currentFrameTimeStamp() {
-      if (!(this[_currentFrameTimeStamp] != null)) dart.assertFailed();
+      if (!(this[_currentFrameTimeStamp] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 849, 12, " assert(_currentFrameTimeStamp");
       return this[_currentFrameTimeStamp];
     }
     [_handleBeginFrame](rawTimeStamp) {
       if (dart.test(this[_warmUpFrame])) {
-        if (!!dart.test(this[_ignoreNextEngineDrawFrame])) dart.assertFailed();
+        if (!!dart.test(this[_ignoreNextEngineDrawFrame])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 862, 14, " assert(!_ignoreNextEngineD");
         this[_ignoreNextEngineDrawFrame] = true;
         return;
       }
@@ -570,11 +697,11 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       this[_firstRawTimeStampInEpoch] == null ? this[_firstRawTimeStampInEpoch] = rawTimeStamp : null;
       this[_currentFrameTimeStamp] = this[_adjustForEpoch]((t1 = rawTimeStamp, t1 == null ? this[_lastRawTimeStamp] : t1));
       if (rawTimeStamp != null) this[_lastRawTimeStamp] = rawTimeStamp;
-      src__foundation__profile.profile(dart.fn(() => {
+      if (!false) {
         this[_profileFrameNumber] = dart.notNull(this[_profileFrameNumber]) + 1;
         this[_profileFrameStopwatch].reset();
         this[_profileFrameStopwatch].start();
-      }, VoidToNull()));
+      }
       if (!dart.test(dart.fn(() => {
         if (dart.test(src__scheduler__debug.debugPrintBeginFrameBanner) || dart.test(src__scheduler__debug.debugPrintEndFrameBanner)) {
           let frameTimeStampDescription = new core.StringBuffer.new();
@@ -587,8 +714,8 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
           if (dart.test(src__scheduler__debug.debugPrintBeginFrameBanner)) src__foundation__print.debugPrint(this[_debugBanner]);
         }
         return true;
-      }, VoidTobool())())) dart.assertFailed();
-      if (!dart.equals(this.schedulerPhase, src__scheduler__binding.SchedulerPhase.idle)) dart.assertFailed();
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 912, 12, " assert(() {\n      if (debugPrintBeginFrameBanner || debugPrintEndFrameBanner) {\n        final StringBuffer frameTimeStampDescription = StringBuffer();\n        if (rawTimeStamp != null) {\n          _debugDescribeTimeStamp(\n              _currentFrameTimeStamp, frameTimeStampDescription);\n        } else {\n          frameTimeStampDescription.write('(warm-up frame)');\n        }\n        _debugBanner =\n            '▄▄▄▄▄▄▄▄ Frame ${_profileFrameNumber.toString().padRight(7)}   ${frameTimeStampDescription.toString().padLeft(18)} ▄▄▄▄▄▄▄▄';\n        if (debugPrintBeginFrameBanner) debugPrint(_debugBan");
+      if (!dart.equals(this.schedulerPhase, src__scheduler__binding.SchedulerPhase.idle)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 928, 12, "     return true;\n    }());\n\n    asse");
       this[_hasScheduledFrame] = false;
       try {
         developer.Timeline.startSync("Animate", {arguments: src__foundation__debug.timelineWhitelistArguments});
@@ -604,7 +731,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       }
     }
     handleDrawFrame() {
-      if (!dart.equals(this[_schedulerPhase], src__scheduler__binding.SchedulerPhase.midFrameMicrotasks)) dart.assertFailed();
+      if (!dart.equals(this[_schedulerPhase], src__scheduler__binding.SchedulerPhase.midFrameMicrotasks)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 957, 12, ".\n  void handleDrawFrame() {\n    assert(_schedulerPh");
       developer.Timeline.finishSync();
       try {
         this[_schedulerPhase] = src__scheduler__binding.SchedulerPhase.persistentCallbacks;
@@ -618,15 +745,15 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       } finally {
         this[_schedulerPhase] = src__scheduler__binding.SchedulerPhase.idle;
         developer.Timeline.finishSync();
-        src__foundation__profile.profile(dart.fn(() => {
+        if (!false) {
           this[_profileFrameStopwatch].stop();
           this[_profileFramePostEvent]();
-        }, VoidToNull()));
+        }
         if (!dart.test(dart.fn(() => {
           if (dart.test(src__scheduler__debug.debugPrintEndFrameBanner)) src__foundation__print.debugPrint("▀"[$times](this[_debugBanner].length));
           this[_debugBanner] = null;
           return true;
-        }, VoidTobool())())) dart.assertFailed();
+        }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 979, 14, "eFramePostEvent();\n      }\n      assert(() {\n        if (debugPrintEndFrameBanner) debugPrint('▀' * _debugBanner.length);\n        _debugBan");
         this[_currentFrameTimeStamp] = null;
       }
     }
@@ -635,32 +762,31 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     }
     [_invokeFrameCallback](callback, timeStamp, callbackStack) {
       if (callbackStack === void 0) callbackStack = null;
-      if (!(callback != null)) dart.assertFailed();
-      if (!(src__scheduler__binding._FrameCallbackEntry.debugCurrentCallbackStack == null)) dart.assertFailed();
+      if (!(callback != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 1023, 12, " [StackTrace cal");
+      if (!(src__scheduler__binding._FrameCallbackEntry.debugCurrentCallbackStack == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 1024, 12, "\n    assert(callback != null);\n    assert(_FrameCallb");
       if (!dart.test(dart.fn(() => {
         src__scheduler__binding._FrameCallbackEntry.debugCurrentCallbackStack = callbackStack;
         return true;
-      }, VoidTobool())())) dart.assertFailed();
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 1025, 12, "CurrentCallbackStack == null);\n    assert(() {\n      _FrameCallbackEntry.debugCurrentCallbackStack =");
       try {
         callback(timeStamp);
       } catch (e) {
         let exception = dart.getThrown(e);
         let exceptionStack = dart.stackTrace(e);
-        src__foundation__assertions.FlutterError.reportError(new src__foundation__assertions.FlutterErrorDetails.new({exception: exception, stack: exceptionStack, library: "scheduler library", context: "during a scheduler callback", informationCollector: callbackStack == null ? null : dart.fn(information => {
-            information.writeln("\nThis exception was thrown in the context of a scheduler callback. " + "When the scheduler callback was _registered_ (as opposed to when the " + "exception was thrown), this was the stack:");
-            src__foundation__assertions.FlutterError.defaultStackFilter(dart.toString(callbackStack)[$trimRight]()[$split]("\n"))[$forEach](dart.bind(information, 'writeln'));
-          }, StringBufferToNull())}));
+        src__foundation__assertions.FlutterError.reportError(new src__foundation__assertions.FlutterErrorDetails.new({exception: exception, stack: exceptionStack, library: "scheduler library", context: new src__foundation__assertions.ErrorDescription.new("during a scheduler callback"), informationCollector: callbackStack == null ? null : dart.fn(() => new (SyncIterableOfDiagnosticsStackTrace()).new(function*() {
+            yield new src__foundation__assertions.DiagnosticsStackTrace.new("\nThis exception was thrown in the context of a scheduler callback. " + "When the scheduler callback was _registered_ (as opposed to when the " + "exception was thrown), this was the stack", callbackStack);
+          }), VoidToIterableOfDiagnosticsStackTrace())}));
       }
       if (!dart.test(dart.fn(() => {
         src__scheduler__binding._FrameCallbackEntry.debugCurrentCallbackStack = null;
         return true;
-      }, VoidTobool())())) dart.assertFailed();
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 1049, 12, "            },\n      ));\n    }\n    assert(() {\n      _FrameCallbackEntry.debugCurrentCallba");
     }
   };
   (src__scheduler__binding.SchedulerBinding[dart.mixinNew] = function() {
     this[_lifecycleState] = null;
-    this[schedulingStrategy] = dart.fn(src__scheduler__binding.defaultSchedulingStrategy, __Tobool());
-    this[_taskQueue] = new (HeapPriorityQueueOf_TaskEntry()).new(dart.fn(src__scheduler__binding.SchedulerBinding._taskSorter, _TaskEntryAnd_TaskEntryToint()));
+    this[schedulingStrategy] = C9 || CT.C9;
+    this[_taskQueue] = new (HeapPriorityQueueOf_TaskEntry()).new(C10 || CT.C10);
     this[_hasRequestedAnEventLoopCallback] = false;
     this[_nextFrameCallbackId] = 0;
     this[_transientCallbacks] = new (IdentityMapOfint$_FrameCallbackEntry()).new();
@@ -688,6 +814,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getMethods(src__scheduler__binding.SchedulerBinding.__proto__),
     initInstances: dart.fnType(dart.void, []),
     initServiceExtensions: dart.fnType(dart.void, []),
+    readInitialLifecycleStateFromNativeWindow: dart.fnType(dart.void, []),
     handleAppLifecycleStateChanged: dart.fnType(dart.void, [ui$.AppLifecycleState]),
     [_handleLifecycleMessage]: dart.fnType(async.Future$(core.String), [core.String]),
     scheduleTask: dart.gFnType(T => [async.Future$(T), [dart.fnType(T, []), src__scheduler__priority.Priority], {debugLabel: core.String, flow: developer.Flow}]),
@@ -724,6 +851,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     framesEnabled: core.bool,
     currentFrameTimeStamp: core.Duration
   }));
+  dart.setLibraryUri(src__scheduler__binding.SchedulerBinding, "package:flutter_web/src/scheduler/binding.dart");
   dart.setFieldSignature(src__scheduler__binding.SchedulerBinding, () => ({
     __proto__: dart.getFields(src__scheduler__binding.SchedulerBinding.__proto__),
     [_lifecycleState]: dart.fieldType(ui$.AppLifecycleState),
@@ -755,7 +883,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     },
     set _instance(_) {}
   });
-  src__scheduler__binding.defaultSchedulingStrategy = function(opts) {
+  src__scheduler__binding.defaultSchedulingStrategy = function defaultSchedulingStrategy(opts) {
     let priority = opts && 'priority' in opts ? opts.priority : null;
     let scheduler = opts && 'scheduler' in opts ? opts.scheduler : null;
     if (dart.notNull(scheduler.transientCallbackCount) > 0) return dart.notNull(priority) >= dart.notNull(src__scheduler__priority.Priority.animation.value);
@@ -767,7 +895,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     },
     set timeDilation(value) {
       let t2;
-      if (!(dart.notNull(value) > 0.0)) dart.assertFailed();
+      if (!(dart.notNull(value) > 0.0)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart", 29, 10, "value > 0.0");
       if (src__scheduler__binding._timeDilation == value) return;
       t2 = src__scheduler__binding.SchedulerBinding.instance;
       t2 == null ? null : t2.resetEpoch();
@@ -784,7 +912,8 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     "package:flutter_web/src/scheduler/debug.dart": src__scheduler__debug,
     "package:flutter_web/src/scheduler/priority.dart": src__scheduler__priority,
     "package:flutter_web/src/scheduler/binding.dart": src__scheduler__binding
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/flutter_web/src/scheduler/debug.dart","org-dartlang-app:///packages/flutter_web/src/scheduler/priority.dart","org-dartlang-app:///packages/flutter_web/src/scheduler/binding.dart"],"names":[],"mappings":"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","file":"binding.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["debug.dart","priority.dart","binding.dart"],"names":[],"mappings":"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","file":"binding.ddc.js"}');
   // Exports:
   return {
     src__scheduler__debug: src__scheduler__debug,

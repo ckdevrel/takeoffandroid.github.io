@@ -9,14 +9,83 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
   const src__widgets__framework = animation.src__widgets__framework;
   const src__painting__basic_types = animation$.src__painting__basic_types;
   const components__SocialView = Object.create(dart.library);
-  let const$;
-  let const$0;
-  let const$1;
-  let const$2;
-  let const$3;
-  let const$4;
-  let const$5;
-  let const$6;
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C2() {
+      return C2 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 13,
+        column: 9,
+        name: "scrollDirection",
+        parameterLocations: null
+      });
+    },
+    get C3() {
+      return C3 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 13,
+        column: 43,
+        name: "children",
+        parameterLocations: null
+      });
+    },
+    get C1() {
+      return C1 = dart.constList([C2 || CT.C2, C3 || CT.C3], src__widgets__widget_inspector._Location);
+    },
+    get C0() {
+      return C0 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/SocialView.dart",
+        line: 12,
+        column: 14,
+        name: null,
+        parameterLocations: C1 || CT.C1
+      });
+    },
+    get C6() {
+      return C6 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 11,
+        column: 7,
+        name: "height",
+        parameterLocations: null
+      });
+    },
+    get C7() {
+      return C7 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 12,
+        column: 7,
+        name: "child",
+        parameterLocations: null
+      });
+    },
+    get C5() {
+      return C5 = dart.constList([C6 || CT.C6, C7 || CT.C7], src__widgets__widget_inspector._Location);
+    },
+    get C4() {
+      return C4 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/SocialView.dart",
+        line: 10,
+        column: 13,
+        name: null,
+        parameterLocations: C5 || CT.C5
+      });
+    }
+  });
+  let C2;
+  let C3;
+  let C1;
+  let C0;
+  let C6;
+  let C7;
+  let C5;
+  let C4;
   components__SocialView.SocialView = class SocialView extends src__widgets__framework.StatelessWidget {
     get socialIconButtons() {
       return this[socialIconButtons$];
@@ -25,7 +94,7 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
       this[socialIconButtons$] = value;
     }
     build(context) {
-      return new src__widgets__container.Container.new({height: 50.0, child: new src__widgets__scroll_view.ListView.new({scrollDirection: src__painting__basic_types.Axis.horizontal, children: this.socialIconButtons, $creationLocationd_0dea112b090073317d4: const$2 || (const$2 = dart.const(new src__widgets__widget_inspector._Location.new({line: 12, column: 14, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/SocialView.dart", parameterLocations: const$1 || (const$1 = dart.constList([const$ || (const$ = dart.const(new src__widgets__widget_inspector._Location.new({line: 13, column: 9, name: "scrollDirection"}))), const$0 || (const$0 = dart.const(new src__widgets__widget_inspector._Location.new({line: 13, column: 43, name: "children"})))], src__widgets__widget_inspector._Location))})))}), $creationLocationd_0dea112b090073317d4: const$6 || (const$6 = dart.const(new src__widgets__widget_inspector._Location.new({line: 10, column: 13, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/SocialView.dart", parameterLocations: const$5 || (const$5 = dart.constList([const$3 || (const$3 = dart.const(new src__widgets__widget_inspector._Location.new({line: 11, column: 7, name: "height"}))), const$4 || (const$4 = dart.const(new src__widgets__widget_inspector._Location.new({line: 12, column: 7, name: "child"})))], src__widgets__widget_inspector._Location))})))});
+      return new src__widgets__container.Container.new({height: 50.0, child: new src__widgets__scroll_view.ListView.new({scrollDirection: src__painting__basic_types.Axis.horizontal, children: this.socialIconButtons, $creationLocationd_0dea112b090073317d4: C0 || CT.C0}), $creationLocationd_0dea112b090073317d4: C4 || CT.C4});
     }
   };
   (components__SocialView.SocialView.new = function(opts) {
@@ -41,13 +110,15 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
     __proto__: dart.getMethods(components__SocialView.SocialView.__proto__),
     build: dart.fnType(src__widgets__framework.Widget, [src__widgets__framework.BuildContext])
   }));
+  dart.setLibraryUri(components__SocialView.SocialView, "package:takeoffandroid_portfolio/components/SocialView.dart");
   dart.setFieldSignature(components__SocialView.SocialView, () => ({
     __proto__: dart.getFields(components__SocialView.SocialView.__proto__),
     socialIconButtons: dart.fieldType(core.List$(src__widgets__framework.Widget))
   }));
   dart.trackLibraries("packages/takeoffandroid_portfolio/components/SocialView", {
     "package:takeoffandroid_portfolio/components/SocialView.dart": components__SocialView
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/components/SocialView.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;IAGe;;;;;;UAKa;AACxB,YAAQ,oDACE,aACD,6DACiB,sDAAsB;IAElD;;;QAT2B;;;AAA3B;;EAA8C","file":"SocialView.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["SocialView.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAGe;;;;;;UAKa;AACxB,YAAQ,oDACE,aACD,6DACiB,sDAAsB;IAElD;;;QAT2B;;;AAA3B;;EAA8C","file":"SocialView.ddc.js"}');
   // Exports:
   return {
     components__SocialView: components__SocialView

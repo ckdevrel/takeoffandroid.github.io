@@ -12,6 +12,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const $length = dartx.length;
   const $_get = dartx._get;
   const $_set = dartx._set;
+  const CT = Object.create(null);
   const _iterables = dart.privateName(src__iterable_zip, "_iterables");
   const _is_IterableZip_default = Symbol('_is_IterableZip_default');
   src__iterable_zip.IterableZip$ = dart.generic(T => {
@@ -37,6 +38,7 @@ define(['dart_sdk'], function(dart_sdk) {
       iterator: core.Iterator$(core.List$(T)),
       [$iterator]: core.Iterator$(core.List$(T))
     }));
+    dart.setLibraryUri(IterableZip, "package:collection/src/iterable_zip.dart");
     dart.setFieldSignature(IterableZip, () => ({
       __proto__: dart.getFields(IterableZip.__proto__),
       [_iterables]: dart.finalFieldType(core.Iterable$(core.Iterable$(T)))
@@ -86,6 +88,7 @@ define(['dart_sdk'], function(dart_sdk) {
       __proto__: dart.getGetters(_IteratorZip.__proto__),
       current: core.List$(T)
     }));
+    dart.setLibraryUri(_IteratorZip, "package:collection/src/iterable_zip.dart");
     dart.setFieldSignature(_IteratorZip, () => ({
       __proto__: dart.getFields(_IteratorZip.__proto__),
       [_iterators]: dart.finalFieldType(core.List$(core.Iterator$(T))),
@@ -97,7 +100,8 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.addTypeTests(src__iterable_zip._IteratorZip, _is__IteratorZip_default);
   dart.trackLibraries("packages/collection/src/iterable_zip", {
     "package:collection/src/iterable_zip.dart": src__iterable_zip
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/collection/src/iterable_zip.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;AAuBQ,wBAAY,AAAW,AAAuB,sCAAnB,QAAC,KAAM,AAAE,CAAD,8DAA4B;AAEnE,cAAW,6BAAgB,SAAS;MACtC;;gCARkC;MAA6B,mBAAE,SAAS;AAA1E;;IAA0E;;;;;;;;;;;;;;;;;;;;;;;;AAkBxE,sBAAI,AAAW,6BAAS,MAAO;AAC/B,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,AAAW,4BAAQ,IAAA,AAAC,CAAA;AACtC,yBAAK,AAAU,AAAI,wBAAH,CAAC;YACf,iBAAW;AACX,kBAAO;;;QAGX,iBAAe,cAAK,AAAW;AAC/B,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,AAAW,4BAAQ,IAAA,AAAC,CAAA;UACtC,AAAQ,sBAAC,CAAC,EAAI,AAAU,AAAI,wBAAH,CAAC;;AAE5B,cAAO;MACT;;AAEuB;MAAQ;;iCAjBA;MAFvB;MAE+C,mBAAE,SAAS","file":"iterable_zip.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["iterable_zip.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;AAuBQ,wBAAY,AAAW,AAAuB,sCAAnB,QAAC,KAAM,AAAE,CAAD,8DAA4B;AAEnE,cAAW,6BAAgB,SAAS;MACtC;;gCARkC;MAA6B,mBAAE,SAAS;AAA1E;;IAA0E;;;;;;;;;;;;;;;;;;;;;;;;;AAkBxE,sBAAI,AAAW,6BAAS,MAAO;AAC/B,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,AAAW,4BAAQ,IAAA,AAAC,CAAA;AACtC,yBAAK,AAAU,AAAI,wBAAH,CAAC;YACf,iBAAW;AACX,kBAAO;;;QAGX,iBAAe,cAAK,AAAW;AAC/B,iBAAS,IAAI,GAAG,AAAE,CAAD,gBAAG,AAAW,4BAAQ,IAAA,AAAC,CAAA;UACtC,AAAQ,sBAAC,CAAC,EAAI,AAAU,AAAI,wBAAH,CAAC;;AAE5B,cAAO;MACT;;AAEuB;MAAQ;;iCAjBA;MAFvB;MAE+C,mBAAE,SAAS","file":"iterable_zip.ddc.js"}');
   // Exports:
   return {
     src__iterable_zip: src__iterable_zip

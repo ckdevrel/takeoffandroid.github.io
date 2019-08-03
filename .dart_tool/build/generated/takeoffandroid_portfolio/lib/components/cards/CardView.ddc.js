@@ -9,21 +9,146 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/mate
   const src__material__card = material.src__material__card;
   const components__PageParagraph = PageParagraph.components__PageParagraph;
   const components__cards__CardView = Object.create(dart.library);
-  let const$;
-  let const$0;
-  let const$1;
-  let const$2;
-  let const$3;
-  let const$4;
-  let const$5;
-  let const$6;
-  let const$7;
-  let const$8;
-  let const$9;
-  let const$10;
-  let const$11;
-  let const$12;
-  let const$13;
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C2() {
+      return C2 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 14,
+        column: 107,
+        name: "title",
+        parameterLocations: null
+      });
+    },
+    get C1() {
+      return C1 = dart.constList([C2 || CT.C2], src__widgets__widget_inspector._Location);
+    },
+    get C0() {
+      return C0 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/CardView.dart",
+        line: 14,
+        column: 93,
+        name: null,
+        parameterLocations: C1 || CT.C1
+      });
+    },
+    get C5() {
+      return C5 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 14,
+        column: 86,
+        name: "child",
+        parameterLocations: null
+      });
+    },
+    get C4() {
+      return C4 = dart.constList([C5 || CT.C5], src__widgets__widget_inspector._Location);
+    },
+    get C3() {
+      return C3 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/CardView.dart",
+        line: 14,
+        column: 79,
+        name: null,
+        parameterLocations: C4 || CT.C4
+      });
+    },
+    get C8() {
+      return C8 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 14,
+        column: 58,
+        name: "elevation",
+        parameterLocations: null
+      });
+    },
+    get C9() {
+      return C9 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 14,
+        column: 72,
+        name: "child",
+        parameterLocations: null
+      });
+    },
+    get C7() {
+      return C7 = dart.constList([C8 || CT.C8, C9 || CT.C9], src__widgets__widget_inspector._Location);
+    },
+    get C6() {
+      return C6 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/CardView.dart",
+        line: 14,
+        column: 53,
+        name: null,
+        parameterLocations: C7 || CT.C7
+      });
+    },
+    get C12() {
+      return C12 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 14,
+        column: 21,
+        name: "width",
+        parameterLocations: null
+      });
+    },
+    get C13() {
+      return C13 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 14,
+        column: 33,
+        name: "height",
+        parameterLocations: null
+      });
+    },
+    get C14() {
+      return C14 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 14,
+        column: 46,
+        name: "child",
+        parameterLocations: null
+      });
+    },
+    get C11() {
+      return C11 = dart.constList([C12 || CT.C12, C13 || CT.C13, C14 || CT.C14], src__widgets__widget_inspector._Location);
+    },
+    get C10() {
+      return C10 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/CardView.dart",
+        line: 14,
+        column: 12,
+        name: null,
+        parameterLocations: C11 || CT.C11
+      });
+    }
+  });
+  let C2;
+  let C1;
+  let C0;
+  let C5;
+  let C4;
+  let C3;
+  let C8;
+  let C9;
+  let C7;
+  let C6;
+  let C12;
+  let C13;
+  let C14;
+  let C11;
+  let C10;
   components__cards__CardView.CardView = class CardView extends src__widgets__framework.StatelessWidget {
     get text() {
       return this[text$];
@@ -32,7 +157,7 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/mate
       this[text$] = value;
     }
     build(context) {
-      return new src__widgets__basic.SizedBox.new({width: 291.0, height: 100.0, child: new src__material__card.Card.new({elevation: 4.0, child: new src__widgets__basic.Center.new({child: new components__PageParagraph.PageParagraph.new(this.text, {$creationLocationd_0dea112b090073317d4: const$1 || (const$1 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 93, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/CardView.dart", parameterLocations: const$0 || (const$0 = dart.constList([const$ || (const$ = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 107, name: "title"})))], src__widgets__widget_inspector._Location))})))}), $creationLocationd_0dea112b090073317d4: const$4 || (const$4 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 79, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/CardView.dart", parameterLocations: const$3 || (const$3 = dart.constList([const$2 || (const$2 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 86, name: "child"})))], src__widgets__widget_inspector._Location))})))}), $creationLocationd_0dea112b090073317d4: const$8 || (const$8 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 53, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/CardView.dart", parameterLocations: const$7 || (const$7 = dart.constList([const$5 || (const$5 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 58, name: "elevation"}))), const$6 || (const$6 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 72, name: "child"})))], src__widgets__widget_inspector._Location))})))}), $creationLocationd_0dea112b090073317d4: const$13 || (const$13 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 12, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/CardView.dart", parameterLocations: const$12 || (const$12 = dart.constList([const$9 || (const$9 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 21, name: "width"}))), const$10 || (const$10 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 33, name: "height"}))), const$11 || (const$11 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 46, name: "child"})))], src__widgets__widget_inspector._Location))})))});
+      return new src__widgets__basic.SizedBox.new({width: 291.0, height: 100.0, child: new src__material__card.Card.new({elevation: 4.0, child: new src__widgets__basic.Center.new({child: new components__PageParagraph.PageParagraph.new(this.text, {$creationLocationd_0dea112b090073317d4: C0 || CT.C0}), $creationLocationd_0dea112b090073317d4: C3 || CT.C3}), $creationLocationd_0dea112b090073317d4: C6 || CT.C6}), $creationLocationd_0dea112b090073317d4: C10 || CT.C10});
     }
   };
   (components__cards__CardView.CardView.new = function(text, opts) {
@@ -47,13 +172,15 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/mate
     __proto__: dart.getMethods(components__cards__CardView.CardView.__proto__),
     build: dart.fnType(src__widgets__framework.Widget, [src__widgets__framework.BuildContext])
   }));
+  dart.setLibraryUri(components__cards__CardView.CardView, "package:takeoffandroid_portfolio/components/cards/CardView.dart");
   dart.setFieldSignature(components__cards__CardView.CardView, () => ({
     __proto__: dart.getFields(components__cards__CardView.CardView.__proto__),
     text: dart.fieldType(core.String)
   }));
   dart.trackLibraries("packages/takeoffandroid_portfolio/components/cards/CardView", {
     "package:takeoffandroid_portfolio/components/cards/CardView.dart": components__cards__CardView
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/CardView.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;IAOS;;;;;;UAKmB;AACxB,YAAO,8CAAgB,eAAa,cAAY,6CAAgB,YAAU,2CAAc,gDAAc;IACxG;;uDALc;;;AAAd;;EAAmB","file":"CardView.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["CardView.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAOS;;;;;;UAKmB;AACxB,YAAO,8CAAgB,eAAa,cAAY,6CAAgB,YAAU,2CAAc,gDAAc;IACxG;;uDALc;;;AAAd;;EAAmB","file":"CardView.ddc.js"}');
   // Exports:
   return {
     components__cards__CardView: components__cards__CardView

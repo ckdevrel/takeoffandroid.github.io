@@ -10,12 +10,13 @@ import 'components/PageThumbnail.dart';
 import 'components/PageTitle.dart';
 import 'components/SocialIconButton.dart';
 import 'components/SocialView.dart';
+import 'package:takeoffandroid_portfolio/util/UrlLauncher.dart';
 
 class SpeakingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageListView(
-      child: new ListView(
+      child: ListView(
         children: <Widget>[
           PageThumbnail('images/speaking_thumbnail.png'),
           PageTitle('MASTERING ANDROID STUDIO TEMPLATE CREATION'),
@@ -27,19 +28,15 @@ class SpeakingPage extends StatelessWidget {
               '\ncreation, application and its usages.'),
           Height36(),
           SocialView(socialIconButtons: <Widget>[
-            SocialIconButton('images/speaking_youtube.png'),
-            SocialIconButton('images/speaking_speaker_deck.png'),
+            InkWell(child: SocialIconButton('images/speaking_youtube.png'), onTap: () {
+              UrlLauncher.openUrl('https://www.youtube.com/watch?v=abbXZ20OPRI&t=12s', 'Chicago Roboto 2018');
+            },),
+            InkWell(child: SocialIconButton('images/speaking_speaker_deck.png'), onTap: () {
+              UrlLauncher.openUrl('https://speakerdeck.com/takeoffandroid/mastering-android-studio-template-creation', 'Speaker Deck');
+            },),
           ]),
         ],
       ),
     );
-  }
-
-  openLink(String url)  {
-//    if (await canLaunch(url)) {
-//      await launch(url);
-//    } else {
-//      throw 'Could not launch $url';
-//    }
   }
 }

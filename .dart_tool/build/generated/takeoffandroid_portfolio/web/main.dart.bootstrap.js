@@ -1,5 +1,33 @@
 /* ENTRYPOINT_EXTENTION_MARKER */
 (function() {
+var _currentDirectory = (function () {
+  var _url;
+  var lines = new Error().stack.split('\n');
+  function lookupUrl() {
+    if (lines.length > 2) {
+      var match = lines[1].match(/^\s+at (.+):\d+:\d+$/);
+      // Chrome.
+      if (match) return match[1];
+      // Chrome nested eval case.
+      match = lines[1].match(/^\s+at eval [(](.+):\d+:\d+[)]$/);
+      if (match) return match[1];
+      // Edge.
+      match = lines[1].match(/^\s+at.+\((.+):\d+:\d+\)$/);
+      if (match) return match[1];
+      // Firefox.
+      match = lines[0].match(/[<][@](.+):\d+:\d+$/)
+      if (match) return match[1];
+    }
+    // Safari.
+    return lines[0].match(/(.+):\d+:\d+$/)[1];
+  }
+  _url = lookupUrl();
+  var lastSlash = _url.lastIndexOf('/');
+  if (lastSlash == -1) return _url;
+  var currentDirectory = _url.substring(0, lastSlash + 1);
+  return currentDirectory;
+})();
+
 var baseUrl = (function () {
   // Attempt to detect --precompiled mode for tests, and set the base url
   // appropriately, otherwise set it to '/'.
@@ -42,7 +70,7 @@ let modulePaths = {
  "packages/flutter_web/scheduler": "packages/flutter_web/scheduler.ddc",
  "packages/flutter_web/services": "packages/flutter_web/services.ddc",
  "packages/flutter_web/src/animation/animation": "packages/flutter_web/src/animation/animation.ddc",
- "packages/flutter_web/src/cupertino/activity_indicator": "packages/flutter_web/src/cupertino/activity_indicator.ddc",
+ "packages/flutter_web/src/cupertino/action_sheet": "packages/flutter_web/src/cupertino/action_sheet.ddc",
  "packages/flutter_web/src/foundation/assertions": "packages/flutter_web/src/foundation/assertions.ddc",
  "packages/flutter_web/src/gestures/arena": "packages/flutter_web/src/gestures/arena.ddc",
  "packages/flutter_web/src/physics/clamped_simulation": "packages/flutter_web/src/physics/clamped_simulation.ddc",
@@ -60,7 +88,6 @@ let modulePaths = {
  "packages/takeoffandroid_portfolio/SkillsPage": "packages/takeoffandroid_portfolio/SkillsPage.ddc",
  "packages/takeoffandroid_portfolio/SpeakingPage": "packages/takeoffandroid_portfolio/SpeakingPage.ddc",
  "packages/takeoffandroid_portfolio/components/ContentFrame": "packages/takeoffandroid_portfolio/components/ContentFrame.ddc",
- "packages/takeoffandroid_portfolio/components/OpenSourceHeader": "packages/takeoffandroid_portfolio/components/OpenSourceHeader.ddc",
  "packages/takeoffandroid_portfolio/components/PageListTile": "packages/takeoffandroid_portfolio/components/PageListTile.ddc",
  "packages/takeoffandroid_portfolio/components/PageListView": "packages/takeoffandroid_portfolio/components/PageListView.ddc",
  "packages/takeoffandroid_portfolio/components/PageParagraph": "packages/takeoffandroid_portfolio/components/PageParagraph.ddc",
@@ -85,6 +112,7 @@ let modulePaths = {
  "packages/takeoffandroid_portfolio/components/space/Width36": "packages/takeoffandroid_portfolio/components/space/Width36.ddc",
  "packages/takeoffandroid_portfolio/main": "packages/takeoffandroid_portfolio/main.ddc",
  "packages/takeoffandroid_portfolio/models/SkillsModel": "packages/takeoffandroid_portfolio/models/SkillsModel.ddc",
+ "packages/takeoffandroid_portfolio/util/UrlLauncher": "packages/takeoffandroid_portfolio/util/UrlLauncher.ddc",
  "packages/typed_data/typed_buffers": "packages/typed_data/typed_buffers.ddc",
  "packages/vector_math/hash": "packages/vector_math/hash.ddc",
  "packages/vector_math/vector_math_64": "packages/vector_math/vector_math_64.ddc",
@@ -92,7 +120,7 @@ let modulePaths = {
 };
 if(!window.$dartLoader) {
    window.$dartLoader = {
-     appDigests: 'main.digests',
+     appDigests: _currentDirectory + 'main.digests',
      moduleIdToUrl: new Map(),
      urlToModuleId: new Map(),
      rootDirectories: new Array(),
@@ -295,6 +323,15 @@ define("main.dart.bootstrap", ["web/main", "dart_sdk"], function(app, dart_sdk) 
   app.main.main();
   var bootstrap = {
       hot$onChildUpdate: function(childName, child) {
+        // Special handling for the multi-root scheme uris. We need to strip
+        // out the scheme and the top level directory, to match the source path
+        // that chrome sees.
+        if (childName.startsWith('org-dartlang-app:///')) {
+          childName = childName.substring('org-dartlang-app:///'.length);
+          var firstSlash = childName.indexOf('/');
+          if (firstSlash == -1) return false;
+          childName = childName.substring(firstSlash + 1);
+        }
         if (childName === "main.dart") {
           // Clear static caches.
           dart_sdk.dart.hotRestart();

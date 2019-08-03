@@ -7,6 +7,7 @@ import 'package:build_config/build_config.dart' as _i4;
 import 'package:build/build.dart' as _i5;
 import 'dart:isolate' as _i6;
 import 'package:build_runner/build_runner.dart' as _i7;
+import 'dart:io' as _i8;
 
 final _builders = <_i1.BuilderApplication>[
   _i1.apply('build_modules:module_library', [_i2.moduleLibraryBuilder],
@@ -84,4 +85,5 @@ final _builders = <_i1.BuilderApplication>[
 main(List<String> args, [_i6.SendPort sendPort]) async {
   var result = await _i7.run(args, _builders);
   sendPort?.send(result);
+  _i8.exitCode = result;
 }

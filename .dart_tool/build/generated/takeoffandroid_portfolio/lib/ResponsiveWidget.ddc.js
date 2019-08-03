@@ -10,9 +10,35 @@ define(['dart_sdk', 'packages/flutter_web/animation'], function(dart_sdk, animat
   const src__widgets__widget_inspector = animation.src__widgets__widget_inspector;
   const ResponsiveWidget = Object.create(dart.library);
   let BuildContextAndBoxConstraintsToWidget = () => (BuildContextAndBoxConstraintsToWidget = dart.constFn(dart.fnType(src__widgets__framework.Widget, [src__widgets__framework.BuildContext, src__rendering__box.BoxConstraints])))();
-  let const$;
-  let const$0;
-  let const$1;
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C2() {
+      return C2 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 31,
+        column: 7,
+        name: "builder",
+        parameterLocations: null
+      });
+    },
+    get C1() {
+      return C1 = dart.constList([C2 || CT.C2], src__widgets__widget_inspector._Location);
+    },
+    get C0() {
+      return C0 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/ResponsiveWidget.dart",
+        line: 30,
+        column: 12,
+        name: null,
+        parameterLocations: C1 || CT.C1
+      });
+    }
+  });
+  let C2;
+  let C1;
+  let C0;
   ResponsiveWidget.ResponsiveWidget = class ResponsiveWidget extends src__widgets__framework.StatelessWidget {
     get largeScreen() {
       return this[largeScreen$];
@@ -53,7 +79,7 @@ define(['dart_sdk', 'packages/flutter_web/animation'], function(dart_sdk, animat
             t0$ = this.smallScreen;
             return t0$ == null ? this.largeScreen : t0$;
           }
-        }, BuildContextAndBoxConstraintsToWidget()), $creationLocationd_0dea112b090073317d4: const$1 || (const$1 = dart.const(new src__widgets__widget_inspector._Location.new({line: 30, column: 12, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/ResponsiveWidget.dart", parameterLocations: const$0 || (const$0 = dart.constList([const$ || (const$ = dart.const(new src__widgets__widget_inspector._Location.new({line: 31, column: 7, name: "builder"})))], src__widgets__widget_inspector._Location))})))});
+        }, BuildContextAndBoxConstraintsToWidget()), $creationLocationd_0dea112b090073317d4: C0 || CT.C0});
     }
   };
   (ResponsiveWidget.ResponsiveWidget.new = function(opts) {
@@ -76,6 +102,7 @@ define(['dart_sdk', 'packages/flutter_web/animation'], function(dart_sdk, animat
     __proto__: dart.getMethods(ResponsiveWidget.ResponsiveWidget.__proto__),
     build: dart.fnType(src__widgets__framework.Widget, [src__widgets__framework.BuildContext])
   }));
+  dart.setLibraryUri(ResponsiveWidget.ResponsiveWidget, "package:takeoffandroid_portfolio/ResponsiveWidget.dart");
   dart.setFieldSignature(ResponsiveWidget.ResponsiveWidget, () => ({
     __proto__: dart.getFields(ResponsiveWidget.ResponsiveWidget.__proto__),
     largeScreen: dart.finalFieldType(src__widgets__framework.Widget),
@@ -84,7 +111,8 @@ define(['dart_sdk', 'packages/flutter_web/animation'], function(dart_sdk, animat
   }));
   dart.trackLibraries("packages/takeoffandroid_portfolio/ResponsiveWidget", {
     "package:takeoffandroid_portfolio/ResponsiveWidget.dart": ResponsiveWidget
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/ResponsiveWidget.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;IAGe;;;;;;IACA;;;;;;IACA;;;;;;yBAS0B;AACrC,YAAyC,cAAvB,AAAY,AAAK,wCAAd,OAAO,gBAAe;IAC7C;yBAEuC;AACrC,YAAyC,cAAvB,AAAY,AAAK,wCAAd,OAAO,gBAAe;IAC7C;0BAEwC;AACtC,YAAyC,AAAM,cAA7B,AAAY,AAAK,wCAAd,OAAO,gBAAe,OACL,aAAvB,AAAY,AAAK,wCAAd,OAAO,gBAAe;IAC1C;UAG0B;AACxB,YAAO,8DACI,SAAC,SAAS;;AACjB,cAAyB,aAArB,AAAY,WAAD,aAAY;AACzB,kBAAO;gBACF,KAAyB,aAArB,AAAY,WAAD,aAAY,QAA6B,aAArB,AAAY,WAAD,aAAY;AAC/D,iBAAO;yBAAa,OAAG;;AAEvB,kBAAO;0BAAY,OAAG;;;IAI9B;;;QAhCS;QACY;QACV;QACA;;IAFU;IACV;IACA;AACL,qEAAW,GAAG;;EAAC","file":"ResponsiveWidget.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["ResponsiveWidget.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAGe;;;;;;IACA;;;;;;IACA;;;;;;yBAS0B;AACrC,YAAyC,cAAvB,AAAY,AAAK,wCAAd,OAAO,gBAAe;IAC7C;yBAEuC;AACrC,YAAyC,cAAvB,AAAY,AAAK,wCAAd,OAAO,gBAAe;IAC7C;0BAEwC;AACtC,YAAyC,AAAM,cAA7B,AAAY,AAAK,wCAAd,OAAO,gBAAe,OACL,aAAvB,AAAY,AAAK,wCAAd,OAAO,gBAAe;IAC1C;UAG0B;AACxB,YAAO,8DACI,SAAC,SAAS;;AACjB,cAAyB,aAArB,AAAY,WAAD,aAAY;AACzB,kBAAO;gBACF,KAAyB,aAArB,AAAY,WAAD,aAAY,QAA6B,aAArB,AAAY,WAAD,aAAY;AAC/D,iBAAO;yBAAa,OAAG;;AAEvB,kBAAO;0BAAY,OAAG;;;IAI9B;;;QAhCS;QACY;QACV;QACA;;IAFU;IACV;IACA;AACL,qEAAW,GAAG;;EAAC","file":"ResponsiveWidget.ddc.js"}');
   // Exports:
   return {
     ResponsiveWidget: ResponsiveWidget

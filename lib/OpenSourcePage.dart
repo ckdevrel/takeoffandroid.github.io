@@ -3,10 +3,8 @@ import 'package:flutter_web/material.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height16.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height24.dart';
 import 'package:takeoffandroid_portfolio/components/space/Height36.dart';
+import 'package:takeoffandroid_portfolio/util/UrlLauncher.dart';
 import 'components/PageListView.dart';
-import 'components/PageParagraph.dart';
-import 'components/OpenSourceHeader.dart';
-import 'components/PageListTile.dart';
 import 'components/PageSubTitle.dart';
 import 'components/PageTitle.dart';
 import 'package:takeoffandroid_portfolio/components/space/Width36.dart';
@@ -17,7 +15,7 @@ class OpenSourcePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PageListView(
-      child: new ListView(
+      child: ListView(
         children: <Widget>[
           PageTitle('OPEN SOURCES'),
           Height24(),
@@ -26,9 +24,20 @@ class OpenSourcePage extends StatelessWidget {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
-              CardView('Flutter Examples'),
+              InkWell(
+                child: CardView('Flutter Examples'),
+                onTap: () {
+                  UrlLauncher.openUrl('http://flutterexamples.com/', 'Flutter Examples');
+                },
+              ),
               Width36(),
-              CardView('Flutter Portfolio Web')
+              InkWell(child: CardView('Feedback Widget'), onTap: () {
+                UrlLauncher.openUrl('https://pub.dev/packages/feedback_widget', 'Feedack widget');
+              },),
+              Width36(),
+              InkWell(child: CardView('Authentication View'), onTap: () {
+                UrlLauncher.openUrl('https://pub.dev/packages/authentication_view', 'Authentication View');
+              },)
             ]),
           ),
           Height36(),
@@ -37,11 +46,17 @@ class OpenSourcePage extends StatelessWidget {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
-              CardView('Recylerview Template'),
+            InkWell(child: CardView('Recylerview Template'), onTap: () {
+              UrlLauncher.openUrl('https://github.com/TakeoffAndroid/RecyclerViewTemplate', 'Recylerview Template');
+          },),
               Width36(),
-              CardView('Material Tabs Template'),
-              Width36(),
-              CardView('Login Template'),
+            InkWell(child: CardView('Material Tabs Template'), onTap: () {
+              UrlLauncher.openUrl('https://github.com/TakeoffAndroid/MaterialTabsTemplate', 'Material Tabs Template');
+            },),
+            Width36(),
+            InkWell(child: CardView('Login Template'), onTap: () {
+              UrlLauncher.openUrl('https://github.com/TakeoffAndroid/LoginAndroidStudioTemplate', 'Login Template');
+            },),
             ]),
           ),
           Height36(),
@@ -50,11 +65,17 @@ class OpenSourcePage extends StatelessWidget {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(children: <Widget>[
-              CardView('App Intro Animation'),
+            InkWell(child: CardView('App Intro Animation'), onTap: () {
+                UrlLauncher.openUrl('https://github.com/TakeoffAndroid/AppIntroAnimation', 'App Intro Animation');
+            },),
               Width36(),
-              CardView('Video Chat Heads'),
+            InkWell(child: CardView('Video Chat Heads'), onTap: () {
+              UrlLauncher.openUrl('https://github.com/TakeoffAndroid/VideoChatHeads', 'Video Chat Heads');
+            },),
               Width36(),
-              CardView('Material Dialog Search view'),
+            InkWell(child: CardView('Material Dialog Search view'), onTap: () {
+              UrlLauncher.openUrl('https://github.com/TakeoffAndroid/MaterialDialogSearchView', 'Material Dialog Search view');
+            },)
             ]),
           ),
         ],

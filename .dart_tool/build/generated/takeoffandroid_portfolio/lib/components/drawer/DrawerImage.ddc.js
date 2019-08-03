@@ -9,17 +9,86 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/mate
   const src__material__circle_avatar = material.src__material__circle_avatar;
   const src__painting__image_provider = animation$.src__painting__image_provider;
   const components__drawer__DrawerImage = Object.create(dart.library);
-  let const$;
-  let const$0;
-  let const$1;
-  let const$2;
-  let const$3;
-  let const$4;
-  let const$5;
-  let const$6;
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C2() {
+      return C2 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 10,
+        column: 11,
+        name: "backgroundImage",
+        parameterLocations: null
+      });
+    },
+    get C1() {
+      return C1 = dart.constList([C2 || CT.C2], src__widgets__widget_inspector._Location);
+    },
+    get C0() {
+      return C0 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerImage.dart",
+        line: 9,
+        column: 16,
+        name: null,
+        parameterLocations: C1 || CT.C1
+      });
+    },
+    get C5() {
+      return C5 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 7,
+        column: 9,
+        name: "width",
+        parameterLocations: null
+      });
+    },
+    get C6() {
+      return C6 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 8,
+        column: 9,
+        name: "height",
+        parameterLocations: null
+      });
+    },
+    get C7() {
+      return C7 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 9,
+        column: 9,
+        name: "child",
+        parameterLocations: null
+      });
+    },
+    get C4() {
+      return C4 = dart.constList([C5 || CT.C5, C6 || CT.C6, C7 || CT.C7], src__widgets__widget_inspector._Location);
+    },
+    get C3() {
+      return C3 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerImage.dart",
+        line: 6,
+        column: 12,
+        name: null,
+        parameterLocations: C4 || CT.C4
+      });
+    }
+  });
+  let C2;
+  let C1;
+  let C0;
+  let C5;
+  let C6;
+  let C7;
+  let C4;
+  let C3;
   components__drawer__DrawerImage.DrawerImage = class DrawerImage extends src__widgets__framework.StatelessWidget {
     build(context) {
-      return new src__widgets__basic.SizedBox.new({width: 90.0, height: 90.0, child: new src__material__circle_avatar.CircleAvatar.new({backgroundImage: new src__painting__image_provider.NetworkImage.new("https://i.imgur.com/R0Rzcsv.png"), $creationLocationd_0dea112b090073317d4: const$1 || (const$1 = dart.const(new src__widgets__widget_inspector._Location.new({line: 9, column: 16, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerImage.dart", parameterLocations: const$0 || (const$0 = dart.constList([const$ || (const$ = dart.const(new src__widgets__widget_inspector._Location.new({line: 10, column: 11, name: "backgroundImage"})))], src__widgets__widget_inspector._Location))})))}), $creationLocationd_0dea112b090073317d4: const$6 || (const$6 = dart.const(new src__widgets__widget_inspector._Location.new({line: 6, column: 12, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerImage.dart", parameterLocations: const$5 || (const$5 = dart.constList([const$2 || (const$2 = dart.const(new src__widgets__widget_inspector._Location.new({line: 7, column: 9, name: "width"}))), const$3 || (const$3 = dart.const(new src__widgets__widget_inspector._Location.new({line: 8, column: 9, name: "height"}))), const$4 || (const$4 = dart.const(new src__widgets__widget_inspector._Location.new({line: 9, column: 9, name: "child"})))], src__widgets__widget_inspector._Location))})))});
+      return new src__widgets__basic.SizedBox.new({width: 90.0, height: 90.0, child: new src__material__circle_avatar.CircleAvatar.new({backgroundImage: new src__painting__image_provider.NetworkImage.new("https://i.imgur.com/R0Rzcsv.png"), $creationLocationd_0dea112b090073317d4: C0 || CT.C0}), $creationLocationd_0dea112b090073317d4: C3 || CT.C3});
     }
   };
   (components__drawer__DrawerImage.DrawerImage.new = function(opts) {
@@ -32,9 +101,11 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/mate
     __proto__: dart.getMethods(components__drawer__DrawerImage.DrawerImage.__proto__),
     build: dart.fnType(src__widgets__framework.Widget, [src__widgets__framework.BuildContext])
   }));
+  dart.setLibraryUri(components__drawer__DrawerImage.DrawerImage, "package:takeoffandroid_portfolio/components/drawer/DrawerImage.dart");
   dart.trackLibraries("packages/takeoffandroid_portfolio/components/drawer/DrawerImage", {
     "package:takeoffandroid_portfolio/components/drawer/DrawerImage.dart": components__drawer__DrawerImage
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerImage.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;UAI4B;AACxB,YAAO,8CACI,cACC,aACD,oEACY,mDAAa;IAEtC;;;;;;EACF","file":"DrawerImage.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["DrawerImage.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAI4B;AACxB,YAAO,8CACI,cACC,aACD,oEACY,mDAAa;IAEtC;;;;;;EACF","file":"DrawerImage.ddc.js"}');
   // Exports:
   return {
     components__drawer__DrawerImage: components__drawer__DrawerImage

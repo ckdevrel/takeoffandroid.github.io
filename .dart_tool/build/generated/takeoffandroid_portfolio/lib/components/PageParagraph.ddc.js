@@ -10,10 +10,46 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
   const AppColors$ = AppColors.AppColors;
   const ui$ = ui.ui;
   const components__PageParagraph = Object.create(dart.library);
-  let const$;
-  let const$0;
-  let const$1;
-  let const$2;
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C2() {
+      return C2 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 12,
+        column: 17,
+        name: "data",
+        parameterLocations: null
+      });
+    },
+    get C3() {
+      return C3 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 13,
+        column: 9,
+        name: "style",
+        parameterLocations: null
+      });
+    },
+    get C1() {
+      return C1 = dart.constList([C2 || CT.C2, C3 || CT.C3], src__widgets__widget_inspector._Location);
+    },
+    get C0() {
+      return C0 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/PageParagraph.dart",
+        line: 12,
+        column: 12,
+        name: null,
+        parameterLocations: C1 || CT.C1
+      });
+    }
+  });
+  let C2;
+  let C3;
+  let C1;
+  let C0;
   components__PageParagraph.PageParagraph = class PageParagraph extends src__widgets__framework.StatelessWidget {
     get title() {
       return this[title$];
@@ -22,7 +58,7 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
       this[title$] = value;
     }
     build(context) {
-      return new src__widgets__text.Text.new(this.title, {style: new src__painting__text_style.TextStyle.new({color: AppColors$.AppColors.colorTextGreySecondary, fontSize: 14.0, fontFamily: "OpenSans", fontWeight: ui$.FontWeight.normal}), $creationLocationd_0dea112b090073317d4: const$2 || (const$2 = dart.const(new src__widgets__widget_inspector._Location.new({line: 12, column: 12, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/PageParagraph.dart", parameterLocations: const$1 || (const$1 = dart.constList([const$ || (const$ = dart.const(new src__widgets__widget_inspector._Location.new({line: 12, column: 17, name: "data"}))), const$0 || (const$0 = dart.const(new src__widgets__widget_inspector._Location.new({line: 13, column: 9, name: "style"})))], src__widgets__widget_inspector._Location))})))});
+      return new src__widgets__text.Text.new(this.title, {style: new src__painting__text_style.TextStyle.new({color: AppColors$.AppColors.colorTextGreySecondary, fontSize: 14.0, fontFamily: "OpenSans", fontWeight: ui$.FontWeight.normal}), $creationLocationd_0dea112b090073317d4: C0 || CT.C0});
     }
   };
   (components__PageParagraph.PageParagraph.new = function(title, opts) {
@@ -37,13 +73,15 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
     __proto__: dart.getMethods(components__PageParagraph.PageParagraph.__proto__),
     build: dart.fnType(src__widgets__framework.Widget, [src__widgets__framework.BuildContext])
   }));
+  dart.setLibraryUri(components__PageParagraph.PageParagraph, "package:takeoffandroid_portfolio/components/PageParagraph.dart");
   dart.setFieldSignature(components__PageParagraph.PageParagraph, () => ({
     __proto__: dart.getFields(components__PageParagraph.PageParagraph.__proto__),
     title: dart.fieldType(core.String)
   }));
   dart.trackLibraries("packages/takeoffandroid_portfolio/components/PageParagraph", {
     "package:takeoffandroid_portfolio/components/PageParagraph.dart": components__PageParagraph
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/components/PageParagraph.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;IAKS;;;;;;UAKmB;AACxB,YAAO,iCAAK,oBACD,oDACc,uDACP,kBACE,wBACW;IACjC;;0DAVmB;;;AAAnB;;EAAyB","file":"PageParagraph.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["PageParagraph.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAKS;;;;;;UAKmB;AACxB,YAAO,iCAAK,oBACD,oDACc,uDACP,kBACE,wBACW;IACjC;;0DAVmB;;;AAAnB;;EAAyB","file":"PageParagraph.ddc.js"}');
   // Exports:
   return {
     components__PageParagraph: components__PageParagraph

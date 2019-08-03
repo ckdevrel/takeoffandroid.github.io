@@ -9,16 +9,16 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const _native_typed_data = dart_sdk._native_typed_data;
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
-  const src__util = assertions.src__util;
   const src__foundation__print = assertions.src__foundation__print;
   const src__foundation__assertions = assertions.src__foundation__assertions;
   const src__foundation__diagnostics = assertions.src__foundation__diagnostics;
-  const src__foundation__bitfield = assertions.src__foundation__bitfield;
   const src__foundation__binding = assertions.src__foundation__binding;
+  const src__foundation__change_notifier = assertions.src__foundation__change_notifier;
   const ui$ = ui.ui;
   const src__scheduler__binding = binding.src__scheduler__binding;
   const src__gestures__arena = Object.create(dart.library);
   const src__gestures__debug = Object.create(dart.library);
+  const src__util = Object.create(dart.library);
   const src__gestures__pointer_router = Object.create(dart.library);
   const src__gestures__events = Object.create(dart.library);
   const src__gestures__scale = Object.create(dart.library);
@@ -31,15 +31,15 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const src__gestures__hit_test = Object.create(dart.library);
   const src__gestures__converter = Object.create(dart.library);
   const src__gestures__constants = Object.create(dart.library);
-  const src__gestures__multidrag = Object.create(dart.library);
-  const src__gestures__drag_details = Object.create(dart.library);
-  const src__gestures__drag = Object.create(dart.library);
   const src__gestures__tap = Object.create(dart.library);
   const src__gestures__eager = Object.create(dart.library);
   const src__gestures__force_press = Object.create(dart.library);
   const src__gestures__mouse_tracking = Object.create(dart.library);
-  const src__gestures__multitap = Object.create(dart.library);
+  const src__gestures__drag = Object.create(dart.library);
+  const src__gestures__drag_details = Object.create(dart.library);
   const src__gestures__long_press = Object.create(dart.library);
+  const src__gestures__multidrag = Object.create(dart.library);
+  const src__gestures__multitap = Object.create(dart.library);
   const src__gestures__monodrag = Object.create(dart.library);
   const $add = dartx.add;
   const $isEmpty = dartx.isEmpty;
@@ -66,25 +66,29 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const $times = dartx['*'];
   const $toStringAsFixed = dartx.toStringAsFixed;
   const $noSuchMethod = dartx.noSuchMethod;
-  const $toList = dartx.toList;
-  const $forEach = dartx.forEach;
-  const $runtimeType = dartx.runtimeType;
   const $isNaN = dartx.isNaN;
   const $clamp = dartx.clamp;
+  const $runtimeType = dartx.runtimeType;
   const $hashCode = dartx.hashCode;
   const $toRadixString = dartx.toRadixString;
+  const $forEach = dartx.forEach;
+  const $toSet = dartx.toSet;
+  const $toList = dartx.toList;
   let JSArrayOfGestureArenaMember = () => (JSArrayOfGestureArenaMember = dart.constFn(_interceptors.JSArray$(src__gestures__arena.GestureArenaMember)))();
   let GestureArenaMemberToString = () => (GestureArenaMemberToString = dart.constFn(dart.fnType(core.String, [src__gestures__arena.GestureArenaMember])))();
   let IdentityMapOfint$_GestureArena = () => (IdentityMapOfint$_GestureArena = dart.constFn(_js_helper.IdentityMap$(core.int, src__gestures__arena._GestureArena)))();
   let VoidTo_GestureArena = () => (VoidTo_GestureArena = dart.constFn(dart.fnType(src__gestures__arena._GestureArena, [])))();
-  let VoidTobool = () => (VoidTobool = dart.constFn(dart.fnType(core.bool, [])))();
   let VoidTovoid = () => (VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))();
+  let VoidTobool = () => (VoidTobool = dart.constFn(dart.fnType(core.bool, [])))();
   let PointerEventTovoid = () => (PointerEventTovoid = dart.constFn(dart.fnType(dart.void, [src__gestures__events.PointerEvent])))();
   let LinkedHashSetOfPointerEventTovoid = () => (LinkedHashSetOfPointerEventTovoid = dart.constFn(collection.LinkedHashSet$(PointerEventTovoid())))();
   let IdentityMapOfint$LinkedHashSetOfPointerEventTovoid = () => (IdentityMapOfint$LinkedHashSetOfPointerEventTovoid = dart.constFn(_js_helper.IdentityMap$(core.int, LinkedHashSetOfPointerEventTovoid())))();
   let _HashSetOfPointerEventTovoid = () => (_HashSetOfPointerEventTovoid = dart.constFn(collection._HashSet$(PointerEventTovoid())))();
   let VoidToLinkedHashSetOfPointerEventTovoid = () => (VoidToLinkedHashSetOfPointerEventTovoid = dart.constFn(dart.fnType(LinkedHashSetOfPointerEventTovoid(), [])))();
-  let StringBufferToNull = () => (StringBufferToNull = dart.constFn(dart.fnType(core.Null, [core.StringBuffer])))();
+  let DiagnosticsPropertyOfPointerEvent = () => (DiagnosticsPropertyOfPointerEvent = dart.constFn(src__foundation__diagnostics.DiagnosticsProperty$(src__gestures__events.PointerEvent)))();
+  let SyncIterableOfDiagnosticsPropertyOfPointerEvent = () => (SyncIterableOfDiagnosticsPropertyOfPointerEvent = dart.constFn(_js_helper.SyncIterable$(DiagnosticsPropertyOfPointerEvent())))();
+  let IterableOfDiagnosticsPropertyOfPointerEvent = () => (IterableOfDiagnosticsPropertyOfPointerEvent = dart.constFn(core.Iterable$(DiagnosticsPropertyOfPointerEvent())))();
+  let VoidToIterableOfDiagnosticsPropertyOfPointerEvent = () => (VoidToIterableOfDiagnosticsPropertyOfPointerEvent = dart.constFn(dart.fnType(IterableOfDiagnosticsPropertyOfPointerEvent(), [])))();
   let ListOfPointerEventTovoid = () => (ListOfPointerEventTovoid = dart.constFn(core.List$(PointerEventTovoid())))();
   let DiagnosticsPropertyOfOffset = () => (DiagnosticsPropertyOfOffset = dart.constFn(src__foundation__diagnostics.DiagnosticsProperty$(ui$.Offset)))();
   let DiagnosticsPropertyOfDuration = () => (DiagnosticsPropertyOfDuration = dart.constFn(src__foundation__diagnostics.DiagnosticsProperty$(core.Duration)))();
@@ -97,6 +101,11 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   let IdentityMapOfint$GestureArenaEntry = () => (IdentityMapOfint$GestureArenaEntry = dart.constFn(_js_helper.IdentityMap$(core.int, src__gestures__arena.GestureArenaEntry)))();
   let _IdentityHashSetOfint = () => (_IdentityHashSetOfint = dart.constFn(collection._IdentityHashSet$(core.int)))();
   let ListOfGestureArenaEntry = () => (ListOfGestureArenaEntry = dart.constFn(core.List$(src__gestures__arena.GestureArenaEntry)))();
+  let IdentityMapOfint$PointerDeviceKind = () => (IdentityMapOfint$PointerDeviceKind = dart.constFn(_js_helper.IdentityMap$(core.int, ui$.PointerDeviceKind)))();
+  let DiagnosticsPropertyOfGestureRecognizer = () => (DiagnosticsPropertyOfGestureRecognizer = dart.constFn(src__foundation__diagnostics.DiagnosticsProperty$(src__gestures__recognizer.GestureRecognizer)))();
+  let SyncIterableOfDiagnosticsNode = () => (SyncIterableOfDiagnosticsNode = dart.constFn(_js_helper.SyncIterable$(src__foundation__diagnostics.DiagnosticsNode)))();
+  let IterableOfDiagnosticsNode = () => (IterableOfDiagnosticsNode = dart.constFn(core.Iterable$(src__foundation__diagnostics.DiagnosticsNode)))();
+  let VoidToIterableOfDiagnosticsNode = () => (VoidToIterableOfDiagnosticsNode = dart.constFn(dart.fnType(IterableOfDiagnosticsNode(), [])))();
   let DiagnosticsPropertyOfObject = () => (DiagnosticsPropertyOfObject = dart.constFn(src__foundation__diagnostics.DiagnosticsProperty$(core.Object)))();
   let ListOf_PointAtTime = () => (ListOf_PointAtTime = dart.constFn(core.List$(src__gestures__velocity_tracker._PointAtTime)))();
   let JSArrayOfdouble = () => (JSArrayOfdouble = dart.constFn(_interceptors.JSArray$(core.double)))();
@@ -105,25 +114,356 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   let VoidTo_CombiningGestureArenaMember = () => (VoidTo_CombiningGestureArenaMember = dart.constFn(dart.fnType(src__gestures__team._CombiningGestureArenaMember, [])))();
   let ListQueueOfPointerEvent = () => (ListQueueOfPointerEvent = dart.constFn(collection.ListQueue$(src__gestures__events.PointerEvent)))();
   let IdentityMapOfint$HitTestResult = () => (IdentityMapOfint$HitTestResult = dart.constFn(_js_helper.IdentityMap$(core.int, src__gestures__hit_test.HitTestResult)))();
+  let DiagnosticsPropertyOfHitTestTarget = () => (DiagnosticsPropertyOfHitTestTarget = dart.constFn(src__foundation__diagnostics.DiagnosticsProperty$(src__gestures__hit_test.HitTestTarget)))();
+  let SyncIterableOfDiagnosticsPropertyOfObject = () => (SyncIterableOfDiagnosticsPropertyOfObject = dart.constFn(_js_helper.SyncIterable$(DiagnosticsPropertyOfObject())))();
+  let IterableOfDiagnosticsPropertyOfObject = () => (IterableOfDiagnosticsPropertyOfObject = dart.constFn(core.Iterable$(DiagnosticsPropertyOfObject())))();
+  let VoidToIterableOfDiagnosticsPropertyOfObject = () => (VoidToIterableOfDiagnosticsPropertyOfObject = dart.constFn(dart.fnType(IterableOfDiagnosticsPropertyOfObject(), [])))();
+  let DiagnosticsPropertyOfPointerSignalEvent = () => (DiagnosticsPropertyOfPointerSignalEvent = dart.constFn(src__foundation__diagnostics.DiagnosticsProperty$(src__gestures__events.PointerSignalEvent)))();
+  let SyncIterableOfDiagnosticsPropertyOfPointerSignalEvent = () => (SyncIterableOfDiagnosticsPropertyOfPointerSignalEvent = dart.constFn(_js_helper.SyncIterable$(DiagnosticsPropertyOfPointerSignalEvent())))();
+  let IterableOfDiagnosticsPropertyOfPointerSignalEvent = () => (IterableOfDiagnosticsPropertyOfPointerSignalEvent = dart.constFn(core.Iterable$(DiagnosticsPropertyOfPointerSignalEvent())))();
+  let VoidToIterableOfDiagnosticsPropertyOfPointerSignalEvent = () => (VoidToIterableOfDiagnosticsPropertyOfPointerSignalEvent = dart.constFn(dart.fnType(IterableOfDiagnosticsPropertyOfPointerSignalEvent(), [])))();
   let JSArrayOfHitTestEntry = () => (JSArrayOfHitTestEntry = dart.constFn(_interceptors.JSArray$(src__gestures__hit_test.HitTestEntry)))();
-  let ListOfHitTestEntry = () => (ListOfHitTestEntry = dart.constFn(core.List$(src__gestures__hit_test.HitTestEntry)))();
   let VoidTo_PointerState = () => (VoidTo_PointerState = dart.constFn(dart.fnType(src__gestures__converter._PointerState, [])))();
   let SyncIterableOfPointerEvent = () => (SyncIterableOfPointerEvent = dart.constFn(_js_helper.SyncIterable$(src__gestures__events.PointerEvent)))();
   let IdentityMapOfint$_PointerState = () => (IdentityMapOfint$_PointerState = dart.constFn(_js_helper.IdentityMap$(core.int, src__gestures__converter._PointerState)))();
-  let OffsetToDrag = () => (OffsetToDrag = dart.constFn(dart.fnType(src__gestures__drag.Drag, [ui$.Offset])))();
-  let VoidToDrag = () => (VoidToDrag = dart.constFn(dart.fnType(src__gestures__drag.Drag, [])))();
   let doubleAnddoubleAnddoubleTodouble = () => (doubleAnddoubleAnddoubleTodouble = dart.constFn(dart.fnType(core.double, [core.double, core.double, core.double])))();
+  let LinkedHashSetOfint = () => (LinkedHashSetOfint = dart.constFn(collection.LinkedHashSet$(core.int)))();
   let LinkedMapOfMouseTrackerAnnotation$_TrackedAnnotation = () => (LinkedMapOfMouseTrackerAnnotation$_TrackedAnnotation = dart.constFn(_js_helper.LinkedMap$(src__gestures__mouse_tracking.MouseTrackerAnnotation, src__gestures__mouse_tracking._TrackedAnnotation)))();
   let IdentityMapOfint$PointerEvent = () => (IdentityMapOfint$PointerEvent = dart.constFn(_js_helper.IdentityMap$(core.int, src__gestures__events.PointerEvent)))();
-  let DurationTovoid = () => (DurationTovoid = dart.constFn(dart.fnType(dart.void, [core.Duration])))();
+  let DurationToNull = () => (DurationToNull = dart.constFn(dart.fnType(core.Null, [core.Duration])))();
   let _TrackedAnnotationAndintTovoid = () => (_TrackedAnnotationAndintTovoid = dart.constFn(dart.fnType(dart.void, [src__gestures__mouse_tracking._TrackedAnnotation, core.int])))();
   let _TrackedAnnotationTovoid = () => (_TrackedAnnotationTovoid = dart.constFn(dart.fnType(dart.void, [src__gestures__mouse_tracking._TrackedAnnotation])))();
+  let MouseTrackerAnnotationTo_TrackedAnnotation = () => (MouseTrackerAnnotationTo_TrackedAnnotation = dart.constFn(dart.fnType(src__gestures__mouse_tracking._TrackedAnnotation, [src__gestures__mouse_tracking.MouseTrackerAnnotation])))();
+  let OffsetToDrag = () => (OffsetToDrag = dart.constFn(dart.fnType(src__gestures__drag.Drag, [ui$.Offset])))();
+  let VoidToDrag = () => (VoidToDrag = dart.constFn(dart.fnType(src__gestures__drag.Drag, [])))();
   let IdentityMapOfint$_TapTracker = () => (IdentityMapOfint$_TapTracker = dart.constFn(_js_helper.IdentityMap$(core.int, src__gestures__multitap._TapTracker)))();
   let IdentityMapOfint$_TapGesture = () => (IdentityMapOfint$_TapGesture = dart.constFn(_js_helper.IdentityMap$(core.int, src__gestures__multitap._TapGesture)))();
   let ListOf_TapGesture = () => (ListOf_TapGesture = dart.constFn(core.List$(src__gestures__multitap._TapGesture)))();
   let VoidToString = () => (VoidToString = dart.constFn(dart.fnType(core.String, [])))();
   let EnumPropertyOfDragStartBehavior = () => (EnumPropertyOfDragStartBehavior = dart.constFn(src__foundation__diagnostics.EnumProperty$(src__gestures__recognizer.DragStartBehavior)))();
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C0() {
+      return C0 = dart.const({
+        __proto__: src__gestures__arena.GestureDisposition.prototype,
+        index: 0,
+        [_name$]: "GestureDisposition.accepted"
+      });
+    },
+    get C1() {
+      return C1 = dart.const({
+        __proto__: src__gestures__arena.GestureDisposition.prototype,
+        index: 1,
+        [_name$]: "GestureDisposition.rejected"
+      });
+    },
+    get C2() {
+      return C2 = dart.constList([C0 || CT.C0, C1 || CT.C1], src__gestures__arena.GestureDisposition);
+    },
+    get C3() {
+      return C3 = dart.const({
+        __proto__: core.Duration.prototype,
+        [_duration]: 0
+      });
+    },
+    get C4() {
+      return C4 = dart.const({
+        __proto__: ui$.PointerDeviceKind.prototype,
+        index: 0,
+        [_name]: "PointerDeviceKind.touch"
+      });
+    },
+    get C5() {
+      return C5 = dart.const({
+        __proto__: ui$.Offset.prototype,
+        [_dx]: 0,
+        [_dy]: 0
+      });
+    },
+    get C6() {
+      return C6 = dart.const({
+        __proto__: ui$.PointerDeviceKind.prototype,
+        index: 1,
+        [_name]: "PointerDeviceKind.mouse"
+      });
+    },
+    get C7() {
+      return C7 = dart.const({
+        __proto__: src__gestures__scale._ScaleState.prototype,
+        index: 0,
+        [_name$0]: "_ScaleState.ready"
+      });
+    },
+    get C8() {
+      return C8 = dart.const({
+        __proto__: src__gestures__scale._ScaleState.prototype,
+        index: 1,
+        [_name$0]: "_ScaleState.possible"
+      });
+    },
+    get C9() {
+      return C9 = dart.const({
+        __proto__: src__gestures__scale._ScaleState.prototype,
+        index: 2,
+        [_name$0]: "_ScaleState.accepted"
+      });
+    },
+    get C10() {
+      return C10 = dart.const({
+        __proto__: src__gestures__scale._ScaleState.prototype,
+        index: 3,
+        [_name$0]: "_ScaleState.started"
+      });
+    },
+    get C11() {
+      return C11 = dart.constList([C7 || CT.C7, C8 || CT.C8, C9 || CT.C9, C10 || CT.C10], src__gestures__scale._ScaleState);
+    },
+    get C12() {
+      return C12 = dart.const({
+        __proto__: src__gestures__velocity_tracker.Velocity.prototype,
+        pixelsPerSecond: C5 || CT.C5
+      });
+    },
+    get C13() {
+      return C13 = dart.const({
+        __proto__: src__gestures__recognizer.DragStartBehavior.prototype,
+        index: 0,
+        [_name$1]: "DragStartBehavior.down"
+      });
+    },
+    get C14() {
+      return C14 = dart.const({
+        __proto__: src__gestures__recognizer.DragStartBehavior.prototype,
+        index: 1,
+        [_name$1]: "DragStartBehavior.start"
+      });
+    },
+    get C15() {
+      return C15 = dart.constList([C13 || CT.C13, C14 || CT.C14], src__gestures__recognizer.DragStartBehavior);
+    },
+    get C16() {
+      return C16 = dart.const({
+        __proto__: src__gestures__recognizer.GestureRecognizerState.prototype,
+        index: 0,
+        [_name$1]: "GestureRecognizerState.ready"
+      });
+    },
+    get C17() {
+      return C17 = dart.const({
+        __proto__: src__gestures__recognizer.GestureRecognizerState.prototype,
+        index: 1,
+        [_name$1]: "GestureRecognizerState.possible"
+      });
+    },
+    get C18() {
+      return C18 = dart.const({
+        __proto__: src__gestures__recognizer.GestureRecognizerState.prototype,
+        index: 2,
+        [_name$1]: "GestureRecognizerState.defunct"
+      });
+    },
+    get C19() {
+      return C19 = dart.constList([C16 || CT.C16, C17 || CT.C17, C18 || CT.C18], src__gestures__recognizer.GestureRecognizerState);
+    },
+    get C20() {
+      return C20 = dart.const(new _js_helper.PrivateSymbol.new('_member', _member$0));
+    },
+    get C21() {
+      return C21 = dart.const(new _js_helper.PrivateSymbol.new('_arena', _arena));
+    },
+    get C22() {
+      return C22 = dart.const(new _js_helper.PrivateSymbol.new('_pointer', _pointer$0));
+    },
+    get C23() {
+      return C23 = dart.const({
+        __proto__: ui$.PointerChange.prototype,
+        index: 1,
+        [_name]: "PointerChange.add"
+      });
+    },
+    get C24() {
+      return C24 = dart.const({
+        __proto__: ui$.PointerChange.prototype,
+        index: 3,
+        [_name]: "PointerChange.hover"
+      });
+    },
+    get C25() {
+      return C25 = dart.const({
+        __proto__: ui$.PointerChange.prototype,
+        index: 4,
+        [_name]: "PointerChange.down"
+      });
+    },
+    get C26() {
+      return C26 = dart.const({
+        __proto__: ui$.PointerChange.prototype,
+        index: 5,
+        [_name]: "PointerChange.move"
+      });
+    },
+    get C27() {
+      return C27 = dart.const({
+        __proto__: ui$.PointerChange.prototype,
+        index: 6,
+        [_name]: "PointerChange.up"
+      });
+    },
+    get C28() {
+      return C28 = dart.const({
+        __proto__: ui$.PointerChange.prototype,
+        index: 0,
+        [_name]: "PointerChange.cancel"
+      });
+    },
+    get C29() {
+      return C29 = dart.const({
+        __proto__: ui$.PointerChange.prototype,
+        index: 2,
+        [_name]: "PointerChange.remove"
+      });
+    },
+    get C30() {
+      return C30 = dart.const({
+        __proto__: ui$.PointerSignalKind.prototype,
+        index: 1,
+        [_name]: "PointerSignalKind.scroll"
+      });
+    },
+    get C31() {
+      return C31 = dart.const({
+        __proto__: ui$.PointerSignalKind.prototype,
+        index: 0,
+        [_name]: "PointerSignalKind.none"
+      });
+    },
+    get C32() {
+      return C32 = dart.const({
+        __proto__: ui$.PointerSignalKind.prototype,
+        index: 2,
+        [_name]: "PointerSignalKind.unknown"
+      });
+    },
+    get C33() {
+      return C33 = dart.const({
+        __proto__: ui$.PointerDeviceKind.prototype,
+        index: 2,
+        [_name]: "PointerDeviceKind.stylus"
+      });
+    },
+    get C34() {
+      return C34 = dart.const({
+        __proto__: ui$.PointerDeviceKind.prototype,
+        index: 3,
+        [_name]: "PointerDeviceKind.invertedStylus"
+      });
+    },
+    get C35() {
+      return C35 = dart.const({
+        __proto__: core.Duration.prototype,
+        [_duration]: 100000
+      });
+    },
+    get C36() {
+      return C36 = dart.const({
+        __proto__: core.Duration.prototype,
+        [_duration]: 150000
+      });
+    },
+    get C37() {
+      return C37 = dart.const({
+        __proto__: core.Duration.prototype,
+        [_duration]: 500000
+      });
+    },
+    get C38() {
+      return C38 = dart.const({
+        __proto__: core.Duration.prototype,
+        [_duration]: 300000
+      });
+    },
+    get C39() {
+      return C39 = dart.const({
+        __proto__: core.Duration.prototype,
+        [_duration]: 40000
+      });
+    },
+    get C40() {
+      return C40 = dart.const({
+        __proto__: core.Duration.prototype,
+        [_duration]: 3000000
+      });
+    },
+    get C41() {
+      return C41 = dart.const({
+        __proto__: src__gestures__force_press._ForceState.prototype,
+        index: 0,
+        [_name$2]: "_ForceState.ready"
+      });
+    },
+    get C42() {
+      return C42 = dart.const({
+        __proto__: src__gestures__force_press._ForceState.prototype,
+        index: 1,
+        [_name$2]: "_ForceState.possible"
+      });
+    },
+    get C43() {
+      return C43 = dart.const({
+        __proto__: src__gestures__force_press._ForceState.prototype,
+        index: 2,
+        [_name$2]: "_ForceState.accepted"
+      });
+    },
+    get C44() {
+      return C44 = dart.const({
+        __proto__: src__gestures__force_press._ForceState.prototype,
+        index: 3,
+        [_name$2]: "_ForceState.started"
+      });
+    },
+    get C45() {
+      return C45 = dart.const({
+        __proto__: src__gestures__force_press._ForceState.prototype,
+        index: 4,
+        [_name$2]: "_ForceState.peaked"
+      });
+    },
+    get C46() {
+      return C46 = dart.constList([C41 || CT.C41, C42 || CT.C42, C43 || CT.C43, C44 || CT.C44, C45 || CT.C45], src__gestures__force_press._ForceState);
+    },
+    get C47() {
+      return C47 = dart.fn(src__gestures__force_press.ForcePressGestureRecognizer._inverseLerp, doubleAnddoubleAnddoubleTodouble());
+    },
+    get C48() {
+      return C48 = dart.const({
+        __proto__: src__gestures__monodrag._DragState.prototype,
+        index: 0,
+        [_name$3]: "_DragState.ready"
+      });
+    },
+    get C49() {
+      return C49 = dart.const({
+        __proto__: src__gestures__monodrag._DragState.prototype,
+        index: 1,
+        [_name$3]: "_DragState.possible"
+      });
+    },
+    get C50() {
+      return C50 = dart.const({
+        __proto__: src__gestures__monodrag._DragState.prototype,
+        index: 2,
+        [_name$3]: "_DragState.accepted"
+      });
+    },
+    get C51() {
+      return C51 = dart.constList([C48 || CT.C48, C49 || CT.C49, C50 || CT.C50], src__gestures__monodrag._DragState);
+    }
+  });
   const _name$ = dart.privateName(src__gestures__arena, "_name");
+  let C0;
+  let C1;
+  let C2;
   src__gestures__arena.GestureDisposition = class GestureDisposition extends core.Object {
     toString() {
       return this[_name$];
@@ -135,20 +475,22 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     ;
   }).prototype = src__gestures__arena.GestureDisposition.prototype;
   dart.addTypeTests(src__gestures__arena.GestureDisposition);
+  dart.setLibraryUri(src__gestures__arena.GestureDisposition, "package:flutter_web/src/gestures/arena.dart");
   dart.setFieldSignature(src__gestures__arena.GestureDisposition, () => ({
     __proto__: dart.getFields(src__gestures__arena.GestureDisposition.__proto__),
     index: dart.finalFieldType(core.int),
     [_name$]: dart.finalFieldType(core.String)
   }));
   dart.defineExtensionMethods(src__gestures__arena.GestureDisposition, ['toString']);
-  src__gestures__arena.GestureDisposition.accepted = dart.const(new src__gestures__arena.GestureDisposition.new(0, "GestureDisposition.accepted"));
-  src__gestures__arena.GestureDisposition.rejected = dart.const(new src__gestures__arena.GestureDisposition.new(1, "GestureDisposition.rejected"));
-  src__gestures__arena.GestureDisposition.values = dart.constList([src__gestures__arena.GestureDisposition.accepted, src__gestures__arena.GestureDisposition.rejected], src__gestures__arena.GestureDisposition);
+  src__gestures__arena.GestureDisposition.accepted = C0 || CT.C0;
+  src__gestures__arena.GestureDisposition.rejected = C1 || CT.C1;
+  src__gestures__arena.GestureDisposition.values = C2 || CT.C2;
   src__gestures__arena.GestureArenaMember = class GestureArenaMember extends core.Object {};
   (src__gestures__arena.GestureArenaMember.new = function() {
     ;
   }).prototype = src__gestures__arena.GestureArenaMember.prototype;
   dart.addTypeTests(src__gestures__arena.GestureArenaMember);
+  dart.setLibraryUri(src__gestures__arena.GestureArenaMember, "package:flutter_web/src/gestures/arena.dart");
   const _arena$ = dart.privateName(src__gestures__arena, "_arena");
   const _pointer$ = dart.privateName(src__gestures__arena, "_pointer");
   const _member$ = dart.privateName(src__gestures__arena, "_member");
@@ -169,6 +511,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getMethods(src__gestures__arena.GestureArenaEntry.__proto__),
     resolve: dart.fnType(dart.void, [src__gestures__arena.GestureDisposition])
   }));
+  dart.setLibraryUri(src__gestures__arena.GestureArenaEntry, "package:flutter_web/src/gestures/arena.dart");
   dart.setFieldSignature(src__gestures__arena.GestureArenaEntry, () => ({
     __proto__: dart.getFields(src__gestures__arena.GestureArenaEntry.__proto__),
     [_arena$]: dart.finalFieldType(src__gestures__arena.GestureArenaManager),
@@ -177,7 +520,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   }));
   src__gestures__arena._GestureArena = class _GestureArena extends core.Object {
     add(member) {
-      if (!dart.test(this.isOpen)) dart.assertFailed();
+      if (!dart.test(this.isOpen)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 70, 12, "isOpen");
       this.members[$add](member);
     }
     toString() {
@@ -213,6 +556,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getMethods(src__gestures__arena._GestureArena.__proto__),
     add: dart.fnType(dart.void, [src__gestures__arena.GestureArenaMember])
   }));
+  dart.setLibraryUri(src__gestures__arena._GestureArena, "package:flutter_web/src/gestures/arena.dart");
   dart.setFieldSignature(src__gestures__arena._GestureArena, () => ({
     __proto__: dart.getFields(src__gestures__arena._GestureArena.__proto__),
     members: dart.finalFieldType(core.List$(src__gestures__arena.GestureArenaMember)),
@@ -230,33 +574,33 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   src__gestures__arena.GestureArenaManager = class GestureArenaManager extends core.Object {
     add(pointer, member) {
       let state = this[_arenas][$putIfAbsent](pointer, dart.fn(() => {
-        if (!dart.test(this[_debugLogDiagnostic](pointer, "★ Opening new gesture arena."))) dart.assertFailed();
+        if (!dart.test(this[_debugLogDiagnostic](pointer, "★ Opening new gesture arena."))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 109, 14, "_debugLogDiagnostic(pointer, '★ Opening new gesture arena.");
         return new src__gestures__arena._GestureArena.new();
       }, VoidTo_GestureArena()));
       state.add(member);
-      if (!dart.test(this[_debugLogDiagnostic](pointer, "Adding: " + dart.str(member)))) dart.assertFailed();
+      if (!dart.test(this[_debugLogDiagnostic](pointer, "Adding: " + dart.str(member)))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 113, 12, "t(_debugLogDiagnostic(pointer, 'Adding: $member");
       return new src__gestures__arena.GestureArenaEntry.__(this, pointer, member);
     }
     close(pointer) {
       let state = this[_arenas][$_get](pointer);
       if (state == null) return;
       state.isOpen = false;
-      if (!dart.test(this[_debugLogDiagnostic](pointer, "Closing", state))) dart.assertFailed();
+      if (!dart.test(this[_debugLogDiagnostic](pointer, "Closing", state))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 125, 12, "t(_debugLogDiagnostic(pointer, 'Closing', stat");
       this[_tryToResolveArena](pointer, state);
     }
     sweep(pointer) {
       let state = this[_arenas][$_get](pointer);
       if (state == null) return;
-      if (!!dart.test(state.isOpen)) dart.assertFailed();
+      if (!!dart.test(state.isOpen)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 146, 12, "t(!state.isOp");
       if (dart.test(state.isHeld)) {
         state.hasPendingSweep = true;
-        if (!dart.test(this[_debugLogDiagnostic](pointer, "Delaying sweep", state))) dart.assertFailed();
+        if (!dart.test(this[_debugLogDiagnostic](pointer, "Delaying sweep", state))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 149, 14, "t(_debugLogDiagnostic(pointer, 'Delaying sweep', stat");
         return;
       }
-      if (!dart.test(this[_debugLogDiagnostic](pointer, "Sweeping", state))) dart.assertFailed();
+      if (!dart.test(this[_debugLogDiagnostic](pointer, "Sweeping", state))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 152, 12, "t(_debugLogDiagnostic(pointer, 'Sweeping', stat");
       this[_arenas][$remove](pointer);
       if (dart.test(state.members[$isNotEmpty])) {
-        if (!dart.test(this[_debugLogDiagnostic](pointer, "Winner: " + dart.str(state.members[$first])))) dart.assertFailed();
+        if (!dart.test(this[_debugLogDiagnostic](pointer, "Winner: " + dart.str(state.members[$first])))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 156, 14, "t(_debugLogDiagnostic(pointer, 'Winner: ${state.members.first}");
         state.members[$first].acceptGesture(pointer);
         for (let i = 1; i < dart.notNull(state.members[$length]); i = i + 1)
           state.members[$_get](i).rejectGesture(pointer);
@@ -266,68 +610,64 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       let state = this[_arenas][$_get](pointer);
       if (state == null) return;
       state.isHeld = true;
-      if (!dart.test(this[_debugLogDiagnostic](pointer, "Holding", state))) dart.assertFailed();
+      if (!dart.test(this[_debugLogDiagnostic](pointer, "Holding", state))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 181, 12, "t(_debugLogDiagnostic(pointer, 'Holding', stat");
     }
     release(pointer) {
       let state = this[_arenas][$_get](pointer);
       if (state == null) return;
       state.isHeld = false;
-      if (!dart.test(this[_debugLogDiagnostic](pointer, "Releasing", state))) dart.assertFailed();
+      if (!dart.test(this[_debugLogDiagnostic](pointer, "Releasing", state))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 198, 12, "t(_debugLogDiagnostic(pointer, 'Releasing', stat");
       if (dart.test(state.hasPendingSweep)) this.sweep(pointer);
     }
     [_resolve](pointer, member, disposition) {
       let t0;
       let state = this[_arenas][$_get](pointer);
       if (state == null) return;
-      if (!dart.test(dart.fn(() => {
-        let result = dart.equals(disposition, src__gestures__arena.GestureDisposition.accepted) ? "Accepting" : "Rejecting";
-        this[_debugLogDiagnostic](pointer, result + ": " + dart.str(member));
-        return true;
-      }, VoidTobool())())) dart.assertFailed();
-      if (!dart.test(state.members[$contains](member))) dart.assertFailed();
+      if (!dart.test(this[_debugLogDiagnostic](pointer, (dart.equals(disposition, src__gestures__arena.GestureDisposition.accepted) ? "Accepting" : "Rejecting") + ": " + dart.str(member)))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 209, 12, "t(_debugLogDiagnostic(pointer,\n        '${disposition == GestureDisposition.accepted ? \"Accepting\" : \"Rejecting\"}: $member");
+      if (!dart.test(state.members[$contains](member))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 211, 12, "t(state.members.contains(membe");
       if (dart.equals(disposition, src__gestures__arena.GestureDisposition.rejected)) {
         state.members[$remove](member);
         member.rejectGesture(pointer);
         if (!dart.test(state.isOpen)) this[_tryToResolveArena](pointer, state);
       } else {
-        if (!dart.equals(disposition, src__gestures__arena.GestureDisposition.accepted)) dart.assertFailed();
+        if (!dart.equals(disposition, src__gestures__arena.GestureDisposition.accepted)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 217, 14, "t(disposition == GestureDisposition.accept");
         if (dart.test(state.isOpen)) {
           t0 = state;
           t0.eagerWinner == null ? t0.eagerWinner = member : null;
         } else {
-          if (!dart.test(this[_debugLogDiagnostic](pointer, "Self-declared winner: " + dart.str(member)))) dart.assertFailed();
+          if (!dart.test(this[_debugLogDiagnostic](pointer, "Self-declared winner: " + dart.str(member)))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 221, 16, "t(_debugLogDiagnostic(pointer, 'Self-declared winner: $member");
           this[_resolveInFavorOf](pointer, state, member);
         }
       }
     }
     [_tryToResolveArena](pointer, state) {
-      if (!dart.equals(this[_arenas][$_get](pointer), state)) dart.assertFailed();
-      if (!!dart.test(state.isOpen)) dart.assertFailed();
+      if (!dart.equals(this[_arenas][$_get](pointer), state)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 228, 12, "t(_arenas[pointer] == sta");
+      if (!!dart.test(state.isOpen)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 229, 12, "t(!state.isOp");
       if (state.members[$length] === 1) {
         async.scheduleMicrotask(dart.fn(() => this[_resolveByDefault](pointer, state), VoidTovoid()));
       } else if (dart.test(state.members[$isEmpty])) {
         this[_arenas][$remove](pointer);
-        if (!dart.test(this[_debugLogDiagnostic](pointer, "Arena empty."))) dart.assertFailed();
+        if (!dart.test(this[_debugLogDiagnostic](pointer, "Arena empty."))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 234, 14, "t(_debugLogDiagnostic(pointer, 'Arena empty.");
       } else if (state.eagerWinner != null) {
-        if (!dart.test(this[_debugLogDiagnostic](pointer, "Eager winner: " + dart.str(state.eagerWinner)))) dart.assertFailed();
+        if (!dart.test(this[_debugLogDiagnostic](pointer, "Eager winner: " + dart.str(state.eagerWinner)))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 237, 11, "  _debugLogDiagnostic(pointer, 'Eager winner: ${state.eagerWinner}");
         this[_resolveInFavorOf](pointer, state, state.eagerWinner);
       }
     }
     [_resolveByDefault](pointer, state) {
       if (!dart.test(this[_arenas][$containsKey](pointer))) return;
-      if (!dart.equals(this[_arenas][$_get](pointer), state)) dart.assertFailed();
-      if (!!dart.test(state.isOpen)) dart.assertFailed();
+      if (!dart.equals(this[_arenas][$_get](pointer), state)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 244, 12, "t(_arenas[pointer] == sta");
+      if (!!dart.test(state.isOpen)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 245, 12, "t(!state.isOp");
       let members = state.members;
-      if (!(members[$length] === 1)) dart.assertFailed();
+      if (!(members[$length] === 1)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 247, 12, "t(members.length ==");
       this[_arenas][$remove](pointer);
-      if (!dart.test(this[_debugLogDiagnostic](pointer, "Default winner: " + dart.str(state.members[$first])))) dart.assertFailed();
+      if (!dart.test(this[_debugLogDiagnostic](pointer, "Default winner: " + dart.str(state.members[$first])))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 250, 9, "  _debugLogDiagnostic(pointer, 'Default winner: ${state.members.first}");
       state.members[$first].acceptGesture(pointer);
     }
     [_resolveInFavorOf](pointer, state, member) {
-      if (!dart.equals(state, this[_arenas][$_get](pointer))) dart.assertFailed();
-      if (!(state != null)) dart.assertFailed();
-      if (!(state.eagerWinner == null || dart.equals(state.eagerWinner, member))) dart.assertFailed();
-      if (!!dart.test(state.isOpen)) dart.assertFailed();
+      if (!dart.equals(state, this[_arenas][$_get](pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 256, 12, "t(state == _arenas[pointe");
+      if (!(state != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 257, 12, "t(state != nu");
+      if (!(state.eagerWinner == null || dart.equals(state.eagerWinner, member))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 258, 12, "t(state.eagerWinner == null || state.eagerWinner == memb");
+      if (!!dart.test(state.isOpen)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 259, 12, "t(!state.isOp");
       this[_arenas][$remove](pointer);
       for (let rejectedMember of state.members) {
         if (!dart.equals(rejectedMember, member)) rejectedMember.rejectGesture(pointer);
@@ -343,7 +683,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
           src__foundation__print.debugPrint("Gesture arena " + dart.toString(pointer)[$padRight](4) + " ❙ " + dart.str(message) + (count != null ? " with " + dart.str(count) + " member" + s + "." : ""));
         }
         return true;
-      }, VoidTobool())())) dart.assertFailed();
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart", 268, 12, "t(() {\n      if (debugPrintGestureArenaDiagnostics) {\n        final int count = state != null ? state.members.length : null;\n        final String s = count != 1 ? 's' : '';\n        debugPrint(\n            'Gesture arena ${pointer.toString().padRight(4)} ❙ $message${count != null ? \" with $count member$s.\" : \"\"}');\n      }\n      return true;\n   ");
       return true;
     }
   };
@@ -365,15 +705,16 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     [_resolveInFavorOf]: dart.fnType(dart.void, [core.int, src__gestures__arena._GestureArena, src__gestures__arena.GestureArenaMember]),
     [_debugLogDiagnostic]: dart.fnType(core.bool, [core.int, core.String], [src__gestures__arena._GestureArena])
   }));
+  dart.setLibraryUri(src__gestures__arena.GestureArenaManager, "package:flutter_web/src/gestures/arena.dart");
   dart.setFieldSignature(src__gestures__arena.GestureArenaManager, () => ({
     __proto__: dart.getFields(src__gestures__arena.GestureArenaManager.__proto__),
     [_arenas]: dart.finalFieldType(core.Map$(core.int, src__gestures__arena._GestureArena))
   }));
-  src__gestures__debug.debugAssertAllGesturesVarsUnset = function(reason) {
+  src__gestures__debug.debugAssertAllGesturesVarsUnset = function debugAssertAllGesturesVarsUnset(reason) {
     if (!dart.test(dart.fn(() => {
-      if (dart.test(src__gestures__debug.debugPrintHitTestResults) || dart.test(src__gestures__debug.debugPrintGestureArenaDiagnostics) || dart.test(src__gestures__debug.debugPrintRecognizerCallbacksTrace)) dart.throw(new src__foundation__assertions.FlutterError.new(reason));
+      if (dart.test(src__gestures__debug.debugPrintHitTestResults) || dart.test(src__gestures__debug.debugPrintGestureArenaDiagnostics) || dart.test(src__gestures__debug.debugPrintRecognizerCallbacksTrace)) dart.throw(src__foundation__assertions.FlutterError.new(reason));
       return true;
-    }, VoidTobool())())) dart.assertFailed();
+    }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/debug.dart", 61, 10, "() {\n    if (debugPrintHitTestResults ||\n        debugPrintGestureArenaDiagnostics ||\n        debugPrintRecognizerCallbacksTrace) throw FlutterError(reason);\n    return true;\n  }()");
     return true;
   };
   dart.defineLazy(src__gestures__debug, {
@@ -394,28 +735,41 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     },
     set debugPrintRecognizerCallbacksTrace(_) {}
   });
+  dart.copyProperties(src__util, {
+    get assertionsEnabled() {
+      let k = false;
+      if (!(k = true)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/util.dart", 22, 10, "k = true");
+      return k;
+    }
+  });
+  dart.defineLazy(src__util, {
+    /*src__util.debugIsInTest*/get debugIsInTest() {
+      return false;
+    },
+    set debugIsInTest(_) {}
+  });
   const _routeMap = dart.privateName(src__gestures__pointer_router, "_routeMap");
   const _globalRoutes = dart.privateName(src__gestures__pointer_router, "_globalRoutes");
   const _dispatch = dart.privateName(src__gestures__pointer_router, "_dispatch");
   src__gestures__pointer_router.PointerRouter = class PointerRouter extends core.Object {
     addRoute(pointer, route) {
       let routes = this[_routeMap][$putIfAbsent](pointer, dart.fn(() => new (_HashSetOfPointerEventTovoid()).new(), VoidToLinkedHashSetOfPointerEventTovoid()));
-      if (!!dart.test(routes.contains(route))) dart.assertFailed();
+      if (!!dart.test(routes.contains(route))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/pointer_router.dart", 30, 12, "!routes.contains(route)");
       routes.add(route);
     }
     removeRoute(pointer, route) {
-      if (!dart.test(this[_routeMap][$containsKey](pointer))) dart.assertFailed();
+      if (!dart.test(this[_routeMap][$containsKey](pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/pointer_router.dart", 42, 12, "_routeMap.containsKey(pointer)");
       let routes = this[_routeMap][$_get](pointer);
-      if (!dart.test(routes.contains(route))) dart.assertFailed();
+      if (!dart.test(routes.contains(route))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/pointer_router.dart", 44, 12, "routes.contains(route)");
       routes.remove(route);
       if (dart.test(routes[$isEmpty])) this[_routeMap][$remove](pointer);
     }
     addGlobalRoute(route) {
-      if (!!dart.test(this[_globalRoutes].contains(route))) dart.assertFailed();
+      if (!!dart.test(this[_globalRoutes].contains(route))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/pointer_router.dart", 56, 12, "!_globalRoutes.contains(route)");
       this[_globalRoutes].add(route);
     }
     removeGlobalRoute(route) {
-      if (!dart.test(this[_globalRoutes].contains(route))) dart.assertFailed();
+      if (!dart.test(this[_globalRoutes].contains(route))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/pointer_router.dart", 68, 12, "_globalRoutes.contains(route)");
       this[_globalRoutes].remove(route);
     }
     [_dispatch](event, route) {
@@ -424,10 +778,9 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       } catch (e) {
         let exception = dart.getThrown(e);
         let stack = dart.stackTrace(e);
-        src__foundation__assertions.FlutterError.reportError(new src__gestures__pointer_router.FlutterErrorDetailsForPointerRouter.new({exception: exception, stack: stack, library: "gesture library", context: "while routing a pointer event", router: this, route: route, event: event, informationCollector: dart.fn(information => {
-            information.writeln("Event:");
-            information.write("  " + dart.str(event));
-          }, StringBufferToNull())}));
+        src__foundation__assertions.FlutterError.reportError(new src__gestures__pointer_router.FlutterErrorDetailsForPointerRouter.new({exception: exception, stack: stack, library: "gesture library", context: new src__foundation__assertions.ErrorDescription.new("while routing a pointer event"), router: this, route: route, event: event, informationCollector: dart.fn(() => new (SyncIterableOfDiagnosticsPropertyOfPointerEvent()).new(function*() {
+            yield new (DiagnosticsPropertyOfPointerEvent()).new("Event", event, {style: src__foundation__diagnostics.DiagnosticsTreeStyle.errorProperty});
+          }), VoidToIterableOfDiagnosticsPropertyOfPointerEvent())}));
       }
     }
     route(event) {
@@ -458,6 +811,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     [_dispatch]: dart.fnType(dart.void, [src__gestures__events.PointerEvent, dart.fnType(dart.void, [src__gestures__events.PointerEvent])]),
     route: dart.fnType(dart.void, [src__gestures__events.PointerEvent])
   }));
+  dart.setLibraryUri(src__gestures__pointer_router.PointerRouter, "package:flutter_web/src/gestures/pointer_router.dart");
   dart.setFieldSignature(src__gestures__pointer_router.PointerRouter, () => ({
     __proto__: dart.getFields(src__gestures__pointer_router.PointerRouter.__proto__),
     [_routeMap]: dart.finalFieldType(core.Map$(core.int, collection.LinkedHashSet$(dart.fnType(dart.void, [src__gestures__events.PointerEvent])))),
@@ -503,12 +857,20 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const router$ = Symbol("FlutterErrorDetailsForPointerRouter.router");
   const route$ = Symbol("FlutterErrorDetailsForPointerRouter.route");
   const event$ = Symbol("FlutterErrorDetailsForPointerRouter.event");
+  dart.setLibraryUri(src__gestures__pointer_router.FlutterErrorDetailsForPointerRouter, "package:flutter_web/src/gestures/pointer_router.dart");
   dart.setFieldSignature(src__gestures__pointer_router.FlutterErrorDetailsForPointerRouter, () => ({
     __proto__: dart.getFields(src__gestures__pointer_router.FlutterErrorDetailsForPointerRouter.__proto__),
     router: dart.finalFieldType(src__gestures__pointer_router.PointerRouter),
     route: dart.finalFieldType(dart.fnType(dart.void, [src__gestures__events.PointerEvent])),
     event: dart.finalFieldType(src__gestures__events.PointerEvent)
   }));
+  const _duration = dart.privateName(core, "_duration");
+  let C3;
+  const _name = dart.privateName(ui$, "_name");
+  let C4;
+  const _dx = dart.privateName(ui$, "_dx");
+  const _dy = dart.privateName(ui$, "_dy");
+  let C5;
   src__gestures__events.PointerEvent = class PointerEvent extends src__foundation__diagnostics.Diagnosticable {
     get timeStamp() {
       return this[timeStamp$];
@@ -683,27 +1045,27 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     }
   };
   (src__gestures__events.PointerEvent.new = function(opts) {
-    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : core.Duration.zero;
+    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : C3 || CT.C3;
     let pointer = opts && 'pointer' in opts ? opts.pointer : 0;
-    let kind = opts && 'kind' in opts ? opts.kind : ui$.PointerDeviceKind.touch;
+    let kind = opts && 'kind' in opts ? opts.kind : C4 || CT.C4;
     let device = opts && 'device' in opts ? opts.device : 0;
-    let position = opts && 'position' in opts ? opts.position : ui$.Offset.zero;
-    let delta = opts && 'delta' in opts ? opts.delta : ui$.Offset.zero;
+    let position = opts && 'position' in opts ? opts.position : C5 || CT.C5;
+    let delta = opts && 'delta' in opts ? opts.delta : C5 || CT.C5;
     let buttons = opts && 'buttons' in opts ? opts.buttons : 0;
     let down = opts && 'down' in opts ? opts.down : false;
     let obscured = opts && 'obscured' in opts ? opts.obscured : false;
-    let pressure = opts && 'pressure' in opts ? opts.pressure : 1.0;
-    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1.0;
-    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1.0;
-    let distance = opts && 'distance' in opts ? opts.distance : 0.0;
-    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0.0;
-    let size = opts && 'size' in opts ? opts.size : 0.0;
-    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0.0;
-    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0.0;
-    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0.0;
-    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0.0;
-    let orientation = opts && 'orientation' in opts ? opts.orientation : 0.0;
-    let tilt = opts && 'tilt' in opts ? opts.tilt : 0.0;
+    let pressure = opts && 'pressure' in opts ? opts.pressure : 1;
+    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1;
+    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1;
+    let distance = opts && 'distance' in opts ? opts.distance : 0;
+    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0;
+    let size = opts && 'size' in opts ? opts.size : 0;
+    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0;
+    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0;
+    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0;
+    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0;
+    let orientation = opts && 'orientation' in opts ? opts.orientation : 0;
+    let tilt = opts && 'tilt' in opts ? opts.tilt : 0;
     let platformData = opts && 'platformData' in opts ? opts.platformData : 0;
     let synthesized = opts && 'synthesized' in opts ? opts.synthesized : false;
     this[timeStamp$] = timeStamp;
@@ -764,6 +1126,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getGetters(src__gestures__events.PointerEvent.__proto__),
     distanceMin: core.double
   }));
+  dart.setLibraryUri(src__gestures__events.PointerEvent, "package:flutter_web/src/gestures/events.dart");
   dart.setFieldSignature(src__gestures__events.PointerEvent, () => ({
     __proto__: dart.getFields(src__gestures__events.PointerEvent.__proto__),
     timeStamp: dart.finalFieldType(core.Duration),
@@ -792,221 +1155,225 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   }));
   src__gestures__events.PointerAddedEvent = class PointerAddedEvent extends src__gestures__events.PointerEvent {};
   (src__gestures__events.PointerAddedEvent.new = function(opts) {
-    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : core.Duration.zero;
-    let kind = opts && 'kind' in opts ? opts.kind : ui$.PointerDeviceKind.touch;
+    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : C3 || CT.C3;
+    let kind = opts && 'kind' in opts ? opts.kind : C4 || CT.C4;
     let device = opts && 'device' in opts ? opts.device : 0;
-    let position = opts && 'position' in opts ? opts.position : ui$.Offset.zero;
+    let position = opts && 'position' in opts ? opts.position : C5 || CT.C5;
     let obscured = opts && 'obscured' in opts ? opts.obscured : false;
-    let pressure = opts && 'pressure' in opts ? opts.pressure : 0.0;
-    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1.0;
-    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1.0;
-    let distance = opts && 'distance' in opts ? opts.distance : 0.0;
-    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0.0;
-    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0.0;
-    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0.0;
-    let orientation = opts && 'orientation' in opts ? opts.orientation : 0.0;
-    let tilt = opts && 'tilt' in opts ? opts.tilt : 0.0;
-    src__gestures__events.PointerAddedEvent.__proto__.new.call(this, {timeStamp: timeStamp, kind: kind, device: device, position: position, obscured: obscured, pressure: pressure, pressureMin: pressureMin, pressureMax: pressureMax, distance: distance, distanceMax: distanceMax, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt});
+    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1;
+    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1;
+    let distance = opts && 'distance' in opts ? opts.distance : 0;
+    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0;
+    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0;
+    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0;
+    let orientation = opts && 'orientation' in opts ? opts.orientation : 0;
+    let tilt = opts && 'tilt' in opts ? opts.tilt : 0;
+    src__gestures__events.PointerAddedEvent.__proto__.new.call(this, {timeStamp: timeStamp, kind: kind, device: device, position: position, obscured: obscured, pressure: 0.0, pressureMin: pressureMin, pressureMax: pressureMax, distance: distance, distanceMax: distanceMax, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt});
     ;
   }).prototype = src__gestures__events.PointerAddedEvent.prototype;
   dart.addTypeTests(src__gestures__events.PointerAddedEvent);
+  dart.setLibraryUri(src__gestures__events.PointerAddedEvent, "package:flutter_web/src/gestures/events.dart");
   src__gestures__events.PointerRemovedEvent = class PointerRemovedEvent extends src__gestures__events.PointerEvent {};
   (src__gestures__events.PointerRemovedEvent.new = function(opts) {
-    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : core.Duration.zero;
-    let kind = opts && 'kind' in opts ? opts.kind : ui$.PointerDeviceKind.touch;
+    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : C3 || CT.C3;
+    let kind = opts && 'kind' in opts ? opts.kind : C4 || CT.C4;
     let device = opts && 'device' in opts ? opts.device : 0;
+    let position = opts && 'position' in opts ? opts.position : C5 || CT.C5;
     let obscured = opts && 'obscured' in opts ? opts.obscured : false;
-    let pressure = opts && 'pressure' in opts ? opts.pressure : 0.0;
-    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1.0;
-    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1.0;
-    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0.0;
-    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0.0;
-    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0.0;
-    src__gestures__events.PointerRemovedEvent.__proto__.new.call(this, {timeStamp: timeStamp, kind: kind, device: device, position: null, obscured: obscured, pressure: pressure, pressureMin: pressureMin, pressureMax: pressureMax, distanceMax: distanceMax, radiusMin: radiusMin, radiusMax: radiusMax});
+    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1;
+    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1;
+    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0;
+    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0;
+    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0;
+    src__gestures__events.PointerRemovedEvent.__proto__.new.call(this, {timeStamp: timeStamp, kind: kind, device: device, position: position, obscured: obscured, pressure: 0.0, pressureMin: pressureMin, pressureMax: pressureMax, distanceMax: distanceMax, radiusMin: radiusMin, radiusMax: radiusMax});
     ;
   }).prototype = src__gestures__events.PointerRemovedEvent.prototype;
   dart.addTypeTests(src__gestures__events.PointerRemovedEvent);
+  dart.setLibraryUri(src__gestures__events.PointerRemovedEvent, "package:flutter_web/src/gestures/events.dart");
   src__gestures__events.PointerHoverEvent = class PointerHoverEvent extends src__gestures__events.PointerEvent {};
   (src__gestures__events.PointerHoverEvent.new = function(opts) {
-    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : core.Duration.zero;
-    let kind = opts && 'kind' in opts ? opts.kind : ui$.PointerDeviceKind.touch;
+    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : C3 || CT.C3;
+    let kind = opts && 'kind' in opts ? opts.kind : C4 || CT.C4;
     let device = opts && 'device' in opts ? opts.device : 0;
-    let position = opts && 'position' in opts ? opts.position : ui$.Offset.zero;
-    let delta = opts && 'delta' in opts ? opts.delta : ui$.Offset.zero;
+    let position = opts && 'position' in opts ? opts.position : C5 || CT.C5;
+    let delta = opts && 'delta' in opts ? opts.delta : C5 || CT.C5;
     let buttons = opts && 'buttons' in opts ? opts.buttons : 0;
     let obscured = opts && 'obscured' in opts ? opts.obscured : false;
-    let pressure = opts && 'pressure' in opts ? opts.pressure : 0.0;
-    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1.0;
-    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1.0;
-    let distance = opts && 'distance' in opts ? opts.distance : 0.0;
-    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0.0;
-    let size = opts && 'size' in opts ? opts.size : 0.0;
-    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0.0;
-    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0.0;
-    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0.0;
-    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0.0;
-    let orientation = opts && 'orientation' in opts ? opts.orientation : 0.0;
-    let tilt = opts && 'tilt' in opts ? opts.tilt : 0.0;
+    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1;
+    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1;
+    let distance = opts && 'distance' in opts ? opts.distance : 0;
+    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0;
+    let size = opts && 'size' in opts ? opts.size : 0;
+    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0;
+    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0;
+    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0;
+    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0;
+    let orientation = opts && 'orientation' in opts ? opts.orientation : 0;
+    let tilt = opts && 'tilt' in opts ? opts.tilt : 0;
     let synthesized = opts && 'synthesized' in opts ? opts.synthesized : false;
-    src__gestures__events.PointerHoverEvent.__proto__.new.call(this, {timeStamp: timeStamp, kind: kind, device: device, position: position, delta: delta, buttons: buttons, down: false, obscured: obscured, pressure: pressure, pressureMin: pressureMin, pressureMax: pressureMax, distance: distance, distanceMax: distanceMax, size: size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt, synthesized: synthesized});
+    src__gestures__events.PointerHoverEvent.__proto__.new.call(this, {timeStamp: timeStamp, kind: kind, device: device, position: position, delta: delta, buttons: buttons, down: false, obscured: obscured, pressure: 0.0, pressureMin: pressureMin, pressureMax: pressureMax, distance: distance, distanceMax: distanceMax, size: size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt, synthesized: synthesized});
     ;
   }).prototype = src__gestures__events.PointerHoverEvent.prototype;
   dart.addTypeTests(src__gestures__events.PointerHoverEvent);
+  dart.setLibraryUri(src__gestures__events.PointerHoverEvent, "package:flutter_web/src/gestures/events.dart");
   src__gestures__events.PointerEnterEvent = class PointerEnterEvent extends src__gestures__events.PointerEvent {};
   (src__gestures__events.PointerEnterEvent.new = function(opts) {
-    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : core.Duration.zero;
-    let kind = opts && 'kind' in opts ? opts.kind : ui$.PointerDeviceKind.touch;
+    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : C3 || CT.C3;
+    let kind = opts && 'kind' in opts ? opts.kind : C4 || CT.C4;
     let device = opts && 'device' in opts ? opts.device : 0;
-    let position = opts && 'position' in opts ? opts.position : ui$.Offset.zero;
-    let delta = opts && 'delta' in opts ? opts.delta : ui$.Offset.zero;
+    let position = opts && 'position' in opts ? opts.position : C5 || CT.C5;
+    let delta = opts && 'delta' in opts ? opts.delta : C5 || CT.C5;
     let buttons = opts && 'buttons' in opts ? opts.buttons : 0;
     let obscured = opts && 'obscured' in opts ? opts.obscured : false;
-    let pressure = opts && 'pressure' in opts ? opts.pressure : 0.0;
-    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1.0;
-    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1.0;
-    let distance = opts && 'distance' in opts ? opts.distance : 0.0;
-    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0.0;
-    let size = opts && 'size' in opts ? opts.size : 0.0;
-    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0.0;
-    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0.0;
-    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0.0;
-    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0.0;
-    let orientation = opts && 'orientation' in opts ? opts.orientation : 0.0;
-    let tilt = opts && 'tilt' in opts ? opts.tilt : 0.0;
+    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1;
+    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1;
+    let distance = opts && 'distance' in opts ? opts.distance : 0;
+    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0;
+    let size = opts && 'size' in opts ? opts.size : 0;
+    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0;
+    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0;
+    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0;
+    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0;
+    let orientation = opts && 'orientation' in opts ? opts.orientation : 0;
+    let tilt = opts && 'tilt' in opts ? opts.tilt : 0;
     let synthesized = opts && 'synthesized' in opts ? opts.synthesized : false;
-    src__gestures__events.PointerEnterEvent.__proto__.new.call(this, {timeStamp: timeStamp, kind: kind, device: device, position: position, delta: delta, buttons: buttons, down: false, obscured: obscured, pressure: pressure, pressureMin: pressureMin, pressureMax: pressureMax, distance: distance, distanceMax: distanceMax, size: size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt, synthesized: synthesized});
+    src__gestures__events.PointerEnterEvent.__proto__.new.call(this, {timeStamp: timeStamp, kind: kind, device: device, position: position, delta: delta, buttons: buttons, down: false, obscured: obscured, pressure: 0.0, pressureMin: pressureMin, pressureMax: pressureMax, distance: distance, distanceMax: distanceMax, size: size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt, synthesized: synthesized});
     ;
   }).prototype = src__gestures__events.PointerEnterEvent.prototype;
   (src__gestures__events.PointerEnterEvent.fromHoverEvent = function(event) {
     src__gestures__events.PointerEnterEvent.fromMouseEvent.call(this, event);
   }).prototype = src__gestures__events.PointerEnterEvent.prototype;
   (src__gestures__events.PointerEnterEvent.fromMouseEvent = function(event) {
-    let t1, t1$, t1$0, t1$1, t1$2, t1$3, t1$4, t1$5, t1$6, t1$7, t1$8, t1$9, t1$10, t1$11, t1$12, t1$13, t1$14, t1$15, t1$16, t1$17, t1$18;
-    src__gestures__events.PointerEnterEvent.__proto__.new.call(this, {timeStamp: (t1 = event, t1 == null ? null : t1.timeStamp), kind: (t1$ = event, t1$ == null ? null : t1$.kind), device: (t1$0 = event, t1$0 == null ? null : t1$0.device), position: (t1$1 = event, t1$1 == null ? null : t1$1.position), delta: (t1$2 = event, t1$2 == null ? null : t1$2.delta), buttons: (t1$3 = event, t1$3 == null ? null : t1$3.buttons), down: (t1$4 = event, t1$4 == null ? null : t1$4.down), obscured: (t1$5 = event, t1$5 == null ? null : t1$5.obscured), pressure: (t1$6 = event, t1$6 == null ? null : t1$6.pressure), pressureMin: (t1$7 = event, t1$7 == null ? null : t1$7.pressureMin), pressureMax: (t1$8 = event, t1$8 == null ? null : t1$8.pressureMax), distance: (t1$9 = event, t1$9 == null ? null : t1$9.distance), distanceMax: (t1$10 = event, t1$10 == null ? null : t1$10.distanceMax), size: (t1$11 = event, t1$11 == null ? null : t1$11.size), radiusMajor: (t1$12 = event, t1$12 == null ? null : t1$12.radiusMajor), radiusMinor: (t1$13 = event, t1$13 == null ? null : t1$13.radiusMinor), radiusMin: (t1$14 = event, t1$14 == null ? null : t1$14.radiusMin), radiusMax: (t1$15 = event, t1$15 == null ? null : t1$15.radiusMax), orientation: (t1$16 = event, t1$16 == null ? null : t1$16.orientation), tilt: (t1$17 = event, t1$17 == null ? null : t1$17.tilt), synthesized: (t1$18 = event, t1$18 == null ? null : t1$18.synthesized)});
-    ;
+    let t1, t1$, t1$0, t1$1, t1$2, t1$3, t1$4, t1$5, t1$6, t1$7, t1$8, t1$9, t1$10, t1$11, t1$12, t1$13, t1$14, t1$15, t1$16;
+    src__gestures__events.PointerEnterEvent.new.call(this, {timeStamp: (t1 = event, t1 == null ? null : t1.timeStamp), kind: (t1$ = event, t1$ == null ? null : t1$.kind), device: (t1$0 = event, t1$0 == null ? null : t1$0.device), position: (t1$1 = event, t1$1 == null ? null : t1$1.position), delta: (t1$2 = event, t1$2 == null ? null : t1$2.delta), buttons: (t1$3 = event, t1$3 == null ? null : t1$3.buttons), obscured: (t1$4 = event, t1$4 == null ? null : t1$4.obscured), pressureMin: (t1$5 = event, t1$5 == null ? null : t1$5.pressureMin), pressureMax: (t1$6 = event, t1$6 == null ? null : t1$6.pressureMax), distance: (t1$7 = event, t1$7 == null ? null : t1$7.distance), distanceMax: (t1$8 = event, t1$8 == null ? null : t1$8.distanceMax), size: (t1$9 = event, t1$9 == null ? null : t1$9.size), radiusMajor: (t1$10 = event, t1$10 == null ? null : t1$10.radiusMajor), radiusMinor: (t1$11 = event, t1$11 == null ? null : t1$11.radiusMinor), radiusMin: (t1$12 = event, t1$12 == null ? null : t1$12.radiusMin), radiusMax: (t1$13 = event, t1$13 == null ? null : t1$13.radiusMax), orientation: (t1$14 = event, t1$14 == null ? null : t1$14.orientation), tilt: (t1$15 = event, t1$15 == null ? null : t1$15.tilt), synthesized: (t1$16 = event, t1$16 == null ? null : t1$16.synthesized)});
   }).prototype = src__gestures__events.PointerEnterEvent.prototype;
   dart.addTypeTests(src__gestures__events.PointerEnterEvent);
+  dart.setLibraryUri(src__gestures__events.PointerEnterEvent, "package:flutter_web/src/gestures/events.dart");
   src__gestures__events.PointerExitEvent = class PointerExitEvent extends src__gestures__events.PointerEvent {};
   (src__gestures__events.PointerExitEvent.new = function(opts) {
-    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : core.Duration.zero;
-    let kind = opts && 'kind' in opts ? opts.kind : ui$.PointerDeviceKind.touch;
+    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : C3 || CT.C3;
+    let kind = opts && 'kind' in opts ? opts.kind : C4 || CT.C4;
     let device = opts && 'device' in opts ? opts.device : 0;
-    let position = opts && 'position' in opts ? opts.position : ui$.Offset.zero;
-    let delta = opts && 'delta' in opts ? opts.delta : ui$.Offset.zero;
+    let position = opts && 'position' in opts ? opts.position : C5 || CT.C5;
+    let delta = opts && 'delta' in opts ? opts.delta : C5 || CT.C5;
     let buttons = opts && 'buttons' in opts ? opts.buttons : 0;
     let obscured = opts && 'obscured' in opts ? opts.obscured : false;
-    let pressure = opts && 'pressure' in opts ? opts.pressure : 0.0;
-    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1.0;
-    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1.0;
-    let distance = opts && 'distance' in opts ? opts.distance : 0.0;
-    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0.0;
-    let size = opts && 'size' in opts ? opts.size : 0.0;
-    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0.0;
-    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0.0;
-    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0.0;
-    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0.0;
-    let orientation = opts && 'orientation' in opts ? opts.orientation : 0.0;
-    let tilt = opts && 'tilt' in opts ? opts.tilt : 0.0;
+    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1;
+    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1;
+    let distance = opts && 'distance' in opts ? opts.distance : 0;
+    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0;
+    let size = opts && 'size' in opts ? opts.size : 0;
+    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0;
+    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0;
+    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0;
+    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0;
+    let orientation = opts && 'orientation' in opts ? opts.orientation : 0;
+    let tilt = opts && 'tilt' in opts ? opts.tilt : 0;
     let synthesized = opts && 'synthesized' in opts ? opts.synthesized : false;
-    src__gestures__events.PointerExitEvent.__proto__.new.call(this, {timeStamp: timeStamp, kind: kind, device: device, position: position, delta: delta, buttons: buttons, down: false, obscured: obscured, pressure: pressure, pressureMin: pressureMin, pressureMax: pressureMax, distance: distance, distanceMax: distanceMax, size: size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt, synthesized: synthesized});
+    src__gestures__events.PointerExitEvent.__proto__.new.call(this, {timeStamp: timeStamp, kind: kind, device: device, position: position, delta: delta, buttons: buttons, down: false, obscured: obscured, pressure: 0.0, pressureMin: pressureMin, pressureMax: pressureMax, distance: distance, distanceMax: distanceMax, size: size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt, synthesized: synthesized});
     ;
   }).prototype = src__gestures__events.PointerExitEvent.prototype;
   (src__gestures__events.PointerExitEvent.fromHoverEvent = function(event) {
     src__gestures__events.PointerExitEvent.fromMouseEvent.call(this, event);
   }).prototype = src__gestures__events.PointerExitEvent.prototype;
   (src__gestures__events.PointerExitEvent.fromMouseEvent = function(event) {
-    let t1, t1$, t1$0, t1$1, t1$2, t1$3, t1$4, t1$5, t1$6, t1$7, t1$8, t1$9, t1$10, t1$11, t1$12, t1$13, t1$14, t1$15, t1$16, t1$17, t1$18;
-    src__gestures__events.PointerExitEvent.__proto__.new.call(this, {timeStamp: (t1 = event, t1 == null ? null : t1.timeStamp), kind: (t1$ = event, t1$ == null ? null : t1$.kind), device: (t1$0 = event, t1$0 == null ? null : t1$0.device), position: (t1$1 = event, t1$1 == null ? null : t1$1.position), delta: (t1$2 = event, t1$2 == null ? null : t1$2.delta), buttons: (t1$3 = event, t1$3 == null ? null : t1$3.buttons), down: (t1$4 = event, t1$4 == null ? null : t1$4.down), obscured: (t1$5 = event, t1$5 == null ? null : t1$5.obscured), pressure: (t1$6 = event, t1$6 == null ? null : t1$6.pressure), pressureMin: (t1$7 = event, t1$7 == null ? null : t1$7.pressureMin), pressureMax: (t1$8 = event, t1$8 == null ? null : t1$8.pressureMax), distance: (t1$9 = event, t1$9 == null ? null : t1$9.distance), distanceMax: (t1$10 = event, t1$10 == null ? null : t1$10.distanceMax), size: (t1$11 = event, t1$11 == null ? null : t1$11.size), radiusMajor: (t1$12 = event, t1$12 == null ? null : t1$12.radiusMajor), radiusMinor: (t1$13 = event, t1$13 == null ? null : t1$13.radiusMinor), radiusMin: (t1$14 = event, t1$14 == null ? null : t1$14.radiusMin), radiusMax: (t1$15 = event, t1$15 == null ? null : t1$15.radiusMax), orientation: (t1$16 = event, t1$16 == null ? null : t1$16.orientation), tilt: (t1$17 = event, t1$17 == null ? null : t1$17.tilt), synthesized: (t1$18 = event, t1$18 == null ? null : t1$18.synthesized)});
-    ;
+    let t1, t1$, t1$0, t1$1, t1$2, t1$3, t1$4, t1$5, t1$6, t1$7, t1$8, t1$9, t1$10, t1$11, t1$12, t1$13, t1$14, t1$15, t1$16;
+    src__gestures__events.PointerExitEvent.new.call(this, {timeStamp: (t1 = event, t1 == null ? null : t1.timeStamp), kind: (t1$ = event, t1$ == null ? null : t1$.kind), device: (t1$0 = event, t1$0 == null ? null : t1$0.device), position: (t1$1 = event, t1$1 == null ? null : t1$1.position), delta: (t1$2 = event, t1$2 == null ? null : t1$2.delta), buttons: (t1$3 = event, t1$3 == null ? null : t1$3.buttons), obscured: (t1$4 = event, t1$4 == null ? null : t1$4.obscured), pressureMin: (t1$5 = event, t1$5 == null ? null : t1$5.pressureMin), pressureMax: (t1$6 = event, t1$6 == null ? null : t1$6.pressureMax), distance: (t1$7 = event, t1$7 == null ? null : t1$7.distance), distanceMax: (t1$8 = event, t1$8 == null ? null : t1$8.distanceMax), size: (t1$9 = event, t1$9 == null ? null : t1$9.size), radiusMajor: (t1$10 = event, t1$10 == null ? null : t1$10.radiusMajor), radiusMinor: (t1$11 = event, t1$11 == null ? null : t1$11.radiusMinor), radiusMin: (t1$12 = event, t1$12 == null ? null : t1$12.radiusMin), radiusMax: (t1$13 = event, t1$13 == null ? null : t1$13.radiusMax), orientation: (t1$14 = event, t1$14 == null ? null : t1$14.orientation), tilt: (t1$15 = event, t1$15 == null ? null : t1$15.tilt), synthesized: (t1$16 = event, t1$16 == null ? null : t1$16.synthesized)});
   }).prototype = src__gestures__events.PointerExitEvent.prototype;
   dart.addTypeTests(src__gestures__events.PointerExitEvent);
+  dart.setLibraryUri(src__gestures__events.PointerExitEvent, "package:flutter_web/src/gestures/events.dart");
   src__gestures__events.PointerDownEvent = class PointerDownEvent extends src__gestures__events.PointerEvent {};
   (src__gestures__events.PointerDownEvent.new = function(opts) {
-    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : core.Duration.zero;
+    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : C3 || CT.C3;
     let pointer = opts && 'pointer' in opts ? opts.pointer : 0;
-    let kind = opts && 'kind' in opts ? opts.kind : ui$.PointerDeviceKind.touch;
+    let kind = opts && 'kind' in opts ? opts.kind : C4 || CT.C4;
     let device = opts && 'device' in opts ? opts.device : 0;
-    let position = opts && 'position' in opts ? opts.position : ui$.Offset.zero;
-    let buttons = opts && 'buttons' in opts ? opts.buttons : 0;
+    let position = opts && 'position' in opts ? opts.position : C5 || CT.C5;
+    let buttons = opts && 'buttons' in opts ? opts.buttons : 1;
     let obscured = opts && 'obscured' in opts ? opts.obscured : false;
-    let pressure = opts && 'pressure' in opts ? opts.pressure : 1.0;
-    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1.0;
-    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1.0;
-    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0.0;
-    let size = opts && 'size' in opts ? opts.size : 0.0;
-    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0.0;
-    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0.0;
-    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0.0;
-    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0.0;
-    let orientation = opts && 'orientation' in opts ? opts.orientation : 0.0;
-    let tilt = opts && 'tilt' in opts ? opts.tilt : 0.0;
+    let pressure = opts && 'pressure' in opts ? opts.pressure : 1;
+    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1;
+    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1;
+    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0;
+    let size = opts && 'size' in opts ? opts.size : 0;
+    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0;
+    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0;
+    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0;
+    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0;
+    let orientation = opts && 'orientation' in opts ? opts.orientation : 0;
+    let tilt = opts && 'tilt' in opts ? opts.tilt : 0;
     src__gestures__events.PointerDownEvent.__proto__.new.call(this, {timeStamp: timeStamp, pointer: pointer, kind: kind, device: device, position: position, buttons: buttons, down: true, obscured: obscured, pressure: pressure, pressureMin: pressureMin, pressureMax: pressureMax, distance: 0.0, distanceMax: distanceMax, size: size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt});
     ;
   }).prototype = src__gestures__events.PointerDownEvent.prototype;
   dart.addTypeTests(src__gestures__events.PointerDownEvent);
+  dart.setLibraryUri(src__gestures__events.PointerDownEvent, "package:flutter_web/src/gestures/events.dart");
   src__gestures__events.PointerMoveEvent = class PointerMoveEvent extends src__gestures__events.PointerEvent {};
   (src__gestures__events.PointerMoveEvent.new = function(opts) {
-    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : core.Duration.zero;
+    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : C3 || CT.C3;
     let pointer = opts && 'pointer' in opts ? opts.pointer : 0;
-    let kind = opts && 'kind' in opts ? opts.kind : ui$.PointerDeviceKind.touch;
+    let kind = opts && 'kind' in opts ? opts.kind : C4 || CT.C4;
     let device = opts && 'device' in opts ? opts.device : 0;
-    let position = opts && 'position' in opts ? opts.position : ui$.Offset.zero;
-    let delta = opts && 'delta' in opts ? opts.delta : ui$.Offset.zero;
-    let buttons = opts && 'buttons' in opts ? opts.buttons : 0;
+    let position = opts && 'position' in opts ? opts.position : C5 || CT.C5;
+    let delta = opts && 'delta' in opts ? opts.delta : C5 || CT.C5;
+    let buttons = opts && 'buttons' in opts ? opts.buttons : 1;
     let obscured = opts && 'obscured' in opts ? opts.obscured : false;
-    let pressure = opts && 'pressure' in opts ? opts.pressure : 1.0;
-    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1.0;
-    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1.0;
-    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0.0;
-    let size = opts && 'size' in opts ? opts.size : 0.0;
-    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0.0;
-    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0.0;
-    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0.0;
-    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0.0;
-    let orientation = opts && 'orientation' in opts ? opts.orientation : 0.0;
-    let tilt = opts && 'tilt' in opts ? opts.tilt : 0.0;
+    let pressure = opts && 'pressure' in opts ? opts.pressure : 1;
+    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1;
+    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1;
+    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0;
+    let size = opts && 'size' in opts ? opts.size : 0;
+    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0;
+    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0;
+    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0;
+    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0;
+    let orientation = opts && 'orientation' in opts ? opts.orientation : 0;
+    let tilt = opts && 'tilt' in opts ? opts.tilt : 0;
     let platformData = opts && 'platformData' in opts ? opts.platformData : 0;
     let synthesized = opts && 'synthesized' in opts ? opts.synthesized : false;
     src__gestures__events.PointerMoveEvent.__proto__.new.call(this, {timeStamp: timeStamp, pointer: pointer, kind: kind, device: device, position: position, delta: delta, buttons: buttons, down: true, obscured: obscured, pressure: pressure, pressureMin: pressureMin, pressureMax: pressureMax, distance: 0.0, distanceMax: distanceMax, size: size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt, platformData: platformData, synthesized: synthesized});
     ;
   }).prototype = src__gestures__events.PointerMoveEvent.prototype;
   dart.addTypeTests(src__gestures__events.PointerMoveEvent);
+  dart.setLibraryUri(src__gestures__events.PointerMoveEvent, "package:flutter_web/src/gestures/events.dart");
   src__gestures__events.PointerUpEvent = class PointerUpEvent extends src__gestures__events.PointerEvent {};
   (src__gestures__events.PointerUpEvent.new = function(opts) {
-    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : core.Duration.zero;
+    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : C3 || CT.C3;
     let pointer = opts && 'pointer' in opts ? opts.pointer : 0;
-    let kind = opts && 'kind' in opts ? opts.kind : ui$.PointerDeviceKind.touch;
+    let kind = opts && 'kind' in opts ? opts.kind : C4 || CT.C4;
     let device = opts && 'device' in opts ? opts.device : 0;
-    let position = opts && 'position' in opts ? opts.position : ui$.Offset.zero;
+    let position = opts && 'position' in opts ? opts.position : C5 || CT.C5;
     let buttons = opts && 'buttons' in opts ? opts.buttons : 0;
     let obscured = opts && 'obscured' in opts ? opts.obscured : false;
-    let pressure = opts && 'pressure' in opts ? opts.pressure : 0.0;
-    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1.0;
-    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1.0;
-    let distance = opts && 'distance' in opts ? opts.distance : 0.0;
-    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0.0;
-    let size = opts && 'size' in opts ? opts.size : 0.0;
-    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0.0;
-    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0.0;
-    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0.0;
-    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0.0;
-    let orientation = opts && 'orientation' in opts ? opts.orientation : 0.0;
-    let tilt = opts && 'tilt' in opts ? opts.tilt : 0.0;
+    let pressure = opts && 'pressure' in opts ? opts.pressure : 0;
+    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1;
+    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1;
+    let distance = opts && 'distance' in opts ? opts.distance : 0;
+    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0;
+    let size = opts && 'size' in opts ? opts.size : 0;
+    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0;
+    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0;
+    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0;
+    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0;
+    let orientation = opts && 'orientation' in opts ? opts.orientation : 0;
+    let tilt = opts && 'tilt' in opts ? opts.tilt : 0;
     src__gestures__events.PointerUpEvent.__proto__.new.call(this, {timeStamp: timeStamp, pointer: pointer, kind: kind, device: device, position: position, buttons: buttons, down: false, obscured: obscured, pressure: pressure, pressureMin: pressureMin, pressureMax: pressureMax, distance: distance, distanceMax: distanceMax, size: size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt});
     ;
   }).prototype = src__gestures__events.PointerUpEvent.prototype;
   dart.addTypeTests(src__gestures__events.PointerUpEvent);
+  dart.setLibraryUri(src__gestures__events.PointerUpEvent, "package:flutter_web/src/gestures/events.dart");
+  let C6;
   src__gestures__events.PointerSignalEvent = class PointerSignalEvent extends src__gestures__events.PointerEvent {};
   (src__gestures__events.PointerSignalEvent.new = function(opts) {
-    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : core.Duration.zero;
+    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : C3 || CT.C3;
     let pointer = opts && 'pointer' in opts ? opts.pointer : 0;
-    let kind = opts && 'kind' in opts ? opts.kind : ui$.PointerDeviceKind.mouse;
+    let kind = opts && 'kind' in opts ? opts.kind : C6 || CT.C6;
     let device = opts && 'device' in opts ? opts.device : 0;
-    let position = opts && 'position' in opts ? opts.position : ui$.Offset.zero;
+    let position = opts && 'position' in opts ? opts.position : C5 || CT.C5;
     src__gestures__events.PointerSignalEvent.__proto__.new.call(this, {timeStamp: timeStamp, pointer: pointer, kind: kind, device: device, position: position});
     ;
   }).prototype = src__gestures__events.PointerSignalEvent.prototype;
   dart.addTypeTests(src__gestures__events.PointerSignalEvent);
+  dart.setLibraryUri(src__gestures__events.PointerSignalEvent, "package:flutter_web/src/gestures/events.dart");
   src__gestures__events.PointerScrollEvent = class PointerScrollEvent extends src__gestures__events.PointerSignalEvent {
     get scrollDelta() {
       return this[scrollDelta$];
@@ -1020,69 +1387,79 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     }
   };
   (src__gestures__events.PointerScrollEvent.new = function(opts) {
-    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : core.Duration.zero;
-    let kind = opts && 'kind' in opts ? opts.kind : ui$.PointerDeviceKind.mouse;
+    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : C3 || CT.C3;
+    let kind = opts && 'kind' in opts ? opts.kind : C6 || CT.C6;
     let device = opts && 'device' in opts ? opts.device : 0;
-    let position = opts && 'position' in opts ? opts.position : ui$.Offset.zero;
-    let scrollDelta = opts && 'scrollDelta' in opts ? opts.scrollDelta : ui$.Offset.zero;
+    let position = opts && 'position' in opts ? opts.position : C5 || CT.C5;
+    let scrollDelta = opts && 'scrollDelta' in opts ? opts.scrollDelta : C5 || CT.C5;
     this[scrollDelta$] = scrollDelta;
-    if (!(timeStamp != null)) dart.assertFailed();
-    if (!(kind != null)) dart.assertFailed();
-    if (!(device != null)) dart.assertFailed();
-    if (!(position != null)) dart.assertFailed();
-    if (!(scrollDelta != null)) dart.assertFailed();
+    if (!(timeStamp != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/events.dart", 970, 16, "timeStamp != null");
+    if (!(kind != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/events.dart", 971, 16, "kind != null");
+    if (!(device != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/events.dart", 972, 16, "device != null");
+    if (!(position != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/events.dart", 973, 16, "position != null");
+    if (!(scrollDelta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/events.dart", 974, 16, "scrollDelta != null");
     src__gestures__events.PointerScrollEvent.__proto__.new.call(this, {timeStamp: timeStamp, kind: kind, device: device, position: position});
     ;
   }).prototype = src__gestures__events.PointerScrollEvent.prototype;
   dart.addTypeTests(src__gestures__events.PointerScrollEvent);
   const scrollDelta$ = Symbol("PointerScrollEvent.scrollDelta");
+  dart.setLibraryUri(src__gestures__events.PointerScrollEvent, "package:flutter_web/src/gestures/events.dart");
   dart.setFieldSignature(src__gestures__events.PointerScrollEvent, () => ({
     __proto__: dart.getFields(src__gestures__events.PointerScrollEvent.__proto__),
     scrollDelta: dart.finalFieldType(ui$.Offset)
   }));
   src__gestures__events.PointerCancelEvent = class PointerCancelEvent extends src__gestures__events.PointerEvent {};
   (src__gestures__events.PointerCancelEvent.new = function(opts) {
-    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : core.Duration.zero;
+    let timeStamp = opts && 'timeStamp' in opts ? opts.timeStamp : C3 || CT.C3;
     let pointer = opts && 'pointer' in opts ? opts.pointer : 0;
-    let kind = opts && 'kind' in opts ? opts.kind : ui$.PointerDeviceKind.touch;
+    let kind = opts && 'kind' in opts ? opts.kind : C4 || CT.C4;
     let device = opts && 'device' in opts ? opts.device : 0;
-    let position = opts && 'position' in opts ? opts.position : ui$.Offset.zero;
+    let position = opts && 'position' in opts ? opts.position : C5 || CT.C5;
     let buttons = opts && 'buttons' in opts ? opts.buttons : 0;
     let obscured = opts && 'obscured' in opts ? opts.obscured : false;
-    let pressure = opts && 'pressure' in opts ? opts.pressure : 0.0;
-    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1.0;
-    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1.0;
-    let distance = opts && 'distance' in opts ? opts.distance : 0.0;
-    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0.0;
-    let size = opts && 'size' in opts ? opts.size : 0.0;
-    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0.0;
-    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0.0;
-    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0.0;
-    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0.0;
-    let orientation = opts && 'orientation' in opts ? opts.orientation : 0.0;
-    let tilt = opts && 'tilt' in opts ? opts.tilt : 0.0;
-    src__gestures__events.PointerCancelEvent.__proto__.new.call(this, {timeStamp: timeStamp, pointer: pointer, kind: kind, device: device, position: position, buttons: buttons, down: false, obscured: obscured, pressure: pressure, pressureMin: pressureMin, pressureMax: pressureMax, distance: distance, distanceMax: distanceMax, size: size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt});
+    let pressureMin = opts && 'pressureMin' in opts ? opts.pressureMin : 1;
+    let pressureMax = opts && 'pressureMax' in opts ? opts.pressureMax : 1;
+    let distance = opts && 'distance' in opts ? opts.distance : 0;
+    let distanceMax = opts && 'distanceMax' in opts ? opts.distanceMax : 0;
+    let size = opts && 'size' in opts ? opts.size : 0;
+    let radiusMajor = opts && 'radiusMajor' in opts ? opts.radiusMajor : 0;
+    let radiusMinor = opts && 'radiusMinor' in opts ? opts.radiusMinor : 0;
+    let radiusMin = opts && 'radiusMin' in opts ? opts.radiusMin : 0;
+    let radiusMax = opts && 'radiusMax' in opts ? opts.radiusMax : 0;
+    let orientation = opts && 'orientation' in opts ? opts.orientation : 0;
+    let tilt = opts && 'tilt' in opts ? opts.tilt : 0;
+    src__gestures__events.PointerCancelEvent.__proto__.new.call(this, {timeStamp: timeStamp, pointer: pointer, kind: kind, device: device, position: position, buttons: buttons, down: false, obscured: obscured, pressure: 0.0, pressureMin: pressureMin, pressureMax: pressureMax, distance: distance, distanceMax: distanceMax, size: size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: orientation, tilt: tilt});
     ;
   }).prototype = src__gestures__events.PointerCancelEvent.prototype;
   dart.addTypeTests(src__gestures__events.PointerCancelEvent);
-  src__gestures__events.nthMouseButton = function(number) {
-    return (src__gestures__events.kPrimaryMouseButton[$leftShift](dart.notNull(number) - 1) & dart.notNull(src__foundation__bitfield.kMaxUnsignedSMI)) >>> 0;
+  dart.setLibraryUri(src__gestures__events.PointerCancelEvent, "package:flutter_web/src/gestures/events.dart");
+  src__gestures__events.nthMouseButton = function nthMouseButton(number) {
+    return ((1)[$leftShift](dart.notNull(number) - 1) & -1) >>> 0;
   };
-  src__gestures__events.nthStylusButton = function(number) {
-    return (src__gestures__events.kPrimaryStylusButton[$leftShift](dart.notNull(number) - 1) & dart.notNull(src__foundation__bitfield.kMaxUnsignedSMI)) >>> 0;
+  src__gestures__events.nthStylusButton = function nthStylusButton(number) {
+    return ((2)[$leftShift](dart.notNull(number) - 1) & -1) >>> 0;
+  };
+  src__gestures__events.smallestButton = function smallestButton(buttons) {
+    return (dart.notNull(buttons) & -dart.notNull(buttons)) >>> 0;
+  };
+  src__gestures__events.isSingleButton = function isSingleButton(buttons) {
+    return buttons !== 0 && src__gestures__events.smallestButton(buttons) == buttons;
   };
   dart.defineLazy(src__gestures__events, {
     /*src__gestures__events.kPrimaryButton*/get kPrimaryButton() {
       return 1;
     },
+    /*src__gestures__events.kSecondaryButton*/get kSecondaryButton() {
+      return 2;
+    },
     /*src__gestures__events.kPrimaryMouseButton*/get kPrimaryMouseButton() {
-      return src__gestures__events.kPrimaryButton;
+      return 1;
     },
     /*src__gestures__events.kSecondaryMouseButton*/get kSecondaryMouseButton() {
       return 2;
     },
     /*src__gestures__events.kStylusContact*/get kStylusContact() {
-      return src__gestures__events.kPrimaryButton;
+      return 1;
     },
     /*src__gestures__events.kPrimaryStylusButton*/get kPrimaryStylusButton() {
       return 2;
@@ -1100,10 +1477,15 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       return 16;
     },
     /*src__gestures__events.kTouchContact*/get kTouchContact() {
-      return src__gestures__events.kPrimaryButton;
+      return 1;
     }
   });
   const _name$0 = dart.privateName(src__gestures__scale, "_name");
+  let C7;
+  let C8;
+  let C9;
+  let C10;
+  let C11;
   src__gestures__scale._ScaleState = class _ScaleState extends core.Object {
     toString() {
       return this[_name$0];
@@ -1115,17 +1497,18 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     ;
   }).prototype = src__gestures__scale._ScaleState.prototype;
   dart.addTypeTests(src__gestures__scale._ScaleState);
+  dart.setLibraryUri(src__gestures__scale._ScaleState, "package:flutter_web/src/gestures/scale.dart");
   dart.setFieldSignature(src__gestures__scale._ScaleState, () => ({
     __proto__: dart.getFields(src__gestures__scale._ScaleState.__proto__),
     index: dart.finalFieldType(core.int),
     [_name$0]: dart.finalFieldType(core.String)
   }));
   dart.defineExtensionMethods(src__gestures__scale._ScaleState, ['toString']);
-  src__gestures__scale._ScaleState.ready = dart.const(new src__gestures__scale._ScaleState.new(0, "_ScaleState.ready"));
-  src__gestures__scale._ScaleState.possible = dart.const(new src__gestures__scale._ScaleState.new(1, "_ScaleState.possible"));
-  src__gestures__scale._ScaleState.accepted = dart.const(new src__gestures__scale._ScaleState.new(2, "_ScaleState.accepted"));
-  src__gestures__scale._ScaleState.started = dart.const(new src__gestures__scale._ScaleState.new(3, "_ScaleState.started"));
-  src__gestures__scale._ScaleState.values = dart.constList([src__gestures__scale._ScaleState.ready, src__gestures__scale._ScaleState.possible, src__gestures__scale._ScaleState.accepted, src__gestures__scale._ScaleState.started], src__gestures__scale._ScaleState);
+  src__gestures__scale._ScaleState.ready = C7 || CT.C7;
+  src__gestures__scale._ScaleState.possible = C8 || CT.C8;
+  src__gestures__scale._ScaleState.accepted = C9 || CT.C9;
+  src__gestures__scale._ScaleState.started = C10 || CT.C10;
+  src__gestures__scale._ScaleState.values = C11 || CT.C11;
   src__gestures__scale.ScaleStartDetails = class ScaleStartDetails extends core.Object {
     get focalPoint() {
       return this[focalPoint$];
@@ -1138,13 +1521,14 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     }
   };
   (src__gestures__scale.ScaleStartDetails.new = function(opts) {
-    let focalPoint = opts && 'focalPoint' in opts ? opts.focalPoint : ui$.Offset.zero;
+    let focalPoint = opts && 'focalPoint' in opts ? opts.focalPoint : C5 || CT.C5;
     this[focalPoint$] = focalPoint;
-    if (!(focalPoint != null)) dart.assertFailed();
+    if (!(focalPoint != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 38, 16, "focalPoint != null");
     ;
   }).prototype = src__gestures__scale.ScaleStartDetails.prototype;
   dart.addTypeTests(src__gestures__scale.ScaleStartDetails);
   const focalPoint$ = Symbol("ScaleStartDetails.focalPoint");
+  dart.setLibraryUri(src__gestures__scale.ScaleStartDetails, "package:flutter_web/src/gestures/scale.dart");
   dart.setFieldSignature(src__gestures__scale.ScaleStartDetails, () => ({
     __proto__: dart.getFields(src__gestures__scale.ScaleStartDetails.__proto__),
     focalPoint: dart.finalFieldType(ui$.Offset)
@@ -1186,21 +1570,21 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     }
   };
   (src__gestures__scale.ScaleUpdateDetails.new = function(opts) {
-    let focalPoint = opts && 'focalPoint' in opts ? opts.focalPoint : ui$.Offset.zero;
-    let scale = opts && 'scale' in opts ? opts.scale : 1.0;
-    let horizontalScale = opts && 'horizontalScale' in opts ? opts.horizontalScale : 1.0;
-    let verticalScale = opts && 'verticalScale' in opts ? opts.verticalScale : 1.0;
-    let rotation = opts && 'rotation' in opts ? opts.rotation : 0.0;
+    let focalPoint = opts && 'focalPoint' in opts ? opts.focalPoint : C5 || CT.C5;
+    let scale = opts && 'scale' in opts ? opts.scale : 1;
+    let horizontalScale = opts && 'horizontalScale' in opts ? opts.horizontalScale : 1;
+    let verticalScale = opts && 'verticalScale' in opts ? opts.verticalScale : 1;
+    let rotation = opts && 'rotation' in opts ? opts.rotation : 0;
     this[focalPoint$0] = focalPoint;
     this[scale$] = scale;
     this[horizontalScale$] = horizontalScale;
     this[verticalScale$] = verticalScale;
     this[rotation$] = rotation;
-    if (!(focalPoint != null)) dart.assertFailed();
-    if (!(scale != null && dart.notNull(scale) >= 0.0)) dart.assertFailed();
-    if (!(horizontalScale != null && dart.notNull(horizontalScale) >= 0.0)) dart.assertFailed();
-    if (!(verticalScale != null && dart.notNull(verticalScale) >= 0.0)) dart.assertFailed();
-    if (!(rotation != null)) dart.assertFailed();
+    if (!(focalPoint != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 61, 16, "focalPoint != null");
+    if (!(scale != null && dart.notNull(scale) >= 0.0)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 62, 16, "scale != null && scale >= 0.0");
+    if (!(horizontalScale != null && dart.notNull(horizontalScale) >= 0.0)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 63, 16, "horizontalScale != null && horizontalScale >= 0.0");
+    if (!(verticalScale != null && dart.notNull(verticalScale) >= 0.0)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 64, 16, "verticalScale != null && verticalScale >= 0.0");
+    if (!(rotation != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 65, 16, "rotation != null");
     ;
   }).prototype = src__gestures__scale.ScaleUpdateDetails.prototype;
   dart.addTypeTests(src__gestures__scale.ScaleUpdateDetails);
@@ -1209,6 +1593,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const horizontalScale$ = Symbol("ScaleUpdateDetails.horizontalScale");
   const verticalScale$ = Symbol("ScaleUpdateDetails.verticalScale");
   const rotation$ = Symbol("ScaleUpdateDetails.rotation");
+  dart.setLibraryUri(src__gestures__scale.ScaleUpdateDetails, "package:flutter_web/src/gestures/scale.dart");
   dart.setFieldSignature(src__gestures__scale.ScaleUpdateDetails, () => ({
     __proto__: dart.getFields(src__gestures__scale.ScaleUpdateDetails.__proto__),
     focalPoint: dart.finalFieldType(ui$.Offset),
@@ -1218,6 +1603,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     rotation: dart.finalFieldType(core.double)
   }));
   dart.defineExtensionMethods(src__gestures__scale.ScaleUpdateDetails, ['toString']);
+  let C12;
   src__gestures__scale.ScaleEndDetails = class ScaleEndDetails extends core.Object {
     get velocity() {
       return this[velocity$];
@@ -1230,13 +1616,14 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     }
   };
   (src__gestures__scale.ScaleEndDetails.new = function(opts) {
-    let velocity = opts && 'velocity' in opts ? opts.velocity : src__gestures__velocity_tracker.Velocity.zero;
+    let velocity = opts && 'velocity' in opts ? opts.velocity : C12 || CT.C12;
     this[velocity$] = velocity;
-    if (!(velocity != null)) dart.assertFailed();
+    if (!(velocity != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 121, 61, "velocity != null");
     ;
   }).prototype = src__gestures__scale.ScaleEndDetails.prototype;
   dart.addTypeTests(src__gestures__scale.ScaleEndDetails);
   const velocity$ = Symbol("ScaleEndDetails.velocity");
+  dart.setLibraryUri(src__gestures__scale.ScaleEndDetails, "package:flutter_web/src/gestures/scale.dart");
   dart.setFieldSignature(src__gestures__scale.ScaleEndDetails, () => ({
     __proto__: dart.getFields(src__gestures__scale.ScaleEndDetails.__proto__),
     velocity: dart.finalFieldType(src__gestures__velocity_tracker.Velocity)
@@ -1244,20 +1631,21 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   dart.defineExtensionMethods(src__gestures__scale.ScaleEndDetails, ['toString']);
   src__gestures__scale._LineBetweenPointers = class _LineBetweenPointers extends core.Object {};
   (src__gestures__scale._LineBetweenPointers.new = function(opts) {
-    let pointerStartLocation = opts && 'pointerStartLocation' in opts ? opts.pointerStartLocation : ui$.Offset.zero;
+    let pointerStartLocation = opts && 'pointerStartLocation' in opts ? opts.pointerStartLocation : C5 || CT.C5;
     let pointerStartId = opts && 'pointerStartId' in opts ? opts.pointerStartId : 0;
-    let pointerEndLocation = opts && 'pointerEndLocation' in opts ? opts.pointerEndLocation : ui$.Offset.zero;
+    let pointerEndLocation = opts && 'pointerEndLocation' in opts ? opts.pointerEndLocation : C5 || CT.C5;
     let pointerEndId = opts && 'pointerEndId' in opts ? opts.pointerEndId : 1;
     this.pointerStartLocation = pointerStartLocation;
     this.pointerStartId = pointerStartId;
     this.pointerEndLocation = pointerEndLocation;
     this.pointerEndId = pointerEndId;
-    if (!(pointerStartLocation != null && pointerEndLocation != null)) dart.assertFailed();
-    if (!(pointerStartId != null && pointerEndId != null)) dart.assertFailed();
-    if (!(pointerStartId != pointerEndId)) dart.assertFailed();
+    if (!(pointerStartLocation != null && pointerEndLocation != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 160, 16, "pointerStartLocation != null && pointerEndLocation != null");
+    if (!(pointerStartId != null && pointerEndId != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 161, 16, "pointerStartId != null && pointerEndId != null");
+    if (!(pointerStartId != pointerEndId)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 162, 16, "pointerStartId != pointerEndId");
     ;
   }).prototype = src__gestures__scale._LineBetweenPointers.prototype;
   dart.addTypeTests(src__gestures__scale._LineBetweenPointers);
+  dart.setLibraryUri(src__gestures__scale._LineBetweenPointers, "package:flutter_web/src/gestures/scale.dart");
   dart.setFieldSignature(src__gestures__scale._LineBetweenPointers, () => ({
     __proto__: dart.getFields(src__gestures__scale._LineBetweenPointers.__proto__),
     pointerStartLocation: dart.finalFieldType(ui$.Offset),
@@ -1292,7 +1680,8 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const _trackedPointers = dart.privateName(src__gestures__recognizer, "_trackedPointers");
   const _team = dart.privateName(src__gestures__recognizer, "_team");
   const _addPointerToArena = dart.privateName(src__gestures__recognizer, "_addPointerToArena");
-  const _kind = dart.privateName(src__gestures__recognizer, "_kind");
+  const _pointerToKind = dart.privateName(src__gestures__recognizer, "_pointerToKind");
+  const _kindFilter = dart.privateName(src__gestures__recognizer, "_kindFilter");
   const GestureArenaMember_DiagnosticableTreeMixin$ = class GestureArenaMember_DiagnosticableTreeMixin extends src__gestures__arena.GestureArenaMember {};
   (GestureArenaMember_DiagnosticableTreeMixin$.new = function() {
   }).prototype = GestureArenaMember_DiagnosticableTreeMixin$.prototype;
@@ -1305,6 +1694,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       super.debugOwner = value;
     }
     addPointer(event) {
+      this[_pointerToKind][$_set](event.pointer, event.kind);
       if (dart.test(this.isPointerAllowed(event))) {
         this.addAllowedPointer(event);
       } else {
@@ -1316,13 +1706,17 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     handleNonAllowedPointer(event) {
     }
     isPointerAllowed(event) {
-      return this[_kind] == null || dart.equals(this[_kind], event.kind);
+      return this[_kindFilter] == null || dart.equals(this[_kindFilter], event.kind);
+    }
+    getKindForPointer(pointer) {
+      if (!dart.test(this[_pointerToKind][$containsKey](pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 142, 12, "_pointerToKind.containsKey(pointer)");
+      return this[_pointerToKind][$_get](pointer);
     }
     dispose() {
     }
     invokeCallback(T, name, callback, opts) {
       let debugReport = opts && 'debugReport' in opts ? opts.debugReport : null;
-      if (!(callback != null)) dart.assertFailed();
+      if (!(callback != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 171, 12, "callback != null");
       let result = null;
       try {
         if (!dart.test(dart.fn(() => {
@@ -1333,16 +1727,15 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
             src__foundation__print.debugPrint(prefix + dart.str(this) + " calling " + dart.str(name) + " callback." + (dart.equals((t1 = report, t1 == null ? null : t1[$isNotEmpty]), true) ? " " + dart.str(report) : ""));
           }
           return true;
-        }, VoidTobool())())) dart.assertFailed();
+        }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 174, 14, "() {\n        if (debugPrintRecognizerCallbacksTrace) {\n          final String report = debugReport != null ? debugReport() : null;\n          // The 19 in the line below is the width of the prefix used by\n          // _debugLogDiagnostic in arena.dart.\n          final String prefix =\n              debugPrintGestureArenaDiagnostics ? ' ' * 19 + '❙ ' : '';\n          debugPrint(\n              '$prefix$this calling $name callback.${report?.isNotEmpty == true ? \" $report\" : \"\"}');\n        }\n        return true;\n      }");
         result = callback();
       } catch (e) {
         let exception = dart.getThrown(e);
         let stack = dart.stackTrace(e);
-        src__foundation__assertions.FlutterError.reportError(new src__foundation__assertions.FlutterErrorDetails.new({exception: exception, stack: stack, library: "gesture", context: "while handling a gesture", informationCollector: dart.fn(information => {
-            information.writeln("Handler: " + dart.str(name));
-            information.writeln("Recognizer:");
-            information.writeln("  " + dart.str(this));
-          }, StringBufferToNull())}));
+        src__foundation__assertions.FlutterError.reportError(new src__foundation__assertions.FlutterErrorDetails.new({exception: exception, stack: stack, library: "gesture", context: new src__foundation__assertions.ErrorDescription.new("while handling a gesture"), informationCollector: dart.fn(() => new (SyncIterableOfDiagnosticsNode()).new((function*() {
+            yield new src__foundation__diagnostics.StringProperty.new("Handler", name);
+            yield new (DiagnosticsPropertyOfGestureRecognizer()).new("Recognizer", this, {style: src__foundation__diagnostics.DiagnosticsTreeStyle.errorProperty});
+          }).bind(this)), VoidToIterableOfDiagnosticsNode())}));
       }
       return result;
     }
@@ -1354,8 +1747,9 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   (src__gestures__recognizer.GestureRecognizer.new = function(opts) {
     let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
     let kind = opts && 'kind' in opts ? opts.kind : null;
+    this[_pointerToKind] = new (IdentityMapOfint$PointerDeviceKind()).new();
     this[debugOwner$] = debugOwner;
-    this[_kind] = kind;
+    this[_kindFilter] = kind;
     ;
   }).prototype = src__gestures__recognizer.GestureRecognizer.prototype;
   dart.addTypeTests(src__gestures__recognizer.GestureRecognizer);
@@ -1366,13 +1760,16 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     addAllowedPointer: dart.fnType(dart.void, [src__gestures__events.PointerDownEvent]),
     handleNonAllowedPointer: dart.fnType(dart.void, [src__gestures__events.PointerDownEvent]),
     isPointerAllowed: dart.fnType(core.bool, [src__gestures__events.PointerDownEvent]),
+    getKindForPointer: dart.fnType(ui$.PointerDeviceKind, [core.int]),
     dispose: dart.fnType(dart.void, []),
     invokeCallback: dart.gFnType(T => [T, [core.String, dart.fnType(T, [])], {debugReport: dart.fnType(core.String, [])}])
   }));
+  dart.setLibraryUri(src__gestures__recognizer.GestureRecognizer, "package:flutter_web/src/gestures/recognizer.dart");
   dart.setFieldSignature(src__gestures__recognizer.GestureRecognizer, () => ({
     __proto__: dart.getFields(src__gestures__recognizer.GestureRecognizer.__proto__),
     debugOwner: dart.finalFieldType(core.Object),
-    [_kind]: dart.finalFieldType(ui$.PointerDeviceKind)
+    [_kindFilter]: dart.finalFieldType(ui$.PointerDeviceKind),
+    [_pointerToKind]: dart.finalFieldType(core.Map$(core.int, ui$.PointerDeviceKind))
   }));
   src__gestures__recognizer.OneSequenceGestureRecognizer = class OneSequenceGestureRecognizer extends src__gestures__recognizer.GestureRecognizer {
     handleNonAllowedPointer(event) {
@@ -1393,17 +1790,17 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       for (let pointer of this[_trackedPointers])
         src__gestures__binding.GestureBinding.instance.pointerRouter.removeRoute(pointer, dart.bind(this, 'handleEvent'));
       this[_trackedPointers].clear();
-      if (!dart.test(this[_entries][$isEmpty])) dart.assertFailed();
+      if (!dart.test(this[_entries][$isEmpty])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 269, 12, "t(_entries.isEmp");
       super.dispose();
     }
     get team() {
       return this[_team];
     }
     set team(value) {
-      if (!(value != null)) dart.assertFailed();
-      if (!dart.test(this[_entries][$isEmpty])) dart.assertFailed();
-      if (!dart.test(this[_trackedPointers][$isEmpty])) dart.assertFailed();
-      if (!(this[_team] == null)) dart.assertFailed();
+      if (!(value != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 288, 12, "t(value != nu");
+      if (!dart.test(this[_entries][$isEmpty])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 289, 12, "t(_entries.isEmp");
+      if (!dart.test(this[_trackedPointers][$isEmpty])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 290, 12, "t(_trackedPointers.isEmp");
+      if (!(this[_team] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 291, 12, "t(_team == nu");
       this[_team] = value;
     }
     [_addPointerToArena](pointer) {
@@ -1413,7 +1810,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     startTrackingPointer(pointer) {
       src__gestures__binding.GestureBinding.instance.pointerRouter.addRoute(pointer, dart.bind(this, 'handleEvent'));
       this[_trackedPointers].add(pointer);
-      if (!!dart.test(this[_entries][$containsValue](pointer))) dart.assertFailed();
+      if (!!dart.test(this[_entries][$containsValue](pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 309, 12, "t(!_entries.containsValue(pointe");
       this[_entries][$_set](pointer, this[_addPointerToArena](pointer));
     }
     stopTrackingPointer(pointer) {
@@ -1455,6 +1852,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getSetters(src__gestures__recognizer.OneSequenceGestureRecognizer.__proto__),
     team: src__gestures__team.GestureArenaTeam
   }));
+  dart.setLibraryUri(src__gestures__recognizer.OneSequenceGestureRecognizer, "package:flutter_web/src/gestures/recognizer.dart");
   dart.setFieldSignature(src__gestures__recognizer.OneSequenceGestureRecognizer, () => ({
     __proto__: dart.getFields(src__gestures__recognizer.OneSequenceGestureRecognizer.__proto__),
     [_entries]: dart.finalFieldType(core.Map$(core.int, src__gestures__arena.GestureArenaEntry)),
@@ -1521,12 +1919,12 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       }
     }
     handleEvent(event) {
-      if (!!dart.equals(this[_state], src__gestures__scale._ScaleState.ready)) dart.assertFailed();
+      if (!!dart.equals(this[_state], src__gestures__scale._ScaleState.ready)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 266, 12, "_state != _ScaleState.ready");
       let didChangeConfiguration = false;
       let shouldStartIfAccepted = false;
       if (src__gestures__events.PointerMoveEvent.is(event)) {
         let tracker = this[_velocityTrackers][$_get](event.pointer);
-        if (!(tracker != null)) dart.assertFailed();
+        if (!(tracker != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 271, 14, "tracker != null");
         if (!dart.test(event.synthesized)) tracker.addPosition(event.timeStamp, event.position);
         this[_pointerLocations][$_set](event.pointer, event.position);
         shouldStartIfAccepted = true;
@@ -1565,7 +1963,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     }
     [_updateLines]() {
       let count = this[_pointerLocations][$keys][$length];
-      if (!(dart.notNull(this[_pointerQueue][$length]) >= dart.notNull(count))) dart.assertFailed();
+      if (!(dart.notNull(this[_pointerQueue][$length]) >= dart.notNull(count))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 328, 12, "_pointerQueue.length >= count");
       if (dart.notNull(count) < 2) {
         this[_initialLine] = this[_currentLine];
       } else if (this[_initialLine] != null && this[_initialLine].pointerStartId == this[_pointerQueue][$_get](0) && this[_initialLine].pointerEndId == this[_pointerQueue][$_get](1)) {
@@ -1584,11 +1982,11 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       if (dart.equals(this[_state], src__gestures__scale._ScaleState.started)) {
         if (this.onEnd != null) {
           let tracker = this[_velocityTrackers][$_get](pointer);
-          if (!(tracker != null)) dart.assertFailed();
+          if (!(tracker != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 364, 16, "tracker != null");
           let velocity = tracker.getVelocity();
           if (dart.test(src__gestures__scale._isFlingGesture(velocity))) {
             let pixelsPerSecond = velocity.pixelsPerSecond;
-            if (dart.notNull(pixelsPerSecond.distanceSquared) > dart.notNull(src__gestures__constants.kMaxFlingVelocity) * dart.notNull(src__gestures__constants.kMaxFlingVelocity)) velocity = new src__gestures__velocity_tracker.Velocity.new({pixelsPerSecond: pixelsPerSecond['/'](pixelsPerSecond.distance)['*'](src__gestures__constants.kMaxFlingVelocity)});
+            if (dart.notNull(pixelsPerSecond.distanceSquared) > 8000 * 8000) velocity = new src__gestures__velocity_tracker.Velocity.new({pixelsPerSecond: pixelsPerSecond['/'](pixelsPerSecond.distance)['*'](8000)});
             this.invokeCallback(dart.void, "onEnd", dart.fn(() => this.onEnd(new src__gestures__scale.ScaleEndDetails.new({velocity: velocity})), VoidTovoid()));
           } else {
             this.invokeCallback(dart.void, "onEnd", dart.fn(() => this.onEnd(new src__gestures__scale.ScaleEndDetails.new({velocity: src__gestures__velocity_tracker.Velocity.zero})), VoidTovoid()));
@@ -1604,7 +2002,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       if (dart.equals(this[_state], src__gestures__scale._ScaleState.possible)) {
         let spanDelta = (dart.notNull(this[_currentSpan]) - dart.notNull(this[_initialSpan]))[$abs]();
         let focalPointDelta = this[_currentFocalPoint]['-'](this[_initialFocalPoint]).distance;
-        if (spanDelta > dart.notNull(src__gestures__constants.kScaleSlop) || dart.notNull(focalPointDelta) > dart.notNull(src__gestures__constants.kPanSlop)) this.resolve(src__gestures__arena.GestureDisposition.accepted);
+        if (spanDelta > 18 || dart.notNull(focalPointDelta) > 36) this.resolve(src__gestures__arena.GestureDisposition.accepted);
       } else if (dart.notNull(this[_state].index) >= dart.notNull(src__gestures__scale._ScaleState.accepted.index)) {
         this.resolve(src__gestures__arena.GestureDisposition.accepted);
       }
@@ -1617,7 +2015,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       }, VoidToNull()));
     }
     [_dispatchOnStartCallbackIfNeeded]() {
-      if (!dart.equals(this[_state], src__gestures__scale._ScaleState.started)) dart.assertFailed();
+      if (!dart.equals(this[_state], src__gestures__scale._ScaleState.started)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 418, 12, "_state == _ScaleState.started");
       if (this.onStart != null) this.invokeCallback(dart.void, "onStart", dart.fn(() => this.onStart(new src__gestures__scale.ScaleStartDetails.new({focalPoint: this[_currentFocalPoint]})), VoidTovoid()));
     }
     acceptGesture(pointer) {
@@ -1631,23 +2029,23 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     }
     didStopTrackingLastPointer(pointer) {
       switch (this[_state]) {
-        case src__gestures__scale._ScaleState.possible:
+        case C8 || CT.C8:
         {
           this.resolve(src__gestures__arena.GestureDisposition.rejected);
           break;
         }
-        case src__gestures__scale._ScaleState.ready:
+        case C7 || CT.C7:
         {
-          if (!false) dart.assertFailed();
+          if (!false) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 444, 16, "false");
           break;
         }
-        case src__gestures__scale._ScaleState.accepted:
+        case C9 || CT.C9:
         {
           break;
         }
-        case src__gestures__scale._ScaleState.started:
+        case C10 || CT.C10:
         {
-          if (!false) dart.assertFailed();
+          if (!false) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 449, 16, "false");
           break;
         }
       }
@@ -1707,6 +2105,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     [_verticalScaleFactor]: core.double,
     debugDescription: core.String
   }));
+  dart.setLibraryUri(src__gestures__scale.ScaleGestureRecognizer, "package:flutter_web/src/gestures/scale.dart");
   dart.setFieldSignature(src__gestures__scale.ScaleGestureRecognizer, () => ({
     __proto__: dart.getFields(src__gestures__scale.ScaleGestureRecognizer.__proto__),
     onStart: dart.fieldType(dart.fnType(dart.void, [src__gestures__scale.ScaleStartDetails])),
@@ -1727,10 +2126,10 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     [_pointerQueue]: dart.fieldType(core.List$(core.int)),
     [_velocityTrackers]: dart.finalFieldType(core.Map$(core.int, src__gestures__velocity_tracker.VelocityTracker))
   }));
-  src__gestures__scale._isFlingGesture = function(velocity) {
-    if (!(velocity != null)) dart.assertFailed();
+  src__gestures__scale._isFlingGesture = function _isFlingGesture(velocity) {
+    if (!(velocity != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart", 142, 10, "velocity != null");
     let speedSquared = velocity.pixelsPerSecond.distanceSquared;
-    return dart.notNull(speedSquared) > dart.notNull(src__gestures__constants.kMinFlingVelocity) * dart.notNull(src__gestures__constants.kMinFlingVelocity);
+    return dart.notNull(speedSquared) > 50 * 50;
   };
   src__gestures__velocity_tracker.Velocity = class Velocity extends core.Object {
     get pixelsPerSecond() {
@@ -1749,8 +2148,8 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       return new src__gestures__velocity_tracker.Velocity.new({pixelsPerSecond: this.pixelsPerSecond['+'](other.pixelsPerSecond)});
     }
     clampMagnitude(minValue, maxValue) {
-      if (!(minValue != null && dart.notNull(minValue) >= 0.0)) dart.assertFailed();
-      if (!(maxValue != null && dart.notNull(maxValue) >= 0.0 && dart.notNull(maxValue) >= dart.notNull(minValue))) dart.assertFailed();
+      if (!(minValue != null && dart.notNull(minValue) >= 0.0)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/velocity_tracker.dart", 53, 12, "minValue != null && minValue >= 0.0");
+      if (!(maxValue != null && dart.notNull(maxValue) >= 0.0 && dart.notNull(maxValue) >= dart.notNull(minValue))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/velocity_tracker.dart", 54, 12, "maxValue != null && maxValue >= 0.0 && maxValue >= minValue");
       let valueSquared = this.pixelsPerSecond.distanceSquared;
       if (dart.notNull(valueSquared) > dart.notNull(maxValue) * dart.notNull(maxValue)) return new src__gestures__velocity_tracker.Velocity.new({pixelsPerSecond: this.pixelsPerSecond['/'](this.pixelsPerSecond.distance)['*'](maxValue)});
       if (dart.notNull(valueSquared) < dart.notNull(minValue) * dart.notNull(minValue)) return new src__gestures__velocity_tracker.Velocity.new({pixelsPerSecond: this.pixelsPerSecond['/'](this.pixelsPerSecond.distance)['*'](minValue)});
@@ -1772,6 +2171,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   (src__gestures__velocity_tracker.Velocity.new = function(opts) {
     let pixelsPerSecond = opts && 'pixelsPerSecond' in opts ? opts.pixelsPerSecond : null;
     this[pixelsPerSecond$] = pixelsPerSecond;
+    if (!(pixelsPerSecond != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/velocity_tracker.dart", 21, 15, "pixelsPerSecond != null");
     ;
   }).prototype = src__gestures__velocity_tracker.Velocity.prototype;
   dart.addTypeTests(src__gestures__velocity_tracker.Velocity);
@@ -1783,6 +2183,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     '+': dart.fnType(src__gestures__velocity_tracker.Velocity, [src__gestures__velocity_tracker.Velocity]),
     clampMagnitude: dart.fnType(src__gestures__velocity_tracker.Velocity, [core.double, core.double])
   }));
+  dart.setLibraryUri(src__gestures__velocity_tracker.Velocity, "package:flutter_web/src/gestures/velocity_tracker.dart");
   dart.setFieldSignature(src__gestures__velocity_tracker.Velocity, () => ({
     __proto__: dart.getFields(src__gestures__velocity_tracker.Velocity.__proto__),
     pixelsPerSecond: dart.finalFieldType(ui$.Offset)
@@ -1791,7 +2192,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   dart.defineExtensionAccessors(src__gestures__velocity_tracker.Velocity, ['hashCode']);
   dart.defineLazy(src__gestures__velocity_tracker.Velocity, {
     /*src__gestures__velocity_tracker.Velocity.zero*/get zero() {
-      return dart.const(new src__gestures__velocity_tracker.Velocity.new({pixelsPerSecond: ui$.Offset.zero}));
+      return C12 || CT.C12;
     }
   });
   src__gestures__velocity_tracker.VelocityEstimate = class VelocityEstimate extends core.Object {
@@ -1820,11 +2221,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       super.offset = value;
     }
     toString() {
-      if (dart.test(src__util.assertionsEnabled)) {
-        return "VelocityEstimate(" + this.pixelsPerSecond.dx[$toStringAsFixed](1) + ", " + this.pixelsPerSecond.dy[$toStringAsFixed](1) + "; offset: " + dart.str(this.offset) + ", " + "duration: " + dart.str(this.duration) + ", confidence: " + this.confidence[$toStringAsFixed](1) + ")";
-      } else {
-        return super[$toString]();
-      }
+      return "VelocityEstimate(" + this.pixelsPerSecond.dx[$toStringAsFixed](1) + ", " + this.pixelsPerSecond.dy[$toStringAsFixed](1) + "; offset: " + dart.str(this.offset) + ", duration: " + dart.str(this.duration) + ", confidence: " + this.confidence[$toStringAsFixed](1) + ")";
     }
   };
   (src__gestures__velocity_tracker.VelocityEstimate.new = function(opts) {
@@ -1836,10 +2233,10 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     this[confidence$] = confidence;
     this[duration$] = duration;
     this[offset$] = offset;
-    if (!(pixelsPerSecond != null)) dart.assertFailed();
-    if (!(confidence != null)) dart.assertFailed();
-    if (!(duration != null)) dart.assertFailed();
-    if (!(offset != null)) dart.assertFailed();
+    if (!(pixelsPerSecond != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/velocity_tracker.dart", 104, 16, "pixelsPerSecond != null");
+    if (!(confidence != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/velocity_tracker.dart", 105, 16, "confidence != null");
+    if (!(duration != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/velocity_tracker.dart", 106, 16, "duration != null");
+    if (!(offset != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/velocity_tracker.dart", 107, 16, "offset != null");
     ;
   }).prototype = src__gestures__velocity_tracker.VelocityEstimate.prototype;
   dart.addTypeTests(src__gestures__velocity_tracker.VelocityEstimate);
@@ -1847,6 +2244,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const confidence$ = Symbol("VelocityEstimate.confidence");
   const duration$ = Symbol("VelocityEstimate.duration");
   const offset$ = Symbol("VelocityEstimate.offset");
+  dart.setLibraryUri(src__gestures__velocity_tracker.VelocityEstimate, "package:flutter_web/src/gestures/velocity_tracker.dart");
   dart.setFieldSignature(src__gestures__velocity_tracker.VelocityEstimate, () => ({
     __proto__: dart.getFields(src__gestures__velocity_tracker.VelocityEstimate.__proto__),
     pixelsPerSecond: dart.finalFieldType(ui$.Offset),
@@ -1863,11 +2261,12 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   (src__gestures__velocity_tracker._PointAtTime.new = function(point, time) {
     this.point = point;
     this.time = time;
-    if (!(point != null)) dart.assertFailed();
-    if (!(time != null)) dart.assertFailed();
+    if (!(point != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/velocity_tracker.dart", 133, 16, "point != null");
+    if (!(time != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/velocity_tracker.dart", 134, 16, "time != null");
     ;
   }).prototype = src__gestures__velocity_tracker._PointAtTime.prototype;
   dart.addTypeTests(src__gestures__velocity_tracker._PointAtTime);
+  dart.setLibraryUri(src__gestures__velocity_tracker._PointAtTime, "package:flutter_web/src/gestures/velocity_tracker.dart");
   dart.setFieldSignature(src__gestures__velocity_tracker._PointAtTime, () => ({
     __proto__: dart.getFields(src__gestures__velocity_tracker._PointAtTime.__proto__),
     time: dart.finalFieldType(core.Duration),
@@ -1879,7 +2278,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   src__gestures__velocity_tracker.VelocityTracker = class VelocityTracker extends core.Object {
     addPosition(time, position) {
       this[_index] = dart.notNull(this[_index]) + 1;
-      if (this[_index] == src__gestures__velocity_tracker.VelocityTracker._historySize) this[_index] = 0;
+      if (this[_index] === 20) this[_index] = 0;
       this[_samples][$_set](this[_index], new src__gestures__velocity_tracker._PointAtTime.new(position, time));
     }
     getVelocityEstimate() {
@@ -1899,17 +2298,17 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
         let age = newestSample.time['-'](sample.time).inMilliseconds[$toDouble]();
         let delta = sample.time['-'](previousSample.time).inMilliseconds[$abs]()[$toDouble]();
         previousSample = sample;
-        if (age > dart.notNull(src__gestures__velocity_tracker.VelocityTracker._horizonMilliseconds) || delta > dart.notNull(src__gestures__velocity_tracker.VelocityTracker._assumePointerMoveStoppedMilliseconds)) break;
+        if (age > 100 || delta > 40) break;
         oldestSample = sample;
         let position = sample.point;
         x[$add](position.dx);
         y[$add](position.dy);
         w[$add](1.0);
         time[$add](-age);
-        index = dart.notNull(index === 0 ? src__gestures__velocity_tracker.VelocityTracker._historySize : index) - 1;
+        index = dart.notNull(index === 0 ? 20 : index) - 1;
         sampleCount = sampleCount + 1;
-      } while (sampleCount < dart.notNull(src__gestures__velocity_tracker.VelocityTracker._historySize));
-      if (sampleCount >= dart.notNull(src__gestures__velocity_tracker.VelocityTracker._minSampleSize)) {
+      } while (sampleCount < 20);
+      if (sampleCount >= 3) {
         let xSolver = new src__gestures__lsq_solver.LeastSquaresSolver.new(time, x, w);
         let xFit = xSolver.solve(2);
         if (xFit != null) {
@@ -1929,7 +2328,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     }
   };
   (src__gestures__velocity_tracker.VelocityTracker.new = function() {
-    this[_samples] = ListOf_PointAtTime().new(src__gestures__velocity_tracker.VelocityTracker._historySize);
+    this[_samples] = ListOf_PointAtTime().new(20);
     this[_index] = 0;
     ;
   }).prototype = src__gestures__velocity_tracker.VelocityTracker.prototype;
@@ -1940,6 +2339,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     getVelocityEstimate: dart.fnType(src__gestures__velocity_tracker.VelocityEstimate, []),
     getVelocity: dart.fnType(src__gestures__velocity_tracker.Velocity, [])
   }));
+  dart.setLibraryUri(src__gestures__velocity_tracker.VelocityTracker, "package:flutter_web/src/gestures/velocity_tracker.dart");
   dart.setFieldSignature(src__gestures__velocity_tracker.VelocityTracker, () => ({
     __proto__: dart.getFields(src__gestures__velocity_tracker.VelocityTracker.__proto__),
     [_samples]: dart.finalFieldType(core.List$(src__gestures__velocity_tracker._PointAtTime)),
@@ -2001,6 +2401,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     '*': dart.fnType(core.double, [src__gestures__lsq_solver._Vector]),
     norm: dart.fnType(core.double, [])
   }));
+  dart.setLibraryUri(src__gestures__lsq_solver._Vector, "package:flutter_web/src/gestures/lsq_solver.dart");
   dart.setFieldSignature(src__gestures__lsq_solver._Vector, () => ({
     __proto__: dart.getFields(src__gestures__lsq_solver._Vector.__proto__),
     [_offset]: dart.finalFieldType(core.int),
@@ -2031,6 +2432,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     set: dart.fnType(dart.void, [core.int, core.int, core.double]),
     getRow: dart.fnType(src__gestures__lsq_solver._Vector, [core.int])
   }));
+  dart.setLibraryUri(src__gestures__lsq_solver._Matrix, "package:flutter_web/src/gestures/lsq_solver.dart");
   dart.setFieldSignature(src__gestures__lsq_solver._Matrix, () => ({
     __proto__: dart.getFields(src__gestures__lsq_solver._Matrix.__proto__),
     [_columns]: dart.finalFieldType(core.int),
@@ -2058,6 +2460,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   dart.addTypeTests(src__gestures__lsq_solver.PolynomialFit);
   const coefficients = Symbol("PolynomialFit.coefficients");
   const confidence = Symbol("PolynomialFit.confidence");
+  dart.setLibraryUri(src__gestures__lsq_solver.PolynomialFit, "package:flutter_web/src/gestures/lsq_solver.dart");
   dart.setFieldSignature(src__gestures__lsq_solver.PolynomialFit, () => ({
     __proto__: dart.getFields(src__gestures__lsq_solver.PolynomialFit.__proto__),
     coefficients: dart.finalFieldType(core.List$(core.double)),
@@ -2105,7 +2508,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
             q.set(j, h, dart.notNull(q.get(j, h)) - dart.notNull(dot) * dart.notNull(q.get(i, h)));
         }
         let norm = q.getRow(j).norm();
-        if (dart.notNull(norm) < 0.000001) {
+        if (dart.notNull(norm) < 1e-10) {
           return null;
         }
         let inverseNorm = 1.0 / dart.notNull(norm);
@@ -2145,7 +2548,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
         let v = dart.notNull(this.y[$_get](h)) - yMean;
         sumSquaredTotal = sumSquaredTotal + dart.notNull(this.w[$_get](h)) * dart.notNull(this.w[$_get](h)) * v * v;
       }
-      result.confidence = sumSquaredTotal <= 0.000001 ? 1.0 : 1.0 - sumSquaredError / sumSquaredTotal;
+      result.confidence = sumSquaredTotal <= 1e-10 ? 1.0 : 1.0 - sumSquaredError / sumSquaredTotal;
       return result;
     }
   };
@@ -2153,8 +2556,8 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     this[x$] = x;
     this[y$] = y;
     this[w$] = w;
-    if (!(x[$length] == y[$length])) dart.assertFailed();
-    if (!(y[$length] == w[$length])) dart.assertFailed();
+    if (!(x[$length] == y[$length])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/lsq_solver.dart", 86, 16, "x.length == y.length");
+    if (!(y[$length] == w[$length])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/lsq_solver.dart", 87, 16, "y.length == w.length");
     ;
   }).prototype = src__gestures__lsq_solver.LeastSquaresSolver.prototype;
   dart.addTypeTests(src__gestures__lsq_solver.LeastSquaresSolver);
@@ -2165,6 +2568,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getMethods(src__gestures__lsq_solver.LeastSquaresSolver.__proto__),
     solve: dart.fnType(src__gestures__lsq_solver.PolynomialFit, [core.int])
   }));
+  dart.setLibraryUri(src__gestures__lsq_solver.LeastSquaresSolver, "package:flutter_web/src/gestures/lsq_solver.dart");
   dart.setFieldSignature(src__gestures__lsq_solver.LeastSquaresSolver, () => ({
     __proto__: dart.getFields(src__gestures__lsq_solver.LeastSquaresSolver.__proto__),
     x: dart.finalFieldType(core.List$(core.double)),
@@ -2172,6 +2576,9 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     w: dart.finalFieldType(core.List$(core.double))
   }));
   const _name$1 = dart.privateName(src__gestures__recognizer, "_name");
+  let C13;
+  let C14;
+  let C15;
   src__gestures__recognizer.DragStartBehavior = class DragStartBehavior extends core.Object {
     toString() {
       return this[_name$1];
@@ -2183,15 +2590,20 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     ;
   }).prototype = src__gestures__recognizer.DragStartBehavior.prototype;
   dart.addTypeTests(src__gestures__recognizer.DragStartBehavior);
+  dart.setLibraryUri(src__gestures__recognizer.DragStartBehavior, "package:flutter_web/src/gestures/recognizer.dart");
   dart.setFieldSignature(src__gestures__recognizer.DragStartBehavior, () => ({
     __proto__: dart.getFields(src__gestures__recognizer.DragStartBehavior.__proto__),
     index: dart.finalFieldType(core.int),
     [_name$1]: dart.finalFieldType(core.String)
   }));
   dart.defineExtensionMethods(src__gestures__recognizer.DragStartBehavior, ['toString']);
-  src__gestures__recognizer.DragStartBehavior.down = dart.const(new src__gestures__recognizer.DragStartBehavior.new(0, "DragStartBehavior.down"));
-  src__gestures__recognizer.DragStartBehavior.start = dart.const(new src__gestures__recognizer.DragStartBehavior.new(1, "DragStartBehavior.start"));
-  src__gestures__recognizer.DragStartBehavior.values = dart.constList([src__gestures__recognizer.DragStartBehavior.down, src__gestures__recognizer.DragStartBehavior.start], src__gestures__recognizer.DragStartBehavior);
+  src__gestures__recognizer.DragStartBehavior.down = C13 || CT.C13;
+  src__gestures__recognizer.DragStartBehavior.start = C14 || CT.C14;
+  src__gestures__recognizer.DragStartBehavior.values = C15 || CT.C15;
+  let C16;
+  let C17;
+  let C18;
+  let C19;
   src__gestures__recognizer.GestureRecognizerState = class GestureRecognizerState extends core.Object {
     toString() {
       return this[_name$1];
@@ -2203,16 +2615,17 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     ;
   }).prototype = src__gestures__recognizer.GestureRecognizerState.prototype;
   dart.addTypeTests(src__gestures__recognizer.GestureRecognizerState);
+  dart.setLibraryUri(src__gestures__recognizer.GestureRecognizerState, "package:flutter_web/src/gestures/recognizer.dart");
   dart.setFieldSignature(src__gestures__recognizer.GestureRecognizerState, () => ({
     __proto__: dart.getFields(src__gestures__recognizer.GestureRecognizerState.__proto__),
     index: dart.finalFieldType(core.int),
     [_name$1]: dart.finalFieldType(core.String)
   }));
   dart.defineExtensionMethods(src__gestures__recognizer.GestureRecognizerState, ['toString']);
-  src__gestures__recognizer.GestureRecognizerState.ready = dart.const(new src__gestures__recognizer.GestureRecognizerState.new(0, "GestureRecognizerState.ready"));
-  src__gestures__recognizer.GestureRecognizerState.possible = dart.const(new src__gestures__recognizer.GestureRecognizerState.new(1, "GestureRecognizerState.possible"));
-  src__gestures__recognizer.GestureRecognizerState.defunct = dart.const(new src__gestures__recognizer.GestureRecognizerState.new(2, "GestureRecognizerState.defunct"));
-  src__gestures__recognizer.GestureRecognizerState.values = dart.constList([src__gestures__recognizer.GestureRecognizerState.ready, src__gestures__recognizer.GestureRecognizerState.possible, src__gestures__recognizer.GestureRecognizerState.defunct], src__gestures__recognizer.GestureRecognizerState);
+  src__gestures__recognizer.GestureRecognizerState.ready = C16 || CT.C16;
+  src__gestures__recognizer.GestureRecognizerState.possible = C17 || CT.C17;
+  src__gestures__recognizer.GestureRecognizerState.defunct = C18 || CT.C18;
+  src__gestures__recognizer.GestureRecognizerState.values = C19 || CT.C19;
   const _gestureAccepted = dart.privateName(src__gestures__recognizer, "_gestureAccepted");
   const _timer = dart.privateName(src__gestures__recognizer, "_timer");
   const _getDistance = dart.privateName(src__gestures__recognizer, "_getDistance");
@@ -2260,11 +2673,11 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
         this.state = src__gestures__recognizer.GestureRecognizerState.possible;
         this.primaryPointer = event.pointer;
         this.initialPosition = event.position;
-        if (this.deadline != null) this[_timer] = async.Timer.new(this.deadline, dart.bind(this, 'didExceedDeadline'));
+        if (this.deadline != null) this[_timer] = async.Timer.new(this.deadline, dart.fn(() => this.didExceedDeadlineWithEvent(event), VoidTovoid()));
       }
     }
     handleEvent(event) {
-      if (!!dart.equals(this.state, src__gestures__recognizer.GestureRecognizerState.ready)) dart.assertFailed();
+      if (!!dart.equals(this.state, src__gestures__recognizer.GestureRecognizerState.ready)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 441, 12, "t(state != GestureRecognizerState.rea");
       if (dart.equals(this.state, src__gestures__recognizer.GestureRecognizerState.possible) && event.pointer == this.primaryPointer) {
         let isPreAcceptSlopPastTolerance = !dart.test(this[_gestureAccepted]) && this.preAcceptSlopTolerance != null && dart.notNull(this[_getDistance](event)) > dart.notNull(this.preAcceptSlopTolerance);
         let isPostAcceptSlopPastTolerance = dart.test(this[_gestureAccepted]) && this.postAcceptSlopTolerance != null && dart.notNull(this[_getDistance](event)) > dart.notNull(this.postAcceptSlopTolerance);
@@ -2278,7 +2691,10 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       this.stopTrackingIfPointerNoLongerDown(event);
     }
     didExceedDeadline() {
-      if (!(this.deadline == null)) dart.assertFailed();
+      if (!(this.deadline == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 472, 12, "t(deadline == nu");
+    }
+    didExceedDeadlineWithEvent(event) {
+      this.didExceedDeadline();
     }
     acceptGesture(pointer) {
       this[_gestureAccepted] = true;
@@ -2290,7 +2706,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       }
     }
     didStopTrackingLastPointer(pointer) {
-      if (!!dart.equals(this.state, src__gestures__recognizer.GestureRecognizerState.ready)) dart.assertFailed();
+      if (!!dart.equals(this.state, src__gestures__recognizer.GestureRecognizerState.ready)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 500, 12, "t(state != GestureRecognizerState.rea");
       this[_stopTimer]();
       this.state = src__gestures__recognizer.GestureRecognizerState.ready;
     }
@@ -2315,8 +2731,8 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   };
   (src__gestures__recognizer.PrimaryPointerGestureRecognizer.new = function(opts) {
     let deadline = opts && 'deadline' in opts ? opts.deadline : null;
-    let preAcceptSlopTolerance = opts && 'preAcceptSlopTolerance' in opts ? opts.preAcceptSlopTolerance : src__gestures__constants.kTouchSlop;
-    let postAcceptSlopTolerance = opts && 'postAcceptSlopTolerance' in opts ? opts.postAcceptSlopTolerance : src__gestures__constants.kTouchSlop;
+    let preAcceptSlopTolerance = opts && 'preAcceptSlopTolerance' in opts ? opts.preAcceptSlopTolerance : 18;
+    let postAcceptSlopTolerance = opts && 'postAcceptSlopTolerance' in opts ? opts.postAcceptSlopTolerance : 18;
     let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
     let kind = opts && 'kind' in opts ? opts.kind : null;
     this[state] = src__gestures__recognizer.GestureRecognizerState.ready;
@@ -2327,8 +2743,8 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     this[deadline$] = deadline;
     this[preAcceptSlopTolerance$] = preAcceptSlopTolerance;
     this[postAcceptSlopTolerance$] = postAcceptSlopTolerance;
-    if (!(preAcceptSlopTolerance == null || dart.notNull(preAcceptSlopTolerance) >= 0)) dart.assertFailed("The preAcceptSlopTolerance must be positive or null");
-    if (!(postAcceptSlopTolerance == null || dart.notNull(postAcceptSlopTolerance) >= 0)) dart.assertFailed("The postAcceptSlopTolerance must be positive or null");
+    if (!(preAcceptSlopTolerance == null || dart.notNull(preAcceptSlopTolerance) >= 0)) dart.assertFailed("The preAcceptSlopTolerance must be positive or null", "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 379, 11, "  preAcceptSlopTolerance == null || preAcceptSlopTolerance >=");
+    if (!(postAcceptSlopTolerance == null || dart.notNull(postAcceptSlopTolerance) >= 0)) dart.assertFailed("The postAcceptSlopTolerance must be positive or null", "org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart", 383, 11, "  postAcceptSlopTolerance == null || postAcceptSlopTolerance >=");
     src__gestures__recognizer.PrimaryPointerGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
     ;
   }).prototype = src__gestures__recognizer.PrimaryPointerGestureRecognizer.prototype;
@@ -2343,10 +2759,12 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getMethods(src__gestures__recognizer.PrimaryPointerGestureRecognizer.__proto__),
     handleEvent: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
     didExceedDeadline: dart.fnType(dart.void, []),
+    didExceedDeadlineWithEvent: dart.fnType(dart.void, [src__gestures__events.PointerDownEvent]),
     didStopTrackingLastPointer: dart.fnType(dart.void, [core.int]),
     [_stopTimer]: dart.fnType(dart.void, []),
     [_getDistance]: dart.fnType(core.double, [src__gestures__events.PointerEvent])
   }));
+  dart.setLibraryUri(src__gestures__recognizer.PrimaryPointerGestureRecognizer, "package:flutter_web/src/gestures/recognizer.dart");
   dart.setFieldSignature(src__gestures__recognizer.PrimaryPointerGestureRecognizer, () => ({
     __proto__: dart.getFields(src__gestures__recognizer.PrimaryPointerGestureRecognizer.__proto__),
     deadline: dart.finalFieldType(core.Duration),
@@ -2361,23 +2779,23 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const _combiner$ = dart.privateName(src__gestures__team, "_combiner");
   const _member$0 = dart.privateName(src__gestures__team, "_member");
   const _resolve$ = dart.privateName(src__gestures__team, "_resolve");
-  let const$;
+  let C20;
   const _arena = dart.privateName(src__gestures__team, "_arena");
-  let const$0;
+  let C21;
   const _pointer$0 = dart.privateName(src__gestures__team, "_pointer");
-  let const$1;
+  let C22;
   src__gestures__team._CombiningGestureArenaEntry = class _CombiningGestureArenaEntry extends core.Object {
     resolve(disposition) {
       this[_combiner$][_resolve$](this[_member$0], disposition);
     }
     get [_member$]() {
-      return src__gestures__arena.GestureArenaMember._check(this[$noSuchMethod](new core._Invocation.getter(const$ || (const$ = dart.const(new _js_helper.PrivateSymbol.new('_member', _member$0))))));
+      return src__gestures__arena.GestureArenaMember._check(this[$noSuchMethod](new core._Invocation.getter(C20 || CT.C20)));
     }
     get [_arena$]() {
-      return src__gestures__arena.GestureArenaManager._check(this[$noSuchMethod](new core._Invocation.getter(const$0 || (const$0 = dart.const(new _js_helper.PrivateSymbol.new('_arena', _arena))))));
+      return src__gestures__arena.GestureArenaManager._check(this[$noSuchMethod](new core._Invocation.getter(C21 || CT.C21)));
     }
     get [_pointer$]() {
-      return core.int._check(this[$noSuchMethod](new core._Invocation.getter(const$1 || (const$1 = dart.const(new _js_helper.PrivateSymbol.new('_pointer', _pointer$0))))));
+      return core.int._check(this[$noSuchMethod](new core._Invocation.getter(C22 || CT.C22)));
     }
   };
   (src__gestures__team._CombiningGestureArenaEntry.new = function(_combiner, _member) {
@@ -2397,6 +2815,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     [_arena$]: src__gestures__arena.GestureArenaManager,
     [_pointer$]: core.int
   }));
+  dart.setLibraryUri(src__gestures__team._CombiningGestureArenaEntry, "package:flutter_web/src/gestures/team.dart");
   dart.setFieldSignature(src__gestures__team._CombiningGestureArenaEntry, () => ({
     __proto__: dart.getFields(src__gestures__team._CombiningGestureArenaEntry.__proto__),
     [_combiner$]: dart.finalFieldType(src__gestures__team._CombiningGestureArenaMember),
@@ -2413,8 +2832,8 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   src__gestures__team._CombiningGestureArenaMember = class _CombiningGestureArenaMember extends src__gestures__arena.GestureArenaMember {
     acceptGesture(pointer) {
       let t2;
-      if (!(this[_pointer$0] == pointer)) dart.assertFailed();
-      if (!(this[_winner] != null || dart.test(this[_members][$isNotEmpty]))) dart.assertFailed();
+      if (!(this[_pointer$0] == pointer)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/team.dart", 33, 12, "_pointer == pointer");
+      if (!(this[_winner] != null || dart.test(this[_members][$isNotEmpty]))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/team.dart", 34, 12, "_winner != null || _members.isNotEmpty");
       this[_close]();
       this[_winner] == null ? this[_winner] = (t2 = this[_owner$].captain, t2 == null ? this[_members][$_get](0) : t2) : null;
       for (let member of this[_members]) {
@@ -2423,20 +2842,20 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       this[_winner].acceptGesture(pointer);
     }
     rejectGesture(pointer) {
-      if (!(this[_pointer$0] == pointer)) dart.assertFailed();
+      if (!(this[_pointer$0] == pointer)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/team.dart", 45, 12, "_pointer == pointer");
       this[_close]();
       for (let member of this[_members])
         member.rejectGesture(pointer);
     }
     [_close]() {
-      if (!!dart.test(this[_resolved])) dart.assertFailed();
+      if (!!dart.test(this[_resolved])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/team.dart", 51, 12, "!_resolved");
       this[_resolved] = true;
       let combiner = this[_owner$][_combiners][$remove](this[_pointer$0]);
-      if (!dart.equals(combiner, this)) dart.assertFailed();
+      if (!dart.equals(combiner, this)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/team.dart", 55, 12, "combiner == this");
     }
     [_add](pointer, member) {
-      if (!!dart.test(this[_resolved])) dart.assertFailed();
-      if (!(this[_pointer$0] == pointer)) dart.assertFailed();
+      if (!!dart.test(this[_resolved])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/team.dart", 59, 12, "!_resolved");
+      if (!(this[_pointer$0] == pointer)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/team.dart", 60, 12, "_pointer == pointer");
       this[_members][$add](member);
       this[_entry] == null ? this[_entry] = src__gestures__binding.GestureBinding.instance.gestureArena.add(pointer, this) : null;
       return new src__gestures__team._CombiningGestureArenaEntry.new(this, member);
@@ -2449,7 +2868,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
         member.rejectGesture(this[_pointer$0]);
         if (dart.test(this[_members][$isEmpty])) this[_entry].resolve(disposition);
       } else {
-        if (!dart.equals(disposition, src__gestures__arena.GestureDisposition.accepted)) dart.assertFailed();
+        if (!dart.equals(disposition, src__gestures__arena.GestureDisposition.accepted)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/team.dart", 73, 14, "disposition == GestureDisposition.accepted");
         this[_winner] == null ? this[_winner] = (t2 = this[_owner$].captain, t2 == null ? member : t2) : null;
         this[_entry].resolve(disposition);
       }
@@ -2473,6 +2892,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     [_add]: dart.fnType(src__gestures__arena.GestureArenaEntry, [core.int, src__gestures__arena.GestureArenaMember]),
     [_resolve$]: dart.fnType(dart.void, [src__gestures__arena.GestureArenaMember, src__gestures__arena.GestureDisposition])
   }));
+  dart.setLibraryUri(src__gestures__team._CombiningGestureArenaMember, "package:flutter_web/src/gestures/team.dart");
   dart.setFieldSignature(src__gestures__team._CombiningGestureArenaMember, () => ({
     __proto__: dart.getFields(src__gestures__team._CombiningGestureArenaMember.__proto__),
     [_owner$]: dart.finalFieldType(src__gestures__team.GestureArenaTeam),
@@ -2505,6 +2925,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getMethods(src__gestures__team.GestureArenaTeam.__proto__),
     add: dart.fnType(src__gestures__arena.GestureArenaEntry, [core.int, src__gestures__arena.GestureArenaMember])
   }));
+  dart.setLibraryUri(src__gestures__team.GestureArenaTeam, "package:flutter_web/src/gestures/team.dart");
   dart.setFieldSignature(src__gestures__team.GestureArenaTeam, () => ({
     __proto__: dart.getFields(src__gestures__team.GestureArenaTeam.__proto__),
     [_combiners]: dart.finalFieldType(core.Map$(core.int, src__gestures__team._CombiningGestureArenaMember)),
@@ -2557,15 +2978,15 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       this[_pendingPointerEvents].addFirst(new src__gestures__events.PointerCancelEvent.new({pointer: pointer}));
     }
     [_flushPointerEventQueue]() {
-      if (!!dart.test(this.locked)) dart.assertFailed();
+      if (!!dart.test(this.locked)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/binding.dart", 102, 12, "!locked");
       while (dart.test(this[_pendingPointerEvents][$isNotEmpty]))
         this[_handlePointerEvent](this[_pendingPointerEvents].removeFirst());
     }
     [_handlePointerEvent](event) {
-      if (!!dart.test(this.locked)) dart.assertFailed();
+      if (!!dart.test(this.locked)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/binding.dart", 125, 12, "!locked");
       let hitTestResult = null;
       if (src__gestures__events.PointerDownEvent.is(event) || src__gestures__events.PointerSignalEvent.is(event)) {
-        if (!!dart.test(this[_hitTests][$containsKey](event.pointer))) dart.assertFailed();
+        if (!!dart.test(this[_hitTests][$containsKey](event.pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/binding.dart", 128, 14, "!_hitTests.containsKey(event.pointer)");
         hitTestResult = new src__gestures__hit_test.HitTestResult.new();
         this.hitTest(hitTestResult, event.position);
         if (src__gestures__events.PointerDownEvent.is(event)) {
@@ -2574,7 +2995,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
         if (!dart.test(dart.fn(() => {
           if (dart.test(src__gestures__debug.debugPrintHitTestResults)) src__foundation__print.debugPrint(dart.str(event) + ": " + dart.str(hitTestResult));
           return true;
-        }, VoidTobool())())) dart.assertFailed();
+        }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/binding.dart", 134, 14, "() {\n        if (debugPrintHitTestResults) debugPrint('$event: $hitTestResult');\n        return true;\n      }()");
       } else if (src__gestures__events.PointerUpEvent.is(event) || src__gestures__events.PointerCancelEvent.is(event)) {
         hitTestResult = this[_hitTests][$remove](event.pointer);
       } else if (dart.test(event.down)) {
@@ -2583,7 +3004,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       if (!dart.test(dart.fn(() => {
         if (dart.test(src__gestures__debug.debugPrintMouseHoverEvents) && src__gestures__events.PointerHoverEvent.is(event)) src__foundation__print.debugPrint(dart.str(event));
         return true;
-      }, VoidTobool())())) dart.assertFailed();
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/binding.dart", 148, 12, "() {\n      if (debugPrintMouseHoverEvents && event is PointerHoverEvent)\n        debugPrint('$event');\n      return true;\n    }()");
       if (hitTestResult != null || src__gestures__events.PointerHoverEvent.is(event) || src__gestures__events.PointerAddedEvent.is(event) || src__gestures__events.PointerRemovedEvent.is(event)) {
         this.dispatchEvent(event, hitTestResult);
       }
@@ -2592,18 +3013,17 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       result.add(new src__gestures__hit_test.HitTestEntry.new(this));
     }
     dispatchEvent(event, hitTestResult) {
-      if (!!dart.test(this.locked)) dart.assertFailed();
+      if (!!dart.test(this.locked)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/binding.dart", 175, 12, "!locked");
       if (hitTestResult == null) {
-        if (!(src__gestures__events.PointerHoverEvent.is(event) || src__gestures__events.PointerAddedEvent.is(event) || src__gestures__events.PointerRemovedEvent.is(event))) dart.assertFailed();
+        if (!(src__gestures__events.PointerHoverEvent.is(event) || src__gestures__events.PointerAddedEvent.is(event) || src__gestures__events.PointerRemovedEvent.is(event))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/binding.dart", 179, 14, "event is PointerHoverEvent ||\n          event is PointerAddedEvent ||\n          event is PointerRemovedEvent");
         try {
           this.pointerRouter.route(event);
         } catch (e) {
           let exception = dart.getThrown(e);
           let stack = dart.stackTrace(e);
-          src__foundation__assertions.FlutterError.reportError(new src__gestures__binding.FlutterErrorDetailsForPointerEventDispatcher.new({exception: exception, stack: stack, library: "gesture library", context: "while dispatching a non-hit-tested pointer event", event: event, hitTestEntry: null, informationCollector: dart.fn(information => {
-              information.writeln("Event:");
-              information.writeln("  " + dart.str(event));
-            }, StringBufferToNull())}));
+          src__foundation__assertions.FlutterError.reportError(new src__gestures__binding.FlutterErrorDetailsForPointerEventDispatcher.new({exception: exception, stack: stack, library: "gesture library", context: new src__foundation__assertions.ErrorDescription.new("while dispatching a non-hit-tested pointer event"), event: event, hitTestEntry: null, informationCollector: dart.fn(() => new (SyncIterableOfDiagnosticsPropertyOfPointerEvent()).new(function*() {
+              yield new (DiagnosticsPropertyOfPointerEvent()).new("Event", event, {style: src__foundation__diagnostics.DiagnosticsTreeStyle.errorProperty});
+            }), VoidToIterableOfDiagnosticsPropertyOfPointerEvent())}));
         }
         return;
       }
@@ -2613,12 +3033,10 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
         } catch (e$) {
           let exception = dart.getThrown(e$);
           let stack = dart.stackTrace(e$);
-          src__foundation__assertions.FlutterError.reportError(new src__gestures__binding.FlutterErrorDetailsForPointerEventDispatcher.new({exception: exception, stack: stack, library: "gesture library", context: "while dispatching a pointer event", event: event, hitTestEntry: entry, informationCollector: dart.fn(information => {
-              information.writeln("Event:");
-              information.writeln("  " + dart.str(event));
-              information.writeln("Target:");
-              information.write("  " + dart.str(entry.target));
-            }, StringBufferToNull())}));
+          src__foundation__assertions.FlutterError.reportError(new src__gestures__binding.FlutterErrorDetailsForPointerEventDispatcher.new({exception: exception, stack: stack, library: "gesture library", context: new src__foundation__assertions.ErrorDescription.new("while dispatching a pointer event"), event: event, hitTestEntry: entry, informationCollector: dart.fn(() => new (SyncIterableOfDiagnosticsPropertyOfObject()).new(function*() {
+              yield new (DiagnosticsPropertyOfPointerEvent()).new("Event", event, {style: src__foundation__diagnostics.DiagnosticsTreeStyle.errorProperty});
+              yield new (DiagnosticsPropertyOfHitTestTarget()).new("Target", entry.target, {style: src__foundation__diagnostics.DiagnosticsTreeStyle.errorProperty});
+            }), VoidToIterableOfDiagnosticsPropertyOfObject())}));
         }
       }
     }
@@ -2655,6 +3073,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     dispatchEvent: dart.fnType(dart.void, [src__gestures__events.PointerEvent, src__gestures__hit_test.HitTestResult]),
     handleEvent: dart.fnType(dart.void, [src__gestures__events.PointerEvent, src__gestures__hit_test.HitTestEntry])
   }));
+  dart.setLibraryUri(src__gestures__binding.GestureBinding, "package:flutter_web/src/gestures/binding.dart");
   dart.setFieldSignature(src__gestures__binding.GestureBinding, () => ({
     __proto__: dart.getFields(src__gestures__binding.GestureBinding.__proto__),
     [_pendingPointerEvents]: dart.finalFieldType(collection.Queue$(src__gestures__events.PointerEvent)),
@@ -2700,6 +3119,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   dart.addTypeTests(src__gestures__binding.FlutterErrorDetailsForPointerEventDispatcher);
   const event$0 = Symbol("FlutterErrorDetailsForPointerEventDispatcher.event");
   const hitTestEntry$ = Symbol("FlutterErrorDetailsForPointerEventDispatcher.hitTestEntry");
+  dart.setLibraryUri(src__gestures__binding.FlutterErrorDetailsForPointerEventDispatcher, "package:flutter_web/src/gestures/binding.dart");
   dart.setFieldSignature(src__gestures__binding.FlutterErrorDetailsForPointerEventDispatcher, () => ({
     __proto__: dart.getFields(src__gestures__binding.FlutterErrorDetailsForPointerEventDispatcher.__proto__),
     event: dart.finalFieldType(src__gestures__events.PointerEvent),
@@ -2709,9 +3129,9 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const _currentEvent = dart.privateName(src__gestures__pointer_signal_resolver, "_currentEvent");
   src__gestures__pointer_signal_resolver.PointerSignalResolver = class PointerSignalResolver extends core.Object {
     register(event, callback) {
-      if (!(event != null)) dart.assertFailed();
-      if (!(callback != null)) dart.assertFailed();
-      if (!(this[_currentEvent] == null || dart.equals(this[_currentEvent], event))) dart.assertFailed();
+      if (!(event != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/pointer_signal_resolver.dart", 32, 12, "event != null");
+      if (!(callback != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/pointer_signal_resolver.dart", 33, 12, "callback != null");
+      if (!(this[_currentEvent] == null || dart.equals(this[_currentEvent], event))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/pointer_signal_resolver.dart", 34, 12, "_currentEvent == null || _currentEvent == event");
       if (this[_firstRegisteredCallback] != null) {
         return;
       }
@@ -2720,19 +3140,18 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     }
     resolve(event) {
       if (this[_firstRegisteredCallback] == null) {
-        if (!(this[_currentEvent] == null)) dart.assertFailed();
+        if (!(this[_currentEvent] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/pointer_signal_resolver.dart", 49, 14, "_currentEvent == null");
         return;
       }
-      if (!dart.equals(this[_currentEvent], event)) dart.assertFailed();
+      if (!dart.equals(this[_currentEvent], event)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/pointer_signal_resolver.dart", 52, 12, "_currentEvent == event");
       try {
         this[_firstRegisteredCallback](event);
       } catch (e) {
         let exception = dart.getThrown(e);
         let stack = dart.stackTrace(e);
-        src__foundation__assertions.FlutterError.reportError(new src__foundation__assertions.FlutterErrorDetails.new({exception: exception, stack: stack, library: "gesture library", context: "while resolving a PointerSignalEvent", informationCollector: dart.fn(information => {
-            information.writeln("Event:");
-            information.write("  " + dart.str(event));
-          }, StringBufferToNull())}));
+        src__foundation__assertions.FlutterError.reportError(new src__foundation__assertions.FlutterErrorDetails.new({exception: exception, stack: stack, library: "gesture library", context: new src__foundation__assertions.ErrorDescription.new("while resolving a PointerSignalEvent"), informationCollector: dart.fn(() => new (SyncIterableOfDiagnosticsPropertyOfPointerSignalEvent()).new(function*() {
+            yield new (DiagnosticsPropertyOfPointerSignalEvent()).new("Event", event, {style: src__foundation__diagnostics.DiagnosticsTreeStyle.errorProperty});
+          }), VoidToIterableOfDiagnosticsPropertyOfPointerSignalEvent())}));
       }
       this[_firstRegisteredCallback] = null;
       this[_currentEvent] = null;
@@ -2749,6 +3168,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     register: dart.fnType(dart.void, [src__gestures__events.PointerSignalEvent, dart.fnType(dart.void, [src__gestures__events.PointerSignalEvent])]),
     resolve: dart.fnType(dart.void, [src__gestures__events.PointerSignalEvent])
   }));
+  dart.setLibraryUri(src__gestures__pointer_signal_resolver.PointerSignalResolver, "package:flutter_web/src/gestures/pointer_signal_resolver.dart");
   dart.setFieldSignature(src__gestures__pointer_signal_resolver.PointerSignalResolver, () => ({
     __proto__: dart.getFields(src__gestures__pointer_signal_resolver.PointerSignalResolver.__proto__),
     [_firstRegisteredCallback]: dart.fieldType(dart.fnType(dart.void, [src__gestures__events.PointerSignalEvent])),
@@ -2762,6 +3182,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   (src__gestures__hit_test.HitTestable[dart.mixinNew] = function() {
   }).prototype = src__gestures__hit_test.HitTestable.prototype;
   dart.addTypeTests(src__gestures__hit_test.HitTestable);
+  dart.setLibraryUri(src__gestures__hit_test.HitTestable, "package:flutter_web/src/gestures/hit_test.dart");
   src__gestures__hit_test.HitTestDispatcher = class HitTestDispatcher extends core.Object {
     static __() {
       return null;
@@ -2770,6 +3191,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   (src__gestures__hit_test.HitTestDispatcher[dart.mixinNew] = function() {
   }).prototype = src__gestures__hit_test.HitTestDispatcher.prototype;
   dart.addTypeTests(src__gestures__hit_test.HitTestDispatcher);
+  dart.setLibraryUri(src__gestures__hit_test.HitTestDispatcher, "package:flutter_web/src/gestures/hit_test.dart");
   src__gestures__hit_test.HitTestTarget = class HitTestTarget extends core.Object {
     static __() {
       return null;
@@ -2778,6 +3200,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   (src__gestures__hit_test.HitTestTarget[dart.mixinNew] = function() {
   }).prototype = src__gestures__hit_test.HitTestTarget.prototype;
   dart.addTypeTests(src__gestures__hit_test.HitTestTarget);
+  dart.setLibraryUri(src__gestures__hit_test.HitTestTarget, "package:flutter_web/src/gestures/hit_test.dart");
   src__gestures__hit_test.HitTestEntry = class HitTestEntry extends core.Object {
     get target() {
       return this[target$];
@@ -2795,6 +3218,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   }).prototype = src__gestures__hit_test.HitTestEntry.prototype;
   dart.addTypeTests(src__gestures__hit_test.HitTestEntry);
   const target$ = Symbol("HitTestEntry.target");
+  dart.setLibraryUri(src__gestures__hit_test.HitTestEntry, "package:flutter_web/src/gestures/hit_test.dart");
   dart.setFieldSignature(src__gestures__hit_test.HitTestEntry, () => ({
     __proto__: dart.getFields(src__gestures__hit_test.HitTestEntry.__proto__),
     target: dart.finalFieldType(src__gestures__hit_test.HitTestTarget)
@@ -2803,7 +3227,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const _path = dart.privateName(src__gestures__hit_test, "_path");
   src__gestures__hit_test.HitTestResult = class HitTestResult extends core.Object {
     get path() {
-      return ListOfHitTestEntry().unmodifiable(this[_path]);
+      return this[_path];
     }
     add(entry) {
       this[_path][$add](entry);
@@ -2816,10 +3240,12 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       }
     }
   };
-  (src__gestures__hit_test.HitTestResult.new = function(opts) {
-    let t5;
-    let path = opts && 'path' in opts ? opts.path : null;
-    this[_path] = (t5 = path, t5 == null ? JSArrayOfHitTestEntry().of([]) : t5);
+  (src__gestures__hit_test.HitTestResult.new = function() {
+    this[_path] = JSArrayOfHitTestEntry().of([]);
+    ;
+  }).prototype = src__gestures__hit_test.HitTestResult.prototype;
+  (src__gestures__hit_test.HitTestResult.wrap = function(result) {
+    this[_path] = result[_path];
     ;
   }).prototype = src__gestures__hit_test.HitTestResult.prototype;
   dart.addTypeTests(src__gestures__hit_test.HitTestResult);
@@ -2829,8 +3255,9 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   }));
   dart.setGetterSignature(src__gestures__hit_test.HitTestResult, () => ({
     __proto__: dart.getGetters(src__gestures__hit_test.HitTestResult.__proto__),
-    path: core.List$(src__gestures__hit_test.HitTestEntry)
+    path: core.Iterable$(src__gestures__hit_test.HitTestEntry)
   }));
+  dart.setLibraryUri(src__gestures__hit_test.HitTestResult, "package:flutter_web/src/gestures/hit_test.dart");
   dart.setFieldSignature(src__gestures__hit_test.HitTestResult, () => ({
     __proto__: dart.getFields(src__gestures__hit_test.HitTestResult.__proto__),
     [_path]: dart.finalFieldType(core.List$(src__gestures__hit_test.HitTestEntry))
@@ -2850,11 +3277,11 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       return this[_down];
     }
     setDown() {
-      if (!!dart.test(this[_down])) dart.assertFailed();
+      if (!!dart.test(this[_down])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 27, 12, "!_down");
       this[_down] = true;
     }
     setUp() {
-      if (!dart.test(this[_down])) dart.assertFailed();
+      if (!dart.test(this[_down])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 32, 12, "_down");
       this[_down] = false;
     }
     deltaTo(to) {
@@ -2883,6 +3310,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     pointer: core.int,
     down: core.bool
   }));
+  dart.setLibraryUri(src__gestures__converter._PointerState, "package:flutter_web/src/gestures/converter.dart");
   dart.setFieldSignature(src__gestures__converter._PointerState, () => ({
     __proto__: dart.getFields(src__gestures__converter._PointerState.__proto__),
     [_pointer]: dart.fieldType(core.int),
@@ -2896,6 +3324,16 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     },
     set _pointerCount(_) {}
   });
+  let C23;
+  let C24;
+  let C25;
+  let C26;
+  let C27;
+  let C28;
+  let C29;
+  let C30;
+  let C31;
+  let C32;
   src__gestures__converter.PointerEventConverter = class PointerEventConverter extends core.Object {
     static clearPointers() {
       return src__gestures__converter.PointerEventConverter._pointers[$clear]();
@@ -2913,37 +3351,37 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
           let radiusMax = src__gestures__converter.PointerEventConverter._toLogicalPixels(datum.radiusMax, devicePixelRatio);
           let timeStamp = datum.timeStamp;
           let kind = datum.kind;
-          if (!(datum.change != null)) dart.assertFailed();
+          if (!(datum.change != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 116, 14, "datum.change != null");
           if (datum.signalKind == null || dart.equals(datum.signalKind, ui$.PointerSignalKind.none)) {
             switch (datum.change) {
-              case ui$.PointerChange.add:
+              case C23 || CT.C23:
               {
-                if (!!dart.test(src__gestures__converter.PointerEventConverter._pointers[$containsKey](datum.device))) dart.assertFailed();
+                if (!!dart.test(src__gestures__converter.PointerEventConverter._pointers[$containsKey](datum.device))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 121, 20, "!_pointers.containsKey(datum.device)");
                 let state = src__gestures__converter.PointerEventConverter._ensureStateForPointer(datum, position);
-                if (!dart.equals(state.lastPosition, position)) dart.assertFailed();
+                if (!dart.equals(state.lastPosition, position)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 123, 20, "state.lastPosition == position");
                 yield new src__gestures__events.PointerAddedEvent.new({timeStamp: timeStamp, kind: kind, device: datum.device, position: position, obscured: datum.obscured, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distance: datum.distance, distanceMax: datum.distanceMax, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt});
                 break;
               }
-              case ui$.PointerChange.hover:
+              case C24 || CT.C24:
               {
                 let alreadyAdded = src__gestures__converter.PointerEventConverter._pointers[$containsKey](datum.device);
                 let state = src__gestures__converter.PointerEventConverter._ensureStateForPointer(datum, position);
-                if (!!dart.test(state.down)) dart.assertFailed();
+                if (!!dart.test(state.down)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 143, 20, "!state.down");
                 if (!dart.test(alreadyAdded)) {
-                  if (!dart.equals(state.lastPosition, position)) dart.assertFailed();
+                  if (!dart.equals(state.lastPosition, position)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 145, 22, "state.lastPosition == position");
                   yield new src__gestures__events.PointerAddedEvent.new({timeStamp: timeStamp, kind: kind, device: datum.device, position: position, obscured: datum.obscured, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distance: datum.distance, distanceMax: datum.distanceMax, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt});
                 }
                 yield new src__gestures__events.PointerHoverEvent.new({timeStamp: timeStamp, kind: kind, device: datum.device, position: position, delta: state.deltaTo(position), buttons: datum.buttons, obscured: datum.obscured, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distance: datum.distance, distanceMax: datum.distanceMax, size: datum.size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt});
                 state.lastPosition = position;
                 break;
               }
-              case ui$.PointerChange.down:
+              case C25 || CT.C25:
               {
                 let alreadyAdded = src__gestures__converter.PointerEventConverter._pointers[$containsKey](datum.device);
                 let state = src__gestures__converter.PointerEventConverter._ensureStateForPointer(datum, position);
-                if (!!dart.test(state.down)) dart.assertFailed();
+                if (!!dart.test(state.down)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 187, 20, "!state.down");
                 if (!dart.test(alreadyAdded)) {
-                  if (!dart.equals(state.lastPosition, position)) dart.assertFailed();
+                  if (!dart.equals(state.lastPosition, position)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 189, 22, "state.lastPosition == position");
                   yield new src__gestures__events.PointerAddedEvent.new({timeStamp: timeStamp, kind: kind, device: datum.device, position: position, obscured: datum.obscured, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distance: datum.distance, distanceMax: datum.distanceMax, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt});
                 }
                 if (!dart.equals(state.lastPosition, position)) {
@@ -2955,54 +3393,54 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
                 yield new src__gestures__events.PointerDownEvent.new({timeStamp: timeStamp, pointer: state.pointer, kind: kind, device: datum.device, position: position, buttons: src__gestures__converter._synthesiseDownButtons(datum.buttons, kind), obscured: datum.obscured, pressure: datum.pressure, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distanceMax: datum.distanceMax, size: datum.size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt});
                 break;
               }
-              case ui$.PointerChange.move:
+              case C26 || CT.C26:
               {
-                if (!dart.test(src__gestures__converter.PointerEventConverter._pointers[$containsKey](datum.device))) dart.assertFailed();
+                if (!dart.test(src__gestures__converter.PointerEventConverter._pointers[$containsKey](datum.device))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 260, 20, "_pointers.containsKey(datum.device)");
                 let state = src__gestures__converter.PointerEventConverter._pointers[$_get](datum.device);
-                if (!dart.test(state.down)) dart.assertFailed();
+                if (!dart.test(state.down)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 262, 20, "state.down");
                 yield new src__gestures__events.PointerMoveEvent.new({timeStamp: timeStamp, pointer: state.pointer, kind: kind, device: datum.device, position: position, delta: state.deltaTo(position), buttons: src__gestures__converter._synthesiseDownButtons(datum.buttons, kind), obscured: datum.obscured, pressure: datum.pressure, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distanceMax: datum.distanceMax, size: datum.size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt, platformData: datum.platformData});
                 state.lastPosition = position;
                 break;
               }
-              case ui$.PointerChange.up:
-              case ui$.PointerChange.cancel:
+              case C27 || CT.C27:
+              case C28 || CT.C28:
               {
-                if (!dart.test(src__gestures__converter.PointerEventConverter._pointers[$containsKey](datum.device))) dart.assertFailed();
+                if (!dart.test(src__gestures__converter.PointerEventConverter._pointers[$containsKey](datum.device))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 289, 20, "_pointers.containsKey(datum.device)");
                 let state = src__gestures__converter.PointerEventConverter._pointers[$_get](datum.device);
-                if (!dart.test(state.down)) dart.assertFailed();
+                if (!dart.test(state.down)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 291, 20, "state.down");
                 if (!dart.equals(position, state.lastPosition)) {
                   yield new src__gestures__events.PointerMoveEvent.new({timeStamp: timeStamp, pointer: state.pointer, kind: kind, device: datum.device, position: position, delta: state.deltaTo(position), buttons: src__gestures__converter._synthesiseDownButtons(datum.buttons, kind), obscured: datum.obscured, pressure: datum.pressure, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distanceMax: datum.distanceMax, size: datum.size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt, synthesized: true});
                   state.lastPosition = position;
                 }
-                if (!dart.equals(position, state.lastPosition)) dart.assertFailed();
+                if (!dart.equals(position, state.lastPosition)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 322, 20, "position == state.lastPosition");
                 state.setUp();
                 if (dart.equals(datum.change, ui$.PointerChange.up)) {
                   yield new src__gestures__events.PointerUpEvent.new({timeStamp: timeStamp, pointer: state.pointer, kind: kind, device: datum.device, position: position, buttons: datum.buttons, obscured: datum.obscured, pressure: datum.pressure, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distance: datum.distance, distanceMax: datum.distanceMax, size: datum.size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt});
                 } else {
-                  yield new src__gestures__events.PointerCancelEvent.new({timeStamp: timeStamp, pointer: state.pointer, kind: kind, device: datum.device, position: position, buttons: datum.buttons, obscured: datum.obscured, pressure: datum.pressure, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distance: datum.distance, distanceMax: datum.distanceMax, size: datum.size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt});
+                  yield new src__gestures__events.PointerCancelEvent.new({timeStamp: timeStamp, pointer: state.pointer, kind: kind, device: datum.device, position: position, buttons: datum.buttons, obscured: datum.obscured, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distance: datum.distance, distanceMax: datum.distanceMax, size: datum.size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt});
                 }
                 break;
               }
-              case ui$.PointerChange.remove:
+              case C29 || CT.C29:
               {
-                if (!dart.test(src__gestures__converter.PointerEventConverter._pointers[$containsKey](datum.device))) dart.assertFailed();
+                if (!dart.test(src__gestures__converter.PointerEventConverter._pointers[$containsKey](datum.device))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 370, 20, "_pointers.containsKey(datum.device)");
                 let state = src__gestures__converter.PointerEventConverter._pointers[$_get](datum.device);
                 if (dart.test(state.down)) {
-                  yield new src__gestures__events.PointerCancelEvent.new({timeStamp: timeStamp, pointer: state.pointer, kind: kind, device: datum.device, position: state.lastPosition, buttons: datum.buttons, obscured: datum.obscured, pressure: datum.pressure, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distance: datum.distance, distanceMax: datum.distanceMax, size: datum.size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt});
+                  yield new src__gestures__events.PointerCancelEvent.new({timeStamp: timeStamp, pointer: state.pointer, kind: kind, device: datum.device, position: state.lastPosition, buttons: datum.buttons, obscured: datum.obscured, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distance: datum.distance, distanceMax: datum.distanceMax, size: datum.size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt});
                 }
                 if (!dart.equals(position, state.lastPosition)) {
-                  yield new src__gestures__events.PointerHoverEvent.new({timeStamp: timeStamp, kind: kind, device: datum.device, position: position, buttons: datum.buttons, delta: state.deltaTo(position), obscured: datum.obscured, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distance: datum.distance, distanceMax: datum.distanceMax, size: datum.size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt, synthesized: true});
+                  yield new src__gestures__events.PointerHoverEvent.new({timeStamp: timeStamp, kind: kind, device: datum.device, position: position, delta: state.deltaTo(position), buttons: datum.buttons, obscured: datum.obscured, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distance: datum.distance, distanceMax: datum.distanceMax, size: datum.size, radiusMajor: radiusMajor, radiusMinor: radiusMinor, radiusMin: radiusMin, radiusMax: radiusMax, orientation: datum.orientation, tilt: datum.tilt, synthesized: true});
                 }
                 src__gestures__converter.PointerEventConverter._pointers[$remove](datum.device);
-                yield new src__gestures__events.PointerRemovedEvent.new({timeStamp: timeStamp, kind: kind, device: datum.device, obscured: datum.obscured, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distanceMax: datum.distanceMax, radiusMin: radiusMin, radiusMax: radiusMax});
+                yield new src__gestures__events.PointerRemovedEvent.new({timeStamp: timeStamp, kind: kind, device: datum.device, position: position, obscured: datum.obscured, pressureMin: datum.pressureMin, pressureMax: datum.pressureMax, distanceMax: datum.distanceMax, radiusMin: radiusMin, radiusMax: radiusMax});
                 break;
               }
             }
           } else {
             switch (datum.signalKind) {
-              case ui$.PointerSignalKind.scroll:
+              case C30 || CT.C30:
               {
-                if (!dart.test(src__gestures__converter.PointerEventConverter._pointers[$containsKey](datum.device))) dart.assertFailed();
+                if (!dart.test(src__gestures__converter.PointerEventConverter._pointers[$containsKey](datum.device))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 436, 20, "_pointers.containsKey(datum.device)");
                 let state = src__gestures__converter.PointerEventConverter._ensureStateForPointer(datum, position);
                 if (!dart.equals(state.lastPosition, position)) {
                   if (dart.test(state.down)) {
@@ -3016,12 +3454,12 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
                 yield new src__gestures__events.PointerScrollEvent.new({timeStamp: timeStamp, kind: kind, device: datum.device, position: position, scrollDelta: scrollDelta});
                 break;
               }
-              case ui$.PointerSignalKind.none:
+              case C31 || CT.C31:
               {
-                if (!false) dart.assertFailed();
+                if (!false) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart", 504, 17, "false");
                 break;
               }
-              case ui$.PointerSignalKind.unknown:
+              case C32 || CT.C32:
               {
                 break;
               }
@@ -3038,745 +3476,139 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     ;
   }).prototype = src__gestures__converter.PointerEventConverter.prototype;
   dart.addTypeTests(src__gestures__converter.PointerEventConverter);
+  dart.setLibraryUri(src__gestures__converter.PointerEventConverter, "package:flutter_web/src/gestures/converter.dart");
   dart.defineLazy(src__gestures__converter.PointerEventConverter, {
     /*src__gestures__converter.PointerEventConverter._pointers*/get _pointers() {
       return new (IdentityMapOfint$_PointerState()).new();
     }
   });
-  src__gestures__converter._synthesiseDownButtons = function(buttons, kind) {
+  let C33;
+  let C34;
+  src__gestures__converter._synthesiseDownButtons = function _synthesiseDownButtons(buttons, kind) {
     switch (kind) {
-      case ui$.PointerDeviceKind.touch:
-      case ui$.PointerDeviceKind.stylus:
-      case ui$.PointerDeviceKind.invertedStylus:
-      {
-        return (dart.notNull(buttons) | dart.notNull(src__gestures__events.kPrimaryButton)) >>> 0;
-      }
-      default:
+      case C6 || CT.C6:
       {
         return buttons;
       }
+      case C4 || CT.C4:
+      case C33 || CT.C33:
+      case C34 || CT.C34:
+      {
+        return (dart.notNull(buttons) | 1) >>> 0;
+      }
+      default:
+      {
+        return buttons === 0 ? 1 : buttons;
+      }
     }
   };
+  let C35;
+  let C36;
+  let C37;
+  let C38;
+  let C39;
+  let C40;
   dart.defineLazy(src__gestures__constants, {
     /*src__gestures__constants.kPressTimeout*/get kPressTimeout() {
-      return dart.const(new core.Duration.new({milliseconds: 100}));
+      return C35 || CT.C35;
+    },
+    /*src__gestures__constants.kHoverTapTimeout*/get kHoverTapTimeout() {
+      return C36 || CT.C36;
+    },
+    /*src__gestures__constants.kHoverTapSlop*/get kHoverTapSlop() {
+      return 20;
     },
     /*src__gestures__constants.kLongPressTimeout*/get kLongPressTimeout() {
-      return dart.const(new core.Duration.new({milliseconds: 500}));
+      return C37 || CT.C37;
     },
     /*src__gestures__constants.kDoubleTapTimeout*/get kDoubleTapTimeout() {
-      return dart.const(new core.Duration.new({milliseconds: 300}));
+      return C38 || CT.C38;
+    },
+    /*src__gestures__constants.kDoubleTapMinTime*/get kDoubleTapMinTime() {
+      return C39 || CT.C39;
     },
     /*src__gestures__constants.kDoubleTapTouchSlop*/get kDoubleTapTouchSlop() {
-      return src__gestures__constants.kTouchSlop;
+      return 18;
     },
     /*src__gestures__constants.kDoubleTapSlop*/get kDoubleTapSlop() {
-      return 100.0;
+      return 100;
     },
     /*src__gestures__constants.kZoomControlsTimeout*/get kZoomControlsTimeout() {
-      return dart.const(new core.Duration.new({milliseconds: 3000}));
+      return C40 || CT.C40;
     },
     /*src__gestures__constants.kTouchSlop*/get kTouchSlop() {
-      return 18.0;
+      return 18;
     },
     /*src__gestures__constants.kPagingTouchSlop*/get kPagingTouchSlop() {
-      return dart.notNull(src__gestures__constants.kTouchSlop) * 2.0;
+      return 36;
     },
     /*src__gestures__constants.kPanSlop*/get kPanSlop() {
-      return dart.notNull(src__gestures__constants.kTouchSlop) * 2.0;
+      return 36;
     },
     /*src__gestures__constants.kScaleSlop*/get kScaleSlop() {
-      return src__gestures__constants.kTouchSlop;
+      return 18;
+    },
+    /*src__gestures__constants.kWindowTouchSlop*/get kWindowTouchSlop() {
+      return 16;
     },
     /*src__gestures__constants.kMinFlingVelocity*/get kMinFlingVelocity() {
-      return 50.0;
+      return 50;
     },
     /*src__gestures__constants.kMaxFlingVelocity*/get kMaxFlingVelocity() {
-      return 8000.0;
+      return 8000;
+    },
+    /*src__gestures__constants.kJumpTapTimeout*/get kJumpTapTimeout() {
+      return C37 || CT.C37;
     }
   });
-  const _velocityTracker = dart.privateName(src__gestures__multidrag, "_velocityTracker");
-  const _client = dart.privateName(src__gestures__multidrag, "_client");
-  const _pendingDelta = dart.privateName(src__gestures__multidrag, "_pendingDelta");
-  const _lastPendingEventTimestamp = dart.privateName(src__gestures__multidrag, "_lastPendingEventTimestamp");
-  const _arenaEntry = dart.privateName(src__gestures__multidrag, "_arenaEntry");
-  const _setArenaEntry = dart.privateName(src__gestures__multidrag, "_setArenaEntry");
-  const _move = dart.privateName(src__gestures__multidrag, "_move");
-  const _startDrag = dart.privateName(src__gestures__multidrag, "_startDrag");
-  const _up = dart.privateName(src__gestures__multidrag, "_up");
-  const _cancel = dart.privateName(src__gestures__multidrag, "_cancel");
-  src__gestures__multidrag.MultiDragPointerState = class MultiDragPointerState extends core.Object {
-    get initialPosition() {
-      return this[initialPosition$];
-    }
-    set initialPosition(value) {
-      super.initialPosition = value;
-    }
-    get pendingDelta() {
-      return this[_pendingDelta];
-    }
-    [_setArenaEntry](entry) {
-      if (!(this[_arenaEntry] == null)) dart.assertFailed();
-      if (!(this.pendingDelta != null)) dart.assertFailed();
-      if (!(this[_client] == null)) dart.assertFailed();
-      this[_arenaEntry] = entry;
-    }
-    resolve(disposition) {
-      this[_arenaEntry].resolve(disposition);
-    }
-    [_move](event) {
-      if (!(this[_arenaEntry] != null)) dart.assertFailed();
-      if (!dart.test(event.synthesized)) this[_velocityTracker].addPosition(event.timeStamp, event.position);
-      if (this[_client] != null) {
-        if (!(this.pendingDelta == null)) dart.assertFailed();
-        this[_client].update(new src__gestures__drag_details.DragUpdateDetails.new({sourceTimeStamp: event.timeStamp, delta: event.delta, globalPosition: event.position}));
-      } else {
-        if (!(this.pendingDelta != null)) dart.assertFailed();
-        this[_pendingDelta] = this[_pendingDelta]['+'](event.delta);
-        this[_lastPendingEventTimestamp] = event.timeStamp;
-        this.checkForResolutionAfterMove();
-      }
-    }
-    checkForResolutionAfterMove() {
-    }
-    rejected() {
-      if (!(this[_arenaEntry] != null)) dart.assertFailed();
-      if (!(this[_client] == null)) dart.assertFailed();
-      if (!(this.pendingDelta != null)) dart.assertFailed();
-      this[_pendingDelta] = null;
-      this[_lastPendingEventTimestamp] = null;
-      this[_arenaEntry] = null;
-    }
-    [_startDrag](client) {
-      if (!(this[_arenaEntry] != null)) dart.assertFailed();
-      if (!(this[_client] == null)) dart.assertFailed();
-      if (!(client != null)) dart.assertFailed();
-      if (!(this.pendingDelta != null)) dart.assertFailed();
-      this[_client] = client;
-      let details = new src__gestures__drag_details.DragUpdateDetails.new({sourceTimeStamp: this[_lastPendingEventTimestamp], delta: this.pendingDelta, globalPosition: this.initialPosition});
-      this[_pendingDelta] = null;
-      this[_lastPendingEventTimestamp] = null;
-      this[_client].update(details);
-    }
-    [_up]() {
-      if (!(this[_arenaEntry] != null)) dart.assertFailed();
-      if (this[_client] != null) {
-        if (!(this.pendingDelta == null)) dart.assertFailed();
-        let details = new src__gestures__drag_details.DragEndDetails.new({velocity: this[_velocityTracker].getVelocity()});
-        let client = this[_client];
-        this[_client] = null;
-        client.end(details);
-      } else {
-        if (!(this.pendingDelta != null)) dart.assertFailed();
-        this[_pendingDelta] = null;
-        this[_lastPendingEventTimestamp] = null;
-      }
-    }
-    [_cancel]() {
-      if (!(this[_arenaEntry] != null)) dart.assertFailed();
-      if (this[_client] != null) {
-        if (!(this.pendingDelta == null)) dart.assertFailed();
-        let client = this[_client];
-        this[_client] = null;
-        client.cancel();
-      } else {
-        if (!(this.pendingDelta != null)) dart.assertFailed();
-        this[_pendingDelta] = null;
-        this[_lastPendingEventTimestamp] = null;
-      }
-    }
-    dispose() {
-      let t5;
-      t5 = this[_arenaEntry];
-      t5 == null ? null : t5.resolve(src__gestures__arena.GestureDisposition.rejected);
-      this[_arenaEntry] = null;
-      if (!dart.test(dart.fn(() => {
-        this[_pendingDelta] = null;
-        return true;
-      }, VoidTobool())())) dart.assertFailed();
-    }
-  };
-  (src__gestures__multidrag.MultiDragPointerState.new = function(initialPosition) {
-    this[_velocityTracker] = new src__gestures__velocity_tracker.VelocityTracker.new();
-    this[_client] = null;
-    this[_pendingDelta] = ui$.Offset.zero;
-    this[_lastPendingEventTimestamp] = null;
-    this[_arenaEntry] = null;
-    this[initialPosition$] = initialPosition;
-    if (!(initialPosition != null)) dart.assertFailed();
-    ;
-  }).prototype = src__gestures__multidrag.MultiDragPointerState.prototype;
-  dart.addTypeTests(src__gestures__multidrag.MultiDragPointerState);
-  const initialPosition$ = Symbol("MultiDragPointerState.initialPosition");
-  dart.setMethodSignature(src__gestures__multidrag.MultiDragPointerState, () => ({
-    __proto__: dart.getMethods(src__gestures__multidrag.MultiDragPointerState.__proto__),
-    [_setArenaEntry]: dart.fnType(dart.void, [src__gestures__arena.GestureArenaEntry]),
-    resolve: dart.fnType(dart.void, [src__gestures__arena.GestureDisposition]),
-    [_move]: dart.fnType(dart.void, [src__gestures__events.PointerMoveEvent]),
-    checkForResolutionAfterMove: dart.fnType(dart.void, []),
-    rejected: dart.fnType(dart.void, []),
-    [_startDrag]: dart.fnType(dart.void, [src__gestures__drag.Drag]),
-    [_up]: dart.fnType(dart.void, []),
-    [_cancel]: dart.fnType(dart.void, []),
-    dispose: dart.fnType(dart.void, [])
-  }));
-  dart.setGetterSignature(src__gestures__multidrag.MultiDragPointerState, () => ({
-    __proto__: dart.getGetters(src__gestures__multidrag.MultiDragPointerState.__proto__),
-    pendingDelta: ui$.Offset
-  }));
-  dart.setFieldSignature(src__gestures__multidrag.MultiDragPointerState, () => ({
-    __proto__: dart.getFields(src__gestures__multidrag.MultiDragPointerState.__proto__),
-    initialPosition: dart.finalFieldType(ui$.Offset),
-    [_velocityTracker]: dart.finalFieldType(src__gestures__velocity_tracker.VelocityTracker),
-    [_client]: dart.fieldType(src__gestures__drag.Drag),
-    [_pendingDelta]: dart.fieldType(ui$.Offset),
-    [_lastPendingEventTimestamp]: dart.fieldType(core.Duration),
-    [_arenaEntry]: dart.fieldType(src__gestures__arena.GestureArenaEntry)
-  }));
-  const _pointers = dart.privateName(src__gestures__multidrag, "_pointers");
-  const _handleEvent = dart.privateName(src__gestures__multidrag, "_handleEvent");
-  const _removeState = dart.privateName(src__gestures__multidrag, "_removeState");
-  const _is_MultiDragGestureRecognizer_default = Symbol('_is_MultiDragGestureRecognizer_default');
-  src__gestures__multidrag.MultiDragGestureRecognizer$ = dart.generic(T => {
-    let IdentityMapOfint$T = () => (IdentityMapOfint$T = dart.constFn(_js_helper.IdentityMap$(core.int, T)))();
-    class MultiDragGestureRecognizer extends src__gestures__recognizer.GestureRecognizer {
-      get onStart() {
-        return this[onStart];
-      }
-      set onStart(value) {
-        this[onStart] = value;
-      }
-      addAllowedPointer(event) {
-        if (!(this[_pointers] != null)) dart.assertFailed();
-        if (!(event.pointer != null)) dart.assertFailed();
-        if (!(event.position != null)) dart.assertFailed();
-        if (!!dart.test(this[_pointers][$containsKey](event.pointer))) dart.assertFailed();
-        let state = this.createNewPointerState(event);
-        this[_pointers][$_set](event.pointer, state);
-        src__gestures__binding.GestureBinding.instance.pointerRouter.addRoute(event.pointer, dart.bind(this, _handleEvent));
-        state[_setArenaEntry](src__gestures__binding.GestureBinding.instance.gestureArena.add(event.pointer, this));
-      }
-      [_handleEvent](event) {
-        if (!(this[_pointers] != null)) dart.assertFailed();
-        if (!(event.pointer != null)) dart.assertFailed();
-        if (!(event.timeStamp != null)) dart.assertFailed();
-        if (!(event.position != null)) dart.assertFailed();
-        if (!dart.test(this[_pointers][$containsKey](event.pointer))) dart.assertFailed();
-        let state = this[_pointers][$_get](event.pointer);
-        if (src__gestures__events.PointerMoveEvent.is(event)) {
-          state[_move](event);
-        } else if (src__gestures__events.PointerUpEvent.is(event)) {
-          if (!dart.equals(event.delta, ui$.Offset.zero)) dart.assertFailed();
-          state[_up]();
-          this[_removeState](event.pointer);
-        } else if (src__gestures__events.PointerCancelEvent.is(event)) {
-          if (!dart.equals(event.delta, ui$.Offset.zero)) dart.assertFailed();
-          state[_cancel]();
-          this[_removeState](event.pointer);
-        } else if (!src__gestures__events.PointerDownEvent.is(event)) {
-          if (!false) dart.assertFailed();
-        }
-      }
-      acceptGesture(pointer) {
-        if (!(this[_pointers] != null)) dart.assertFailed();
-        let state = this[_pointers][$_get](pointer);
-        if (state == null) return;
-        state.accepted(dart.fn(initialPosition => this[_startDrag](initialPosition, pointer), OffsetToDrag()));
-      }
-      [_startDrag](initialPosition, pointer) {
-        if (!(this[_pointers] != null)) dart.assertFailed();
-        let state = this[_pointers][$_get](pointer);
-        if (!(state != null)) dart.assertFailed();
-        if (!(state[_pendingDelta] != null)) dart.assertFailed();
-        let drag = null;
-        if (this.onStart != null) drag = this.invokeCallback(src__gestures__drag.Drag, "onStart", dart.fn(() => this.onStart(initialPosition), VoidToDrag()));
-        if (drag != null) {
-          state[_startDrag](drag);
-        } else {
-          this[_removeState](pointer);
-        }
-        return drag;
-      }
-      rejectGesture(pointer) {
-        if (!(this[_pointers] != null)) dart.assertFailed();
-        if (dart.test(this[_pointers][$containsKey](pointer))) {
-          let state = this[_pointers][$_get](pointer);
-          if (!(state != null)) dart.assertFailed();
-          state.rejected();
-          this[_removeState](pointer);
-        }
-      }
-      [_removeState](pointer) {
-        if (this[_pointers] == null) {
-          return;
-        }
-        if (!dart.test(this[_pointers][$containsKey](pointer))) dart.assertFailed();
-        src__gestures__binding.GestureBinding.instance.pointerRouter.removeRoute(pointer, dart.bind(this, _handleEvent));
-        this[_pointers][$remove](pointer).dispose();
-      }
-      dispose() {
-        this[_pointers][$keys][$toList]()[$forEach](dart.bind(this, _removeState));
-        if (!dart.test(this[_pointers][$isEmpty])) dart.assertFailed();
-        this[_pointers] = null;
-        super.dispose();
-      }
-    }
-    (MultiDragGestureRecognizer.new = function(opts) {
-      let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
-      let kind = opts && 'kind' in opts ? opts.kind : null;
-      this[onStart] = null;
-      this[_pointers] = new (IdentityMapOfint$T()).new();
-      MultiDragGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
-      ;
-    }).prototype = MultiDragGestureRecognizer.prototype;
-    dart.addTypeTests(MultiDragGestureRecognizer);
-    MultiDragGestureRecognizer.prototype[_is_MultiDragGestureRecognizer_default] = true;
-    const onStart = Symbol("MultiDragGestureRecognizer.onStart");
-    dart.setMethodSignature(MultiDragGestureRecognizer, () => ({
-      __proto__: dart.getMethods(MultiDragGestureRecognizer.__proto__),
-      [_handleEvent]: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
-      acceptGesture: dart.fnType(dart.void, [core.int]),
-      [_startDrag]: dart.fnType(src__gestures__drag.Drag, [ui$.Offset, core.int]),
-      rejectGesture: dart.fnType(dart.void, [core.int]),
-      [_removeState]: dart.fnType(dart.void, [core.int])
-    }));
-    dart.setFieldSignature(MultiDragGestureRecognizer, () => ({
-      __proto__: dart.getFields(MultiDragGestureRecognizer.__proto__),
-      onStart: dart.fieldType(dart.fnType(src__gestures__drag.Drag, [ui$.Offset])),
-      [_pointers]: dart.fieldType(core.Map$(core.int, T))
-    }));
-    return MultiDragGestureRecognizer;
-  });
-  src__gestures__multidrag.MultiDragGestureRecognizer = src__gestures__multidrag.MultiDragGestureRecognizer$();
-  dart.addTypeTests(src__gestures__multidrag.MultiDragGestureRecognizer, _is_MultiDragGestureRecognizer_default);
-  src__gestures__multidrag._ImmediatePointerState = class _ImmediatePointerState extends src__gestures__multidrag.MultiDragPointerState {
-    checkForResolutionAfterMove() {
-      if (!(this.pendingDelta != null)) dart.assertFailed();
-      if (dart.notNull(this.pendingDelta.distance) > dart.notNull(src__gestures__constants.kTouchSlop)) this.resolve(src__gestures__arena.GestureDisposition.accepted);
-    }
-    accepted(starter) {
-      starter(this.initialPosition);
-    }
-  };
-  (src__gestures__multidrag._ImmediatePointerState.new = function(initialPosition) {
-    src__gestures__multidrag._ImmediatePointerState.__proto__.new.call(this, initialPosition);
-    ;
-  }).prototype = src__gestures__multidrag._ImmediatePointerState.prototype;
-  dart.addTypeTests(src__gestures__multidrag._ImmediatePointerState);
-  dart.setMethodSignature(src__gestures__multidrag._ImmediatePointerState, () => ({
-    __proto__: dart.getMethods(src__gestures__multidrag._ImmediatePointerState.__proto__),
-    accepted: dart.fnType(dart.void, [dart.fnType(src__gestures__drag.Drag, [ui$.Offset])])
-  }));
-  src__gestures__multidrag.ImmediateMultiDragGestureRecognizer = class ImmediateMultiDragGestureRecognizer extends src__gestures__multidrag.MultiDragGestureRecognizer$(src__gestures__multidrag._ImmediatePointerState) {
-    createNewPointerState(event) {
-      return new src__gestures__multidrag._ImmediatePointerState.new(event.position);
-    }
-    get debugDescription() {
-      return "multidrag";
-    }
-  };
-  (src__gestures__multidrag.ImmediateMultiDragGestureRecognizer.new = function(opts) {
-    let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
-    let kind = opts && 'kind' in opts ? opts.kind : null;
-    src__gestures__multidrag.ImmediateMultiDragGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
-    ;
-  }).prototype = src__gestures__multidrag.ImmediateMultiDragGestureRecognizer.prototype;
-  dart.addTypeTests(src__gestures__multidrag.ImmediateMultiDragGestureRecognizer);
-  dart.setMethodSignature(src__gestures__multidrag.ImmediateMultiDragGestureRecognizer, () => ({
-    __proto__: dart.getMethods(src__gestures__multidrag.ImmediateMultiDragGestureRecognizer.__proto__),
-    createNewPointerState: dart.fnType(src__gestures__multidrag._ImmediatePointerState, [src__gestures__events.PointerDownEvent])
-  }));
-  dart.setGetterSignature(src__gestures__multidrag.ImmediateMultiDragGestureRecognizer, () => ({
-    __proto__: dart.getGetters(src__gestures__multidrag.ImmediateMultiDragGestureRecognizer.__proto__),
-    debugDescription: core.String
-  }));
-  src__gestures__multidrag._HorizontalPointerState = class _HorizontalPointerState extends src__gestures__multidrag.MultiDragPointerState {
-    checkForResolutionAfterMove() {
-      if (!(this.pendingDelta != null)) dart.assertFailed();
-      if (this.pendingDelta.dx[$abs]() > dart.notNull(src__gestures__constants.kTouchSlop)) this.resolve(src__gestures__arena.GestureDisposition.accepted);
-    }
-    accepted(starter) {
-      starter(this.initialPosition);
-    }
-  };
-  (src__gestures__multidrag._HorizontalPointerState.new = function(initialPosition) {
-    src__gestures__multidrag._HorizontalPointerState.__proto__.new.call(this, initialPosition);
-    ;
-  }).prototype = src__gestures__multidrag._HorizontalPointerState.prototype;
-  dart.addTypeTests(src__gestures__multidrag._HorizontalPointerState);
-  dart.setMethodSignature(src__gestures__multidrag._HorizontalPointerState, () => ({
-    __proto__: dart.getMethods(src__gestures__multidrag._HorizontalPointerState.__proto__),
-    accepted: dart.fnType(dart.void, [dart.fnType(src__gestures__drag.Drag, [ui$.Offset])])
-  }));
-  src__gestures__multidrag.HorizontalMultiDragGestureRecognizer = class HorizontalMultiDragGestureRecognizer extends src__gestures__multidrag.MultiDragGestureRecognizer$(src__gestures__multidrag._HorizontalPointerState) {
-    createNewPointerState(event) {
-      return new src__gestures__multidrag._HorizontalPointerState.new(event.position);
-    }
-    get debugDescription() {
-      return "horizontal multidrag";
-    }
-  };
-  (src__gestures__multidrag.HorizontalMultiDragGestureRecognizer.new = function(opts) {
-    let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
-    let kind = opts && 'kind' in opts ? opts.kind : null;
-    src__gestures__multidrag.HorizontalMultiDragGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
-    ;
-  }).prototype = src__gestures__multidrag.HorizontalMultiDragGestureRecognizer.prototype;
-  dart.addTypeTests(src__gestures__multidrag.HorizontalMultiDragGestureRecognizer);
-  dart.setMethodSignature(src__gestures__multidrag.HorizontalMultiDragGestureRecognizer, () => ({
-    __proto__: dart.getMethods(src__gestures__multidrag.HorizontalMultiDragGestureRecognizer.__proto__),
-    createNewPointerState: dart.fnType(src__gestures__multidrag._HorizontalPointerState, [src__gestures__events.PointerDownEvent])
-  }));
-  dart.setGetterSignature(src__gestures__multidrag.HorizontalMultiDragGestureRecognizer, () => ({
-    __proto__: dart.getGetters(src__gestures__multidrag.HorizontalMultiDragGestureRecognizer.__proto__),
-    debugDescription: core.String
-  }));
-  src__gestures__multidrag._VerticalPointerState = class _VerticalPointerState extends src__gestures__multidrag.MultiDragPointerState {
-    checkForResolutionAfterMove() {
-      if (!(this.pendingDelta != null)) dart.assertFailed();
-      if (this.pendingDelta.dy[$abs]() > dart.notNull(src__gestures__constants.kTouchSlop)) this.resolve(src__gestures__arena.GestureDisposition.accepted);
-    }
-    accepted(starter) {
-      starter(this.initialPosition);
-    }
-  };
-  (src__gestures__multidrag._VerticalPointerState.new = function(initialPosition) {
-    src__gestures__multidrag._VerticalPointerState.__proto__.new.call(this, initialPosition);
-    ;
-  }).prototype = src__gestures__multidrag._VerticalPointerState.prototype;
-  dart.addTypeTests(src__gestures__multidrag._VerticalPointerState);
-  dart.setMethodSignature(src__gestures__multidrag._VerticalPointerState, () => ({
-    __proto__: dart.getMethods(src__gestures__multidrag._VerticalPointerState.__proto__),
-    accepted: dart.fnType(dart.void, [dart.fnType(src__gestures__drag.Drag, [ui$.Offset])])
-  }));
-  src__gestures__multidrag.VerticalMultiDragGestureRecognizer = class VerticalMultiDragGestureRecognizer extends src__gestures__multidrag.MultiDragGestureRecognizer$(src__gestures__multidrag._VerticalPointerState) {
-    createNewPointerState(event) {
-      return new src__gestures__multidrag._VerticalPointerState.new(event.position);
-    }
-    get debugDescription() {
-      return "vertical multidrag";
-    }
-  };
-  (src__gestures__multidrag.VerticalMultiDragGestureRecognizer.new = function(opts) {
-    let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
-    let kind = opts && 'kind' in opts ? opts.kind : null;
-    src__gestures__multidrag.VerticalMultiDragGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
-    ;
-  }).prototype = src__gestures__multidrag.VerticalMultiDragGestureRecognizer.prototype;
-  dart.addTypeTests(src__gestures__multidrag.VerticalMultiDragGestureRecognizer);
-  dart.setMethodSignature(src__gestures__multidrag.VerticalMultiDragGestureRecognizer, () => ({
-    __proto__: dart.getMethods(src__gestures__multidrag.VerticalMultiDragGestureRecognizer.__proto__),
-    createNewPointerState: dart.fnType(src__gestures__multidrag._VerticalPointerState, [src__gestures__events.PointerDownEvent])
-  }));
-  dart.setGetterSignature(src__gestures__multidrag.VerticalMultiDragGestureRecognizer, () => ({
-    __proto__: dart.getGetters(src__gestures__multidrag.VerticalMultiDragGestureRecognizer.__proto__),
-    debugDescription: core.String
-  }));
-  const _timer$ = dart.privateName(src__gestures__multidrag, "_timer");
-  const _starter = dart.privateName(src__gestures__multidrag, "_starter");
-  const _delayPassed = dart.privateName(src__gestures__multidrag, "_delayPassed");
-  const _ensureTimerStopped = dart.privateName(src__gestures__multidrag, "_ensureTimerStopped");
-  src__gestures__multidrag._DelayedPointerState = class _DelayedPointerState extends src__gestures__multidrag.MultiDragPointerState {
-    [_delayPassed]() {
-      if (!(this[_timer$] != null)) dart.assertFailed();
-      if (!(this.pendingDelta != null)) dart.assertFailed();
-      if (!(dart.notNull(this.pendingDelta.distance) <= dart.notNull(src__gestures__constants.kTouchSlop))) dart.assertFailed();
-      this[_timer$] = null;
-      if (this[_starter] != null) {
-        this[_starter](this.initialPosition);
-        this[_starter] = null;
-      } else {
-        this.resolve(src__gestures__arena.GestureDisposition.accepted);
-      }
-      if (!(this[_starter] == null)) dart.assertFailed();
-    }
-    [_ensureTimerStopped]() {
-      let t5;
-      t5 = this[_timer$];
-      t5 == null ? null : t5.cancel();
-      this[_timer$] = null;
-    }
-    accepted(starter) {
-      if (!(this[_starter] == null)) dart.assertFailed();
-      if (this[_timer$] == null)
-        starter(this.initialPosition);
-      else
-        this[_starter] = starter;
-    }
-    checkForResolutionAfterMove() {
-      if (this[_timer$] == null) {
-        if (!(this[_starter] != null)) dart.assertFailed();
-        return;
-      }
-      if (!(this.pendingDelta != null)) dart.assertFailed();
-      if (dart.notNull(this.pendingDelta.distance) > dart.notNull(src__gestures__constants.kTouchSlop)) {
-        this.resolve(src__gestures__arena.GestureDisposition.rejected);
-        this[_ensureTimerStopped]();
-      }
-    }
-    dispose() {
-      this[_ensureTimerStopped]();
-      super.dispose();
-    }
-  };
-  (src__gestures__multidrag._DelayedPointerState.new = function(initialPosition, delay) {
-    this[_timer$] = null;
-    this[_starter] = null;
-    if (!(delay != null)) dart.assertFailed();
-    src__gestures__multidrag._DelayedPointerState.__proto__.new.call(this, initialPosition);
-    this[_timer$] = async.Timer.new(delay, dart.bind(this, _delayPassed));
-  }).prototype = src__gestures__multidrag._DelayedPointerState.prototype;
-  dart.addTypeTests(src__gestures__multidrag._DelayedPointerState);
-  dart.setMethodSignature(src__gestures__multidrag._DelayedPointerState, () => ({
-    __proto__: dart.getMethods(src__gestures__multidrag._DelayedPointerState.__proto__),
-    [_delayPassed]: dart.fnType(dart.void, []),
-    [_ensureTimerStopped]: dart.fnType(dart.void, []),
-    accepted: dart.fnType(dart.void, [dart.fnType(src__gestures__drag.Drag, [ui$.Offset])])
-  }));
-  dart.setFieldSignature(src__gestures__multidrag._DelayedPointerState, () => ({
-    __proto__: dart.getFields(src__gestures__multidrag._DelayedPointerState.__proto__),
-    [_timer$]: dart.fieldType(async.Timer),
-    [_starter]: dart.fieldType(dart.fnType(src__gestures__drag.Drag, [ui$.Offset]))
-  }));
-  src__gestures__multidrag.DelayedMultiDragGestureRecognizer = class DelayedMultiDragGestureRecognizer extends src__gestures__multidrag.MultiDragGestureRecognizer$(src__gestures__multidrag._DelayedPointerState) {
-    get delay() {
-      return this[delay$];
-    }
-    set delay(value) {
-      super.delay = value;
-    }
-    createNewPointerState(event) {
-      return new src__gestures__multidrag._DelayedPointerState.new(event.position, this.delay);
-    }
-    get debugDescription() {
-      return "long multidrag";
-    }
-  };
-  (src__gestures__multidrag.DelayedMultiDragGestureRecognizer.new = function(opts) {
-    let delay = opts && 'delay' in opts ? opts.delay : src__gestures__constants.kLongPressTimeout;
-    let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
-    let kind = opts && 'kind' in opts ? opts.kind : null;
-    this[delay$] = delay;
-    if (!(delay != null)) dart.assertFailed();
-    src__gestures__multidrag.DelayedMultiDragGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
-    ;
-  }).prototype = src__gestures__multidrag.DelayedMultiDragGestureRecognizer.prototype;
-  dart.addTypeTests(src__gestures__multidrag.DelayedMultiDragGestureRecognizer);
-  const delay$ = Symbol("DelayedMultiDragGestureRecognizer.delay");
-  dart.setMethodSignature(src__gestures__multidrag.DelayedMultiDragGestureRecognizer, () => ({
-    __proto__: dart.getMethods(src__gestures__multidrag.DelayedMultiDragGestureRecognizer.__proto__),
-    createNewPointerState: dart.fnType(src__gestures__multidrag._DelayedPointerState, [src__gestures__events.PointerDownEvent])
-  }));
-  dart.setGetterSignature(src__gestures__multidrag.DelayedMultiDragGestureRecognizer, () => ({
-    __proto__: dart.getGetters(src__gestures__multidrag.DelayedMultiDragGestureRecognizer.__proto__),
-    debugDescription: core.String
-  }));
-  dart.setFieldSignature(src__gestures__multidrag.DelayedMultiDragGestureRecognizer, () => ({
-    __proto__: dart.getFields(src__gestures__multidrag.DelayedMultiDragGestureRecognizer.__proto__),
-    delay: dart.finalFieldType(core.Duration)
-  }));
-  src__gestures__drag_details.DragDownDetails = class DragDownDetails extends core.Object {
+  src__gestures__tap.TapDownDetails = class TapDownDetails extends core.Object {
     get globalPosition() {
       return this[globalPosition$];
     }
     set globalPosition(value) {
       super.globalPosition = value;
     }
-    toString() {
-      return dart.str(this[$runtimeType]) + "(" + dart.str(this.globalPosition) + ")";
+    get kind() {
+      return this[kind$0];
+    }
+    set kind(value) {
+      super.kind = value;
     }
   };
-  (src__gestures__drag_details.DragDownDetails.new = function(opts) {
-    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : ui$.Offset.zero;
+  (src__gestures__tap.TapDownDetails.new = function(opts) {
+    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : C5 || CT.C5;
+    let kind = opts && 'kind' in opts ? opts.kind : null;
     this[globalPosition$] = globalPosition;
-    if (!(globalPosition != null)) dart.assertFailed();
+    this[kind$0] = kind;
+    if (!(globalPosition != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/tap.dart", 26, 15, "globalPosition != null");
     ;
-  }).prototype = src__gestures__drag_details.DragDownDetails.prototype;
-  dart.addTypeTests(src__gestures__drag_details.DragDownDetails);
-  const globalPosition$ = Symbol("DragDownDetails.globalPosition");
-  dart.setFieldSignature(src__gestures__drag_details.DragDownDetails, () => ({
-    __proto__: dart.getFields(src__gestures__drag_details.DragDownDetails.__proto__),
-    globalPosition: dart.finalFieldType(ui$.Offset)
+  }).prototype = src__gestures__tap.TapDownDetails.prototype;
+  dart.addTypeTests(src__gestures__tap.TapDownDetails);
+  const globalPosition$ = Symbol("TapDownDetails.globalPosition");
+  const kind$0 = Symbol("TapDownDetails.kind");
+  dart.setLibraryUri(src__gestures__tap.TapDownDetails, "package:flutter_web/src/gestures/tap.dart");
+  dart.setFieldSignature(src__gestures__tap.TapDownDetails, () => ({
+    __proto__: dart.getFields(src__gestures__tap.TapDownDetails.__proto__),
+    globalPosition: dart.finalFieldType(ui$.Offset),
+    kind: dart.finalFieldType(ui$.PointerDeviceKind)
   }));
-  dart.defineExtensionMethods(src__gestures__drag_details.DragDownDetails, ['toString']);
-  src__gestures__drag_details.DragStartDetails = class DragStartDetails extends core.Object {
-    get sourceTimeStamp() {
-      return this[sourceTimeStamp$];
-    }
-    set sourceTimeStamp(value) {
-      super.sourceTimeStamp = value;
-    }
+  src__gestures__tap.TapUpDetails = class TapUpDetails extends core.Object {
     get globalPosition() {
       return this[globalPosition$0];
     }
     set globalPosition(value) {
       super.globalPosition = value;
     }
-    toString() {
-      return dart.str(this[$runtimeType]) + "(" + dart.str(this.globalPosition) + ")";
-    }
-  };
-  (src__gestures__drag_details.DragStartDetails.new = function(opts) {
-    let sourceTimeStamp = opts && 'sourceTimeStamp' in opts ? opts.sourceTimeStamp : null;
-    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : ui$.Offset.zero;
-    this[sourceTimeStamp$] = sourceTimeStamp;
-    this[globalPosition$0] = globalPosition;
-    if (!(globalPosition != null)) dart.assertFailed();
-    ;
-  }).prototype = src__gestures__drag_details.DragStartDetails.prototype;
-  dart.addTypeTests(src__gestures__drag_details.DragStartDetails);
-  const sourceTimeStamp$ = Symbol("DragStartDetails.sourceTimeStamp");
-  const globalPosition$0 = Symbol("DragStartDetails.globalPosition");
-  dart.setFieldSignature(src__gestures__drag_details.DragStartDetails, () => ({
-    __proto__: dart.getFields(src__gestures__drag_details.DragStartDetails.__proto__),
-    sourceTimeStamp: dart.finalFieldType(core.Duration),
-    globalPosition: dart.finalFieldType(ui$.Offset)
-  }));
-  dart.defineExtensionMethods(src__gestures__drag_details.DragStartDetails, ['toString']);
-  src__gestures__drag_details.DragUpdateDetails = class DragUpdateDetails extends core.Object {
-    get sourceTimeStamp() {
-      return this[sourceTimeStamp$0];
-    }
-    set sourceTimeStamp(value) {
-      super.sourceTimeStamp = value;
-    }
-    get delta() {
-      return this[delta$0];
-    }
-    set delta(value) {
-      super.delta = value;
-    }
-    get primaryDelta() {
-      return this[primaryDelta$];
-    }
-    set primaryDelta(value) {
-      super.primaryDelta = value;
-    }
-    get globalPosition() {
-      return this[globalPosition$1];
-    }
-    set globalPosition(value) {
-      super.globalPosition = value;
-    }
-    toString() {
-      return dart.str(this[$runtimeType]) + "(" + dart.str(this.delta) + ")";
-    }
-  };
-  (src__gestures__drag_details.DragUpdateDetails.new = function(opts) {
-    let sourceTimeStamp = opts && 'sourceTimeStamp' in opts ? opts.sourceTimeStamp : null;
-    let delta = opts && 'delta' in opts ? opts.delta : ui$.Offset.zero;
-    let primaryDelta = opts && 'primaryDelta' in opts ? opts.primaryDelta : null;
-    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : null;
-    this[sourceTimeStamp$0] = sourceTimeStamp;
-    this[delta$0] = delta;
-    this[primaryDelta$] = primaryDelta;
-    this[globalPosition$1] = globalPosition;
-    if (!(delta != null)) dart.assertFailed();
-    if (!(primaryDelta == null || primaryDelta == delta.dx && delta.dy === 0.0 || primaryDelta == delta.dy && delta.dx === 0.0)) dart.assertFailed();
-    ;
-  }).prototype = src__gestures__drag_details.DragUpdateDetails.prototype;
-  dart.addTypeTests(src__gestures__drag_details.DragUpdateDetails);
-  const sourceTimeStamp$0 = Symbol("DragUpdateDetails.sourceTimeStamp");
-  const delta$0 = Symbol("DragUpdateDetails.delta");
-  const primaryDelta$ = Symbol("DragUpdateDetails.primaryDelta");
-  const globalPosition$1 = Symbol("DragUpdateDetails.globalPosition");
-  dart.setFieldSignature(src__gestures__drag_details.DragUpdateDetails, () => ({
-    __proto__: dart.getFields(src__gestures__drag_details.DragUpdateDetails.__proto__),
-    sourceTimeStamp: dart.finalFieldType(core.Duration),
-    delta: dart.finalFieldType(ui$.Offset),
-    primaryDelta: dart.finalFieldType(core.double),
-    globalPosition: dart.finalFieldType(ui$.Offset)
-  }));
-  dart.defineExtensionMethods(src__gestures__drag_details.DragUpdateDetails, ['toString']);
-  src__gestures__drag_details.DragEndDetails = class DragEndDetails extends core.Object {
-    get velocity() {
-      return this[velocity$0];
-    }
-    set velocity(value) {
-      super.velocity = value;
-    }
-    get primaryVelocity() {
-      return this[primaryVelocity$];
-    }
-    set primaryVelocity(value) {
-      super.primaryVelocity = value;
-    }
-    toString() {
-      return dart.str(this[$runtimeType]) + "(" + dart.str(this.velocity) + ")";
-    }
-  };
-  (src__gestures__drag_details.DragEndDetails.new = function(opts) {
-    let velocity = opts && 'velocity' in opts ? opts.velocity : src__gestures__velocity_tracker.Velocity.zero;
-    let primaryVelocity = opts && 'primaryVelocity' in opts ? opts.primaryVelocity : null;
-    this[velocity$0] = velocity;
-    this[primaryVelocity$] = primaryVelocity;
-    if (!(velocity != null)) dart.assertFailed();
-    if (!(primaryVelocity == null || primaryVelocity == velocity.pixelsPerSecond.dx || primaryVelocity == velocity.pixelsPerSecond.dy)) dart.assertFailed();
-    ;
-  }).prototype = src__gestures__drag_details.DragEndDetails.prototype;
-  dart.addTypeTests(src__gestures__drag_details.DragEndDetails);
-  const velocity$0 = Symbol("DragEndDetails.velocity");
-  const primaryVelocity$ = Symbol("DragEndDetails.primaryVelocity");
-  dart.setFieldSignature(src__gestures__drag_details.DragEndDetails, () => ({
-    __proto__: dart.getFields(src__gestures__drag_details.DragEndDetails.__proto__),
-    velocity: dart.finalFieldType(src__gestures__velocity_tracker.Velocity),
-    primaryVelocity: dart.finalFieldType(core.double)
-  }));
-  dart.defineExtensionMethods(src__gestures__drag_details.DragEndDetails, ['toString']);
-  src__gestures__drag.Drag = class Drag extends core.Object {
-    update(details) {
-    }
-    end(details) {
-    }
-    cancel() {
-    }
-  };
-  (src__gestures__drag.Drag.new = function() {
-    ;
-  }).prototype = src__gestures__drag.Drag.prototype;
-  dart.addTypeTests(src__gestures__drag.Drag);
-  dart.setMethodSignature(src__gestures__drag.Drag, () => ({
-    __proto__: dart.getMethods(src__gestures__drag.Drag.__proto__),
-    update: dart.fnType(dart.void, [src__gestures__drag_details.DragUpdateDetails]),
-    end: dart.fnType(dart.void, [src__gestures__drag_details.DragEndDetails]),
-    cancel: dart.fnType(dart.void, [])
-  }));
-  src__gestures__tap.TapDownDetails = class TapDownDetails extends core.Object {
-    get globalPosition() {
-      return this[globalPosition$2];
-    }
-    set globalPosition(value) {
-      super.globalPosition = value;
-    }
-  };
-  (src__gestures__tap.TapDownDetails.new = function(opts) {
-    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : ui$.Offset.zero;
-    this[globalPosition$2] = globalPosition;
-    if (!(globalPosition != null)) dart.assertFailed();
-    ;
-  }).prototype = src__gestures__tap.TapDownDetails.prototype;
-  dart.addTypeTests(src__gestures__tap.TapDownDetails);
-  const globalPosition$2 = Symbol("TapDownDetails.globalPosition");
-  dart.setFieldSignature(src__gestures__tap.TapDownDetails, () => ({
-    __proto__: dart.getFields(src__gestures__tap.TapDownDetails.__proto__),
-    globalPosition: dart.finalFieldType(ui$.Offset)
-  }));
-  src__gestures__tap.TapUpDetails = class TapUpDetails extends core.Object {
-    get globalPosition() {
-      return this[globalPosition$3];
-    }
-    set globalPosition(value) {
-      super.globalPosition = value;
-    }
   };
   (src__gestures__tap.TapUpDetails.new = function(opts) {
-    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : ui$.Offset.zero;
-    this[globalPosition$3] = globalPosition;
-    if (!(globalPosition != null)) dart.assertFailed();
+    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : C5 || CT.C5;
+    this[globalPosition$0] = globalPosition;
+    if (!(globalPosition != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/tap.dart", 56, 16, "globalPosition != null");
     ;
   }).prototype = src__gestures__tap.TapUpDetails.prototype;
   dart.addTypeTests(src__gestures__tap.TapUpDetails);
-  const globalPosition$3 = Symbol("TapUpDetails.globalPosition");
+  const globalPosition$0 = Symbol("TapUpDetails.globalPosition");
+  dart.setLibraryUri(src__gestures__tap.TapUpDetails, "package:flutter_web/src/gestures/tap.dart");
   dart.setFieldSignature(src__gestures__tap.TapUpDetails, () => ({
     __proto__: dart.getFields(src__gestures__tap.TapUpDetails.__proto__),
     globalPosition: dart.finalFieldType(ui$.Offset)
@@ -3784,7 +3616,9 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const _sentTapDown = dart.privateName(src__gestures__tap, "_sentTapDown");
   const _wonArenaForPrimaryPointer = dart.privateName(src__gestures__tap, "_wonArenaForPrimaryPointer");
   const _finalPosition = dart.privateName(src__gestures__tap, "_finalPosition");
+  const _initialButtons = dart.privateName(src__gestures__tap, "_initialButtons");
   const _checkUp = dart.privateName(src__gestures__tap, "_checkUp");
+  const _checkCancel = dart.privateName(src__gestures__tap, "_checkCancel");
   const _reset = dart.privateName(src__gestures__tap, "_reset");
   const _checkDown = dart.privateName(src__gestures__tap, "_checkDown");
   src__gestures__tap.TapGestureRecognizer = class TapGestureRecognizer extends src__gestures__recognizer.PrimaryPointerGestureRecognizer {
@@ -3812,32 +3646,77 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     set onTapCancel(value) {
       this[onTapCancel] = value;
     }
+    get onSecondaryTapDown() {
+      return this[onSecondaryTapDown];
+    }
+    set onSecondaryTapDown(value) {
+      this[onSecondaryTapDown] = value;
+    }
+    get onSecondaryTapUp() {
+      return this[onSecondaryTapUp];
+    }
+    set onSecondaryTapUp(value) {
+      this[onSecondaryTapUp] = value;
+    }
+    get onSecondaryTapCancel() {
+      return this[onSecondaryTapCancel];
+    }
+    set onSecondaryTapCancel(value) {
+      this[onSecondaryTapCancel] = value;
+    }
+    isPointerAllowed(event) {
+      switch (event.buttons) {
+        case 1:
+        {
+          if (this.onTapDown == null && this.onTap == null && this.onTapUp == null && this.onTapCancel == null) return false;
+          break;
+        }
+        case 2:
+        {
+          if (this.onSecondaryTapDown == null && this.onSecondaryTapUp == null && this.onSecondaryTapCancel == null) return false;
+          break;
+        }
+        default:
+        {
+          return false;
+        }
+      }
+      return super.isPointerAllowed(event);
+    }
+    addAllowedPointer(event) {
+      super.addAllowedPointer(event);
+      this[_initialButtons] = event.buttons;
+    }
     handlePrimaryPointer(event) {
       if (src__gestures__events.PointerUpEvent.is(event)) {
         this[_finalPosition] = event.position;
         this[_checkUp]();
       } else if (src__gestures__events.PointerCancelEvent.is(event)) {
-        if (dart.test(this[_sentTapDown]) && this.onTapCancel != null) {
-          this.invokeCallback(dart.void, "onTapCancel", this.onTapCancel);
+        this.resolve(src__gestures__arena.GestureDisposition.rejected);
+        if (dart.test(this[_sentTapDown])) {
+          this[_checkCancel]("");
         }
         this[_reset]();
+      } else if (event.buttons != this[_initialButtons]) {
+        this.resolve(src__gestures__arena.GestureDisposition.rejected);
+        this.stopTrackingPointer(this.primaryPointer);
       }
     }
     resolve(disposition) {
       if (dart.test(this[_wonArenaForPrimaryPointer]) && dart.equals(disposition, src__gestures__arena.GestureDisposition.rejected)) {
-        if (!dart.test(this[_sentTapDown])) dart.assertFailed();
-        if (this.onTapCancel != null) this.invokeCallback(dart.void, "spontaneous onTapCancel", this.onTapCancel);
+        if (!dart.test(this[_sentTapDown])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/tap.dart", 284, 14, "_sentTapDown");
+        this[_checkCancel]("spontaneous ");
         this[_reset]();
       }
       super.resolve(disposition);
     }
-    didExceedDeadline() {
-      this[_checkDown]();
+    didExceedDeadlineWithEvent(event) {
+      this[_checkDown](event.pointer);
     }
     acceptGesture(pointer) {
       super.acceptGesture(pointer);
       if (pointer == this.primaryPointer) {
-        this[_checkDown]();
+        this[_checkDown](pointer);
         this[_wonArenaForPrimaryPointer] = true;
         this[_checkUp]();
       }
@@ -3845,36 +3724,72 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     rejectGesture(pointer) {
       super.rejectGesture(pointer);
       if (pointer == this.primaryPointer) {
-        if (!!dart.equals(this.state, src__gestures__recognizer.GestureRecognizerState.possible)) dart.assertFailed();
-        if (dart.test(this[_sentTapDown]) && this.onTapCancel != null) this.invokeCallback(dart.void, "forced onTapCancel", this.onTapCancel);
+        if (!!dart.equals(this.state, src__gestures__recognizer.GestureRecognizerState.possible)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/tap.dart", 311, 14, "state != GestureRecognizerState.possible");
+        if (dart.test(this[_sentTapDown])) this[_checkCancel]("forced ");
         this[_reset]();
       }
     }
-    [_checkDown]() {
-      if (!dart.test(this[_sentTapDown])) {
-        if (this.onTapDown != null) this.invokeCallback(dart.void, "onTapDown", dart.fn(() => {
-          this.onTapDown(new src__gestures__tap.TapDownDetails.new({globalPosition: this.initialPosition}));
-        }, VoidToNull()));
-        this[_sentTapDown] = true;
+    [_checkDown](pointer) {
+      if (dart.test(this[_sentTapDown])) {
+        return;
       }
+      let details = new src__gestures__tap.TapDownDetails.new({globalPosition: this.initialPosition, kind: this.getKindForPointer(pointer)});
+      switch (this[_initialButtons]) {
+        case 1:
+        {
+          if (this.onTapDown != null) this.invokeCallback(dart.void, "onTapDown", dart.fn(() => this.onTapDown(details), VoidTovoid()));
+          break;
+        }
+        case 2:
+        {
+          if (this.onSecondaryTapDown != null) this.invokeCallback(dart.void, "onSecondaryTapDown", dart.fn(() => this.onSecondaryTapDown(details), VoidTovoid()));
+          break;
+        }
+        default:
+      }
+      this[_sentTapDown] = true;
     }
     [_checkUp]() {
-      if (dart.test(this[_wonArenaForPrimaryPointer]) && this[_finalPosition] != null) {
-        this.resolve(src__gestures__arena.GestureDisposition.accepted);
-        if (!dart.test(this[_wonArenaForPrimaryPointer]) || this[_finalPosition] == null) {
-          return;
+      if (!dart.test(this[_wonArenaForPrimaryPointer]) || this[_finalPosition] == null) {
+        return;
+      }
+      let details = new src__gestures__tap.TapUpDetails.new({globalPosition: this[_finalPosition]});
+      switch (this[_initialButtons]) {
+        case 1:
+        {
+          if (this.onTapUp != null) this.invokeCallback(dart.void, "onTapUp", dart.fn(() => this.onTapUp(details), VoidTovoid()));
+          if (this.onTap != null) this.invokeCallback(dart.void, "onTap", this.onTap);
+          break;
         }
-        if (this.onTapUp != null) this.invokeCallback(dart.void, "onTapUp", dart.fn(() => {
-          this.onTapUp(new src__gestures__tap.TapUpDetails.new({globalPosition: this[_finalPosition]}));
-        }, VoidToNull()));
-        if (this.onTap != null) this.invokeCallback(dart.void, "onTap", this.onTap);
-        this[_reset]();
+        case 2:
+        {
+          if (this.onSecondaryTapUp != null) this.invokeCallback(dart.void, "onSecondaryTapUp", dart.fn(() => this.onSecondaryTapUp(details), VoidTovoid()));
+          break;
+        }
+        default:
+      }
+      this[_reset]();
+    }
+    [_checkCancel](note) {
+      switch (this[_initialButtons]) {
+        case 1:
+        {
+          if (this.onTapCancel != null) this.invokeCallback(dart.void, dart.str(note) + "onTapCancel", this.onTapCancel);
+          break;
+        }
+        case 2:
+        {
+          if (this.onSecondaryTapCancel != null) this.invokeCallback(dart.void, dart.str(note) + "onSecondaryTapCancel", this.onSecondaryTapCancel);
+          break;
+        }
+        default:
       }
     }
     [_reset]() {
       this[_sentTapDown] = false;
       this[_wonArenaForPrimaryPointer] = false;
       this[_finalPosition] = null;
+      this[_initialButtons] = null;
     }
     get debugDescription() {
       return "tap";
@@ -3892,9 +3807,13 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     this[onTapUp] = null;
     this[onTap] = null;
     this[onTapCancel] = null;
+    this[onSecondaryTapDown] = null;
+    this[onSecondaryTapUp] = null;
+    this[onSecondaryTapCancel] = null;
     this[_sentTapDown] = false;
     this[_wonArenaForPrimaryPointer] = false;
     this[_finalPosition] = null;
+    this[_initialButtons] = null;
     src__gestures__tap.TapGestureRecognizer.__proto__.new.call(this, {deadline: src__gestures__constants.kPressTimeout, debugOwner: debugOwner});
     ;
   }).prototype = src__gestures__tap.TapGestureRecognizer.prototype;
@@ -3903,26 +3822,35 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const onTapUp = Symbol("TapGestureRecognizer.onTapUp");
   const onTap = Symbol("TapGestureRecognizer.onTap");
   const onTapCancel = Symbol("TapGestureRecognizer.onTapCancel");
+  const onSecondaryTapDown = Symbol("TapGestureRecognizer.onSecondaryTapDown");
+  const onSecondaryTapUp = Symbol("TapGestureRecognizer.onSecondaryTapUp");
+  const onSecondaryTapCancel = Symbol("TapGestureRecognizer.onSecondaryTapCancel");
   dart.setMethodSignature(src__gestures__tap.TapGestureRecognizer, () => ({
     __proto__: dart.getMethods(src__gestures__tap.TapGestureRecognizer.__proto__),
     handlePrimaryPointer: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
-    [_checkDown]: dart.fnType(dart.void, []),
+    [_checkDown]: dart.fnType(dart.void, [core.int]),
     [_checkUp]: dart.fnType(dart.void, []),
+    [_checkCancel]: dart.fnType(dart.void, [core.String]),
     [_reset]: dart.fnType(dart.void, [])
   }));
   dart.setGetterSignature(src__gestures__tap.TapGestureRecognizer, () => ({
     __proto__: dart.getGetters(src__gestures__tap.TapGestureRecognizer.__proto__),
     debugDescription: core.String
   }));
+  dart.setLibraryUri(src__gestures__tap.TapGestureRecognizer, "package:flutter_web/src/gestures/tap.dart");
   dart.setFieldSignature(src__gestures__tap.TapGestureRecognizer, () => ({
     __proto__: dart.getFields(src__gestures__tap.TapGestureRecognizer.__proto__),
     onTapDown: dart.fieldType(dart.fnType(dart.void, [src__gestures__tap.TapDownDetails])),
     onTapUp: dart.fieldType(dart.fnType(dart.void, [src__gestures__tap.TapUpDetails])),
     onTap: dart.fieldType(dart.fnType(dart.void, [])),
     onTapCancel: dart.fieldType(dart.fnType(dart.void, [])),
+    onSecondaryTapDown: dart.fieldType(dart.fnType(dart.void, [src__gestures__tap.TapDownDetails])),
+    onSecondaryTapUp: dart.fieldType(dart.fnType(dart.void, [src__gestures__tap.TapUpDetails])),
+    onSecondaryTapCancel: dart.fieldType(dart.fnType(dart.void, [])),
     [_sentTapDown]: dart.fieldType(core.bool),
     [_wonArenaForPrimaryPointer]: dart.fieldType(core.bool),
-    [_finalPosition]: dart.fieldType(ui$.Offset)
+    [_finalPosition]: dart.fieldType(ui$.Offset),
+    [_initialButtons]: dart.fieldType(core.int)
   }));
   src__gestures__eager.EagerGestureRecognizer = class EagerGestureRecognizer extends src__gestures__recognizer.OneSequenceGestureRecognizer {
     addAllowedPointer(event) {
@@ -3953,7 +3881,14 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getGetters(src__gestures__eager.EagerGestureRecognizer.__proto__),
     debugDescription: core.String
   }));
+  dart.setLibraryUri(src__gestures__eager.EagerGestureRecognizer, "package:flutter_web/src/gestures/eager.dart");
   const _name$2 = dart.privateName(src__gestures__force_press, "_name");
+  let C41;
+  let C42;
+  let C43;
+  let C44;
+  let C45;
+  let C46;
   src__gestures__force_press._ForceState = class _ForceState extends core.Object {
     toString() {
       return this[_name$2];
@@ -3965,21 +3900,22 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     ;
   }).prototype = src__gestures__force_press._ForceState.prototype;
   dart.addTypeTests(src__gestures__force_press._ForceState);
+  dart.setLibraryUri(src__gestures__force_press._ForceState, "package:flutter_web/src/gestures/force_press.dart");
   dart.setFieldSignature(src__gestures__force_press._ForceState, () => ({
     __proto__: dart.getFields(src__gestures__force_press._ForceState.__proto__),
     index: dart.finalFieldType(core.int),
     [_name$2]: dart.finalFieldType(core.String)
   }));
   dart.defineExtensionMethods(src__gestures__force_press._ForceState, ['toString']);
-  src__gestures__force_press._ForceState.ready = dart.const(new src__gestures__force_press._ForceState.new(0, "_ForceState.ready"));
-  src__gestures__force_press._ForceState.possible = dart.const(new src__gestures__force_press._ForceState.new(1, "_ForceState.possible"));
-  src__gestures__force_press._ForceState.accepted = dart.const(new src__gestures__force_press._ForceState.new(2, "_ForceState.accepted"));
-  src__gestures__force_press._ForceState.started = dart.const(new src__gestures__force_press._ForceState.new(3, "_ForceState.started"));
-  src__gestures__force_press._ForceState.peaked = dart.const(new src__gestures__force_press._ForceState.new(4, "_ForceState.peaked"));
-  src__gestures__force_press._ForceState.values = dart.constList([src__gestures__force_press._ForceState.ready, src__gestures__force_press._ForceState.possible, src__gestures__force_press._ForceState.accepted, src__gestures__force_press._ForceState.started, src__gestures__force_press._ForceState.peaked], src__gestures__force_press._ForceState);
+  src__gestures__force_press._ForceState.ready = C41 || CT.C41;
+  src__gestures__force_press._ForceState.possible = C42 || CT.C42;
+  src__gestures__force_press._ForceState.accepted = C43 || CT.C43;
+  src__gestures__force_press._ForceState.started = C44 || CT.C44;
+  src__gestures__force_press._ForceState.peaked = C45 || CT.C45;
+  src__gestures__force_press._ForceState.values = C46 || CT.C46;
   src__gestures__force_press.ForcePressDetails = class ForcePressDetails extends core.Object {
     get globalPosition() {
-      return this[globalPosition$4];
+      return this[globalPosition$1];
     }
     set globalPosition(value) {
       super.globalPosition = value;
@@ -3994,20 +3930,22 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   (src__gestures__force_press.ForcePressDetails.new = function(opts) {
     let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : null;
     let pressure = opts && 'pressure' in opts ? opts.pressure : null;
-    this[globalPosition$4] = globalPosition;
+    this[globalPosition$1] = globalPosition;
     this[pressure$0] = pressure;
-    if (!(globalPosition != null)) dart.assertFailed();
-    if (!(pressure != null)) dart.assertFailed();
+    if (!(globalPosition != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/force_press.dart", 55, 16, "globalPosition != null");
+    if (!(pressure != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/force_press.dart", 56, 16, "pressure != null");
     ;
   }).prototype = src__gestures__force_press.ForcePressDetails.prototype;
   dart.addTypeTests(src__gestures__force_press.ForcePressDetails);
-  const globalPosition$4 = Symbol("ForcePressDetails.globalPosition");
+  const globalPosition$1 = Symbol("ForcePressDetails.globalPosition");
   const pressure$0 = Symbol("ForcePressDetails.pressure");
+  dart.setLibraryUri(src__gestures__force_press.ForcePressDetails, "package:flutter_web/src/gestures/force_press.dart");
   dart.setFieldSignature(src__gestures__force_press.ForcePressDetails, () => ({
     __proto__: dart.getFields(src__gestures__force_press.ForcePressDetails.__proto__),
     globalPosition: dart.finalFieldType(ui$.Offset),
     pressure: dart.finalFieldType(core.double)
   }));
+  let C47;
   const _lastPosition = dart.privateName(src__gestures__force_press, "_lastPosition");
   const _lastPressure = dart.privateName(src__gestures__force_press, "_lastPressure");
   const _state$ = dart.privateName(src__gestures__force_press, "_state");
@@ -4066,20 +4004,20 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       }
     }
     handleEvent(event) {
-      if (!!dart.equals(this[_state$], src__gestures__force_press._ForceState.ready)) dart.assertFailed();
+      if (!!dart.equals(this[_state$], src__gestures__force_press._ForceState.ready)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/force_press.dart", 232, 12, "_state != _ForceState.ready");
       if (src__gestures__events.PointerMoveEvent.is(event) || src__gestures__events.PointerDownEvent.is(event)) {
         if (dart.notNull(event.pressure) > dart.notNull(event.pressureMax) || dart.notNull(event.pressure) < dart.notNull(event.pressureMin)) {
           src__foundation__print.debugPrint("The reported device pressure " + dart.toString(event.pressure) + " is outside of the device pressure range where: " + dart.toString(event.pressureMin) + " <= pressure <= " + dart.toString(event.pressureMax));
         }
         let pressure = this.interpolation(event.pressureMin, event.pressureMax, event.pressure);
-        if (!(dart.notNull(pressure) >= 0.0 && dart.notNull(pressure) <= 1.0 || pressure[$isNaN])) dart.assertFailed();
+        if (!(dart.notNull(pressure) >= 0.0 && dart.notNull(pressure) <= 1.0 || pressure[$isNaN])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/force_press.dart", 249, 14, "(pressure >= 0.0 &&\n                  pressure <=\n                      1.0) || // Interpolated pressure must be between 1.0 and 0.0...\n              pressure\n                  .isNaN");
         this[_lastPosition] = event.position;
         this[_lastPressure] = pressure;
         if (dart.equals(this[_state$], src__gestures__force_press._ForceState.possible)) {
           if (dart.notNull(pressure) > dart.notNull(this.startPressure)) {
             this[_state$] = src__gestures__force_press._ForceState.started;
             this.resolve(src__gestures__arena.GestureDisposition.accepted);
-          } else if (dart.notNull(event.delta.distanceSquared) > dart.notNull(src__gestures__constants.kTouchSlop)) {
+          } else if (dart.notNull(event.delta.distanceSquared) > 18) {
             this.resolve(src__gestures__arena.GestureDisposition.rejected);
           }
         }
@@ -4127,7 +4065,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       this.didStopTrackingLastPointer(pointer);
     }
     static _inverseLerp(min, max, t) {
-      if (!(dart.notNull(min) <= dart.notNull(max))) dart.assertFailed();
+      if (!(dart.notNull(min) <= dart.notNull(max))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/force_press.dart", 351, 12, "min <= max");
       let value = (dart.notNull(t) - dart.notNull(min)) / (dart.notNull(max) - dart.notNull(min));
       if (!value[$isNaN]) value = value[$clamp](0.0, 1.0);
       return value;
@@ -4139,7 +4077,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   (src__gestures__force_press.ForcePressGestureRecognizer.new = function(opts) {
     let startPressure = opts && 'startPressure' in opts ? opts.startPressure : 0.4;
     let peakPressure = opts && 'peakPressure' in opts ? opts.peakPressure : 0.85;
-    let interpolation = opts && 'interpolation' in opts ? opts.interpolation : dart.fn(src__gestures__force_press.ForcePressGestureRecognizer._inverseLerp, doubleAnddoubleAnddoubleTodouble());
+    let interpolation = opts && 'interpolation' in opts ? opts.interpolation : C47 || CT.C47;
     let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
     let kind = opts && 'kind' in opts ? opts.kind : null;
     this[onStart$] = null;
@@ -4152,10 +4090,10 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     this[startPressure$] = startPressure;
     this[peakPressure$] = peakPressure;
     this[interpolation$] = interpolation;
-    if (!(startPressure != null)) dart.assertFailed();
-    if (!(peakPressure != null)) dart.assertFailed();
-    if (!(interpolation != null)) dart.assertFailed();
-    if (!(dart.notNull(peakPressure) > dart.notNull(startPressure))) dart.assertFailed();
+    if (!(startPressure != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/force_press.dart", 131, 16, "startPressure != null");
+    if (!(peakPressure != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/force_press.dart", 132, 16, "peakPressure != null");
+    if (!(interpolation != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/force_press.dart", 133, 16, "interpolation != null");
+    if (!(dart.notNull(peakPressure) > dart.notNull(startPressure))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/force_press.dart", 134, 16, "peakPressure > startPressure");
     src__gestures__force_press.ForcePressGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
     ;
   }).prototype = src__gestures__force_press.ForcePressGestureRecognizer.prototype;
@@ -4177,6 +4115,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getGetters(src__gestures__force_press.ForcePressGestureRecognizer.__proto__),
     debugDescription: core.String
   }));
+  dart.setLibraryUri(src__gestures__force_press.ForcePressGestureRecognizer, "package:flutter_web/src/gestures/force_press.dart");
   dart.setFieldSignature(src__gestures__force_press.ForcePressGestureRecognizer, () => ({
     __proto__: dart.getFields(src__gestures__force_press.ForcePressGestureRecognizer.__proto__),
     onStart: dart.fieldType(dart.fnType(dart.void, [src__gestures__force_press.ForcePressDetails])),
@@ -4227,6 +4166,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const onEnter$ = Symbol("MouseTrackerAnnotation.onEnter");
   const onHover$ = Symbol("MouseTrackerAnnotation.onHover");
   const onExit$ = Symbol("MouseTrackerAnnotation.onExit");
+  dart.setLibraryUri(src__gestures__mouse_tracking.MouseTrackerAnnotation, "package:flutter_web/src/gestures/mouse_tracking.dart");
   dart.setFieldSignature(src__gestures__mouse_tracking.MouseTrackerAnnotation, () => ({
     __proto__: dart.getFields(src__gestures__mouse_tracking.MouseTrackerAnnotation.__proto__),
     onEnter: dart.finalFieldType(dart.fnType(dart.void, [src__gestures__events.PointerEnterEvent])),
@@ -4236,22 +4176,26 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   dart.defineExtensionMethods(src__gestures__mouse_tracking.MouseTrackerAnnotation, ['toString']);
   src__gestures__mouse_tracking._TrackedAnnotation = class _TrackedAnnotation extends core.Object {};
   (src__gestures__mouse_tracking._TrackedAnnotation.new = function(annotation) {
-    this.activeDevices = new (_IdentityHashSetOfint()).new();
+    this.activeDevices = LinkedHashSetOfint().new();
     this.annotation = annotation;
     ;
   }).prototype = src__gestures__mouse_tracking._TrackedAnnotation.prototype;
   dart.addTypeTests(src__gestures__mouse_tracking._TrackedAnnotation);
+  dart.setLibraryUri(src__gestures__mouse_tracking._TrackedAnnotation, "package:flutter_web/src/gestures/mouse_tracking.dart");
   dart.setFieldSignature(src__gestures__mouse_tracking._TrackedAnnotation, () => ({
     __proto__: dart.getFields(src__gestures__mouse_tracking._TrackedAnnotation.__proto__),
     annotation: dart.finalFieldType(src__gestures__mouse_tracking.MouseTrackerAnnotation),
     activeDevices: dart.fieldType(core.Set$(core.int))
   }));
   const _trackedAnnotations = dart.privateName(src__gestures__mouse_tracking, "_trackedAnnotations");
+  const _postFrameCheckScheduled = dart.privateName(src__gestures__mouse_tracking, "_postFrameCheckScheduled");
   const _lastMouseEvent = dart.privateName(src__gestures__mouse_tracking, "_lastMouseEvent");
-  const _handleEvent$ = dart.privateName(src__gestures__mouse_tracking, "_handleEvent");
+  const _handleEvent = dart.privateName(src__gestures__mouse_tracking, "_handleEvent");
   const _scheduleMousePositionCheck = dart.privateName(src__gestures__mouse_tracking, "_scheduleMousePositionCheck");
   const _findAnnotation = dart.privateName(src__gestures__mouse_tracking, "_findAnnotation");
-  src__gestures__mouse_tracking.MouseTracker = class MouseTracker extends core.Object {
+  const _addMouseEvent = dart.privateName(src__gestures__mouse_tracking, "_addMouseEvent");
+  const _removeMouseEvent = dart.privateName(src__gestures__mouse_tracking, "_removeMouseEvent");
+  src__gestures__mouse_tracking.MouseTracker = class MouseTracker extends src__foundation__change_notifier.ChangeNotifier {
     get annotationFinder() {
       return this[annotationFinder$];
     }
@@ -4272,33 +4216,39 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       this[_trackedAnnotations][$remove](annotation);
     }
     [_scheduleMousePositionCheck]() {
-      src__scheduler__binding.SchedulerBinding.instance.addPostFrameCallback(dart.fn(_ => this.collectMousePositions(), DurationTovoid()));
-      src__scheduler__binding.SchedulerBinding.instance.scheduleFrame();
+      if (dart.test(this[_trackedAnnotations][$isNotEmpty]) && !dart.test(this[_postFrameCheckScheduled])) {
+        this[_postFrameCheckScheduled] = true;
+        src__scheduler__binding.SchedulerBinding.instance.addPostFrameCallback(dart.fn(_ => {
+          this[_postFrameCheckScheduled] = false;
+          this.collectMousePositions();
+        }, DurationToNull()));
+        src__scheduler__binding.SchedulerBinding.instance.scheduleFrame();
+      }
     }
-    [_handleEvent$](event) {
+    [_handleEvent](event) {
       if (!dart.equals(event.kind, ui$.PointerDeviceKind.mouse)) {
         return;
       }
       let deviceId = event.device;
-      if (dart.test(this[_trackedAnnotations][$isEmpty])) {
-        this[_lastMouseEvent][$remove](deviceId);
+      if (src__gestures__events.PointerAddedEvent.is(event)) {
+        this[_addMouseEvent](deviceId, event);
         return;
       }
       if (src__gestures__events.PointerRemovedEvent.is(event)) {
-        this[_lastMouseEvent][$remove](deviceId);
+        this[_removeMouseEvent](deviceId);
         this[_scheduleMousePositionCheck]();
       } else {
         if (src__gestures__events.PointerMoveEvent.is(event) || src__gestures__events.PointerHoverEvent.is(event) || src__gestures__events.PointerDownEvent.is(event)) {
           if (!dart.test(this[_lastMouseEvent][$containsKey](deviceId)) || !dart.equals(this[_lastMouseEvent][$_get](deviceId).position, event.position)) {
             this[_scheduleMousePositionCheck]();
           }
-          this[_lastMouseEvent][$_set](deviceId, event);
+          this[_addMouseEvent](deviceId, event);
         }
       }
     }
     [_findAnnotation](annotation) {
       let trackedAnnotation = this[_trackedAnnotations][$_get](annotation);
-      if (!(trackedAnnotation != null)) dart.assertFailed("Unable to find annotation " + dart.str(annotation) + " in tracked annotations. " + "Check that attachAnnotation has been called for all annotated layers.");
+      if (!(trackedAnnotation != null)) dart.assertFailed("Unable to find annotation " + dart.str(annotation) + " in tracked annotations. " + "Check that attachAnnotation has been called for all annotated layers.", "org-dartlang-app:///packages/flutter_web/src/gestures/mouse_tracking.dart", 189, 9, "trackedAnnotation != null");
       return trackedAnnotation;
     }
     isAnnotationAttached(annotation) {
@@ -4329,34 +4279,50 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       }
       for (let deviceId of this[_lastMouseEvent][$keys]) {
         let lastEvent = this[_lastMouseEvent][$_get](deviceId);
-        let hit = this.annotationFinder(lastEvent.position);
-        if (hit == null) {
+        let hits = this.annotationFinder(lastEvent.position);
+        if (dart.test(hits[$isEmpty])) {
           for (let trackedAnnotation of this[_trackedAnnotations][$values]) {
             exitAnnotation(trackedAnnotation, deviceId);
           }
-          return;
+          continue;
         }
-        let hitAnnotation = this[_findAnnotation](hit);
-        if (!dart.test(hitAnnotation.activeDevices.contains(deviceId))) {
-          hitAnnotation.activeDevices.add(deviceId);
-          if ((t5 = hitAnnotation.annotation, t5 == null ? null : t5.onEnter) != null) {
-            hitAnnotation.annotation.onEnter(new src__gestures__events.PointerEnterEvent.fromMouseEvent(lastEvent));
-          }
-        }
-        if ((t5$ = hitAnnotation.annotation, t5$ == null ? null : t5$.onHover) != null && src__gestures__events.PointerHoverEvent.is(lastEvent)) {
-          hitAnnotation.annotation.onHover(lastEvent);
-        }
-        for (let trackedAnnotation of this[_trackedAnnotations][$values]) {
-          if (dart.equals(hitAnnotation, trackedAnnotation)) {
-            continue;
-          }
-          if (dart.test(trackedAnnotation.activeDevices.contains(deviceId))) {
-            if ((t5$0 = trackedAnnotation.annotation, t5$0 == null ? null : t5$0.onExit) != null) {
-              trackedAnnotation.annotation.onExit(new src__gestures__events.PointerExitEvent.fromMouseEvent(lastEvent));
+        let hitAnnotations = hits[$map](src__gestures__mouse_tracking._TrackedAnnotation, dart.fn(hit => this[_findAnnotation](hit), MouseTrackerAnnotationTo_TrackedAnnotation()))[$toSet]();
+        for (let hitAnnotation of hitAnnotations) {
+          if (!dart.test(hitAnnotation.activeDevices.contains(deviceId))) {
+            hitAnnotation.activeDevices.add(deviceId);
+            if ((t5 = hitAnnotation.annotation, t5 == null ? null : t5.onEnter) != null) {
+              hitAnnotation.annotation.onEnter(new src__gestures__events.PointerEnterEvent.fromMouseEvent(lastEvent));
             }
-            trackedAnnotation.activeDevices.remove(deviceId);
+          }
+          if ((t5$ = hitAnnotation.annotation, t5$ == null ? null : t5$.onHover) != null && src__gestures__events.PointerHoverEvent.is(lastEvent)) {
+            hitAnnotation.annotation.onHover(lastEvent);
+          }
+          for (let trackedAnnotation of this[_trackedAnnotations][$values]) {
+            if (dart.test(hitAnnotations.contains(trackedAnnotation))) {
+              continue;
+            }
+            if (dart.test(trackedAnnotation.activeDevices.contains(deviceId))) {
+              if ((t5$0 = trackedAnnotation.annotation, t5$0 == null ? null : t5$0.onExit) != null) {
+                trackedAnnotation.annotation.onExit(new src__gestures__events.PointerExitEvent.fromMouseEvent(lastEvent));
+              }
+              trackedAnnotation.activeDevices.remove(deviceId);
+            }
           }
         }
+      }
+    }
+    [_addMouseEvent](deviceId, event) {
+      let wasConnected = this.mouseIsConnected;
+      this[_lastMouseEvent][$_set](deviceId, event);
+      if (!dart.equals(this.mouseIsConnected, wasConnected)) {
+        this.notifyListeners();
+      }
+    }
+    [_removeMouseEvent](deviceId) {
+      let wasConnected = this.mouseIsConnected;
+      this[_lastMouseEvent][$remove](deviceId);
+      if (!dart.equals(this.mouseIsConnected, wasConnected)) {
+        this.notifyListeners();
       }
     }
     get mouseIsConnected() {
@@ -4365,11 +4331,13 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   };
   (src__gestures__mouse_tracking.MouseTracker.new = function(router, annotationFinder) {
     this[_trackedAnnotations] = new (LinkedMapOfMouseTrackerAnnotation$_TrackedAnnotation()).new();
+    this[_postFrameCheckScheduled] = false;
     this[_lastMouseEvent] = new (IdentityMapOfint$PointerEvent()).new();
     this[annotationFinder$] = annotationFinder;
-    if (!(router != null)) dart.assertFailed();
-    if (!(annotationFinder != null)) dart.assertFailed();
-    router.addGlobalRoute(dart.bind(this, _handleEvent$));
+    if (!(router != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/mouse_tracking.dart", 100, 16, "router != null");
+    if (!(annotationFinder != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/mouse_tracking.dart", 101, 16, "annotationFinder != null");
+    src__gestures__mouse_tracking.MouseTracker.__proto__.new.call(this);
+    router.addGlobalRoute(dart.bind(this, _handleEvent));
   }).prototype = src__gestures__mouse_tracking.MouseTracker.prototype;
   dart.addTypeTests(src__gestures__mouse_tracking.MouseTracker);
   const annotationFinder$ = Symbol("MouseTracker.annotationFinder");
@@ -4378,23 +4346,955 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     attachAnnotation: dart.fnType(dart.void, [src__gestures__mouse_tracking.MouseTrackerAnnotation]),
     detachAnnotation: dart.fnType(dart.void, [src__gestures__mouse_tracking.MouseTrackerAnnotation]),
     [_scheduleMousePositionCheck]: dart.fnType(dart.void, []),
-    [_handleEvent$]: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
+    [_handleEvent]: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
     [_findAnnotation]: dart.fnType(src__gestures__mouse_tracking._TrackedAnnotation, [src__gestures__mouse_tracking.MouseTrackerAnnotation]),
     isAnnotationAttached: dart.fnType(core.bool, [src__gestures__mouse_tracking.MouseTrackerAnnotation]),
-    collectMousePositions: dart.fnType(dart.void, [])
+    collectMousePositions: dart.fnType(dart.void, []),
+    [_addMouseEvent]: dart.fnType(dart.void, [core.int, src__gestures__events.PointerEvent]),
+    [_removeMouseEvent]: dart.fnType(dart.void, [core.int])
   }));
   dart.setGetterSignature(src__gestures__mouse_tracking.MouseTracker, () => ({
     __proto__: dart.getGetters(src__gestures__mouse_tracking.MouseTracker.__proto__),
     mouseIsConnected: core.bool
   }));
+  dart.setLibraryUri(src__gestures__mouse_tracking.MouseTracker, "package:flutter_web/src/gestures/mouse_tracking.dart");
   dart.setFieldSignature(src__gestures__mouse_tracking.MouseTracker, () => ({
     __proto__: dart.getFields(src__gestures__mouse_tracking.MouseTracker.__proto__),
-    annotationFinder: dart.finalFieldType(dart.fnType(src__gestures__mouse_tracking.MouseTrackerAnnotation, [ui$.Offset])),
+    annotationFinder: dart.finalFieldType(dart.fnType(core.Iterable$(src__gestures__mouse_tracking.MouseTrackerAnnotation), [ui$.Offset])),
     [_trackedAnnotations]: dart.finalFieldType(core.Map$(src__gestures__mouse_tracking.MouseTrackerAnnotation, src__gestures__mouse_tracking._TrackedAnnotation)),
+    [_postFrameCheckScheduled]: dart.fieldType(core.bool),
     [_lastMouseEvent]: dart.finalFieldType(core.Map$(core.int, src__gestures__events.PointerEvent))
+  }));
+  src__gestures__drag.Drag = class Drag extends core.Object {
+    update(details) {
+    }
+    end(details) {
+    }
+    cancel() {
+    }
+  };
+  (src__gestures__drag.Drag.new = function() {
+    ;
+  }).prototype = src__gestures__drag.Drag.prototype;
+  dart.addTypeTests(src__gestures__drag.Drag);
+  dart.setMethodSignature(src__gestures__drag.Drag, () => ({
+    __proto__: dart.getMethods(src__gestures__drag.Drag.__proto__),
+    update: dart.fnType(dart.void, [src__gestures__drag_details.DragUpdateDetails]),
+    end: dart.fnType(dart.void, [src__gestures__drag_details.DragEndDetails]),
+    cancel: dart.fnType(dart.void, [])
+  }));
+  dart.setLibraryUri(src__gestures__drag.Drag, "package:flutter_web/src/gestures/drag.dart");
+  src__gestures__drag_details.DragDownDetails = class DragDownDetails extends core.Object {
+    get globalPosition() {
+      return this[globalPosition$2];
+    }
+    set globalPosition(value) {
+      super.globalPosition = value;
+    }
+    toString() {
+      return dart.str(this[$runtimeType]) + "(" + dart.str(this.globalPosition) + ")";
+    }
+  };
+  (src__gestures__drag_details.DragDownDetails.new = function(opts) {
+    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : C5 || CT.C5;
+    this[globalPosition$2] = globalPosition;
+    if (!(globalPosition != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/drag_details.dart", 24, 16, "globalPosition != null");
+    ;
+  }).prototype = src__gestures__drag_details.DragDownDetails.prototype;
+  dart.addTypeTests(src__gestures__drag_details.DragDownDetails);
+  const globalPosition$2 = Symbol("DragDownDetails.globalPosition");
+  dart.setLibraryUri(src__gestures__drag_details.DragDownDetails, "package:flutter_web/src/gestures/drag_details.dart");
+  dart.setFieldSignature(src__gestures__drag_details.DragDownDetails, () => ({
+    __proto__: dart.getFields(src__gestures__drag_details.DragDownDetails.__proto__),
+    globalPosition: dart.finalFieldType(ui$.Offset)
+  }));
+  dart.defineExtensionMethods(src__gestures__drag_details.DragDownDetails, ['toString']);
+  src__gestures__drag_details.DragStartDetails = class DragStartDetails extends core.Object {
+    get sourceTimeStamp() {
+      return this[sourceTimeStamp$];
+    }
+    set sourceTimeStamp(value) {
+      super.sourceTimeStamp = value;
+    }
+    get globalPosition() {
+      return this[globalPosition$3];
+    }
+    set globalPosition(value) {
+      super.globalPosition = value;
+    }
+    toString() {
+      return dart.str(this[$runtimeType]) + "(" + dart.str(this.globalPosition) + ")";
+    }
+  };
+  (src__gestures__drag_details.DragStartDetails.new = function(opts) {
+    let sourceTimeStamp = opts && 'sourceTimeStamp' in opts ? opts.sourceTimeStamp : null;
+    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : C5 || CT.C5;
+    this[sourceTimeStamp$] = sourceTimeStamp;
+    this[globalPosition$3] = globalPosition;
+    if (!(globalPosition != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/drag_details.dart", 56, 16, "globalPosition != null");
+    ;
+  }).prototype = src__gestures__drag_details.DragStartDetails.prototype;
+  dart.addTypeTests(src__gestures__drag_details.DragStartDetails);
+  const sourceTimeStamp$ = Symbol("DragStartDetails.sourceTimeStamp");
+  const globalPosition$3 = Symbol("DragStartDetails.globalPosition");
+  dart.setLibraryUri(src__gestures__drag_details.DragStartDetails, "package:flutter_web/src/gestures/drag_details.dart");
+  dart.setFieldSignature(src__gestures__drag_details.DragStartDetails, () => ({
+    __proto__: dart.getFields(src__gestures__drag_details.DragStartDetails.__proto__),
+    sourceTimeStamp: dart.finalFieldType(core.Duration),
+    globalPosition: dart.finalFieldType(ui$.Offset)
+  }));
+  dart.defineExtensionMethods(src__gestures__drag_details.DragStartDetails, ['toString']);
+  src__gestures__drag_details.DragUpdateDetails = class DragUpdateDetails extends core.Object {
+    get sourceTimeStamp() {
+      return this[sourceTimeStamp$0];
+    }
+    set sourceTimeStamp(value) {
+      super.sourceTimeStamp = value;
+    }
+    get delta() {
+      return this[delta$0];
+    }
+    set delta(value) {
+      super.delta = value;
+    }
+    get primaryDelta() {
+      return this[primaryDelta$];
+    }
+    set primaryDelta(value) {
+      super.primaryDelta = value;
+    }
+    get globalPosition() {
+      return this[globalPosition$4];
+    }
+    set globalPosition(value) {
+      super.globalPosition = value;
+    }
+    toString() {
+      return dart.str(this[$runtimeType]) + "(" + dart.str(this.delta) + ")";
+    }
+  };
+  (src__gestures__drag_details.DragUpdateDetails.new = function(opts) {
+    let sourceTimeStamp = opts && 'sourceTimeStamp' in opts ? opts.sourceTimeStamp : null;
+    let delta = opts && 'delta' in opts ? opts.delta : C5 || CT.C5;
+    let primaryDelta = opts && 'primaryDelta' in opts ? opts.primaryDelta : null;
+    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : null;
+    this[sourceTimeStamp$0] = sourceTimeStamp;
+    this[delta$0] = delta;
+    this[primaryDelta$] = primaryDelta;
+    this[globalPosition$4] = globalPosition;
+    if (!(delta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/drag_details.dart", 107, 16, "delta != null");
+    if (!(primaryDelta == null || primaryDelta == delta.dx && delta.dy === 0.0 || primaryDelta == delta.dy && delta.dx === 0.0)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/drag_details.dart", 108, 16, "primaryDelta == null ||\n            (primaryDelta == delta.dx && delta.dy == 0.0) ||\n            (primaryDelta == delta.dy && delta.dx == 0.0)");
+    ;
+  }).prototype = src__gestures__drag_details.DragUpdateDetails.prototype;
+  dart.addTypeTests(src__gestures__drag_details.DragUpdateDetails);
+  const sourceTimeStamp$0 = Symbol("DragUpdateDetails.sourceTimeStamp");
+  const delta$0 = Symbol("DragUpdateDetails.delta");
+  const primaryDelta$ = Symbol("DragUpdateDetails.primaryDelta");
+  const globalPosition$4 = Symbol("DragUpdateDetails.globalPosition");
+  dart.setLibraryUri(src__gestures__drag_details.DragUpdateDetails, "package:flutter_web/src/gestures/drag_details.dart");
+  dart.setFieldSignature(src__gestures__drag_details.DragUpdateDetails, () => ({
+    __proto__: dart.getFields(src__gestures__drag_details.DragUpdateDetails.__proto__),
+    sourceTimeStamp: dart.finalFieldType(core.Duration),
+    delta: dart.finalFieldType(ui$.Offset),
+    primaryDelta: dart.finalFieldType(core.double),
+    globalPosition: dart.finalFieldType(ui$.Offset)
+  }));
+  dart.defineExtensionMethods(src__gestures__drag_details.DragUpdateDetails, ['toString']);
+  src__gestures__drag_details.DragEndDetails = class DragEndDetails extends core.Object {
+    get velocity() {
+      return this[velocity$0];
+    }
+    set velocity(value) {
+      super.velocity = value;
+    }
+    get primaryVelocity() {
+      return this[primaryVelocity$];
+    }
+    set primaryVelocity(value) {
+      super.primaryVelocity = value;
+    }
+    toString() {
+      return dart.str(this[$runtimeType]) + "(" + dart.str(this.velocity) + ")";
+    }
+  };
+  (src__gestures__drag_details.DragEndDetails.new = function(opts) {
+    let velocity = opts && 'velocity' in opts ? opts.velocity : C12 || CT.C12;
+    let primaryVelocity = opts && 'primaryVelocity' in opts ? opts.primaryVelocity : null;
+    this[velocity$0] = velocity;
+    this[primaryVelocity$] = primaryVelocity;
+    if (!(velocity != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/drag_details.dart", 170, 16, "velocity != null");
+    if (!(primaryVelocity == null || primaryVelocity == velocity.pixelsPerSecond.dx || primaryVelocity == velocity.pixelsPerSecond.dy)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/drag_details.dart", 171, 16, "primaryVelocity == null ||\n            primaryVelocity == velocity.pixelsPerSecond.dx ||\n            primaryVelocity == velocity.pixelsPerSecond.dy");
+    ;
+  }).prototype = src__gestures__drag_details.DragEndDetails.prototype;
+  dart.addTypeTests(src__gestures__drag_details.DragEndDetails);
+  const velocity$0 = Symbol("DragEndDetails.velocity");
+  const primaryVelocity$ = Symbol("DragEndDetails.primaryVelocity");
+  dart.setLibraryUri(src__gestures__drag_details.DragEndDetails, "package:flutter_web/src/gestures/drag_details.dart");
+  dart.setFieldSignature(src__gestures__drag_details.DragEndDetails, () => ({
+    __proto__: dart.getFields(src__gestures__drag_details.DragEndDetails.__proto__),
+    velocity: dart.finalFieldType(src__gestures__velocity_tracker.Velocity),
+    primaryVelocity: dart.finalFieldType(core.double)
+  }));
+  dart.defineExtensionMethods(src__gestures__drag_details.DragEndDetails, ['toString']);
+  src__gestures__long_press.LongPressStartDetails = class LongPressStartDetails extends core.Object {
+    get globalPosition() {
+      return this[globalPosition$5];
+    }
+    set globalPosition(value) {
+      super.globalPosition = value;
+    }
+  };
+  (src__gestures__long_press.LongPressStartDetails.new = function(opts) {
+    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : C5 || CT.C5;
+    this[globalPosition$5] = globalPosition;
+    if (!(globalPosition != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/long_press.dart", 59, 16, "globalPosition != null");
+    ;
+  }).prototype = src__gestures__long_press.LongPressStartDetails.prototype;
+  dart.addTypeTests(src__gestures__long_press.LongPressStartDetails);
+  const globalPosition$5 = Symbol("LongPressStartDetails.globalPosition");
+  dart.setLibraryUri(src__gestures__long_press.LongPressStartDetails, "package:flutter_web/src/gestures/long_press.dart");
+  dart.setFieldSignature(src__gestures__long_press.LongPressStartDetails, () => ({
+    __proto__: dart.getFields(src__gestures__long_press.LongPressStartDetails.__proto__),
+    globalPosition: dart.finalFieldType(ui$.Offset)
+  }));
+  src__gestures__long_press.LongPressMoveUpdateDetails = class LongPressMoveUpdateDetails extends core.Object {
+    get globalPosition() {
+      return this[globalPosition$6];
+    }
+    set globalPosition(value) {
+      super.globalPosition = value;
+    }
+    get offsetFromOrigin() {
+      return this[offsetFromOrigin$];
+    }
+    set offsetFromOrigin(value) {
+      super.offsetFromOrigin = value;
+    }
+  };
+  (src__gestures__long_press.LongPressMoveUpdateDetails.new = function(opts) {
+    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : C5 || CT.C5;
+    let offsetFromOrigin = opts && 'offsetFromOrigin' in opts ? opts.offsetFromOrigin : C5 || CT.C5;
+    this[globalPosition$6] = globalPosition;
+    this[offsetFromOrigin$] = offsetFromOrigin;
+    if (!(globalPosition != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/long_press.dart", 79, 16, "globalPosition != null");
+    if (!(offsetFromOrigin != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/long_press.dart", 80, 16, "offsetFromOrigin != null");
+    ;
+  }).prototype = src__gestures__long_press.LongPressMoveUpdateDetails.prototype;
+  dart.addTypeTests(src__gestures__long_press.LongPressMoveUpdateDetails);
+  const globalPosition$6 = Symbol("LongPressMoveUpdateDetails.globalPosition");
+  const offsetFromOrigin$ = Symbol("LongPressMoveUpdateDetails.offsetFromOrigin");
+  dart.setLibraryUri(src__gestures__long_press.LongPressMoveUpdateDetails, "package:flutter_web/src/gestures/long_press.dart");
+  dart.setFieldSignature(src__gestures__long_press.LongPressMoveUpdateDetails, () => ({
+    __proto__: dart.getFields(src__gestures__long_press.LongPressMoveUpdateDetails.__proto__),
+    globalPosition: dart.finalFieldType(ui$.Offset),
+    offsetFromOrigin: dart.finalFieldType(ui$.Offset)
+  }));
+  src__gestures__long_press.LongPressEndDetails = class LongPressEndDetails extends core.Object {
+    get globalPosition() {
+      return this[globalPosition$7];
+    }
+    set globalPosition(value) {
+      super.globalPosition = value;
+    }
+  };
+  (src__gestures__long_press.LongPressEndDetails.new = function(opts) {
+    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : C5 || CT.C5;
+    this[globalPosition$7] = globalPosition;
+    if (!(globalPosition != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/long_press.dart", 103, 16, "globalPosition != null");
+    ;
+  }).prototype = src__gestures__long_press.LongPressEndDetails.prototype;
+  dart.addTypeTests(src__gestures__long_press.LongPressEndDetails);
+  const globalPosition$7 = Symbol("LongPressEndDetails.globalPosition");
+  dart.setLibraryUri(src__gestures__long_press.LongPressEndDetails, "package:flutter_web/src/gestures/long_press.dart");
+  dart.setFieldSignature(src__gestures__long_press.LongPressEndDetails, () => ({
+    __proto__: dart.getFields(src__gestures__long_press.LongPressEndDetails.__proto__),
+    globalPosition: dart.finalFieldType(ui$.Offset)
+  }));
+  const _longPressAccepted = dart.privateName(src__gestures__long_press, "_longPressAccepted");
+  const _longPressOrigin = dart.privateName(src__gestures__long_press, "_longPressOrigin");
+  const _initialButtons$ = dart.privateName(src__gestures__long_press, "_initialButtons");
+  const _checkLongPressStart = dart.privateName(src__gestures__long_press, "_checkLongPressStart");
+  const _checkLongPressEnd = dart.privateName(src__gestures__long_press, "_checkLongPressEnd");
+  const _reset$ = dart.privateName(src__gestures__long_press, "_reset");
+  const _checkLongPressMoveUpdate = dart.privateName(src__gestures__long_press, "_checkLongPressMoveUpdate");
+  src__gestures__long_press.LongPressGestureRecognizer = class LongPressGestureRecognizer extends src__gestures__recognizer.PrimaryPointerGestureRecognizer {
+    get onLongPress() {
+      return this[onLongPress];
+    }
+    set onLongPress(value) {
+      this[onLongPress] = value;
+    }
+    get onLongPressStart() {
+      return this[onLongPressStart];
+    }
+    set onLongPressStart(value) {
+      this[onLongPressStart] = value;
+    }
+    get onLongPressMoveUpdate() {
+      return this[onLongPressMoveUpdate];
+    }
+    set onLongPressMoveUpdate(value) {
+      this[onLongPressMoveUpdate] = value;
+    }
+    get onLongPressUp() {
+      return this[onLongPressUp];
+    }
+    set onLongPressUp(value) {
+      this[onLongPressUp] = value;
+    }
+    get onLongPressEnd() {
+      return this[onLongPressEnd];
+    }
+    set onLongPressEnd(value) {
+      this[onLongPressEnd] = value;
+    }
+    isPointerAllowed(event) {
+      switch (event.buttons) {
+        case 1:
+        {
+          if (this.onLongPressStart == null && this.onLongPress == null && this.onLongPressMoveUpdate == null && this.onLongPressEnd == null && this.onLongPressUp == null) return false;
+          break;
+        }
+        default:
+        {
+          return false;
+        }
+      }
+      return super.isPointerAllowed(event);
+    }
+    didExceedDeadline() {
+      this.resolve(src__gestures__arena.GestureDisposition.accepted);
+      this[_longPressAccepted] = true;
+      super.acceptGesture(this.primaryPointer);
+      this[_checkLongPressStart]();
+    }
+    handlePrimaryPointer(event) {
+      if (src__gestures__events.PointerUpEvent.is(event)) {
+        if (dart.equals(this[_longPressAccepted], true)) {
+          this[_checkLongPressEnd](event);
+        } else {
+          this.resolve(src__gestures__arena.GestureDisposition.rejected);
+        }
+        this[_reset$]();
+      } else if (src__gestures__events.PointerCancelEvent.is(event)) {
+        this[_reset$]();
+      } else if (src__gestures__events.PointerDownEvent.is(event)) {
+        this[_longPressOrigin] = event.position;
+        this[_initialButtons$] = event.buttons;
+      } else if (src__gestures__events.PointerMoveEvent.is(event)) {
+        if (event.buttons != this[_initialButtons$]) {
+          this.resolve(src__gestures__arena.GestureDisposition.rejected);
+          this.stopTrackingPointer(this.primaryPointer);
+        } else if (dart.test(this[_longPressAccepted])) {
+          this[_checkLongPressMoveUpdate](event);
+        }
+      }
+    }
+    [_checkLongPressStart]() {
+      if (!(this[_initialButtons$] === 1)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/long_press.dart", 249, 12, "_initialButtons == kPrimaryButton");
+      let details = new src__gestures__long_press.LongPressStartDetails.new({globalPosition: this[_longPressOrigin]});
+      if (this.onLongPressStart != null) this.invokeCallback(dart.void, "onLongPressStart", dart.fn(() => this.onLongPressStart(details), VoidTovoid()));
+      if (this.onLongPress != null) this.invokeCallback(dart.void, "onLongPress", this.onLongPress);
+    }
+    [_checkLongPressMoveUpdate](event) {
+      if (!(this[_initialButtons$] === 1)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/long_press.dart", 259, 12, "_initialButtons == kPrimaryButton");
+      let details = new src__gestures__long_press.LongPressMoveUpdateDetails.new({globalPosition: event.position, offsetFromOrigin: event.position['-'](this[_longPressOrigin])});
+      if (this.onLongPressMoveUpdate != null) this.invokeCallback(dart.void, "onLongPressMoveUpdate", dart.fn(() => this.onLongPressMoveUpdate(details), VoidTovoid()));
+    }
+    [_checkLongPressEnd](event) {
+      if (!(this[_initialButtons$] === 1)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/long_press.dart", 270, 12, "_initialButtons == kPrimaryButton");
+      let details = new src__gestures__long_press.LongPressEndDetails.new({globalPosition: event.position});
+      if (this.onLongPressEnd != null) this.invokeCallback(dart.void, "onLongPressEnd", dart.fn(() => this.onLongPressEnd(details), VoidTovoid()));
+      if (this.onLongPressUp != null) this.invokeCallback(dart.void, "onLongPressUp", this.onLongPressUp);
+    }
+    [_reset$]() {
+      this[_longPressAccepted] = false;
+      this[_longPressOrigin] = null;
+      this[_initialButtons$] = null;
+    }
+    resolve(disposition) {
+      if (dart.test(this[_longPressAccepted]) && dart.equals(disposition, src__gestures__arena.GestureDisposition.rejected)) {
+        this[_reset$]();
+      }
+      super.resolve(disposition);
+    }
+    acceptGesture(pointer) {
+    }
+    get debugDescription() {
+      return "long press";
+    }
+  };
+  (src__gestures__long_press.LongPressGestureRecognizer.new = function(opts) {
+    let postAcceptSlopTolerance = opts && 'postAcceptSlopTolerance' in opts ? opts.postAcceptSlopTolerance : null;
+    let kind = opts && 'kind' in opts ? opts.kind : null;
+    let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
+    this[_longPressAccepted] = false;
+    this[_longPressOrigin] = null;
+    this[_initialButtons$] = null;
+    this[onLongPress] = null;
+    this[onLongPressStart] = null;
+    this[onLongPressMoveUpdate] = null;
+    this[onLongPressUp] = null;
+    this[onLongPressEnd] = null;
+    src__gestures__long_press.LongPressGestureRecognizer.__proto__.new.call(this, {deadline: src__gestures__constants.kLongPressTimeout, postAcceptSlopTolerance: postAcceptSlopTolerance, kind: kind, debugOwner: debugOwner});
+    ;
+  }).prototype = src__gestures__long_press.LongPressGestureRecognizer.prototype;
+  dart.addTypeTests(src__gestures__long_press.LongPressGestureRecognizer);
+  const onLongPress = Symbol("LongPressGestureRecognizer.onLongPress");
+  const onLongPressStart = Symbol("LongPressGestureRecognizer.onLongPressStart");
+  const onLongPressMoveUpdate = Symbol("LongPressGestureRecognizer.onLongPressMoveUpdate");
+  const onLongPressUp = Symbol("LongPressGestureRecognizer.onLongPressUp");
+  const onLongPressEnd = Symbol("LongPressGestureRecognizer.onLongPressEnd");
+  dart.setMethodSignature(src__gestures__long_press.LongPressGestureRecognizer, () => ({
+    __proto__: dart.getMethods(src__gestures__long_press.LongPressGestureRecognizer.__proto__),
+    handlePrimaryPointer: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
+    [_checkLongPressStart]: dart.fnType(dart.void, []),
+    [_checkLongPressMoveUpdate]: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
+    [_checkLongPressEnd]: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
+    [_reset$]: dart.fnType(dart.void, [])
+  }));
+  dart.setGetterSignature(src__gestures__long_press.LongPressGestureRecognizer, () => ({
+    __proto__: dart.getGetters(src__gestures__long_press.LongPressGestureRecognizer.__proto__),
+    debugDescription: core.String
+  }));
+  dart.setLibraryUri(src__gestures__long_press.LongPressGestureRecognizer, "package:flutter_web/src/gestures/long_press.dart");
+  dart.setFieldSignature(src__gestures__long_press.LongPressGestureRecognizer, () => ({
+    __proto__: dart.getFields(src__gestures__long_press.LongPressGestureRecognizer.__proto__),
+    [_longPressAccepted]: dart.fieldType(core.bool),
+    [_longPressOrigin]: dart.fieldType(ui$.Offset),
+    [_initialButtons$]: dart.fieldType(core.int),
+    onLongPress: dart.fieldType(dart.fnType(dart.void, [])),
+    onLongPressStart: dart.fieldType(dart.fnType(dart.void, [src__gestures__long_press.LongPressStartDetails])),
+    onLongPressMoveUpdate: dart.fieldType(dart.fnType(dart.void, [src__gestures__long_press.LongPressMoveUpdateDetails])),
+    onLongPressUp: dart.fieldType(dart.fnType(dart.void, [])),
+    onLongPressEnd: dart.fieldType(dart.fnType(dart.void, [src__gestures__long_press.LongPressEndDetails]))
+  }));
+  const _velocityTracker = dart.privateName(src__gestures__multidrag, "_velocityTracker");
+  const _client = dart.privateName(src__gestures__multidrag, "_client");
+  const _pendingDelta = dart.privateName(src__gestures__multidrag, "_pendingDelta");
+  const _lastPendingEventTimestamp = dart.privateName(src__gestures__multidrag, "_lastPendingEventTimestamp");
+  const _arenaEntry = dart.privateName(src__gestures__multidrag, "_arenaEntry");
+  const _setArenaEntry = dart.privateName(src__gestures__multidrag, "_setArenaEntry");
+  const _move = dart.privateName(src__gestures__multidrag, "_move");
+  const _startDrag = dart.privateName(src__gestures__multidrag, "_startDrag");
+  const _up = dart.privateName(src__gestures__multidrag, "_up");
+  const _cancel = dart.privateName(src__gestures__multidrag, "_cancel");
+  src__gestures__multidrag.MultiDragPointerState = class MultiDragPointerState extends core.Object {
+    get initialPosition() {
+      return this[initialPosition$];
+    }
+    set initialPosition(value) {
+      super.initialPosition = value;
+    }
+    get pendingDelta() {
+      return this[_pendingDelta];
+    }
+    [_setArenaEntry](entry) {
+      if (!(this[_arenaEntry] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 51, 12, "_arenaEntry == null");
+      if (!(this.pendingDelta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 52, 12, "pendingDelta != null");
+      if (!(this[_client] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 53, 12, "_client == null");
+      this[_arenaEntry] = entry;
+    }
+    resolve(disposition) {
+      this[_arenaEntry].resolve(disposition);
+    }
+    [_move](event) {
+      if (!(this[_arenaEntry] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 65, 12, "_arenaEntry != null");
+      if (!dart.test(event.synthesized)) this[_velocityTracker].addPosition(event.timeStamp, event.position);
+      if (this[_client] != null) {
+        if (!(this.pendingDelta == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 69, 14, "pendingDelta == null");
+        this[_client].update(new src__gestures__drag_details.DragUpdateDetails.new({sourceTimeStamp: event.timeStamp, delta: event.delta, globalPosition: event.position}));
+      } else {
+        if (!(this.pendingDelta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 77, 14, "pendingDelta != null");
+        this[_pendingDelta] = this[_pendingDelta]['+'](event.delta);
+        this[_lastPendingEventTimestamp] = event.timeStamp;
+        this.checkForResolutionAfterMove();
+      }
+    }
+    checkForResolutionAfterMove() {
+    }
+    rejected() {
+      if (!(this[_arenaEntry] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 103, 12, "_arenaEntry != null");
+      if (!(this[_client] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 104, 12, "_client == null");
+      if (!(this.pendingDelta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 105, 12, "pendingDelta != null");
+      this[_pendingDelta] = null;
+      this[_lastPendingEventTimestamp] = null;
+      this[_arenaEntry] = null;
+    }
+    [_startDrag](client) {
+      if (!(this[_arenaEntry] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 112, 12, "_arenaEntry != null");
+      if (!(this[_client] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 113, 12, "_client == null");
+      if (!(client != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 114, 12, "client != null");
+      if (!(this.pendingDelta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 115, 12, "pendingDelta != null");
+      this[_client] = client;
+      let details = new src__gestures__drag_details.DragUpdateDetails.new({sourceTimeStamp: this[_lastPendingEventTimestamp], delta: this.pendingDelta, globalPosition: this.initialPosition});
+      this[_pendingDelta] = null;
+      this[_lastPendingEventTimestamp] = null;
+      this[_client].update(details);
+    }
+    [_up]() {
+      if (!(this[_arenaEntry] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 129, 12, "_arenaEntry != null");
+      if (this[_client] != null) {
+        if (!(this.pendingDelta == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 131, 14, "pendingDelta == null");
+        let details = new src__gestures__drag_details.DragEndDetails.new({velocity: this[_velocityTracker].getVelocity()});
+        let client = this[_client];
+        this[_client] = null;
+        client.end(details);
+      } else {
+        if (!(this.pendingDelta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 139, 14, "pendingDelta != null");
+        this[_pendingDelta] = null;
+        this[_lastPendingEventTimestamp] = null;
+      }
+    }
+    [_cancel]() {
+      if (!(this[_arenaEntry] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 146, 12, "_arenaEntry != null");
+      if (this[_client] != null) {
+        if (!(this.pendingDelta == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 148, 14, "pendingDelta == null");
+        let client = this[_client];
+        this[_client] = null;
+        client.cancel();
+      } else {
+        if (!(this.pendingDelta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 154, 14, "pendingDelta != null");
+        this[_pendingDelta] = null;
+        this[_lastPendingEventTimestamp] = null;
+      }
+    }
+    dispose() {
+      let t5;
+      t5 = this[_arenaEntry];
+      t5 == null ? null : t5.resolve(src__gestures__arena.GestureDisposition.rejected);
+      this[_arenaEntry] = null;
+      if (!dart.test(dart.fn(() => {
+        this[_pendingDelta] = null;
+        return true;
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 166, 12, "() {\n      _pendingDelta = null;\n      return true;\n    }()");
+    }
+  };
+  (src__gestures__multidrag.MultiDragPointerState.new = function(initialPosition) {
+    this[_velocityTracker] = new src__gestures__velocity_tracker.VelocityTracker.new();
+    this[_client] = null;
+    this[_pendingDelta] = ui$.Offset.zero;
+    this[_lastPendingEventTimestamp] = null;
+    this[_arenaEntry] = null;
+    this[initialPosition$] = initialPosition;
+    if (!(initialPosition != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 30, 56, "initialPosition != null");
+    ;
+  }).prototype = src__gestures__multidrag.MultiDragPointerState.prototype;
+  dart.addTypeTests(src__gestures__multidrag.MultiDragPointerState);
+  const initialPosition$ = Symbol("MultiDragPointerState.initialPosition");
+  dart.setMethodSignature(src__gestures__multidrag.MultiDragPointerState, () => ({
+    __proto__: dart.getMethods(src__gestures__multidrag.MultiDragPointerState.__proto__),
+    [_setArenaEntry]: dart.fnType(dart.void, [src__gestures__arena.GestureArenaEntry]),
+    resolve: dart.fnType(dart.void, [src__gestures__arena.GestureDisposition]),
+    [_move]: dart.fnType(dart.void, [src__gestures__events.PointerMoveEvent]),
+    checkForResolutionAfterMove: dart.fnType(dart.void, []),
+    rejected: dart.fnType(dart.void, []),
+    [_startDrag]: dart.fnType(dart.void, [src__gestures__drag.Drag]),
+    [_up]: dart.fnType(dart.void, []),
+    [_cancel]: dart.fnType(dart.void, []),
+    dispose: dart.fnType(dart.void, [])
+  }));
+  dart.setGetterSignature(src__gestures__multidrag.MultiDragPointerState, () => ({
+    __proto__: dart.getGetters(src__gestures__multidrag.MultiDragPointerState.__proto__),
+    pendingDelta: ui$.Offset
+  }));
+  dart.setLibraryUri(src__gestures__multidrag.MultiDragPointerState, "package:flutter_web/src/gestures/multidrag.dart");
+  dart.setFieldSignature(src__gestures__multidrag.MultiDragPointerState, () => ({
+    __proto__: dart.getFields(src__gestures__multidrag.MultiDragPointerState.__proto__),
+    initialPosition: dart.finalFieldType(ui$.Offset),
+    [_velocityTracker]: dart.finalFieldType(src__gestures__velocity_tracker.VelocityTracker),
+    [_client]: dart.fieldType(src__gestures__drag.Drag),
+    [_pendingDelta]: dart.fieldType(ui$.Offset),
+    [_lastPendingEventTimestamp]: dart.fieldType(core.Duration),
+    [_arenaEntry]: dart.fieldType(src__gestures__arena.GestureArenaEntry)
+  }));
+  const _pointers = dart.privateName(src__gestures__multidrag, "_pointers");
+  const _handleEvent$ = dart.privateName(src__gestures__multidrag, "_handleEvent");
+  const _removeState = dart.privateName(src__gestures__multidrag, "_removeState");
+  const _is_MultiDragGestureRecognizer_default = Symbol('_is_MultiDragGestureRecognizer_default');
+  src__gestures__multidrag.MultiDragGestureRecognizer$ = dart.generic(T => {
+    let IdentityMapOfint$T = () => (IdentityMapOfint$T = dart.constFn(_js_helper.IdentityMap$(core.int, T)))();
+    class MultiDragGestureRecognizer extends src__gestures__recognizer.GestureRecognizer {
+      get onStart() {
+        return this[onStart];
+      }
+      set onStart(value) {
+        this[onStart] = value;
+      }
+      addAllowedPointer(event) {
+        if (!(this[_pointers] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 211, 12, "_pointers != null");
+        if (!(event.pointer != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 212, 12, "event.pointer != null");
+        if (!(event.position != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 213, 12, "event.position != null");
+        if (!!dart.test(this[_pointers][$containsKey](event.pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 214, 12, "!_pointers.containsKey(event.pointer)");
+        let state = this.createNewPointerState(event);
+        this[_pointers][$_set](event.pointer, state);
+        src__gestures__binding.GestureBinding.instance.pointerRouter.addRoute(event.pointer, dart.bind(this, _handleEvent$));
+        state[_setArenaEntry](src__gestures__binding.GestureBinding.instance.gestureArena.add(event.pointer, this));
+      }
+      [_handleEvent$](event) {
+        if (!(this[_pointers] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 228, 12, "_pointers != null");
+        if (!(event.pointer != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 229, 12, "event.pointer != null");
+        if (!(event.timeStamp != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 230, 12, "event.timeStamp != null");
+        if (!(event.position != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 231, 12, "event.position != null");
+        if (!dart.test(this[_pointers][$containsKey](event.pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 232, 12, "_pointers.containsKey(event.pointer)");
+        let state = this[_pointers][$_get](event.pointer);
+        if (src__gestures__events.PointerMoveEvent.is(event)) {
+          state[_move](event);
+        } else if (src__gestures__events.PointerUpEvent.is(event)) {
+          if (!dart.equals(event.delta, ui$.Offset.zero)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 238, 14, "event.delta == Offset.zero");
+          state[_up]();
+          this[_removeState](event.pointer);
+        } else if (src__gestures__events.PointerCancelEvent.is(event)) {
+          if (!dart.equals(event.delta, ui$.Offset.zero)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 243, 14, "event.delta == Offset.zero");
+          state[_cancel]();
+          this[_removeState](event.pointer);
+        } else if (!src__gestures__events.PointerDownEvent.is(event)) {
+          if (!false) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 251, 14, "false");
+        }
+      }
+      acceptGesture(pointer) {
+        if (!(this[_pointers] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 257, 12, "_pointers != null");
+        let state = this[_pointers][$_get](pointer);
+        if (state == null) return;
+        state.accepted(dart.fn(initialPosition => this[_startDrag](initialPosition, pointer), OffsetToDrag()));
+      }
+      [_startDrag](initialPosition, pointer) {
+        if (!(this[_pointers] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 266, 12, "_pointers != null");
+        let state = this[_pointers][$_get](pointer);
+        if (!(state != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 268, 12, "state != null");
+        if (!(state[_pendingDelta] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 269, 12, "state._pendingDelta != null");
+        let drag = null;
+        if (this.onStart != null) drag = this.invokeCallback(src__gestures__drag.Drag, "onStart", dart.fn(() => this.onStart(initialPosition), VoidToDrag()));
+        if (drag != null) {
+          state[_startDrag](drag);
+        } else {
+          this[_removeState](pointer);
+        }
+        return drag;
+      }
+      rejectGesture(pointer) {
+        if (!(this[_pointers] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 283, 12, "_pointers != null");
+        if (dart.test(this[_pointers][$containsKey](pointer))) {
+          let state = this[_pointers][$_get](pointer);
+          if (!(state != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 286, 14, "state != null");
+          state.rejected();
+          this[_removeState](pointer);
+        }
+      }
+      [_removeState](pointer) {
+        if (this[_pointers] == null) {
+          return;
+        }
+        if (!dart.test(this[_pointers][$containsKey](pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 298, 12, "_pointers.containsKey(pointer)");
+        src__gestures__binding.GestureBinding.instance.pointerRouter.removeRoute(pointer, dart.bind(this, _handleEvent$));
+        this[_pointers][$remove](pointer).dispose();
+      }
+      dispose() {
+        this[_pointers][$keys][$toList]()[$forEach](dart.bind(this, _removeState));
+        if (!dart.test(this[_pointers][$isEmpty])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 306, 12, "_pointers.isEmpty");
+        this[_pointers] = null;
+        super.dispose();
+      }
+    }
+    (MultiDragGestureRecognizer.new = function(opts) {
+      let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
+      let kind = opts && 'kind' in opts ? opts.kind : null;
+      this[onStart] = null;
+      this[_pointers] = new (IdentityMapOfint$T()).new();
+      MultiDragGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
+      ;
+    }).prototype = MultiDragGestureRecognizer.prototype;
+    dart.addTypeTests(MultiDragGestureRecognizer);
+    MultiDragGestureRecognizer.prototype[_is_MultiDragGestureRecognizer_default] = true;
+    const onStart = Symbol("MultiDragGestureRecognizer.onStart");
+    dart.setMethodSignature(MultiDragGestureRecognizer, () => ({
+      __proto__: dart.getMethods(MultiDragGestureRecognizer.__proto__),
+      [_handleEvent$]: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
+      acceptGesture: dart.fnType(dart.void, [core.int]),
+      [_startDrag]: dart.fnType(src__gestures__drag.Drag, [ui$.Offset, core.int]),
+      rejectGesture: dart.fnType(dart.void, [core.int]),
+      [_removeState]: dart.fnType(dart.void, [core.int])
+    }));
+    dart.setLibraryUri(MultiDragGestureRecognizer, "package:flutter_web/src/gestures/multidrag.dart");
+    dart.setFieldSignature(MultiDragGestureRecognizer, () => ({
+      __proto__: dart.getFields(MultiDragGestureRecognizer.__proto__),
+      onStart: dart.fieldType(dart.fnType(src__gestures__drag.Drag, [ui$.Offset])),
+      [_pointers]: dart.fieldType(core.Map$(core.int, T))
+    }));
+    return MultiDragGestureRecognizer;
+  });
+  src__gestures__multidrag.MultiDragGestureRecognizer = src__gestures__multidrag.MultiDragGestureRecognizer$();
+  dart.addTypeTests(src__gestures__multidrag.MultiDragGestureRecognizer, _is_MultiDragGestureRecognizer_default);
+  src__gestures__multidrag._ImmediatePointerState = class _ImmediatePointerState extends src__gestures__multidrag.MultiDragPointerState {
+    checkForResolutionAfterMove() {
+      if (!(this.pendingDelta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 317, 12, "pendingDelta != null");
+      if (dart.notNull(this.pendingDelta.distance) > 18) this.resolve(src__gestures__arena.GestureDisposition.accepted);
+    }
+    accepted(starter) {
+      starter(this.initialPosition);
+    }
+  };
+  (src__gestures__multidrag._ImmediatePointerState.new = function(initialPosition) {
+    src__gestures__multidrag._ImmediatePointerState.__proto__.new.call(this, initialPosition);
+    ;
+  }).prototype = src__gestures__multidrag._ImmediatePointerState.prototype;
+  dart.addTypeTests(src__gestures__multidrag._ImmediatePointerState);
+  dart.setMethodSignature(src__gestures__multidrag._ImmediatePointerState, () => ({
+    __proto__: dart.getMethods(src__gestures__multidrag._ImmediatePointerState.__proto__),
+    accepted: dart.fnType(dart.void, [dart.fnType(src__gestures__drag.Drag, [ui$.Offset])])
+  }));
+  dart.setLibraryUri(src__gestures__multidrag._ImmediatePointerState, "package:flutter_web/src/gestures/multidrag.dart");
+  src__gestures__multidrag.ImmediateMultiDragGestureRecognizer = class ImmediateMultiDragGestureRecognizer extends src__gestures__multidrag.MultiDragGestureRecognizer$(src__gestures__multidrag._ImmediatePointerState) {
+    createNewPointerState(event) {
+      return new src__gestures__multidrag._ImmediatePointerState.new(event.position);
+    }
+    get debugDescription() {
+      return "multidrag";
+    }
+  };
+  (src__gestures__multidrag.ImmediateMultiDragGestureRecognizer.new = function(opts) {
+    let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
+    let kind = opts && 'kind' in opts ? opts.kind : null;
+    src__gestures__multidrag.ImmediateMultiDragGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
+    ;
+  }).prototype = src__gestures__multidrag.ImmediateMultiDragGestureRecognizer.prototype;
+  dart.addTypeTests(src__gestures__multidrag.ImmediateMultiDragGestureRecognizer);
+  dart.setMethodSignature(src__gestures__multidrag.ImmediateMultiDragGestureRecognizer, () => ({
+    __proto__: dart.getMethods(src__gestures__multidrag.ImmediateMultiDragGestureRecognizer.__proto__),
+    createNewPointerState: dart.fnType(src__gestures__multidrag._ImmediatePointerState, [src__gestures__events.PointerDownEvent])
+  }));
+  dart.setGetterSignature(src__gestures__multidrag.ImmediateMultiDragGestureRecognizer, () => ({
+    __proto__: dart.getGetters(src__gestures__multidrag.ImmediateMultiDragGestureRecognizer.__proto__),
+    debugDescription: core.String
+  }));
+  dart.setLibraryUri(src__gestures__multidrag.ImmediateMultiDragGestureRecognizer, "package:flutter_web/src/gestures/multidrag.dart");
+  src__gestures__multidrag._HorizontalPointerState = class _HorizontalPointerState extends src__gestures__multidrag.MultiDragPointerState {
+    checkForResolutionAfterMove() {
+      if (!(this.pendingDelta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 366, 12, "pendingDelta != null");
+      if (this.pendingDelta.dx[$abs]() > 18) this.resolve(src__gestures__arena.GestureDisposition.accepted);
+    }
+    accepted(starter) {
+      starter(this.initialPosition);
+    }
+  };
+  (src__gestures__multidrag._HorizontalPointerState.new = function(initialPosition) {
+    src__gestures__multidrag._HorizontalPointerState.__proto__.new.call(this, initialPosition);
+    ;
+  }).prototype = src__gestures__multidrag._HorizontalPointerState.prototype;
+  dart.addTypeTests(src__gestures__multidrag._HorizontalPointerState);
+  dart.setMethodSignature(src__gestures__multidrag._HorizontalPointerState, () => ({
+    __proto__: dart.getMethods(src__gestures__multidrag._HorizontalPointerState.__proto__),
+    accepted: dart.fnType(dart.void, [dart.fnType(src__gestures__drag.Drag, [ui$.Offset])])
+  }));
+  dart.setLibraryUri(src__gestures__multidrag._HorizontalPointerState, "package:flutter_web/src/gestures/multidrag.dart");
+  src__gestures__multidrag.HorizontalMultiDragGestureRecognizer = class HorizontalMultiDragGestureRecognizer extends src__gestures__multidrag.MultiDragGestureRecognizer$(src__gestures__multidrag._HorizontalPointerState) {
+    createNewPointerState(event) {
+      return new src__gestures__multidrag._HorizontalPointerState.new(event.position);
+    }
+    get debugDescription() {
+      return "horizontal multidrag";
+    }
+  };
+  (src__gestures__multidrag.HorizontalMultiDragGestureRecognizer.new = function(opts) {
+    let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
+    let kind = opts && 'kind' in opts ? opts.kind : null;
+    src__gestures__multidrag.HorizontalMultiDragGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
+    ;
+  }).prototype = src__gestures__multidrag.HorizontalMultiDragGestureRecognizer.prototype;
+  dart.addTypeTests(src__gestures__multidrag.HorizontalMultiDragGestureRecognizer);
+  dart.setMethodSignature(src__gestures__multidrag.HorizontalMultiDragGestureRecognizer, () => ({
+    __proto__: dart.getMethods(src__gestures__multidrag.HorizontalMultiDragGestureRecognizer.__proto__),
+    createNewPointerState: dart.fnType(src__gestures__multidrag._HorizontalPointerState, [src__gestures__events.PointerDownEvent])
+  }));
+  dart.setGetterSignature(src__gestures__multidrag.HorizontalMultiDragGestureRecognizer, () => ({
+    __proto__: dart.getGetters(src__gestures__multidrag.HorizontalMultiDragGestureRecognizer.__proto__),
+    debugDescription: core.String
+  }));
+  dart.setLibraryUri(src__gestures__multidrag.HorizontalMultiDragGestureRecognizer, "package:flutter_web/src/gestures/multidrag.dart");
+  src__gestures__multidrag._VerticalPointerState = class _VerticalPointerState extends src__gestures__multidrag.MultiDragPointerState {
+    checkForResolutionAfterMove() {
+      if (!(this.pendingDelta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 415, 12, "pendingDelta != null");
+      if (this.pendingDelta.dy[$abs]() > 18) this.resolve(src__gestures__arena.GestureDisposition.accepted);
+    }
+    accepted(starter) {
+      starter(this.initialPosition);
+    }
+  };
+  (src__gestures__multidrag._VerticalPointerState.new = function(initialPosition) {
+    src__gestures__multidrag._VerticalPointerState.__proto__.new.call(this, initialPosition);
+    ;
+  }).prototype = src__gestures__multidrag._VerticalPointerState.prototype;
+  dart.addTypeTests(src__gestures__multidrag._VerticalPointerState);
+  dart.setMethodSignature(src__gestures__multidrag._VerticalPointerState, () => ({
+    __proto__: dart.getMethods(src__gestures__multidrag._VerticalPointerState.__proto__),
+    accepted: dart.fnType(dart.void, [dart.fnType(src__gestures__drag.Drag, [ui$.Offset])])
+  }));
+  dart.setLibraryUri(src__gestures__multidrag._VerticalPointerState, "package:flutter_web/src/gestures/multidrag.dart");
+  src__gestures__multidrag.VerticalMultiDragGestureRecognizer = class VerticalMultiDragGestureRecognizer extends src__gestures__multidrag.MultiDragGestureRecognizer$(src__gestures__multidrag._VerticalPointerState) {
+    createNewPointerState(event) {
+      return new src__gestures__multidrag._VerticalPointerState.new(event.position);
+    }
+    get debugDescription() {
+      return "vertical multidrag";
+    }
+  };
+  (src__gestures__multidrag.VerticalMultiDragGestureRecognizer.new = function(opts) {
+    let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
+    let kind = opts && 'kind' in opts ? opts.kind : null;
+    src__gestures__multidrag.VerticalMultiDragGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
+    ;
+  }).prototype = src__gestures__multidrag.VerticalMultiDragGestureRecognizer.prototype;
+  dart.addTypeTests(src__gestures__multidrag.VerticalMultiDragGestureRecognizer);
+  dart.setMethodSignature(src__gestures__multidrag.VerticalMultiDragGestureRecognizer, () => ({
+    __proto__: dart.getMethods(src__gestures__multidrag.VerticalMultiDragGestureRecognizer.__proto__),
+    createNewPointerState: dart.fnType(src__gestures__multidrag._VerticalPointerState, [src__gestures__events.PointerDownEvent])
+  }));
+  dart.setGetterSignature(src__gestures__multidrag.VerticalMultiDragGestureRecognizer, () => ({
+    __proto__: dart.getGetters(src__gestures__multidrag.VerticalMultiDragGestureRecognizer.__proto__),
+    debugDescription: core.String
+  }));
+  dart.setLibraryUri(src__gestures__multidrag.VerticalMultiDragGestureRecognizer, "package:flutter_web/src/gestures/multidrag.dart");
+  const _timer$ = dart.privateName(src__gestures__multidrag, "_timer");
+  const _starter = dart.privateName(src__gestures__multidrag, "_starter");
+  const _delayPassed = dart.privateName(src__gestures__multidrag, "_delayPassed");
+  const _ensureTimerStopped = dart.privateName(src__gestures__multidrag, "_ensureTimerStopped");
+  src__gestures__multidrag._DelayedPointerState = class _DelayedPointerState extends src__gestures__multidrag.MultiDragPointerState {
+    [_delayPassed]() {
+      if (!(this[_timer$] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 470, 12, "_timer != null");
+      if (!(this.pendingDelta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 471, 12, "pendingDelta != null");
+      if (!(dart.notNull(this.pendingDelta.distance) <= 18)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 472, 12, "pendingDelta.distance <= kTouchSlop");
+      this[_timer$] = null;
+      if (this[_starter] != null) {
+        this[_starter](this.initialPosition);
+        this[_starter] = null;
+      } else {
+        this.resolve(src__gestures__arena.GestureDisposition.accepted);
+      }
+      if (!(this[_starter] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 480, 12, "_starter == null");
+    }
+    [_ensureTimerStopped]() {
+      let t5;
+      t5 = this[_timer$];
+      t5 == null ? null : t5.cancel();
+      this[_timer$] = null;
+    }
+    accepted(starter) {
+      if (!(this[_starter] == null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 490, 12, "_starter == null");
+      if (this[_timer$] == null)
+        starter(this.initialPosition);
+      else
+        this[_starter] = starter;
+    }
+    checkForResolutionAfterMove() {
+      if (this[_timer$] == null) {
+        if (!(this[_starter] != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 505, 14, "_starter != null");
+        return;
+      }
+      if (!(this.pendingDelta != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 508, 12, "pendingDelta != null");
+      if (dart.notNull(this.pendingDelta.distance) > 18) {
+        this.resolve(src__gestures__arena.GestureDisposition.rejected);
+        this[_ensureTimerStopped]();
+      }
+    }
+    dispose() {
+      this[_ensureTimerStopped]();
+      super.dispose();
+    }
+  };
+  (src__gestures__multidrag._DelayedPointerState.new = function(initialPosition, delay) {
+    this[_timer$] = null;
+    this[_starter] = null;
+    if (!(delay != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 461, 16, "delay != null");
+    src__gestures__multidrag._DelayedPointerState.__proto__.new.call(this, initialPosition);
+    this[_timer$] = async.Timer.new(delay, dart.bind(this, _delayPassed));
+  }).prototype = src__gestures__multidrag._DelayedPointerState.prototype;
+  dart.addTypeTests(src__gestures__multidrag._DelayedPointerState);
+  dart.setMethodSignature(src__gestures__multidrag._DelayedPointerState, () => ({
+    __proto__: dart.getMethods(src__gestures__multidrag._DelayedPointerState.__proto__),
+    [_delayPassed]: dart.fnType(dart.void, []),
+    [_ensureTimerStopped]: dart.fnType(dart.void, []),
+    accepted: dart.fnType(dart.void, [dart.fnType(src__gestures__drag.Drag, [ui$.Offset])])
+  }));
+  dart.setLibraryUri(src__gestures__multidrag._DelayedPointerState, "package:flutter_web/src/gestures/multidrag.dart");
+  dart.setFieldSignature(src__gestures__multidrag._DelayedPointerState, () => ({
+    __proto__: dart.getFields(src__gestures__multidrag._DelayedPointerState.__proto__),
+    [_timer$]: dart.fieldType(async.Timer),
+    [_starter]: dart.fieldType(dart.fnType(src__gestures__drag.Drag, [ui$.Offset]))
+  }));
+  src__gestures__multidrag.DelayedMultiDragGestureRecognizer = class DelayedMultiDragGestureRecognizer extends src__gestures__multidrag.MultiDragGestureRecognizer$(src__gestures__multidrag._DelayedPointerState) {
+    get delay() {
+      return this[delay$];
+    }
+    set delay(value) {
+      super.delay = value;
+    }
+    createNewPointerState(event) {
+      return new src__gestures__multidrag._DelayedPointerState.new(event.position, this.delay);
+    }
+    get debugDescription() {
+      return "long multidrag";
+    }
+  };
+  (src__gestures__multidrag.DelayedMultiDragGestureRecognizer.new = function(opts) {
+    let delay = opts && 'delay' in opts ? opts.delay : C37 || CT.C37;
+    let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
+    let kind = opts && 'kind' in opts ? opts.kind : null;
+    this[delay$] = delay;
+    if (!(delay != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart", 552, 16, "delay != null");
+    src__gestures__multidrag.DelayedMultiDragGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
+    ;
+  }).prototype = src__gestures__multidrag.DelayedMultiDragGestureRecognizer.prototype;
+  dart.addTypeTests(src__gestures__multidrag.DelayedMultiDragGestureRecognizer);
+  const delay$ = Symbol("DelayedMultiDragGestureRecognizer.delay");
+  dart.setMethodSignature(src__gestures__multidrag.DelayedMultiDragGestureRecognizer, () => ({
+    __proto__: dart.getMethods(src__gestures__multidrag.DelayedMultiDragGestureRecognizer.__proto__),
+    createNewPointerState: dart.fnType(src__gestures__multidrag._DelayedPointerState, [src__gestures__events.PointerDownEvent])
+  }));
+  dart.setGetterSignature(src__gestures__multidrag.DelayedMultiDragGestureRecognizer, () => ({
+    __proto__: dart.getGetters(src__gestures__multidrag.DelayedMultiDragGestureRecognizer.__proto__),
+    debugDescription: core.String
+  }));
+  dart.setLibraryUri(src__gestures__multidrag.DelayedMultiDragGestureRecognizer, "package:flutter_web/src/gestures/multidrag.dart");
+  dart.setFieldSignature(src__gestures__multidrag.DelayedMultiDragGestureRecognizer, () => ({
+    __proto__: dart.getFields(src__gestures__multidrag.DelayedMultiDragGestureRecognizer.__proto__),
+    delay: dart.finalFieldType(core.Duration)
+  }));
+  const _timeout = dart.privateName(src__gestures__multitap, "_timeout");
+  const _timer$0 = dart.privateName(src__gestures__multitap, "_timer");
+  const _onTimeout = dart.privateName(src__gestures__multitap, "_onTimeout");
+  src__gestures__multitap._CountdownZoned = class _CountdownZoned extends core.Object {
+    get timeout() {
+      return this[_timeout];
+    }
+    [_onTimeout]() {
+      this[_timeout] = true;
+    }
+  };
+  (src__gestures__multitap._CountdownZoned.new = function(opts) {
+    let duration = opts && 'duration' in opts ? opts.duration : null;
+    this[_timeout] = false;
+    this[_timer$0] = null;
+    if (!(duration != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 46, 59, "duration != null");
+    this[_timer$0] = async.Timer.new(duration, dart.bind(this, _onTimeout));
+  }).prototype = src__gestures__multitap._CountdownZoned.prototype;
+  dart.addTypeTests(src__gestures__multitap._CountdownZoned);
+  dart.setMethodSignature(src__gestures__multitap._CountdownZoned, () => ({
+    __proto__: dart.getMethods(src__gestures__multitap._CountdownZoned.__proto__),
+    [_onTimeout]: dart.fnType(dart.void, [])
+  }));
+  dart.setGetterSignature(src__gestures__multitap._CountdownZoned, () => ({
+    __proto__: dart.getGetters(src__gestures__multitap._CountdownZoned.__proto__),
+    timeout: core.bool
+  }));
+  dart.setLibraryUri(src__gestures__multitap._CountdownZoned, "package:flutter_web/src/gestures/multitap.dart");
+  dart.setFieldSignature(src__gestures__multitap._CountdownZoned, () => ({
+    __proto__: dart.getFields(src__gestures__multitap._CountdownZoned.__proto__),
+    [_timeout]: dart.fieldType(core.bool),
+    [_timer$0]: dart.fieldType(async.Timer)
   }));
   const _isTrackingPointer = dart.privateName(src__gestures__multitap, "_isTrackingPointer");
   const _initialPosition = dart.privateName(src__gestures__multitap, "_initialPosition");
+  const _doubleTapMinTimeCountdown = dart.privateName(src__gestures__multitap, "_doubleTapMinTimeCountdown");
   src__gestures__multitap._TapTracker = class _TapTracker extends core.Object {
     startTrackingPointer(route) {
       if (!dart.test(this[_isTrackingPointer])) {
@@ -4412,14 +5312,26 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       let offset = event.position['-'](this[_initialPosition]);
       return dart.notNull(offset.distance) <= dart.notNull(tolerance);
     }
+    hasElapsedMinTime() {
+      return this[_doubleTapMinTimeCountdown].timeout;
+    }
+    hasSameButton(event) {
+      return event.buttons == this.initialButtons;
+    }
   };
   (src__gestures__multitap._TapTracker.new = function(opts) {
     let event = opts && 'event' in opts ? opts.event : null;
     let entry = opts && 'entry' in opts ? opts.entry : null;
+    let doubleTapMinTime = opts && 'doubleTapMinTime' in opts ? opts.doubleTapMinTime : null;
     this[_isTrackingPointer] = false;
     this.entry = entry;
+    if (!(doubleTapMinTime != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 67, 16, "doubleTapMinTime != null");
+    if (!(event != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 68, 16, "event != null");
+    if (!(event.buttons != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 69, 16, "event.buttons != null");
     this.pointer = event.pointer;
     this[_initialPosition] = event.position;
+    this.initialButtons = event.buttons;
+    this[_doubleTapMinTimeCountdown] = new src__gestures__multitap._CountdownZoned.new({duration: doubleTapMinTime});
     ;
   }).prototype = src__gestures__multitap._TapTracker.prototype;
   dart.addTypeTests(src__gestures__multitap._TapTracker);
@@ -4427,27 +5339,34 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getMethods(src__gestures__multitap._TapTracker.__proto__),
     startTrackingPointer: dart.fnType(dart.void, [dart.fnType(dart.void, [src__gestures__events.PointerEvent])]),
     stopTrackingPointer: dart.fnType(dart.void, [dart.fnType(dart.void, [src__gestures__events.PointerEvent])]),
-    isWithinTolerance: dart.fnType(core.bool, [src__gestures__events.PointerEvent, core.double])
+    isWithinTolerance: dart.fnType(core.bool, [src__gestures__events.PointerEvent, core.double]),
+    hasElapsedMinTime: dart.fnType(core.bool, []),
+    hasSameButton: dart.fnType(core.bool, [src__gestures__events.PointerDownEvent])
   }));
+  dart.setLibraryUri(src__gestures__multitap._TapTracker, "package:flutter_web/src/gestures/multitap.dart");
   dart.setFieldSignature(src__gestures__multitap._TapTracker, () => ({
     __proto__: dart.getFields(src__gestures__multitap._TapTracker.__proto__),
     pointer: dart.finalFieldType(core.int),
     entry: dart.finalFieldType(src__gestures__arena.GestureArenaEntry),
     [_initialPosition]: dart.finalFieldType(ui$.Offset),
+    initialButtons: dart.finalFieldType(core.int),
+    [_doubleTapMinTimeCountdown]: dart.finalFieldType(src__gestures__multitap._CountdownZoned),
     [_isTrackingPointer]: dart.fieldType(core.bool)
   }));
   const _doubleTapTimer = dart.privateName(src__gestures__multitap, "_doubleTapTimer");
   const _firstTap = dart.privateName(src__gestures__multitap, "_firstTap");
   const _trackers = dart.privateName(src__gestures__multitap, "_trackers");
+  const _reset$0 = dart.privateName(src__gestures__multitap, "_reset");
+  const _trackFirstTap = dart.privateName(src__gestures__multitap, "_trackFirstTap");
   const _stopDoubleTapTimer = dart.privateName(src__gestures__multitap, "_stopDoubleTapTimer");
   const _handleEvent$0 = dart.privateName(src__gestures__multitap, "_handleEvent");
   const _registerFirstTap = dart.privateName(src__gestures__multitap, "_registerFirstTap");
   const _registerSecondTap = dart.privateName(src__gestures__multitap, "_registerSecondTap");
   const _reject = dart.privateName(src__gestures__multitap, "_reject");
   const _freezeTracker = dart.privateName(src__gestures__multitap, "_freezeTracker");
-  const _reset$ = dart.privateName(src__gestures__multitap, "_reset");
   const _clearTrackers = dart.privateName(src__gestures__multitap, "_clearTrackers");
   const _startDoubleTapTimer = dart.privateName(src__gestures__multitap, "_startDoubleTapTimer");
+  const _checkUp$ = dart.privateName(src__gestures__multitap, "_checkUp");
   src__gestures__multitap.DoubleTapGestureRecognizer = class DoubleTapGestureRecognizer extends src__gestures__recognizer.GestureRecognizer {
     get onDoubleTap() {
       return this[onDoubleTap];
@@ -4455,23 +5374,49 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     set onDoubleTap(value) {
       this[onDoubleTap] = value;
     }
+    isPointerAllowed(event) {
+      if (this[_firstTap] == null) {
+        switch (event.buttons) {
+          case 1:
+          {
+            if (this.onDoubleTap == null) return false;
+            break;
+          }
+          default:
+          {
+            return false;
+          }
+        }
+      }
+      return super.isPointerAllowed(src__gestures__events.PointerDownEvent._check(event));
+    }
     addAllowedPointer(event) {
-      if (this[_firstTap] != null && !dart.test(this[_firstTap].isWithinTolerance(event, src__gestures__constants.kDoubleTapSlop))) return;
+      if (this[_firstTap] != null) {
+        if (!dart.test(this[_firstTap].isWithinTolerance(event, 100))) {
+          return;
+        } else if (!dart.test(this[_firstTap].hasElapsedMinTime()) || !dart.test(this[_firstTap].hasSameButton(src__gestures__events.PointerDownEvent._check(event)))) {
+          this[_reset$0]();
+          return this[_trackFirstTap](event);
+        }
+      }
+      this[_trackFirstTap](event);
+    }
+    [_trackFirstTap](event) {
       this[_stopDoubleTapTimer]();
-      let tracker = new src__gestures__multitap._TapTracker.new({event: src__gestures__events.PointerDownEvent._check(event), entry: src__gestures__binding.GestureBinding.instance.gestureArena.add(event.pointer, this)});
+      let tracker = new src__gestures__multitap._TapTracker.new({event: src__gestures__events.PointerDownEvent._check(event), entry: src__gestures__binding.GestureBinding.instance.gestureArena.add(event.pointer, this), doubleTapMinTime: src__gestures__constants.kDoubleTapMinTime});
       this[_trackers][$_set](event.pointer, tracker);
       tracker.startTrackingPointer(dart.bind(this, _handleEvent$0));
     }
     [_handleEvent$0](event) {
       let tracker = this[_trackers][$_get](event.pointer);
-      if (!(tracker != null)) dart.assertFailed();
+      if (!(tracker != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 206, 12, "tracker != null");
       if (src__gestures__events.PointerUpEvent.is(event)) {
         if (this[_firstTap] == null)
           this[_registerFirstTap](tracker);
         else
           this[_registerSecondTap](tracker);
       } else if (src__gestures__events.PointerMoveEvent.is(event)) {
-        if (!dart.test(tracker.isWithinTolerance(event, src__gestures__constants.kDoubleTapTouchSlop))) this[_reject](tracker);
+        if (!dart.test(tracker.isWithinTolerance(event, 18))) this[_reject](tracker);
       } else if (src__gestures__events.PointerCancelEvent.is(event)) {
         this[_reject](tracker);
       }
@@ -4487,13 +5432,13 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       this[_trackers][$remove](tracker.pointer);
       tracker.entry.resolve(src__gestures__arena.GestureDisposition.rejected);
       this[_freezeTracker](tracker);
-      if (this[_firstTap] != null && (dart.test(this[_trackers][$isEmpty]) || dart.equals(tracker, this[_firstTap]))) this[_reset$]();
+      if (this[_firstTap] != null && (dart.test(this[_trackers][$isEmpty]) || dart.equals(tracker, this[_firstTap]))) this[_reset$0]();
     }
     dispose() {
-      this[_reset$]();
+      this[_reset$0]();
       super.dispose();
     }
-    [_reset$]() {
+    [_reset$0]() {
       this[_stopDoubleTapTimer]();
       if (this[_firstTap] != null) {
         let tracker = this[_firstTap];
@@ -4516,24 +5461,28 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       tracker.entry.resolve(src__gestures__arena.GestureDisposition.accepted);
       this[_freezeTracker](tracker);
       this[_trackers][$remove](tracker.pointer);
-      if (this.onDoubleTap != null) this.invokeCallback(dart.void, "onDoubleTap", this.onDoubleTap);
-      this[_reset$]();
+      this[_checkUp$](tracker.initialButtons);
+      this[_reset$0]();
     }
     [_clearTrackers]() {
       this[_trackers][$values][$toList]()[$forEach](dart.bind(this, _reject));
-      if (!dart.test(this[_trackers][$isEmpty])) dart.assertFailed();
+      if (!dart.test(this[_trackers][$isEmpty])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 285, 12, "_trackers.isEmpty");
     }
     [_freezeTracker](tracker) {
       tracker.stopTrackingPointer(dart.bind(this, _handleEvent$0));
     }
     [_startDoubleTapTimer]() {
-      this[_doubleTapTimer] == null ? this[_doubleTapTimer] = async.Timer.new(src__gestures__constants.kDoubleTapTimeout, dart.bind(this, _reset$)) : null;
+      this[_doubleTapTimer] == null ? this[_doubleTapTimer] = async.Timer.new(src__gestures__constants.kDoubleTapTimeout, dart.bind(this, _reset$0)) : null;
     }
     [_stopDoubleTapTimer]() {
       if (this[_doubleTapTimer] != null) {
         this[_doubleTapTimer].cancel();
         this[_doubleTapTimer] = null;
       }
+    }
+    [_checkUp$](buttons) {
+      if (!(buttons === 1)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 304, 12, "buttons == kPrimaryButton");
+      if (this.onDoubleTap != null) this.invokeCallback(dart.void, "onDoubleTap", this.onDoubleTap);
     }
     get debugDescription() {
       return "double tap";
@@ -4553,23 +5502,27 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const onDoubleTap = Symbol("DoubleTapGestureRecognizer.onDoubleTap");
   dart.setMethodSignature(src__gestures__multitap.DoubleTapGestureRecognizer, () => ({
     __proto__: dart.getMethods(src__gestures__multitap.DoubleTapGestureRecognizer.__proto__),
+    isPointerAllowed: dart.fnType(core.bool, [src__gestures__events.PointerEvent]),
     addAllowedPointer: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
+    [_trackFirstTap]: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
     [_handleEvent$0]: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
     acceptGesture: dart.fnType(dart.void, [core.int]),
     rejectGesture: dart.fnType(dart.void, [core.int]),
     [_reject]: dart.fnType(dart.void, [src__gestures__multitap._TapTracker]),
-    [_reset$]: dart.fnType(dart.void, []),
+    [_reset$0]: dart.fnType(dart.void, []),
     [_registerFirstTap]: dart.fnType(dart.void, [src__gestures__multitap._TapTracker]),
     [_registerSecondTap]: dart.fnType(dart.void, [src__gestures__multitap._TapTracker]),
     [_clearTrackers]: dart.fnType(dart.void, []),
     [_freezeTracker]: dart.fnType(dart.void, [src__gestures__multitap._TapTracker]),
     [_startDoubleTapTimer]: dart.fnType(dart.void, []),
-    [_stopDoubleTapTimer]: dart.fnType(dart.void, [])
+    [_stopDoubleTapTimer]: dart.fnType(dart.void, []),
+    [_checkUp$]: dart.fnType(dart.void, [core.int])
   }));
   dart.setGetterSignature(src__gestures__multitap.DoubleTapGestureRecognizer, () => ({
     __proto__: dart.getGetters(src__gestures__multitap.DoubleTapGestureRecognizer.__proto__),
     debugDescription: core.String
   }));
+  dart.setLibraryUri(src__gestures__multitap.DoubleTapGestureRecognizer, "package:flutter_web/src/gestures/multitap.dart");
   dart.setFieldSignature(src__gestures__multitap.DoubleTapGestureRecognizer, () => ({
     __proto__: dart.getFields(src__gestures__multitap.DoubleTapGestureRecognizer.__proto__),
     onDoubleTap: dart.fieldType(dart.fnType(dart.void, [])),
@@ -4578,7 +5531,6 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     [_trackers]: dart.finalFieldType(core.Map$(core.int, src__gestures__multitap._TapTracker))
   }));
   const _wonArena = dart.privateName(src__gestures__multitap, "_wonArena");
-  const _timer$0 = dart.privateName(src__gestures__multitap, "_timer");
   const _finalPosition$ = dart.privateName(src__gestures__multitap, "_finalPosition");
   const _lastPosition$ = dart.privateName(src__gestures__multitap, "_lastPosition");
   const _dispatchLongTap = dart.privateName(src__gestures__multitap, "_dispatchLongTap");
@@ -4587,9 +5539,9 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const _dispatchTap = dart.privateName(src__gestures__multitap, "_dispatchTap");
   src__gestures__multitap._TapGesture = class _TapGesture extends src__gestures__multitap._TapTracker {
     handleEvent(event) {
-      if (!(event.pointer == this.pointer)) dart.assertFailed();
+      if (!(event.pointer == this.pointer)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 345, 12, "event.pointer == pointer");
       if (src__gestures__events.PointerMoveEvent.is(event)) {
-        if (!dart.test(this.isWithinTolerance(event, src__gestures__constants.kTouchSlop)))
+        if (!dart.test(this.isWithinTolerance(event, 18)))
           this.cancel();
         else
           this[_lastPosition$] = event.position;
@@ -4635,7 +5587,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     this[_finalPosition$] = null;
     this.gestureRecognizer = gestureRecognizer;
     this[_lastPosition$] = event.position;
-    src__gestures__multitap._TapGesture.__proto__.new.call(this, {event: src__gestures__events.PointerDownEvent._check(event), entry: src__gestures__binding.GestureBinding.instance.gestureArena.add(event.pointer, gestureRecognizer)});
+    src__gestures__multitap._TapGesture.__proto__.new.call(this, {event: src__gestures__events.PointerDownEvent._check(event), entry: src__gestures__binding.GestureBinding.instance.gestureArena.add(event.pointer, gestureRecognizer), doubleTapMinTime: src__gestures__constants.kDoubleTapMinTime});
     this.startTrackingPointer(dart.bind(this, 'handleEvent'));
     if (dart.test(longTapDelay['>'](core.Duration.zero))) {
       this[_timer$0] = async.Timer.new(longTapDelay, dart.fn(() => {
@@ -4653,6 +5605,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     cancel: dart.fnType(dart.void, []),
     [_check]: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(src__gestures__multitap._TapGesture, "package:flutter_web/src/gestures/multitap.dart");
   dart.setFieldSignature(src__gestures__multitap._TapGesture, () => ({
     __proto__: dart.getFields(src__gestures__multitap._TapGesture.__proto__),
     gestureRecognizer: dart.finalFieldType(src__gestures__multitap.MultiTapGestureRecognizer),
@@ -4700,39 +5653,43 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       this[onLongTapDown] = value;
     }
     addAllowedPointer(event) {
-      if (!!dart.test(this[_gestureMap][$containsKey](event.pointer))) dart.assertFailed();
+      if (!!dart.test(this[_gestureMap][$containsKey](event.pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 438, 12, "!_gestureMap.containsKey(event.pointer)");
       this[_gestureMap][$_set](event.pointer, new src__gestures__multitap._TapGesture.new({gestureRecognizer: this, event: event, longTapDelay: this.longTapDelay}));
-      if (this.onTapDown != null) this.invokeCallback(dart.void, "onTapDown", dart.fn(() => this.onTapDown(event.pointer, new src__gestures__tap.TapDownDetails.new({globalPosition: event.position})), VoidTovoid()));
+      if (this.onTapDown != null) this.invokeCallback(dart.void, "onTapDown", dart.fn(() => {
+        this.onTapDown(event.pointer, new src__gestures__tap.TapDownDetails.new({globalPosition: event.position, kind: event.kind}));
+      }, VoidToNull()));
     }
     acceptGesture(pointer) {
-      if (!dart.test(this[_gestureMap][$containsKey](pointer))) dart.assertFailed();
+      if (!dart.test(this[_gestureMap][$containsKey](pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 457, 12, "_gestureMap.containsKey(pointer)");
       this[_gestureMap][$_get](pointer).accept();
     }
     rejectGesture(pointer) {
-      if (!dart.test(this[_gestureMap][$containsKey](pointer))) dart.assertFailed();
+      if (!dart.test(this[_gestureMap][$containsKey](pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 463, 12, "_gestureMap.containsKey(pointer)");
       this[_gestureMap][$_get](pointer).reject();
-      if (!!dart.test(this[_gestureMap][$containsKey](pointer))) dart.assertFailed();
+      if (!!dart.test(this[_gestureMap][$containsKey](pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 465, 12, "!_gestureMap.containsKey(pointer)");
     }
     [_dispatchCancel](pointer) {
-      if (!dart.test(this[_gestureMap][$containsKey](pointer))) dart.assertFailed();
+      if (!dart.test(this[_gestureMap][$containsKey](pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 469, 12, "_gestureMap.containsKey(pointer)");
       this[_gestureMap][$remove](pointer);
       if (this.onTapCancel != null) this.invokeCallback(dart.void, "onTapCancel", dart.fn(() => this.onTapCancel(pointer), VoidTovoid()));
     }
     [_dispatchTap](pointer, globalPosition) {
-      if (!dart.test(this[_gestureMap][$containsKey](pointer))) dart.assertFailed();
+      if (!dart.test(this[_gestureMap][$containsKey](pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 476, 12, "_gestureMap.containsKey(pointer)");
       this[_gestureMap][$remove](pointer);
       if (this.onTapUp != null) this.invokeCallback(dart.void, "onTapUp", dart.fn(() => this.onTapUp(pointer, new src__gestures__tap.TapUpDetails.new({globalPosition: globalPosition})), VoidTovoid()));
       if (this.onTap != null) this.invokeCallback(dart.void, "onTap", dart.fn(() => this.onTap(pointer), VoidTovoid()));
     }
     [_dispatchLongTap](pointer, lastPosition) {
-      if (!dart.test(this[_gestureMap][$containsKey](pointer))) dart.assertFailed();
-      if (this.onLongTapDown != null) this.invokeCallback(dart.void, "onLongTapDown", dart.fn(() => this.onLongTapDown(pointer, new src__gestures__tap.TapDownDetails.new({globalPosition: lastPosition})), VoidTovoid()));
+      if (!dart.test(this[_gestureMap][$containsKey](pointer))) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 485, 12, "_gestureMap.containsKey(pointer)");
+      if (this.onLongTapDown != null) this.invokeCallback(dart.void, "onLongTapDown", dart.fn(() => {
+        this.onLongTapDown(pointer, new src__gestures__tap.TapDownDetails.new({globalPosition: lastPosition, kind: this.getKindForPointer(pointer)}));
+      }, VoidToNull()));
     }
     dispose() {
       let localGestures = ListOf_TapGesture().from(this[_gestureMap][$values]);
       for (let gesture of localGestures)
         gesture.cancel();
-      if (!dart.test(this[_gestureMap][$isEmpty])) dart.assertFailed();
+      if (!dart.test(this[_gestureMap][$isEmpty])) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart", 504, 12, "_gestureMap.isEmpty");
       super.dispose();
     }
     get debugDescription() {
@@ -4740,7 +5697,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     }
   };
   (src__gestures__multitap.MultiTapGestureRecognizer.new = function(opts) {
-    let longTapDelay = opts && 'longTapDelay' in opts ? opts.longTapDelay : core.Duration.zero;
+    let longTapDelay = opts && 'longTapDelay' in opts ? opts.longTapDelay : C3 || CT.C3;
     let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
     let kind = opts && 'kind' in opts ? opts.kind : null;
     this[onTapDown$] = null;
@@ -4773,6 +5730,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     __proto__: dart.getGetters(src__gestures__multitap.MultiTapGestureRecognizer.__proto__),
     debugDescription: core.String
   }));
+  dart.setLibraryUri(src__gestures__multitap.MultiTapGestureRecognizer, "package:flutter_web/src/gestures/multitap.dart");
   dart.setFieldSignature(src__gestures__multitap.MultiTapGestureRecognizer, () => ({
     __proto__: dart.getFields(src__gestures__multitap.MultiTapGestureRecognizer.__proto__),
     onTapDown: dart.fieldType(dart.fnType(dart.void, [core.int, src__gestures__tap.TapDownDetails])),
@@ -4783,192 +5741,11 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     onLongTapDown: dart.fieldType(dart.fnType(dart.void, [core.int, src__gestures__tap.TapDownDetails])),
     [_gestureMap]: dart.finalFieldType(core.Map$(core.int, src__gestures__multitap._TapGesture))
   }));
-  src__gestures__long_press.LongPressStartDetails = class LongPressStartDetails extends core.Object {
-    get globalPosition() {
-      return this[globalPosition$5];
-    }
-    set globalPosition(value) {
-      super.globalPosition = value;
-    }
-  };
-  (src__gestures__long_press.LongPressStartDetails.new = function(opts) {
-    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : ui$.Offset.zero;
-    this[globalPosition$5] = globalPosition;
-    if (!(globalPosition != null)) dart.assertFailed();
-    ;
-  }).prototype = src__gestures__long_press.LongPressStartDetails.prototype;
-  dart.addTypeTests(src__gestures__long_press.LongPressStartDetails);
-  const globalPosition$5 = Symbol("LongPressStartDetails.globalPosition");
-  dart.setFieldSignature(src__gestures__long_press.LongPressStartDetails, () => ({
-    __proto__: dart.getFields(src__gestures__long_press.LongPressStartDetails.__proto__),
-    globalPosition: dart.finalFieldType(ui$.Offset)
-  }));
-  src__gestures__long_press.LongPressMoveUpdateDetails = class LongPressMoveUpdateDetails extends core.Object {
-    get globalPosition() {
-      return this[globalPosition$6];
-    }
-    set globalPosition(value) {
-      super.globalPosition = value;
-    }
-    get offsetFromOrigin() {
-      return this[offsetFromOrigin$];
-    }
-    set offsetFromOrigin(value) {
-      super.offsetFromOrigin = value;
-    }
-  };
-  (src__gestures__long_press.LongPressMoveUpdateDetails.new = function(opts) {
-    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : ui$.Offset.zero;
-    let offsetFromOrigin = opts && 'offsetFromOrigin' in opts ? opts.offsetFromOrigin : ui$.Offset.zero;
-    this[globalPosition$6] = globalPosition;
-    this[offsetFromOrigin$] = offsetFromOrigin;
-    if (!(globalPosition != null)) dart.assertFailed();
-    if (!(offsetFromOrigin != null)) dart.assertFailed();
-    ;
-  }).prototype = src__gestures__long_press.LongPressMoveUpdateDetails.prototype;
-  dart.addTypeTests(src__gestures__long_press.LongPressMoveUpdateDetails);
-  const globalPosition$6 = Symbol("LongPressMoveUpdateDetails.globalPosition");
-  const offsetFromOrigin$ = Symbol("LongPressMoveUpdateDetails.offsetFromOrigin");
-  dart.setFieldSignature(src__gestures__long_press.LongPressMoveUpdateDetails, () => ({
-    __proto__: dart.getFields(src__gestures__long_press.LongPressMoveUpdateDetails.__proto__),
-    globalPosition: dart.finalFieldType(ui$.Offset),
-    offsetFromOrigin: dart.finalFieldType(ui$.Offset)
-  }));
-  src__gestures__long_press.LongPressEndDetails = class LongPressEndDetails extends core.Object {
-    get globalPosition() {
-      return this[globalPosition$7];
-    }
-    set globalPosition(value) {
-      super.globalPosition = value;
-    }
-  };
-  (src__gestures__long_press.LongPressEndDetails.new = function(opts) {
-    let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : ui$.Offset.zero;
-    this[globalPosition$7] = globalPosition;
-    if (!(globalPosition != null)) dart.assertFailed();
-    ;
-  }).prototype = src__gestures__long_press.LongPressEndDetails.prototype;
-  dart.addTypeTests(src__gestures__long_press.LongPressEndDetails);
-  const globalPosition$7 = Symbol("LongPressEndDetails.globalPosition");
-  dart.setFieldSignature(src__gestures__long_press.LongPressEndDetails, () => ({
-    __proto__: dart.getFields(src__gestures__long_press.LongPressEndDetails.__proto__),
-    globalPosition: dart.finalFieldType(ui$.Offset)
-  }));
-  const _longPressAccepted = dart.privateName(src__gestures__long_press, "_longPressAccepted");
-  const _longPressOrigin = dart.privateName(src__gestures__long_press, "_longPressOrigin");
-  src__gestures__long_press.LongPressGestureRecognizer = class LongPressGestureRecognizer extends src__gestures__recognizer.PrimaryPointerGestureRecognizer {
-    get onLongPress() {
-      return this[onLongPress];
-    }
-    set onLongPress(value) {
-      this[onLongPress] = value;
-    }
-    get onLongPressStart() {
-      return this[onLongPressStart];
-    }
-    set onLongPressStart(value) {
-      this[onLongPressStart] = value;
-    }
-    get onLongPressMoveUpdate() {
-      return this[onLongPressMoveUpdate];
-    }
-    set onLongPressMoveUpdate(value) {
-      this[onLongPressMoveUpdate] = value;
-    }
-    get onLongPressUp() {
-      return this[onLongPressUp];
-    }
-    set onLongPressUp(value) {
-      this[onLongPressUp] = value;
-    }
-    get onLongPressEnd() {
-      return this[onLongPressEnd];
-    }
-    set onLongPressEnd(value) {
-      this[onLongPressEnd] = value;
-    }
-    didExceedDeadline() {
-      this.resolve(src__gestures__arena.GestureDisposition.accepted);
-      this[_longPressAccepted] = true;
-      super.acceptGesture(this.primaryPointer);
-      if (this.onLongPress != null) {
-        this.invokeCallback(dart.void, "onLongPress", this.onLongPress);
-      }
-      if (this.onLongPressStart != null) {
-        this.invokeCallback(dart.void, "onLongPressStart", dart.fn(() => {
-          this.onLongPressStart(new src__gestures__long_press.LongPressStartDetails.new({globalPosition: this[_longPressOrigin]}));
-        }, VoidToNull()));
-      }
-    }
-    handlePrimaryPointer(event) {
-      if (src__gestures__events.PointerUpEvent.is(event)) {
-        if (dart.equals(this[_longPressAccepted], true)) {
-          if (this.onLongPressUp != null) {
-            this.invokeCallback(dart.void, "onLongPressUp", this.onLongPressUp);
-          }
-          if (this.onLongPressEnd != null) {
-            this.invokeCallback(dart.void, "onLongPressEnd", dart.fn(() => {
-              this.onLongPressEnd(new src__gestures__long_press.LongPressEndDetails.new({globalPosition: event.position}));
-            }, VoidToNull()));
-          }
-          this[_longPressAccepted] = false;
-        } else {
-          this.resolve(src__gestures__arena.GestureDisposition.rejected);
-        }
-      } else if (src__gestures__events.PointerDownEvent.is(event) || src__gestures__events.PointerCancelEvent.is(event)) {
-        this[_longPressAccepted] = false;
-        this[_longPressOrigin] = event.position;
-      } else if (src__gestures__events.PointerMoveEvent.is(event) && dart.test(this[_longPressAccepted]) && this.onLongPressMoveUpdate != null) {
-        this.invokeCallback(dart.void, "onLongPressMoveUpdate", dart.fn(() => {
-          this.onLongPressMoveUpdate(new src__gestures__long_press.LongPressMoveUpdateDetails.new({globalPosition: event.position, offsetFromOrigin: event.position['-'](this[_longPressOrigin])}));
-        }, VoidToNull()));
-      }
-    }
-    acceptGesture(pointer) {
-    }
-    get debugDescription() {
-      return "long press";
-    }
-  };
-  (src__gestures__long_press.LongPressGestureRecognizer.new = function(opts) {
-    let postAcceptSlopTolerance = opts && 'postAcceptSlopTolerance' in opts ? opts.postAcceptSlopTolerance : null;
-    let kind = opts && 'kind' in opts ? opts.kind : null;
-    let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
-    this[_longPressAccepted] = false;
-    this[_longPressOrigin] = null;
-    this[onLongPress] = null;
-    this[onLongPressStart] = null;
-    this[onLongPressMoveUpdate] = null;
-    this[onLongPressUp] = null;
-    this[onLongPressEnd] = null;
-    src__gestures__long_press.LongPressGestureRecognizer.__proto__.new.call(this, {deadline: src__gestures__constants.kLongPressTimeout, postAcceptSlopTolerance: postAcceptSlopTolerance, kind: kind, debugOwner: debugOwner});
-    ;
-  }).prototype = src__gestures__long_press.LongPressGestureRecognizer.prototype;
-  dart.addTypeTests(src__gestures__long_press.LongPressGestureRecognizer);
-  const onLongPress = Symbol("LongPressGestureRecognizer.onLongPress");
-  const onLongPressStart = Symbol("LongPressGestureRecognizer.onLongPressStart");
-  const onLongPressMoveUpdate = Symbol("LongPressGestureRecognizer.onLongPressMoveUpdate");
-  const onLongPressUp = Symbol("LongPressGestureRecognizer.onLongPressUp");
-  const onLongPressEnd = Symbol("LongPressGestureRecognizer.onLongPressEnd");
-  dart.setMethodSignature(src__gestures__long_press.LongPressGestureRecognizer, () => ({
-    __proto__: dart.getMethods(src__gestures__long_press.LongPressGestureRecognizer.__proto__),
-    handlePrimaryPointer: dart.fnType(dart.void, [src__gestures__events.PointerEvent])
-  }));
-  dart.setGetterSignature(src__gestures__long_press.LongPressGestureRecognizer, () => ({
-    __proto__: dart.getGetters(src__gestures__long_press.LongPressGestureRecognizer.__proto__),
-    debugDescription: core.String
-  }));
-  dart.setFieldSignature(src__gestures__long_press.LongPressGestureRecognizer, () => ({
-    __proto__: dart.getFields(src__gestures__long_press.LongPressGestureRecognizer.__proto__),
-    [_longPressAccepted]: dart.fieldType(core.bool),
-    [_longPressOrigin]: dart.fieldType(ui$.Offset),
-    onLongPress: dart.fieldType(dart.fnType(dart.void, [])),
-    onLongPressStart: dart.fieldType(dart.fnType(dart.void, [src__gestures__long_press.LongPressStartDetails])),
-    onLongPressMoveUpdate: dart.fieldType(dart.fnType(dart.void, [src__gestures__long_press.LongPressMoveUpdateDetails])),
-    onLongPressUp: dart.fieldType(dart.fnType(dart.void, [])),
-    onLongPressEnd: dart.fieldType(dart.fnType(dart.void, [src__gestures__long_press.LongPressEndDetails]))
-  }));
   const _name$3 = dart.privateName(src__gestures__monodrag, "_name");
+  let C48;
+  let C49;
+  let C50;
+  let C51;
   src__gestures__monodrag._DragState = class _DragState extends core.Object {
     toString() {
       return this[_name$3];
@@ -4980,25 +5757,32 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     ;
   }).prototype = src__gestures__monodrag._DragState.prototype;
   dart.addTypeTests(src__gestures__monodrag._DragState);
+  dart.setLibraryUri(src__gestures__monodrag._DragState, "package:flutter_web/src/gestures/monodrag.dart");
   dart.setFieldSignature(src__gestures__monodrag._DragState, () => ({
     __proto__: dart.getFields(src__gestures__monodrag._DragState.__proto__),
     index: dart.finalFieldType(core.int),
     [_name$3]: dart.finalFieldType(core.String)
   }));
   dart.defineExtensionMethods(src__gestures__monodrag._DragState, ['toString']);
-  src__gestures__monodrag._DragState.ready = dart.const(new src__gestures__monodrag._DragState.new(0, "_DragState.ready"));
-  src__gestures__monodrag._DragState.possible = dart.const(new src__gestures__monodrag._DragState.new(1, "_DragState.possible"));
-  src__gestures__monodrag._DragState.accepted = dart.const(new src__gestures__monodrag._DragState.new(2, "_DragState.accepted"));
-  src__gestures__monodrag._DragState.values = dart.constList([src__gestures__monodrag._DragState.ready, src__gestures__monodrag._DragState.possible, src__gestures__monodrag._DragState.accepted], src__gestures__monodrag._DragState);
+  src__gestures__monodrag._DragState.ready = C48 || CT.C48;
+  src__gestures__monodrag._DragState.possible = C49 || CT.C49;
+  src__gestures__monodrag._DragState.accepted = C50 || CT.C50;
+  src__gestures__monodrag._DragState.values = C51 || CT.C51;
   const _state$0 = dart.privateName(src__gestures__monodrag, "_state");
   const _initialPosition$ = dart.privateName(src__gestures__monodrag, "_initialPosition");
   const _pendingDragOffset = dart.privateName(src__gestures__monodrag, "_pendingDragOffset");
   const _lastPendingEventTimestamp$ = dart.privateName(src__gestures__monodrag, "_lastPendingEventTimestamp");
+  const _initialButtons$0 = dart.privateName(src__gestures__monodrag, "_initialButtons");
   const _velocityTrackers$ = dart.privateName(src__gestures__monodrag, "_velocityTrackers");
+  const _checkDown$ = dart.privateName(src__gestures__monodrag, "_checkDown");
   const _getDeltaForDetails = dart.privateName(src__gestures__monodrag, "_getDeltaForDetails");
   const _getPrimaryValueFromOffset = dart.privateName(src__gestures__monodrag, "_getPrimaryValueFromOffset");
+  const _checkUpdate = dart.privateName(src__gestures__monodrag, "_checkUpdate");
   const _hasSufficientPendingDragDeltaToAccept = dart.privateName(src__gestures__monodrag, "_hasSufficientPendingDragDeltaToAccept");
-  const _isFlingGesture = dart.privateName(src__gestures__monodrag, "_isFlingGesture");
+  const _checkStart = dart.privateName(src__gestures__monodrag, "_checkStart");
+  const _checkCancel$ = dart.privateName(src__gestures__monodrag, "_checkCancel");
+  const _checkEnd = dart.privateName(src__gestures__monodrag, "_checkEnd");
+  const _isFlingGesture$ = dart.privateName(src__gestures__monodrag, "_isFlingGesture");
   src__gestures__monodrag.DragGestureRecognizer = class DragGestureRecognizer extends src__gestures__recognizer.OneSequenceGestureRecognizer {
     get dragStartBehavior() {
       return this[dragStartBehavior$];
@@ -5054,32 +5838,56 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     set maxFlingVelocity(value) {
       this[maxFlingVelocity] = value;
     }
+    isPointerAllowed(event) {
+      if (this[_initialButtons$0] == null) {
+        switch (event.buttons) {
+          case 1:
+          {
+            if (this.onDown == null && this.onStart == null && this.onUpdate == null && this.onEnd == null && this.onCancel == null) return false;
+            break;
+          }
+          default:
+          {
+            return false;
+          }
+        }
+      } else {
+        if (event.buttons != this[_initialButtons$0]) {
+          return false;
+        }
+      }
+      return super.isPointerAllowed(src__gestures__events.PointerDownEvent._check(event));
+    }
     addAllowedPointer(event) {
       this.startTrackingPointer(event.pointer);
       this[_velocityTrackers$][$_set](event.pointer, new src__gestures__velocity_tracker.VelocityTracker.new());
       if (dart.equals(this[_state$0], src__gestures__monodrag._DragState.ready)) {
         this[_state$0] = src__gestures__monodrag._DragState.possible;
         this[_initialPosition$] = event.position;
+        this[_initialButtons$0] = event.buttons;
         this[_pendingDragOffset] = ui$.Offset.zero;
         this[_lastPendingEventTimestamp$] = event.timeStamp;
-        if (this.onDown != null) this.invokeCallback(dart.void, "onDown", dart.fn(() => this.onDown(new src__gestures__drag_details.DragDownDetails.new({globalPosition: this[_initialPosition$]})), VoidTovoid()));
+        this[_checkDown$]();
       } else if (dart.equals(this[_state$0], src__gestures__monodrag._DragState.accepted)) {
         this.resolve(src__gestures__arena.GestureDisposition.accepted);
       }
     }
     handleEvent(event) {
-      if (!!dart.equals(this[_state$0], src__gestures__monodrag._DragState.ready)) dart.assertFailed();
+      if (!!dart.equals(this[_state$0], src__gestures__monodrag._DragState.ready)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/monodrag.dart", 228, 12, "_state != _DragState.ready");
       if (!dart.test(event.synthesized) && (src__gestures__events.PointerDownEvent.is(event) || src__gestures__events.PointerMoveEvent.is(event))) {
         let tracker = this[_velocityTrackers$][$_get](event.pointer);
-        if (!(tracker != null)) dart.assertFailed();
+        if (!(tracker != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/monodrag.dart", 232, 14, "tracker != null");
         tracker.addPosition(event.timeStamp, event.position);
       }
       if (src__gestures__events.PointerMoveEvent.is(event)) {
+        if (event.buttons != this[_initialButtons$0]) {
+          this.resolve(src__gestures__arena.GestureDisposition.rejected);
+          this.stopTrackingPointer(event.pointer);
+          return;
+        }
         let delta = event.delta;
         if (dart.equals(this[_state$0], src__gestures__monodrag._DragState.accepted)) {
-          if (this.onUpdate != null) {
-            this.invokeCallback(dart.void, "onUpdate", dart.fn(() => this.onUpdate(new src__gestures__drag_details.DragUpdateDetails.new({sourceTimeStamp: event.timeStamp, delta: this[_getDeltaForDetails](delta), primaryDelta: this[_getPrimaryValueFromOffset](delta), globalPosition: event.position})), VoidTovoid()));
-          }
+          this[_checkUpdate]({sourceTimeStamp: event.timeStamp, delta: this[_getDeltaForDetails](delta), primaryDelta: this[_getPrimaryValueFromOffset](delta), globalPosition: event.position});
         } else {
           this[_pendingDragOffset] = this[_pendingDragOffset]['+'](delta);
           this[_lastPendingEventTimestamp$] = event.timeStamp;
@@ -5095,13 +5903,13 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
         let timestamp = this[_lastPendingEventTimestamp$];
         let updateDelta = null;
         switch (this.dragStartBehavior) {
-          case src__gestures__recognizer.DragStartBehavior.start:
+          case C14 || CT.C14:
           {
             this[_initialPosition$] = this[_initialPosition$]['+'](delta);
             updateDelta = ui$.Offset.zero;
             break;
           }
-          case src__gestures__recognizer.DragStartBehavior.down:
+          case C13 || CT.C13:
           {
             updateDelta = this[_getDeltaForDetails](delta);
             break;
@@ -5109,11 +5917,9 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
         }
         this[_pendingDragOffset] = ui$.Offset.zero;
         this[_lastPendingEventTimestamp$] = null;
-        if (this.onStart != null) {
-          this.invokeCallback(dart.void, "onStart", dart.fn(() => this.onStart(new src__gestures__drag_details.DragStartDetails.new({sourceTimeStamp: timestamp, globalPosition: this[_initialPosition$]})), VoidTovoid()));
-        }
-        if (!dart.equals(updateDelta, ui$.Offset.zero) && this.onUpdate != null) {
-          this.invokeCallback(dart.void, "onUpdate", dart.fn(() => this.onUpdate(new src__gestures__drag_details.DragUpdateDetails.new({sourceTimeStamp: timestamp, delta: updateDelta, primaryDelta: this[_getPrimaryValueFromOffset](updateDelta), globalPosition: this[_initialPosition$]['+'](updateDelta)})), VoidTovoid()));
+        this[_checkStart](timestamp);
+        if (!dart.equals(updateDelta, ui$.Offset.zero)) {
+          this[_checkUpdate]({sourceTimeStamp: timestamp, delta: updateDelta, primaryDelta: this[_getPrimaryValueFromOffset](updateDelta), globalPosition: this[_initialPosition$]['+'](updateDelta)});
         }
       }
     }
@@ -5121,30 +5927,72 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
       this.stopTrackingPointer(pointer);
     }
     didStopTrackingLastPointer(pointer) {
-      let t5, t5$;
-      if (dart.equals(this[_state$0], src__gestures__monodrag._DragState.possible)) {
-        this.resolve(src__gestures__arena.GestureDisposition.rejected);
-        this[_state$0] = src__gestures__monodrag._DragState.ready;
-        if (this.onCancel != null) this.invokeCallback(dart.void, "onCancel", this.onCancel);
-        return;
-      }
-      let wasAccepted = dart.equals(this[_state$0], src__gestures__monodrag._DragState.accepted);
-      this[_state$0] = src__gestures__monodrag._DragState.ready;
-      if (wasAccepted && this.onEnd != null) {
-        let tracker = this[_velocityTrackers$][$_get](pointer);
-        if (!(tracker != null)) dart.assertFailed();
-        let estimate = tracker.getVelocityEstimate();
-        if (estimate != null && dart.test(this[_isFlingGesture](estimate))) {
-          let velocity = new src__gestures__velocity_tracker.Velocity.new({pixelsPerSecond: estimate.pixelsPerSecond}).clampMagnitude((t5 = this.minFlingVelocity, t5 == null ? src__gestures__constants.kMinFlingVelocity : t5), (t5$ = this.maxFlingVelocity, t5$ == null ? src__gestures__constants.kMaxFlingVelocity : t5$));
-          this.invokeCallback(dart.void, "onEnd", dart.fn(() => this.onEnd(new src__gestures__drag_details.DragEndDetails.new({velocity: velocity, primaryVelocity: this[_getPrimaryValueFromOffset](velocity.pixelsPerSecond)})), VoidTovoid()), {debugReport: dart.fn(() => dart.str(estimate) + "; fling at " + dart.str(velocity) + ".", VoidToString())});
-        } else {
-          this.invokeCallback(dart.void, "onEnd", dart.fn(() => this.onEnd(new src__gestures__drag_details.DragEndDetails.new({velocity: src__gestures__velocity_tracker.Velocity.zero, primaryVelocity: 0.0})), VoidTovoid()), {debugReport: dart.fn(() => {
-              if (estimate == null) return "Could not estimate velocity.";
-              return dart.str(estimate) + "; judged to not be a fling.";
-            }, VoidToString())});
+      if (!!dart.equals(this[_state$0], src__gestures__monodrag._DragState.ready)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/monodrag.dart", 298, 12, "_state != _DragState.ready");
+      switch (this[_state$0]) {
+        case C48 || CT.C48:
+        {
+          break;
+        }
+        case C49 || CT.C49:
+        {
+          this.resolve(src__gestures__arena.GestureDisposition.rejected);
+          this[_checkCancel$]();
+          break;
+        }
+        case C50 || CT.C50:
+        {
+          this[_checkEnd](pointer);
+          break;
         }
       }
       this[_velocityTrackers$][$clear]();
+      this[_initialButtons$0] = null;
+      this[_state$0] = src__gestures__monodrag._DragState.ready;
+    }
+    [_checkDown$]() {
+      if (!(this[_initialButtons$0] === 1)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/monodrag.dart", 318, 12, "_initialButtons == kPrimaryButton");
+      let details = new src__gestures__drag_details.DragDownDetails.new({globalPosition: this[_initialPosition$]});
+      if (this.onDown != null) this.invokeCallback(dart.void, "onDown", dart.fn(() => this.onDown(details), VoidTovoid()));
+    }
+    [_checkStart](timestamp) {
+      if (!(this[_initialButtons$0] === 1)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/monodrag.dart", 326, 12, "_initialButtons == kPrimaryButton");
+      let details = new src__gestures__drag_details.DragStartDetails.new({sourceTimeStamp: timestamp, globalPosition: this[_initialPosition$]});
+      if (this.onStart != null) this.invokeCallback(dart.void, "onStart", dart.fn(() => this.onStart(details), VoidTovoid()));
+    }
+    [_checkUpdate](opts) {
+      let sourceTimeStamp = opts && 'sourceTimeStamp' in opts ? opts.sourceTimeStamp : null;
+      let delta = opts && 'delta' in opts ? opts.delta : null;
+      let primaryDelta = opts && 'primaryDelta' in opts ? opts.primaryDelta : null;
+      let globalPosition = opts && 'globalPosition' in opts ? opts.globalPosition : null;
+      if (!(this[_initialButtons$0] === 1)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/monodrag.dart", 341, 12, "_initialButtons == kPrimaryButton");
+      let details = new src__gestures__drag_details.DragUpdateDetails.new({sourceTimeStamp: sourceTimeStamp, delta: delta, primaryDelta: primaryDelta, globalPosition: globalPosition});
+      if (this.onUpdate != null) this.invokeCallback(dart.void, "onUpdate", dart.fn(() => this.onUpdate(details), VoidTovoid()));
+    }
+    [_checkEnd](pointer) {
+      let t5, t5$;
+      if (!(this[_initialButtons$0] === 1)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/monodrag.dart", 353, 12, "_initialButtons == kPrimaryButton");
+      if (this.onEnd == null) return;
+      let tracker = this[_velocityTrackers$][$_get](pointer);
+      if (!(tracker != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/monodrag.dart", 357, 12, "tracker != null");
+      let details = null;
+      let debugReport = null;
+      let estimate = tracker.getVelocityEstimate();
+      if (estimate != null && dart.test(this[_isFlingGesture$](estimate))) {
+        let velocity = new src__gestures__velocity_tracker.Velocity.new({pixelsPerSecond: estimate.pixelsPerSecond}).clampMagnitude((t5 = this.minFlingVelocity, t5 == null ? 50 : t5), (t5$ = this.maxFlingVelocity, t5$ == null ? 8000 : t5$));
+        details = new src__gestures__drag_details.DragEndDetails.new({velocity: velocity, primaryVelocity: this[_getPrimaryValueFromOffset](velocity.pixelsPerSecond)});
+        debugReport = dart.fn(() => dart.str(estimate) + "; fling at " + dart.str(velocity) + ".", VoidToString());
+      } else {
+        details = new src__gestures__drag_details.DragEndDetails.new({velocity: src__gestures__velocity_tracker.Velocity.zero, primaryVelocity: 0.0});
+        debugReport = dart.fn(() => {
+          if (estimate == null) return "Could not estimate velocity.";
+          return dart.str(estimate) + "; judged to not be a fling.";
+        }, VoidToString());
+      }
+      this.invokeCallback(dart.void, "onEnd", dart.fn(() => this.onEnd(details), VoidTovoid()), {debugReport: VoidToString()._check(debugReport)});
+    }
+    [_checkCancel$]() {
+      if (!(this[_initialButtons$0] === 1)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/monodrag.dart", 390, 12, "_initialButtons == kPrimaryButton");
+      if (this.onCancel != null) this.invokeCallback(dart.void, "onCancel", this.onCancel);
     }
     dispose() {
       this[_velocityTrackers$][$clear]();
@@ -5158,7 +6006,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   (src__gestures__monodrag.DragGestureRecognizer.new = function(opts) {
     let debugOwner = opts && 'debugOwner' in opts ? opts.debugOwner : null;
     let kind = opts && 'kind' in opts ? opts.kind : null;
-    let dragStartBehavior = opts && 'dragStartBehavior' in opts ? opts.dragStartBehavior : src__gestures__recognizer.DragStartBehavior.start;
+    let dragStartBehavior = opts && 'dragStartBehavior' in opts ? opts.dragStartBehavior : C14 || CT.C14;
     this[onDown] = null;
     this[onStart$0] = null;
     this[onUpdate$0] = null;
@@ -5171,9 +6019,10 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     this[_initialPosition$] = null;
     this[_pendingDragOffset] = null;
     this[_lastPendingEventTimestamp$] = null;
+    this[_initialButtons$0] = null;
     this[_velocityTrackers$] = new (IdentityMapOfint$VelocityTracker()).new();
     this[dragStartBehavior$] = dragStartBehavior;
-    if (!(dragStartBehavior != null)) dart.assertFailed();
+    if (!(dragStartBehavior != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/gestures/monodrag.dart", 66, 16, "dragStartBehavior != null");
     src__gestures__monodrag.DragGestureRecognizer.__proto__.new.call(this, {debugOwner: debugOwner, kind: kind});
     ;
   }).prototype = src__gestures__monodrag.DragGestureRecognizer.prototype;
@@ -5189,10 +6038,17 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   const maxFlingVelocity = Symbol("DragGestureRecognizer.maxFlingVelocity");
   dart.setMethodSignature(src__gestures__monodrag.DragGestureRecognizer, () => ({
     __proto__: dart.getMethods(src__gestures__monodrag.DragGestureRecognizer.__proto__),
+    isPointerAllowed: dart.fnType(core.bool, [src__gestures__events.PointerEvent]),
     addAllowedPointer: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
     handleEvent: dart.fnType(dart.void, [src__gestures__events.PointerEvent]),
-    didStopTrackingLastPointer: dart.fnType(dart.void, [core.int])
+    didStopTrackingLastPointer: dart.fnType(dart.void, [core.int]),
+    [_checkDown$]: dart.fnType(dart.void, []),
+    [_checkStart]: dart.fnType(dart.void, [core.Duration]),
+    [_checkUpdate]: dart.fnType(dart.void, [], {delta: ui$.Offset, globalPosition: ui$.Offset, primaryDelta: core.double, sourceTimeStamp: core.Duration}),
+    [_checkEnd]: dart.fnType(dart.void, [core.int]),
+    [_checkCancel$]: dart.fnType(dart.void, [])
   }));
+  dart.setLibraryUri(src__gestures__monodrag.DragGestureRecognizer, "package:flutter_web/src/gestures/monodrag.dart");
   dart.setFieldSignature(src__gestures__monodrag.DragGestureRecognizer, () => ({
     __proto__: dart.getFields(src__gestures__monodrag.DragGestureRecognizer.__proto__),
     dragStartBehavior: dart.fieldType(src__gestures__recognizer.DragStartBehavior),
@@ -5208,17 +6064,18 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     [_initialPosition$]: dart.fieldType(ui$.Offset),
     [_pendingDragOffset]: dart.fieldType(ui$.Offset),
     [_lastPendingEventTimestamp$]: dart.fieldType(core.Duration),
+    [_initialButtons$0]: dart.fieldType(core.int),
     [_velocityTrackers$]: dart.finalFieldType(core.Map$(core.int, src__gestures__velocity_tracker.VelocityTracker))
   }));
   src__gestures__monodrag.VerticalDragGestureRecognizer = class VerticalDragGestureRecognizer extends src__gestures__monodrag.DragGestureRecognizer {
-    [_isFlingGesture](estimate) {
+    [_isFlingGesture$](estimate) {
       let t5, t5$;
-      let minVelocity = (t5 = this.minFlingVelocity, t5 == null ? src__gestures__constants.kMinFlingVelocity : t5);
-      let minDistance = (t5$ = this.minFlingDistance, t5$ == null ? src__gestures__constants.kTouchSlop : t5$);
+      let minVelocity = (t5 = this.minFlingVelocity, t5 == null ? 50 : t5);
+      let minDistance = (t5$ = this.minFlingDistance, t5$ == null ? 18 : t5$);
       return estimate.pixelsPerSecond.dy[$abs]() > dart.notNull(minVelocity) && estimate.offset.dy[$abs]() > dart.notNull(minDistance);
     }
     get [_hasSufficientPendingDragDeltaToAccept]() {
-      return this[_pendingDragOffset].dy[$abs]() > dart.notNull(src__gestures__constants.kTouchSlop);
+      return this[_pendingDragOffset].dy[$abs]() > 18;
     }
     [_getDeltaForDetails](delta) {
       return new ui$.Offset.new(0.0, delta.dy);
@@ -5239,7 +6096,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   dart.addTypeTests(src__gestures__monodrag.VerticalDragGestureRecognizer);
   dart.setMethodSignature(src__gestures__monodrag.VerticalDragGestureRecognizer, () => ({
     __proto__: dart.getMethods(src__gestures__monodrag.VerticalDragGestureRecognizer.__proto__),
-    [_isFlingGesture]: dart.fnType(core.bool, [src__gestures__velocity_tracker.VelocityEstimate]),
+    [_isFlingGesture$]: dart.fnType(core.bool, [src__gestures__velocity_tracker.VelocityEstimate]),
     [_getDeltaForDetails]: dart.fnType(ui$.Offset, [ui$.Offset]),
     [_getPrimaryValueFromOffset]: dart.fnType(core.double, [ui$.Offset])
   }));
@@ -5248,15 +6105,16 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     [_hasSufficientPendingDragDeltaToAccept]: core.bool,
     debugDescription: core.String
   }));
+  dart.setLibraryUri(src__gestures__monodrag.VerticalDragGestureRecognizer, "package:flutter_web/src/gestures/monodrag.dart");
   src__gestures__monodrag.HorizontalDragGestureRecognizer = class HorizontalDragGestureRecognizer extends src__gestures__monodrag.DragGestureRecognizer {
-    [_isFlingGesture](estimate) {
+    [_isFlingGesture$](estimate) {
       let t5, t5$;
-      let minVelocity = (t5 = this.minFlingVelocity, t5 == null ? src__gestures__constants.kMinFlingVelocity : t5);
-      let minDistance = (t5$ = this.minFlingDistance, t5$ == null ? src__gestures__constants.kTouchSlop : t5$);
+      let minVelocity = (t5 = this.minFlingVelocity, t5 == null ? 50 : t5);
+      let minDistance = (t5$ = this.minFlingDistance, t5$ == null ? 18 : t5$);
       return estimate.pixelsPerSecond.dx[$abs]() > dart.notNull(minVelocity) && estimate.offset.dx[$abs]() > dart.notNull(minDistance);
     }
     get [_hasSufficientPendingDragDeltaToAccept]() {
-      return this[_pendingDragOffset].dx[$abs]() > dart.notNull(src__gestures__constants.kTouchSlop);
+      return this[_pendingDragOffset].dx[$abs]() > 18;
     }
     [_getDeltaForDetails](delta) {
       return new ui$.Offset.new(delta.dx, 0.0);
@@ -5277,7 +6135,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   dart.addTypeTests(src__gestures__monodrag.HorizontalDragGestureRecognizer);
   dart.setMethodSignature(src__gestures__monodrag.HorizontalDragGestureRecognizer, () => ({
     __proto__: dart.getMethods(src__gestures__monodrag.HorizontalDragGestureRecognizer.__proto__),
-    [_isFlingGesture]: dart.fnType(core.bool, [src__gestures__velocity_tracker.VelocityEstimate]),
+    [_isFlingGesture$]: dart.fnType(core.bool, [src__gestures__velocity_tracker.VelocityEstimate]),
     [_getDeltaForDetails]: dart.fnType(ui$.Offset, [ui$.Offset]),
     [_getPrimaryValueFromOffset]: dart.fnType(core.double, [ui$.Offset])
   }));
@@ -5286,15 +6144,16 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     [_hasSufficientPendingDragDeltaToAccept]: core.bool,
     debugDescription: core.String
   }));
+  dart.setLibraryUri(src__gestures__monodrag.HorizontalDragGestureRecognizer, "package:flutter_web/src/gestures/monodrag.dart");
   src__gestures__monodrag.PanGestureRecognizer = class PanGestureRecognizer extends src__gestures__monodrag.DragGestureRecognizer {
-    [_isFlingGesture](estimate) {
+    [_isFlingGesture$](estimate) {
       let t5, t5$;
-      let minVelocity = (t5 = this.minFlingVelocity, t5 == null ? src__gestures__constants.kMinFlingVelocity : t5);
-      let minDistance = (t5$ = this.minFlingDistance, t5$ == null ? src__gestures__constants.kTouchSlop : t5$);
+      let minVelocity = (t5 = this.minFlingVelocity, t5 == null ? 50 : t5);
+      let minDistance = (t5$ = this.minFlingDistance, t5$ == null ? 18 : t5$);
       return dart.notNull(estimate.pixelsPerSecond.distanceSquared) > dart.notNull(minVelocity) * dart.notNull(minVelocity) && dart.notNull(estimate.offset.distanceSquared) > dart.notNull(minDistance) * dart.notNull(minDistance);
     }
     get [_hasSufficientPendingDragDeltaToAccept]() {
-      return dart.notNull(this[_pendingDragOffset].distance) > dart.notNull(src__gestures__constants.kPanSlop);
+      return dart.notNull(this[_pendingDragOffset].distance) > 36;
     }
     [_getDeltaForDetails](delta) {
       return delta;
@@ -5314,7 +6173,7 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
   dart.addTypeTests(src__gestures__monodrag.PanGestureRecognizer);
   dart.setMethodSignature(src__gestures__monodrag.PanGestureRecognizer, () => ({
     __proto__: dart.getMethods(src__gestures__monodrag.PanGestureRecognizer.__proto__),
-    [_isFlingGesture]: dart.fnType(core.bool, [src__gestures__velocity_tracker.VelocityEstimate]),
+    [_isFlingGesture$]: dart.fnType(core.bool, [src__gestures__velocity_tracker.VelocityEstimate]),
     [_getDeltaForDetails]: dart.fnType(ui$.Offset, [ui$.Offset]),
     [_getPrimaryValueFromOffset]: dart.fnType(core.double, [ui$.Offset])
   }));
@@ -5323,9 +6182,11 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     [_hasSufficientPendingDragDeltaToAccept]: core.bool,
     debugDescription: core.String
   }));
+  dart.setLibraryUri(src__gestures__monodrag.PanGestureRecognizer, "package:flutter_web/src/gestures/monodrag.dart");
   dart.trackLibraries("packages/flutter_web/src/gestures/arena", {
     "package:flutter_web/src/gestures/arena.dart": src__gestures__arena,
     "package:flutter_web/src/gestures/debug.dart": src__gestures__debug,
+    "package:flutter_web/src/util.dart": src__util,
     "package:flutter_web/src/gestures/pointer_router.dart": src__gestures__pointer_router,
     "package:flutter_web/src/gestures/events.dart": src__gestures__events,
     "package:flutter_web/src/gestures/scale.dart": src__gestures__scale,
@@ -5338,21 +6199,23 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     "package:flutter_web/src/gestures/hit_test.dart": src__gestures__hit_test,
     "package:flutter_web/src/gestures/converter.dart": src__gestures__converter,
     "package:flutter_web/src/gestures/constants.dart": src__gestures__constants,
-    "package:flutter_web/src/gestures/multidrag.dart": src__gestures__multidrag,
-    "package:flutter_web/src/gestures/drag_details.dart": src__gestures__drag_details,
-    "package:flutter_web/src/gestures/drag.dart": src__gestures__drag,
     "package:flutter_web/src/gestures/tap.dart": src__gestures__tap,
     "package:flutter_web/src/gestures/eager.dart": src__gestures__eager,
     "package:flutter_web/src/gestures/force_press.dart": src__gestures__force_press,
     "package:flutter_web/src/gestures/mouse_tracking.dart": src__gestures__mouse_tracking,
-    "package:flutter_web/src/gestures/multitap.dart": src__gestures__multitap,
+    "package:flutter_web/src/gestures/drag.dart": src__gestures__drag,
+    "package:flutter_web/src/gestures/drag_details.dart": src__gestures__drag_details,
     "package:flutter_web/src/gestures/long_press.dart": src__gestures__long_press,
+    "package:flutter_web/src/gestures/multidrag.dart": src__gestures__multidrag,
+    "package:flutter_web/src/gestures/multitap.dart": src__gestures__multitap,
     "package:flutter_web/src/gestures/monodrag.dart": src__gestures__monodrag
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/flutter_web/src/gestures/arena.dart","org-dartlang-app:///packages/flutter_web/src/gestures/debug.dart","org-dartlang-app:///packages/flutter_web/src/gestures/pointer_router.dart","org-dartlang-app:///packages/flutter_web/src/gestures/events.dart","org-dartlang-app:///packages/flutter_web/src/gestures/scale.dart","org-dartlang-app:///packages/flutter_web/src/gestures/recognizer.dart","org-dartlang-app:///packages/flutter_web/src/gestures/velocity_tracker.dart","org-dartlang-app:///packages/flutter_web/src/gestures/lsq_solver.dart","org-dartlang-app:///packages/flutter_web/src/gestures/team.dart","org-dartlang-app:///packages/flutter_web/src/gestures/binding.dart","org-dartlang-app:///packages/flutter_web/src/gestures/pointer_signal_resolver.dart","org-dartlang-app:///packages/flutter_web/src/gestures/hit_test.dart","org-dartlang-app:///packages/flutter_web/src/gestures/converter.dart","org-dartlang-app:///packages/flutter_web/src/gestures/constants.dart","org-dartlang-app:///packages/flutter_web/src/gestures/multidrag.dart","org-dartlang-app:///packages/flutter_web/src/gestures/drag_details.dart","org-dartlang-app:///packages/flutter_web/src/gestures/drag.dart","org-dartlang-app:///packages/flutter_web/src/gestures/tap.dart","org-dartlang-app:///packages/flutter_web/src/gestures/eager.dart","org-dartlang-app:///packages/flutter_web/src/gestures/force_press.dart","org-dartlang-app:///packages/flutter_web/src/gestures/mouse_tracking.dart","org-dartlang-app:///packages/flutter_web/src/gestures/multitap.dart","org-dartlang-app:///packages/flutter_web/src/gestures/long_press.dart","org-dartlang-app:///packages/flutter_web/src/gestures/monodrag.dart"],"names":[],"mappings":"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","file":"arena.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["arena.dart","debug.dart","../util.dart","pointer_router.dart","events.dart","scale.dart","recognizer.dart","velocity_tracker.dart","lsq_solver.dart","team.dart","binding.dart","pointer_signal_resolver.dart","hit_test.dart","converter.dart","constants.dart","tap.dart","eager.dart","force_press.dart","mouse_tracking.dart","drag.dart","drag_details.dart","long_press.dart","multidrag.dart","multitap.dart","monodrag.dart"],"names":[],"mappings":"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","file":"arena.ddc.js"}');
   // Exports:
   return {
     src__gestures__arena: src__gestures__arena,
     src__gestures__debug: src__gestures__debug,
+    src__util: src__util,
     src__gestures__pointer_router: src__gestures__pointer_router,
     src__gestures__events: src__gestures__events,
     src__gestures__scale: src__gestures__scale,
@@ -5365,15 +6228,15 @@ define(['dart_sdk', 'packages/flutter_web/src/foundation/assertions', 'packages/
     src__gestures__hit_test: src__gestures__hit_test,
     src__gestures__converter: src__gestures__converter,
     src__gestures__constants: src__gestures__constants,
-    src__gestures__multidrag: src__gestures__multidrag,
-    src__gestures__drag_details: src__gestures__drag_details,
-    src__gestures__drag: src__gestures__drag,
     src__gestures__tap: src__gestures__tap,
     src__gestures__eager: src__gestures__eager,
     src__gestures__force_press: src__gestures__force_press,
     src__gestures__mouse_tracking: src__gestures__mouse_tracking,
-    src__gestures__multitap: src__gestures__multitap,
+    src__gestures__drag: src__gestures__drag,
+    src__gestures__drag_details: src__gestures__drag_details,
     src__gestures__long_press: src__gestures__long_press,
+    src__gestures__multidrag: src__gestures__multidrag,
+    src__gestures__multitap: src__gestures__multitap,
     src__gestures__monodrag: src__gestures__monodrag
   };
 });

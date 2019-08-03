@@ -53,8 +53,22 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
   let VoidTobool = () => (VoidTobool = dart.constFn(dart.fnType(core.bool, [])))();
   let IdentityMapOfString$FutureOfString = () => (IdentityMapOfString$FutureOfString = dart.constFn(_js_helper.IdentityMap$(core.String, FutureOfString())))();
   let IdentityMapOfString$Future = () => (IdentityMapOfString$Future = dart.constFn(_js_helper.IdentityMap$(core.String, async.Future)))();
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C0() {
+      return C0 = dart.fn(src__services__platform_messages.BinaryMessages.handlePlatformMessage, StringAndByteDataAndFnToFutureOfvoid());
+    },
+    get C1() {
+      return C1 = dart.fn(src__services__binding.ServicesBinding._parseLicenses, StringToListOfLicenseEntry());
+    },
+    get C2() {
+      return C2 = dart.constList([], core.String);
+    }
+  });
+  let C0;
   const _addLicenses = dart.privateName(src__services__binding, "_addLicenses");
-  let const$;
+  let C1;
+  let C2;
   src__services__binding.ServicesBinding = class ServicesBinding extends src__foundation__binding.BindingBase {
     static _parseLicenses(rawLicenses) {
       let _licenseSeparator = "\n" + "-"[$times](80) + "\n";
@@ -65,7 +79,7 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
         if (split >= 0) {
           result[$add](new src__foundation__licenses.LicenseEntryWithLineBreaks.new(license[$substring](0, split)[$split]("\n"), license[$substring](split + 2)));
         } else {
-          result[$add](new src__foundation__licenses.LicenseEntryWithLineBreaks.new(const$ || (const$ = dart.constList([], core.String)), license));
+          result[$add](new src__foundation__licenses.LicenseEntryWithLineBreaks.new(C2 || CT.C2, license));
         }
       }
       return result;
@@ -76,7 +90,7 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
       let t0;
       super.initInstances();
       t0 = ui$.window;
-      t0.onPlatformMessage = dart.fn(src__services__platform_messages.BinaryMessages.handlePlatformMessage, StringAndByteDataAndFnToFutureOfvoid());
+      t0.onPlatformMessage = C0 || CT.C0;
       t0;
       this.initLicenses();
     }
@@ -92,7 +106,7 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
         yield rawLicenses.future;
         let parsedLicenses = CompleterOfListOfLicenseEntry().new();
         async.Timer.run(dart.fn(() => async.async(core.Null, function*() {
-          parsedLicenses.complete(src__foundation__isolates.compute(core.String, ListOfLicenseEntry(), dart.fn(src__services__binding.ServicesBinding._parseLicenses, StringToListOfLicenseEntry()), yield rawLicenses.future, {debugLabel: "parseLicenses"}));
+          parsedLicenses.complete(src__foundation__isolates.compute(core.String, ListOfLicenseEntry(), C1 || CT.C1, yield rawLicenses.future, {debugLabel: "parseLicenses"}));
         }), VoidToFutureOfNull()));
         yield parsedLicenses.future;
         if (stream.addStream(StreamOfLicenseEntry().fromIterable(yield parsedLicenses.future))) return;
@@ -108,7 +122,7 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
             this.evict(value);
           }).bind(this)), StringToFutureOfNull())});
         return true;
-      }, VoidTobool())())) dart.assertFailed();
+      }, VoidTobool())())) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/services/binding.dart", 90, 12, "() {\n      registerStringServiceExtension(\n        // ext.flutter.evict value=foo.png will cause foo.png to be evicted from\n        // the rootBundle cache and cause the entire image cache to be cleared.\n        // This is used by hot reload mode to clear out the cache of resources\n        // that have changed.\n        name: 'evict',\n        getter: () async => '',\n        setter: (String value) async {\n          evict(value);\n        },\n      );\n      return true;\n    }()");
     }
     evict(asset) {
       src__services__asset_bundle.rootBundle.evict(asset);
@@ -122,12 +136,13 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
     [_addLicenses]: dart.fnType(async.Stream$(src__foundation__licenses.LicenseEntry), []),
     evict: dart.fnType(dart.void, [core.String])
   }));
+  dart.setLibraryUri(src__services__binding.ServicesBinding, "package:flutter_web/src/services/binding.dart");
   src__services__asset_bundle.AssetBundle = class AssetBundle extends core.Object {
     loadString(key, opts) {
       let cache = opts && 'cache' in opts ? opts.cache : true;
       return async.async(core.String, (function* loadString() {
         let data = (yield this.load(key));
-        if (data == null) dart.throw(new src__foundation__assertions.FlutterError.new("Unable to load asset: " + dart.str(key)));
+        if (data == null) dart.throw(src__foundation__assertions.FlutterError.new("Unable to load asset: " + dart.str(key)));
         if (dart.notNull(data[$lengthInBytes]) < 20 * 1024) {
           return convert.utf8.decode(data[$buffer][$asUint8List]());
         }
@@ -152,6 +167,7 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
     loadString: dart.fnType(async.Future$(core.String), [core.String], {cache: core.bool}),
     evict: dart.fnType(dart.void, [core.String])
   }));
+  dart.setLibraryUri(src__services__asset_bundle.AssetBundle, "package:flutter_web/src/services/asset_bundle.dart");
   dart.defineExtensionMethods(src__services__asset_bundle.AssetBundle, ['toString']);
   const _baseUrl = dart.privateName(src__services__asset_bundle, "_baseUrl");
   const _urlFromKey = dart.privateName(src__services__asset_bundle, "_urlFromKey");
@@ -168,8 +184,8 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
     }
     loadStructuredData(T, key, parser) {
       return async.async(T, (function* loadStructuredData() {
-        if (!(key != null)) dart.assertFailed();
-        if (!(parser != null)) dart.assertFailed();
+        if (!(key != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/services/asset_bundle.dart", 134, 12, "key != null");
+        if (!(parser != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/services/asset_bundle.dart", 135, 12, "parser != null");
         return parser(yield this.loadString(key));
       }).bind(this));
     }
@@ -185,6 +201,7 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
     load: dart.fnType(async.Future$(typed_data.ByteData), [core.String]),
     loadStructuredData: dart.gFnType(T => [async.Future$(T), [core.String, dart.fnType(async.Future$(T), [core.String])]])
   }));
+  dart.setLibraryUri(src__services__asset_bundle.NetworkAssetBundle, "package:flutter_web/src/services/asset_bundle.dart");
   dart.setFieldSignature(src__services__asset_bundle.NetworkAssetBundle, () => ({
     __proto__: dart.getFields(src__services__asset_bundle.NetworkAssetBundle.__proto__),
     [_baseUrl]: dart.finalFieldType(core.Uri)
@@ -198,8 +215,8 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
       return super.loadString(key);
     }
     loadStructuredData(T, key, parser) {
-      if (!(key != null)) dart.assertFailed();
-      if (!(parser != null)) dart.assertFailed();
+      if (!(key != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/services/asset_bundle.dart", 177, 12, "key != null");
+      if (!(parser != null)) dart.assertFailed(null, "org-dartlang-app:///packages/flutter_web/src/services/asset_bundle.dart", 178, 12, "parser != null");
       if (dart.test(this[_structuredDataCache][$containsKey](key))) return async.Future$(T)._check(this[_structuredDataCache][$_get](key));
       let completer = null;
       let result = null;
@@ -232,6 +249,7 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
     __proto__: dart.getMethods(src__services__asset_bundle.CachingAssetBundle.__proto__),
     loadStructuredData: dart.gFnType(T => [async.Future$(T), [core.String, dart.fnType(async.Future$(T), [core.String])]])
   }));
+  dart.setLibraryUri(src__services__asset_bundle.CachingAssetBundle, "package:flutter_web/src/services/asset_bundle.dart");
   dart.setFieldSignature(src__services__asset_bundle.CachingAssetBundle, () => ({
     __proto__: dart.getFields(src__services__asset_bundle.CachingAssetBundle.__proto__),
     [_stringCache]: dart.finalFieldType(core.Map$(core.String, async.Future$(core.String))),
@@ -240,9 +258,9 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
   src__services__asset_bundle.PlatformAssetBundle = class PlatformAssetBundle extends src__services__asset_bundle.CachingAssetBundle {
     load(key) {
       return async.async(typed_data.ByteData, function* load() {
-        let encoded = typed_data.Uint8List._check(convert.utf8.encoder.convert(core._Uri.new({path: core.Uri.encodeFull(key)}).path));
+        let encoded = convert.utf8.encoder.convert(core._Uri.new({path: core.Uri.encodeFull(key)}).path);
         let asset = (yield src__services__platform_messages.BinaryMessages.send("flutter/assets", encoded[$buffer][$asByteData]()));
-        if (asset == null) dart.throw(new src__foundation__assertions.FlutterError.new("Unable to load asset: " + dart.str(key)));
+        if (asset == null) dart.throw(src__foundation__assertions.FlutterError.new("Unable to load asset: " + dart.str(key)));
         return asset;
       });
     }
@@ -256,7 +274,8 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
     __proto__: dart.getMethods(src__services__asset_bundle.PlatformAssetBundle.__proto__),
     load: dart.fnType(async.Future$(typed_data.ByteData), [core.String])
   }));
-  src__services__asset_bundle._initRootBundle = function() {
+  dart.setLibraryUri(src__services__asset_bundle.PlatformAssetBundle, "package:flutter_web/src/services/asset_bundle.dart");
+  src__services__asset_bundle._initRootBundle = function _initRootBundle() {
     return new src__services__asset_bundle.PlatformAssetBundle.new();
   };
   dart.defineLazy(src__services__asset_bundle, {
@@ -268,7 +287,8 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/flutter_web/src/serv
     "package:flutter_web/services.dart": services,
     "package:flutter_web/src/services/binding.dart": src__services__binding,
     "package:flutter_web/src/services/asset_bundle.dart": src__services__asset_bundle
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/flutter_web/src/services/binding.dart","org-dartlang-app:///packages/flutter_web/src/services/asset_bundle.dart"],"names":[],"mappings":"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","file":"services.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["src/services/binding.dart","src/services/asset_bundle.dart"],"names":[],"mappings":"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","file":"services.ddc.js"}');
   // Exports:
   return {
     services: services,

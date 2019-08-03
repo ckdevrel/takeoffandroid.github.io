@@ -2,36 +2,699 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f9528a4-1ecc-4e2f-bf49-a25f514dd40f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/util/UrlLauncher.dart" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/098d3ee73e6cc294616d3a2e2c3c81ad/asset_graph.json" afterPath="$PROJECT_DIR$/.dart_tool/build/098d3ee73e6cc294616d3a2e2c3c81ad/asset_graph.json" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.dart2js.meta_module.clean" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.dart2js.meta_module.clean" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.dart2js.meta_module.raw" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.dart2js.meta_module.raw" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/entrypoint/build.dart" afterPath="$PROJECT_DIR$/.dart_tool/build/entrypoint/build.dart" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/entrypoint/build.dart.snapshot" afterPath="$PROJECT_DIR$/.dart_tool/build/entrypoint/build.dart.snapshot" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/build_web_compilers/lib/src/dev_compiler/dart_sdk.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/build_web_compilers/lib/src/dev_compiler/dart_sdk.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/algorithms.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/algorithms.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/collection.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/collection.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/collection.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/collection.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/collection.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/collection.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/collection.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/collection.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/equality.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/equality.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/iterable_zip.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/iterable_zip.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/priority_queue.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/priority_queue.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/algorithms.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/algorithms.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/algorithms.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/algorithms.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/algorithms.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/algorithms.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/algorithms.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/algorithms.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/canonicalized_map.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/canonicalized_map.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/canonicalized_map.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/canonicalized_map.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/canonicalized_map.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/canonicalized_map.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/canonicalized_map.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/canonicalized_map.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/combined_wrappers/combined_iterable.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/combined_wrappers/combined_iterable.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/combined_wrappers/combined_list.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/combined_wrappers/combined_list.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/combined_wrappers/combined_map.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/combined_wrappers/combined_map.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/comparators.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/comparators.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/comparators.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/comparators.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/comparators.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/comparators.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/comparators.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/comparators.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/empty_unmodifiable_set.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/empty_unmodifiable_set.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/equality.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/equality.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/equality_map.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/equality_map.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/equality_set.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/equality_set.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/functions.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/functions.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/iterable_zip.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/iterable_zip.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/iterable_zip.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/iterable_zip.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/iterable_zip.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/iterable_zip.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/iterable_zip.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/iterable_zip.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/priority_queue.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/priority_queue.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/priority_queue.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/priority_queue.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/priority_queue.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/priority_queue.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/priority_queue.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/priority_queue.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/queue_list.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/queue_list.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/union_set.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/union_set.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/union_set_controller.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/union_set_controller.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/unmodifiable_wrappers.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/unmodifiable_wrappers.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/utils.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/utils.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/utils.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/utils.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/utils.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/utils.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/utils.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/utils.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/wrappers.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/src/wrappers.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/wrappers.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/collection/lib/wrappers.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/.dart2js.meta_module.clean" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/.dart2js.meta_module.clean" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/.dart2js.meta_module.raw" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/.dart2js.meta_module.raw" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/.ddc.meta_module.clean" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/.ddc.meta_module.clean" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/.ddc.meta_module.raw" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/.ddc.meta_module.raw" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.dart2js.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/animation.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/cupertino.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/cupertino.dart2js.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/cupertino.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/cupertino.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/cupertino.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/cupertino.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/cupertino.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/cupertino.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/cupertino.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/cupertino.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/foundation.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/foundation.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/foundation.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/foundation.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/foundation.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/foundation.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/gestures.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/gestures.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/gestures.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/gestures.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/gestures.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/gestures.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/io.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/io.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/io.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/io.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/io.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/io.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/io.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/io.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.dart2js.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/material.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/painting.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/painting.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/physics.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/physics.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/physics.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/physics.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/physics.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/physics.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/rendering.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/rendering.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/scheduler.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/scheduler.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/scheduler.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/scheduler.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/scheduler.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/scheduler.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/scheduler.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/scheduler.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/semantics.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/semantics.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/services.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/services.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/services.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/services.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/services.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/services.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/services.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/services.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.dart2js.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation_controller.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animation_controller.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animations.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/animations.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/curves.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/curves.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/listener_helpers.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/listener_helpers.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/tween.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/tween.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/tween_sequence.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/animation/tween_sequence.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/activity_indicator.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/activity_indicator.ddc.dill" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/activity_indicator.ddc.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/activity_indicator.ddc.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/activity_indicator.ddc.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/activity_indicator.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/activity_indicator.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/button.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/button.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/colors.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/colors.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/icons.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/icons.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/localizations.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/localizations.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/nav_bar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/nav_bar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/page_scaffold.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/page_scaffold.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/route.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/route.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/text_theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/text_theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/cupertino/theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.dart2js.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/assertions.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/basic_types.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/basic_types.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/binding.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/binding.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/bitfield.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/bitfield.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/change_notifier.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/change_notifier.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/collections.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/collections.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/constants.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/constants.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/debug.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/debug.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/diagnostics.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/diagnostics.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/isolates.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/isolates.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/key.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/key.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/licenses.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/licenses.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/node.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/node.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/observer_list.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/observer_list.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/platform.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/platform.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/print.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/print.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/profile.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/profile.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/serialization.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/serialization.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/synchronous_future.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/synchronous_future.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/unicode.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/foundation/unicode.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.dart2js.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/arena.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/binding.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/binding.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/constants.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/constants.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/converter.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/converter.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/debug.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/debug.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/drag.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/drag.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/drag_details.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/drag_details.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/eager.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/eager.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/events.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/events.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/force_press.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/force_press.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/hit_test.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/hit_test.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/long_press.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/long_press.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/lsq_solver.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/lsq_solver.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/monodrag.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/monodrag.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/mouse_tracking.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/mouse_tracking.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/multidrag.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/multidrag.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/multitap.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/multitap.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/pointer_router.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/pointer_router.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/pointer_signal_resolver.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/pointer_signal_resolver.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/recognizer.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/recognizer.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/scale.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/scale.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/tap.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/tap.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/team.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/team.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/velocity_tracker.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/gestures/velocity_tracker.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/about.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/about.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/animated_icons.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/animated_icons.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/app.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/app.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/app_bar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/app_bar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/app_bar_theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/app_bar_theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/arc.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/arc.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/back_button.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/back_button.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/bottom_app_bar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/bottom_app_bar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/bottom_app_bar_theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/bottom_app_bar_theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/bottom_navigation_bar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/bottom_navigation_bar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/bottom_sheet.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/bottom_sheet.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/button.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/button.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/button_bar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/button_bar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/button_theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/button_theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/card.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/card.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/card_theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/card_theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/checkbox.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/checkbox.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/checkbox_list_tile.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/checkbox_list_tile.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/chip.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/chip.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/chip_theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/chip_theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/circle_avatar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/circle_avatar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/color_scheme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/color_scheme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/colors.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/colors.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/constants.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/constants.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/data_table.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/data_table.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/data_table_source.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/data_table_source.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/date_picker.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/date_picker.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/debug.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/debug.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/dialog.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/dialog.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/dialog_theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/dialog_theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/divider.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/divider.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/drawer.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/drawer.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/drawer_header.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/drawer_header.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/dropdown.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/dropdown.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/expand_icon.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/expand_icon.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/expansion_panel.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/expansion_panel.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/expansion_tile.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/expansion_tile.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/feedback.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/feedback.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/flat_button.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/flat_button.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/flexible_space_bar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/flexible_space_bar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/floating_action_button.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/floating_action_button.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/floating_action_button_location.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/floating_action_button_location.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/flutter_logo.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/flutter_logo.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/grid_tile.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/grid_tile.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/grid_tile_bar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/grid_tile_bar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/icon_button.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/icon_button.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/icons.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/icons.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/ink_decoration.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/ink_decoration.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/ink_highlight.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/ink_highlight.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/ink_ripple.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/ink_ripple.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/ink_splash.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/ink_splash.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/ink_well.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/ink_well.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/input_border.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/input_border.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/input_decorator.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/input_decorator.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/list_tile.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/list_tile.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/material.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/material.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/material_button.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/material_button.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/material_localizations.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/material_localizations.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/mergeable_material.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/mergeable_material.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/outline_button.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/outline_button.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/page.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/page.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/page_transitions_theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/page_transitions_theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/paginated_data_table.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/paginated_data_table.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/popup_menu.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/popup_menu.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/progress_indicator.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/progress_indicator.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/radio.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/radio.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/radio_list_tile.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/radio_list_tile.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/raised_button.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/raised_button.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/refresh_indicator.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/refresh_indicator.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/reorderable_list.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/reorderable_list.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/scaffold.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/scaffold.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/scrollbar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/scrollbar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/search.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/search.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/shadows.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/shadows.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/slider.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/slider.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/slider_theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/slider_theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/snack_bar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/snack_bar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/stepper.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/stepper.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/switch.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/switch.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/switch_list_tile.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/switch_list_tile.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/tab_bar_theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/tab_bar_theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/tab_controller.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/tab_controller.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/tab_indicator.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/tab_indicator.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/tabs.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/tabs.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/text_field.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/text_field.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/text_form_field.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/text_form_field.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/text_selection.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/text_selection.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/text_theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/text_theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/theme_data.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/theme_data.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/time.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/time.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/time_picker.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/time_picker.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/toggleable.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/toggleable.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/tooltip.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/tooltip.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/two_level_list.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/two_level_list.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/typography.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/typography.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/user_accounts_drawer_header.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/material/user_accounts_drawer_header.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/alignment.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/alignment.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/basic_types.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/basic_types.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/beveled_rectangle_border.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/beveled_rectangle_border.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/binding.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/binding.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/border_radius.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/border_radius.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/borders.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/borders.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/box_border.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/box_border.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/box_decoration.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/box_decoration.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/box_fit.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/box_fit.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/box_shadow.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/box_shadow.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/circle_border.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/circle_border.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/clip.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/clip.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/colors.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/colors.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/debug.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/debug.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/decoration.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/decoration.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/decoration_image.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/decoration_image.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/edge_insets.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/edge_insets.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/flutter_logo.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/flutter_logo.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/fractional_offset.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/fractional_offset.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/geometry.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/geometry.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/gradient.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/gradient.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/image_cache.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/image_cache.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/image_decoder.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/image_decoder.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/image_provider.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/image_provider.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/image_resolution.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/image_resolution.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/image_stream.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/image_stream.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/matrix_utils.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/matrix_utils.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/notched_shapes.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/notched_shapes.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/paint_utilities.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/paint_utilities.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/rounded_rectangle_border.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/rounded_rectangle_border.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/shape_decoration.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/shape_decoration.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/stadium_border.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/stadium_border.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/strut_style.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/strut_style.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/text_painter.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/text_painter.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/text_span.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/text_span.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/text_style.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/painting/text_style.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/clamped_simulation.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/clamped_simulation.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/clamped_simulation.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/clamped_simulation.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/clamped_simulation.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/clamped_simulation.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/clamped_simulation.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/clamped_simulation.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/friction_simulation.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/friction_simulation.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/gravity_simulation.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/gravity_simulation.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/simulation.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/simulation.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/spring_simulation.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/spring_simulation.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/tolerance.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/tolerance.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/utils.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/physics/utils.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/animated_size.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/animated_size.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/binding.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/binding.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/box.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/box.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/custom_layout.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/custom_layout.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/custom_paint.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/custom_paint.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/debug.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/debug.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/debug_overflow_indicator.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/debug_overflow_indicator.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/editable.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/editable.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/error.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/error.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/flex.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/flex.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/flow.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/flow.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/image.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/image.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/layer.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/layer.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/list_body.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/list_body.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/list_wheel_viewport.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/list_wheel_viewport.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/object.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/object.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/paragraph.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/paragraph.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/performance_overlay.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/performance_overlay.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/platform_view.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/platform_view.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/proxy_box.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/proxy_box.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/rotated_box.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/rotated_box.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/shifted_box.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/shifted_box.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_fill.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_fill.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_fixed_extent_list.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_fixed_extent_list.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_grid.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_grid.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_list.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_list.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_multi_box_adaptor.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_multi_box_adaptor.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_padding.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_padding.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_persistent_header.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/sliver_persistent_header.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/stack.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/stack.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/table.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/table.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/table_border.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/table_border.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/tweens.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/tweens.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/view.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/view.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/viewport.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/viewport.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/viewport_offset.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/viewport_offset.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/wrap.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/rendering/wrap.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/binding.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/binding.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/binding.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/binding.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/binding.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/binding.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/binding.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/binding.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/debug.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/debug.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/priority.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/priority.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/ticker.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/scheduler/ticker.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/semantics/binding.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/semantics/binding.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/semantics/debug.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/semantics/debug.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/semantics/semantics.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/semantics/semantics.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/semantics/semantics_event.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/semantics/semantics_event.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/semantics/semantics_service.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/semantics/semantics_service.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/asset_bundle.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/asset_bundle.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/binding.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/binding.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.dart2js.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/clipboard.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/haptic_feedback.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/haptic_feedback.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/message_codec.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/message_codec.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/message_codecs.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/message_codecs.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/platform_channel.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/platform_channel.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/platform_messages.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/platform_messages.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/platform_views.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/platform_views.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/raw_keyboard.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/raw_keyboard.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/raw_keyboard_android.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/raw_keyboard_android.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/raw_keyboard_fuschia.module.library" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/system_channels.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/system_channels.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/system_chrome.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/system_chrome.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/system_navigator.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/system_navigator.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/system_sound.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/system_sound.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/text_editing.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/text_editing.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/text_formatter.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/text_formatter.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/text_input.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/services/text_input.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/util.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/util.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/animated_cross_fade.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/animated_cross_fade.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/animated_list.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/animated_list.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/animated_size.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/animated_size.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/animated_switcher.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/animated_switcher.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/annotated_region.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/annotated_region.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/app.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/app.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/async.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/async.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/automatic_keep_alive.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/automatic_keep_alive.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/banner.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/banner.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/basic.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/basic.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/binding.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/binding.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/bottom_navigation_bar_item.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/bottom_navigation_bar_item.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/container.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/container.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/debug.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/debug.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/dismissible.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/dismissible.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/drag_target.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/drag_target.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/editable_text.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/editable_text.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/fade_in_image.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/fade_in_image.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/focus_manager.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/focus_manager.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/focus_scope.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/focus_scope.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/form.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/form.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/framework.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/framework.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/gesture_detector.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/gesture_detector.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/grid_paper.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/grid_paper.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/heroes.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/heroes.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/icon.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/icon.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/icon_data.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/icon_data.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/icon_theme.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/icon_theme.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/icon_theme_data.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/icon_theme_data.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/image.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/image.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/image_icon.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/image_icon.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/implicit_animations.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/implicit_animations.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/inherited_model.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/inherited_model.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/inherited_notifier.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/inherited_notifier.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/layout_builder.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/layout_builder.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/list_wheel_scroll_view.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/list_wheel_scroll_view.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/localizations.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/localizations.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/media_query.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/media_query.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/modal_barrier.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/modal_barrier.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/navigation_toolbar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/navigation_toolbar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/navigator.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/navigator.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/nested_scroll_view.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/nested_scroll_view.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/notification_listener.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/notification_listener.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/orientation_builder.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/orientation_builder.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/overlay.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/overlay.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/overscroll_indicator.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/overscroll_indicator.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/page_storage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/page_storage.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/page_view.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/page_view.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/pages.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/pages.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/performance_overlay.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/performance_overlay.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/placeholder.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/placeholder.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/preferred_size.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/preferred_size.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/primary_scroll_controller.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/primary_scroll_controller.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/raw_keyboard_listener.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/raw_keyboard_listener.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/routes.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/routes.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/safe_area.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/safe_area.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_activity.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_activity.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_configuration.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_configuration.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_context.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_context.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_controller.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_controller.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_metrics.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_metrics.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_notification.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_notification.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_physics.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_physics.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_position.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_position.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_position_with_single_context.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_position_with_single_context.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_simulation.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_simulation.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_view.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scroll_view.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scrollable.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scrollable.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scrollbar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/scrollbar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/semantics_debugger.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/semantics_debugger.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/single_child_scroll_view.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/single_child_scroll_view.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/size_changed_layout_notifier.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/size_changed_layout_notifier.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/sliver.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/sliver.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/sliver_persistent_header.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/sliver_persistent_header.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/sliver_prototype_extent_list.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/sliver_prototype_extent_list.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/spacer.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/spacer.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/status_transitions.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/status_transitions.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/table.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/table.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/text.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/text.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/text_selection.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/text_selection.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/ticker_provider.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/ticker_provider.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/title.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/title.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/transitions.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/transitions.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/unique_widget.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/unique_widget.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/value_listenable_builder.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/value_listenable_builder.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/viewport.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/viewport.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/visibility.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/visibility.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/web_navigator.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/web_navigator.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/widget_inspector.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/widget_inspector.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/will_pop_scope.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/src/widgets/will_pop_scope.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/widgets.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web/lib/widgets.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/.dart2js.meta_module.clean" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/.dart2js.meta_module.clean" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/.dart2js.meta_module.raw" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/.dart2js.meta_module.raw" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/.ddc.meta_module.clean" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/.ddc.meta_module.clean" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/.ddc.meta_module.raw" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/.ddc.meta_module.raw" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/src/engine.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/src/engine.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.dart2js.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/flutter_web_ui/lib/ui.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/dart2js.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/dart2js.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/meta.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/meta.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/meta.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/meta.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/meta.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/meta.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/meta.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/meta/lib/meta.module.library" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.ddc.meta_module.clean" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.ddc.meta_module.clean" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.ddc.meta_module.raw" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/.ddc.meta_module.raw" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AboutPage.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AppColors.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AppColors.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AppColors.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AppColors.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AppColors.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AppColors.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AppColors.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AppColors.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/AwardsPage.module.library" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeMobilePage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeMobilePage.ddc.dill" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeMobilePage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeMobilePage.ddc.js" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeMobilePage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeMobilePage.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeMobilePage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeMobilePage.module.library" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeWebPage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeWebPage.ddc.dill" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeWebPage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeWebPage.ddc.js" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeWebPage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeWebPage.ddc.js.map" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.dart2js.module" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.dart2js.module" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListTile.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListTile.dart2js.module" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerRow.dart2js.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerRow.dart2js.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeWebPage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/HomeWebPage.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/OpenSourcePage.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/ResponsiveWidget.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/ResponsiveWidget.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/ResponsiveWidget.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/ResponsiveWidget.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/ResponsiveWidget.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/ResponsiveWidget.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/ResponsiveWidget.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/ResponsiveWidget.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SkillsPage.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.ddc.module" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/SpeakingPage.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/ContentFrame.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/ContentFrame.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/ContentFrame.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/ContentFrame.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/ContentFrame.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/ContentFrame.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/ContentFrame.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/ContentFrame.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceAndroidTitle.ddc.dill" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceAndroidTitle.ddc.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceAndroidTitle.ddc.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceAndroidTitle.ddc.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceAndroidTitle.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceAndroidTitle.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceHeader.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceHeader.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceHeader.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceHeader.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceHeader.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceHeader.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceHeader.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/OpenSourceHeader.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListTile.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListTile.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListTile.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListTile.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListTile.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListTile.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListTile.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListTile.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListView.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListView.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListView.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListView.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListView.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListView.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListView.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageListView.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageParagraph.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageParagraph.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageParagraph.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageParagraph.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageParagraph.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageParagraph.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageParagraph.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageParagraph.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageSubTitle.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageThumbnail.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageThumbnail.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageThumbnail.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageThumbnail.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageThumbnail.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageThumbnail.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageThumbnail.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageThumbnail.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/PageTitle.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialIconButton.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialIconButton.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialIconButton.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialIconButton.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialIconButton.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialIconButton.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialIconButton.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialIconButton.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialView.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialView.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialView.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialView.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialView.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialView.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialView.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/SocialView.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardView.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardView.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardView.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardView.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardView.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardView.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardView.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardView.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardViewIcon.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardViewIcon.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardViewIcon.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardViewIcon.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardViewIcon.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardViewIcon.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardViewIcon.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/CardViewIcon.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/ThreeRowCardView.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/ThreeRowCardView.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/ThreeRowCardView.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/ThreeRowCardView.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/ThreeRowCardView.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/ThreeRowCardView.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/ThreeRowCardView.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/ThreeRowCardView.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/TwoRowCardView.dart2js.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/TwoRowCardView.ddc.dill" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/TwoRowCardView.ddc.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/TwoRowCardView.ddc.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/TwoRowCardView.ddc.module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/TwoRowCardView.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/cards/TwoRowCardView.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerImage.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerImage.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerImage.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerImage.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerImage.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerImage.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerImage.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerImage.module.library" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerRow.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerRow.ddc.dill" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerRow.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerRow.ddc.js" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerRow.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerRow.ddc.js.map" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerRow.ddc.module" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerRow.ddc.module" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerRow.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerRow.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerSubTitle.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerSubTitle.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerSubTitle.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerSubTitle.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerSubTitle.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerSubTitle.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerSubTitle.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerSubTitle.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTitle.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTitle.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTitle.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTitle.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTitle.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTitle.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTitle.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTitle.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTopBar.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTopBar.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTopBar.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTopBar.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTopBar.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTopBar.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTopBar.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/drawer/DrawerTopBar.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height16.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height16.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height16.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height16.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height16.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height16.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height16.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height16.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height24.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height24.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height24.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height24.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height24.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height24.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height24.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height24.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height36.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height36.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height36.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height36.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height36.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height36.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height36.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height36.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height4.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height4.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height4.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height4.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height4.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height4.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height4.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Height4.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width16.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width16.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width16.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width16.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width16.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width16.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width16.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width16.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width24.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width24.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width36.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width36.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width36.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width36.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width36.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width36.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width36.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/components/space/Width36.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/main.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/main.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/main.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/main.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/main.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/main.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/main.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/main.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/models/SkillsModel.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/models/SkillsModel.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/models/SkillsModel.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/models/SkillsModel.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/models/SkillsModel.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/models/SkillsModel.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/models/SkillsModel.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/lib/models/SkillsModel.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.dart.bootstrap.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.dart.bootstrap.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.ddc.js.map" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.digests" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.digests" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/takeoffandroid_portfolio/web/main.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/typed_buffers.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/typed_buffers.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/typed_buffers.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/typed_buffers.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/typed_buffers.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/typed_buffers.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/typed_buffers.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/typed_buffers.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/typed_data.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/typed_data/lib/typed_data.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/hash.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/hash.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/hash.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/hash.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/hash.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/hash.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/hash.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/hash.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_64.ddc.dill" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_64.ddc.dill" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_64.ddc.js" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_64.ddc.js" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_64.ddc.js.map" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_64.ddc.js.map" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_64.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_64.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_geometry.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_geometry.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_lists.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_lists.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_operations.module.library" afterPath="$PROJECT_DIR$/.dart_tool/build/generated/vector_math/lib/vector_math_operations.module.library" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/pub/bin/build_runner/build_runner.dart.snapshot.dart2" afterPath="$PROJECT_DIR$/.dart_tool/pub/bin/build_runner/build_runner.dart.snapshot.dart2" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/pub/bin/build_runner/graph_inspector.dart.snapshot.dart2" afterPath="$PROJECT_DIR$/.dart_tool/pub/bin/build_runner/graph_inspector.dart.snapshot.dart2" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/pub/bin/sdk-version" afterPath="$PROJECT_DIR$/.dart_tool/pub/bin/sdk-version" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lib/HomeMobilePage.dart" afterPath="$PROJECT_DIR$/lib/HomeMobilePage.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/HomeWebPage.dart" afterPath="$PROJECT_DIR$/lib/HomeWebPage.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/components/drawer/DrawerRow.dart" afterPath="$PROJECT_DIR$/lib/components/drawer/DrawerRow.dart" />
-      <change beforePath="$PROJECT_DIR$/web/assets/images/about.png" afterPath="$PROJECT_DIR$/web/assets/images/drawer_about.png" />
-      <change beforePath="$PROJECT_DIR$/web/assets/images/award.png" afterPath="$PROJECT_DIR$/web/assets/images/drawer_award.png" />
-      <change beforePath="$PROJECT_DIR$/web/assets/images/opensource.png" afterPath="$PROJECT_DIR$/web/assets/images/drawer_open_source.png" />
-      <change beforePath="$PROJECT_DIR$/web/assets/images/skills.png" afterPath="$PROJECT_DIR$/web/assets/images/drawer_skills.png" />
-      <change beforePath="$PROJECT_DIR$/web/assets/images/speaking.png" afterPath="$PROJECT_DIR$/web/assets/images/drawer_speaking.png" />
+      <change beforePath="$PROJECT_DIR$/.packages" afterPath="$PROJECT_DIR$/.packages" />
+      <change beforePath="$PROJECT_DIR$/lib/AboutPage.dart" afterPath="$PROJECT_DIR$/lib/AboutPage.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/OpenSourcePage.dart" afterPath="$PROJECT_DIR$/lib/OpenSourcePage.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/SpeakingPage.dart" afterPath="$PROJECT_DIR$/lib/SpeakingPage.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" afterPath="$PROJECT_DIR$/lib/main.dart" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" afterPath="$PROJECT_DIR$/pubspec.lock" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" afterPath="$PROJECT_DIR$/pubspec.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,51 +708,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DrawerRow.dart" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/components/drawer/DrawerRow.dart">
+      <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+            <state relative-caret-position="336">
+              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drawer_about.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_about.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeWebPage.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/HomeWebPage.dart">
+      <file leaf-file-name="PageListTile.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/components/PageListTile.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+            <state relative-caret-position="140">
+              <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drawer_skills.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_skills.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="OpenSourcePage.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/OpenSourcePage.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drawer_open_source.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_open_source.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="main.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/main.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drawer_speaking.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_speaking.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="UrlLauncher.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/util/UrlLauncher.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AboutPage.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/AboutPage.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpeakingPage.dart" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/SpeakingPage.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OpenSourceHeader.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/components/OpenSourceHeader.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ink_well.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-88a6325290b75326c072ae63bf3016e15a08fccc/packages/flutter_web/lib/src/material/ink_well.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22652">
+              <caret line="823" column="8" lean-forward="false" selection-start-line="823" selection-start-column="8" selection-end-line="823" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardView.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/components/cards/CardView.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -137,7 +856,6 @@
         <option value="$PROJECT_DIR$/web/assets/FontManifest.json" />
         <option value="$PROJECT_DIR$/lib/components.dart" />
         <option value="$PROJECT_DIR$/lib/components/PageParagraph.dart" />
-        <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/lib/components/PageThumbnail.dart" />
         <option value="$PROJECT_DIR$/lib/AppColors.dart" />
         <option value="$PROJECT_DIR$/lib/models/SkillsModel.dart" />
@@ -161,25 +879,27 @@
         <option value="$PROJECT_DIR$/lib/components/drawer/DrawerTopBar.dart" />
         <option value="$PROJECT_DIR$/lib/HomePage.dart" />
         <option value="$PROJECT_DIR$/lib/components/drawer/DrawerList.dart" />
-        <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/components/PageTitle.dart" />
         <option value="$PROJECT_DIR$/lib/components/PageSubTitle.dart" />
         <option value="$PROJECT_DIR$/lib/components/cards/ThreeCardView.dart" />
         <option value="$PROJECT_DIR$/lib/components/cards/ThreeRowCardView.dart" />
         <option value="$PROJECT_DIR$/lib/components/cards/TwoRowCardView.dart" />
-        <option value="$PROJECT_DIR$/lib/AboutPage.dart" />
         <option value="$PROJECT_DIR$/lib/AwardsPage.dart" />
-        <option value="$PROJECT_DIR$/lib/SpeakingPage.dart" />
         <option value="$PROJECT_DIR$/lib/components/PageListView.dart" />
         <option value="$PROJECT_DIR$/lib/components/PageSection.dart" />
         <option value="$PROJECT_DIR$/lib/components/cards/CardViewIcon.dart" />
-        <option value="$PROJECT_DIR$/lib/OpenSourcePage.dart" />
         <option value="$PROJECT_DIR$/lib/SkillsPage.dart" />
         <option value="$PROJECT_DIR$/lib/components/PageListTile.dart" />
         <option value="$PROJECT_DIR$/lib/components/cards/CardView.dart" />
         <option value="$PROJECT_DIR$/lib/HomeMobilePage.dart" />
         <option value="$PROJECT_DIR$/lib/HomeWebPage.dart" />
         <option value="$PROJECT_DIR$/lib/components/drawer/DrawerRow.dart" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/util/UrlLauncher.dart" />
+        <option value="$PROJECT_DIR$/lib/main.dart" />
+        <option value="$PROJECT_DIR$/lib/AboutPage.dart" />
+        <option value="$PROJECT_DIR$/lib/OpenSourcePage.dart" />
+        <option value="$PROJECT_DIR$/lib/SpeakingPage.dart" />
       </list>
     </option>
   </component>
@@ -206,6 +926,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,35 +943,19 @@
             <path>
               <item name="takeoffandroid_portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="takeoffandroid_portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="takeoffandroid_portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="takeoffandroid_portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="takeoffandroid_portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="takeoffandroid_portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="takeoffandroid_portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="takeoffandroid_portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -410,8 +1116,7 @@
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18254818" sideWeight="0.4867872" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1846895" sideWeight="0.4867872" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -425,6 +1130,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2116228" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -435,55 +1141,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/components/space/Height24.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/components/space/Height36.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/components/space/Width36.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/components/OpenSourceAndroidTitle.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/components/OpenSourceHeader.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/components/space/Height4.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/components/space/Width24.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/components/drawer/DrawerImage.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -517,16 +1174,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -572,21 +1219,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/AboutPage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/SpeakingPage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/AwardsPage.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -596,8 +1228,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/components/PageListView.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
+        <state relative-caret-position="196">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -610,23 +1243,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/components/PageGridTile.dart" />
     <entry file="file://$PROJECT_DIR$/lib/components/PageSection.dart" />
-    <entry file="file://$PROJECT_DIR$/lib/OpenSourcePage.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/SkillsPage.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -634,7 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54236">
           <caret line="2003" column="8" lean-forward="false" selection-start-line="2003" selection-start-column="8" selection-end-line="2003" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,7 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8008">
           <caret line="291" column="19" lean-forward="false" selection-start-line="291" selection-start-column="19" selection-end-line="291" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,7 +1275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,9 +1290,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -684,17 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/components/cards/CardView.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +1305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,7 +1312,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="48" column="18" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,7 +1319,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="658">
           <caret line="43" column="27" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -732,16 +1332,8 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_about_blue.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_speaking_blue.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_about_blue.png" />
+    <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_speaking_blue.png" />
     <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_speaking.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -752,26 +1344,17 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_open_source_blue.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_open_source_blue.png" />
     <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_skills.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_skills_blue.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/images/drawer_skills_blue.png" />
     <entry file="file://$PROJECT_DIR$/lib/HomeWebPage.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
           <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -779,7 +1362,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/bin/cache/dart-sdk/lib/html/dart2js/html_dart2js.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30545" column="13" lean-forward="false" selection-start-line="30545" selection-start-column="13" selection-end-line="30545" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/FontManifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/util/UrlLauncher.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/components/cards/CardView.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/components/OpenSourceAndroidTitle.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/flutter/.pub-cache/git/flutter_web-88a6325290b75326c072ae63bf3016e15a08fccc/packages/flutter_web/lib/src/material/ink_well.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22652">
+          <caret line="823" column="8" lean-forward="false" selection-start-line="823" selection-start-column="8" selection-end-line="823" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/components/OpenSourceHeader.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/AboutPage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/OpenSourcePage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/SpeakingPage.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

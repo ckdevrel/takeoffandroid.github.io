@@ -1,1 +1,1 @@
-{"isEntrypoint":true,"deps":["flutter_web|lib/material.dart","takeoffandroid_portfolio|lib/AppColors.dart","takeoffandroid_portfolio|lib/ResponsiveWidget.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}
+{"isEntrypoint":true,"deps":["flutter_web|lib/material.dart","takeoffandroid_portfolio|lib/AppColors.dart","takeoffandroid_portfolio|lib/ResponsiveWidget.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

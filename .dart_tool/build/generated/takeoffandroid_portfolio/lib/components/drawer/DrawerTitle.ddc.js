@@ -10,14 +10,60 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
   const src__material__colors = material.src__material__colors;
   const ui$ = ui.ui;
   const components__drawer__DrawerTitle = Object.create(dart.library);
-  let const$;
-  let const$0;
-  let const$1;
-  let const$2;
-  let const$3;
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C2() {
+      return C2 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 7,
+        column: 7,
+        name: "data",
+        parameterLocations: null
+      });
+    },
+    get C3() {
+      return C3 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 8,
+        column: 7,
+        name: "style",
+        parameterLocations: null
+      });
+    },
+    get C4() {
+      return C4 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 13,
+        column: 7,
+        name: "textAlign",
+        parameterLocations: null
+      });
+    },
+    get C1() {
+      return C1 = dart.constList([C2 || CT.C2, C3 || CT.C3, C4 || CT.C4], src__widgets__widget_inspector._Location);
+    },
+    get C0() {
+      return C0 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerTitle.dart",
+        line: 6,
+        column: 16,
+        name: null,
+        parameterLocations: C1 || CT.C1
+      });
+    }
+  });
+  let C2;
+  let C3;
+  let C4;
+  let C1;
+  let C0;
   components__drawer__DrawerTitle.DrawerTitle = class DrawerTitle extends src__widgets__framework.StatelessWidget {
     build(context) {
-      return new src__widgets__text.Text.new("CHANDRASEKAR K", {style: new src__painting__text_style.TextStyle.new({fontFamily: "Lato", fontSize: 14.0, color: src__material__colors.Colors.white, fontWeight: ui$.FontWeight.w100}), textAlign: ui$.TextAlign.center, $creationLocationd_0dea112b090073317d4: const$3 || (const$3 = dart.const(new src__widgets__widget_inspector._Location.new({line: 6, column: 16, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerTitle.dart", parameterLocations: const$2 || (const$2 = dart.constList([const$ || (const$ = dart.const(new src__widgets__widget_inspector._Location.new({line: 7, column: 7, name: "data"}))), const$0 || (const$0 = dart.const(new src__widgets__widget_inspector._Location.new({line: 8, column: 7, name: "style"}))), const$1 || (const$1 = dart.const(new src__widgets__widget_inspector._Location.new({line: 13, column: 7, name: "textAlign"})))], src__widgets__widget_inspector._Location))})))});
+      return new src__widgets__text.Text.new("CHANDRASEKAR K", {style: new src__painting__text_style.TextStyle.new({fontFamily: "Lato", fontSize: 14.0, color: src__material__colors.Colors.white, fontWeight: ui$.FontWeight.w100}), textAlign: ui$.TextAlign.center, $creationLocationd_0dea112b090073317d4: C0 || CT.C0});
     }
   };
   (components__drawer__DrawerTitle.DrawerTitle.new = function(opts) {
@@ -30,9 +76,11 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
     __proto__: dart.getMethods(components__drawer__DrawerTitle.DrawerTitle.__proto__),
     build: dart.fnType(src__widgets__framework.Widget, [src__widgets__framework.BuildContext])
   }));
+  dart.setLibraryUri(components__drawer__DrawerTitle.DrawerTitle, "package:takeoffandroid_portfolio/components/drawer/DrawerTitle.dart");
   dart.trackLibraries("packages/takeoffandroid_portfolio/components/drawer/DrawerTitle", {
     "package:takeoffandroid_portfolio/components/drawer/DrawerTitle.dart": components__drawer__DrawerTitle
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/components/drawer/DrawerTitle.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;UAI4B;AACxB,YAAW,iCACT,0BACO,yDACS,kBACF,aACI,gDACS,kCACN;IAEzB;;;;;;EACF","file":"DrawerTitle.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["DrawerTitle.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAI4B;AACxB,YAAW,iCACT,0BACO,yDACS,kBACF,aACI,gDACS,kCACN;IAEzB;;;;;;EACF","file":"DrawerTitle.ddc.js"}');
   // Exports:
   return {
     components__drawer__DrawerTitle: components__drawer__DrawerTitle

@@ -4,8 +4,10 @@ define(['dart_sdk'], function(dart_sdk) {
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
   const gestures = Object.create(dart.library);
+  const CT = Object.create(null);
   dart.trackLibraries("packages/flutter_web/gestures", {
     "package:flutter_web/gestures.dart": gestures
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"gestures.ddc.js"}');
   // Exports:
   return {

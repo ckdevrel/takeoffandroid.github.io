@@ -4,6 +4,7 @@ define(['dart_sdk'], function(dart_sdk) {
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
   const models__SkillsModel = Object.create(dart.library);
+  const CT = Object.create(null);
   models__SkillsModel.SkillsModel = class SkillsModel extends core.Object {
     get image() {
       return this[image$];
@@ -37,6 +38,7 @@ define(['dart_sdk'], function(dart_sdk) {
     icon: dart.dynamic,
     text: dart.dynamic
   }));
+  dart.setLibraryUri(models__SkillsModel.SkillsModel, "package:takeoffandroid_portfolio/models/SkillsModel.dart");
   dart.setFieldSignature(models__SkillsModel.SkillsModel, () => ({
     __proto__: dart.getFields(models__SkillsModel.SkillsModel.__proto__),
     image: dart.fieldType(core.String),
@@ -44,7 +46,8 @@ define(['dart_sdk'], function(dart_sdk) {
   }));
   dart.trackLibraries("packages/takeoffandroid_portfolio/models/SkillsModel", {
     "package:takeoffandroid_portfolio/models/SkillsModel.dart": models__SkillsModel
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/models/SkillsModel.dart"],"names":[],"mappings":";;;;;;;IACS;;;;;;IAAO;;;;;;;AAIF;IAAK;;AAEL;IAAK;;kDAJA,OAAY;IAAZ;IAAY;;EAAM","file":"SkillsModel.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["SkillsModel.dart"],"names":[],"mappings":";;;;;;;;IACS;;;;;;IAAO;;;;;;;AAIF;IAAK;;AAEL;IAAK;;kDAJA,OAAY;IAAZ;IAAY;;EAAM","file":"SkillsModel.ddc.js"}');
   // Exports:
   return {
     models__SkillsModel: models__SkillsModel

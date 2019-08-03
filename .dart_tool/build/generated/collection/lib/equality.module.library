@@ -1,1 +1,1 @@
-{"isEntrypoint":true,"deps":["collection|lib/src/equality.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}
+{"isEntrypoint":true,"deps":["collection|lib/src/equality.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}

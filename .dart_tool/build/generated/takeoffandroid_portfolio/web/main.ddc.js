@@ -7,15 +7,17 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/takeoffandroid_portf
   const ui$ = ui.ui;
   const main$ = main.main;
   const main$0 = Object.create(dart.library);
-  main$0.main = function() {
+  const CT = Object.create(null);
+  main$0.main = function main$1() {
     return async.async(dart.dynamic, function* main() {
       yield ui$.webOnlyInitializePlatform();
       main$.main();
     });
   };
   dart.trackLibraries("web/main", {
-    "main.dart": main$0
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///web/main.dart"],"names":[],"mappings":";;;;;;;;;;AAMI;MACF,MAAM;MACN;IACF","file":"main.ddc.js"}');
+    "org-dartlang-app:///web/main.dart": main$0
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["main.dart"],"names":[],"mappings":";;;;;;;;;;;AAMI;MACF,MAAM;MACN;IACF","file":"main.ddc.js"}');
   // Exports:
   return {
     main: main$0

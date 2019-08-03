@@ -4,8 +4,10 @@ define(['dart_sdk'], function(dart_sdk) {
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
   const physics = Object.create(dart.library);
+  const CT = Object.create(null);
   dart.trackLibraries("packages/flutter_web/physics", {
     "package:flutter_web/physics.dart": physics
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"physics.ddc.js"}');
   // Exports:
   return {

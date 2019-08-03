@@ -4,8 +4,10 @@ define(['dart_sdk'], function(dart_sdk) {
   const dart = dart_sdk.dart;
   const dartx = dart_sdk.dartx;
   const foundation = Object.create(dart.library);
+  const CT = Object.create(null);
   dart.trackLibraries("packages/flutter_web/foundation", {
     "package:flutter_web/foundation.dart": foundation
+  }, {
   }, '{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"foundation.ddc.js"}');
   // Exports:
   return {

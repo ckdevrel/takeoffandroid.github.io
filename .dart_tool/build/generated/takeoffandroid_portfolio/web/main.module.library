@@ -1,1 +1,1 @@
-{"isEntrypoint":true,"deps":["flutter_web_ui|lib/ui.dart","takeoffandroid_portfolio|lib/main.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}
+{"isEntrypoint":true,"deps":["flutter_web_ui|lib/ui.dart","takeoffandroid_portfolio|lib/main.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}

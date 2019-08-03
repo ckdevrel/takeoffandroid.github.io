@@ -11,16 +11,68 @@ define(['dart_sdk', 'packages/takeoffandroid_portfolio/AboutPage', 'packages/flu
   const SkillsPage$ = SkillsPage.SkillsPage;
   const AwardsPage$ = AwardsPage.AwardsPage;
   const components__ContentFrame = Object.create(dart.library);
-  let const$;
-  let const$0;
-  let const$1;
-  let const$2;
-  let const$3;
-  let const$4;
-  let const$5;
-  let const$6;
-  let const$7;
-  let const$8;
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C1() {
+      return C1 = dart.constList([], src__widgets__widget_inspector._Location);
+    },
+    get C0() {
+      return C0 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/ContentFrame.dart",
+        line: 22,
+        column: 16,
+        name: null,
+        parameterLocations: C1 || CT.C1
+      });
+    },
+    get C2() {
+      return C2 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/ContentFrame.dart",
+        line: 24,
+        column: 16,
+        name: null,
+        parameterLocations: C1 || CT.C1
+      });
+    },
+    get C3() {
+      return C3 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/ContentFrame.dart",
+        line: 26,
+        column: 16,
+        name: null,
+        parameterLocations: C1 || CT.C1
+      });
+    },
+    get C4() {
+      return C4 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/ContentFrame.dart",
+        line: 28,
+        column: 16,
+        name: null,
+        parameterLocations: C1 || CT.C1
+      });
+    },
+    get C5() {
+      return C5 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/ContentFrame.dart",
+        line: 30,
+        column: 16,
+        name: null,
+        parameterLocations: C1 || CT.C1
+      });
+    }
+  });
+  let C1;
+  let C0;
+  let C2;
+  let C3;
+  let C4;
+  let C5;
   components__ContentFrame.ContentFrame = class ContentFrame extends src__widgets__framework.StatelessWidget {
     get drawerPosition() {
       return this[drawerPosition$];
@@ -35,23 +87,23 @@ define(['dart_sdk', 'packages/takeoffandroid_portfolio/AboutPage', 'packages/flu
       switch (this.drawerPosition) {
         case 0:
         {
-          return new AboutPage$.AboutPage.new({$creationLocationd_0dea112b090073317d4: const$0 || (const$0 = dart.const(new src__widgets__widget_inspector._Location.new({line: 22, column: 16, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/ContentFrame.dart", parameterLocations: const$ || (const$ = dart.constList([], src__widgets__widget_inspector._Location))})))});
+          return new AboutPage$.AboutPage.new({$creationLocationd_0dea112b090073317d4: C0 || CT.C0});
         }
         case 1:
         {
-          return new SpeakingPage$.SpeakingPage.new({$creationLocationd_0dea112b090073317d4: const$2 || (const$2 = dart.const(new src__widgets__widget_inspector._Location.new({line: 24, column: 16, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/ContentFrame.dart", parameterLocations: const$1 || (const$1 = dart.constList([], src__widgets__widget_inspector._Location))})))});
+          return new SpeakingPage$.SpeakingPage.new({$creationLocationd_0dea112b090073317d4: C2 || CT.C2});
         }
         case 2:
         {
-          return new OpenSourcePage$.OpenSourcePage.new({$creationLocationd_0dea112b090073317d4: const$4 || (const$4 = dart.const(new src__widgets__widget_inspector._Location.new({line: 26, column: 16, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/ContentFrame.dart", parameterLocations: const$3 || (const$3 = dart.constList([], src__widgets__widget_inspector._Location))})))});
+          return new OpenSourcePage$.OpenSourcePage.new({$creationLocationd_0dea112b090073317d4: C3 || CT.C3});
         }
         case 3:
         {
-          return new SkillsPage$.SkillsPage.new({$creationLocationd_0dea112b090073317d4: const$6 || (const$6 = dart.const(new src__widgets__widget_inspector._Location.new({line: 28, column: 16, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/ContentFrame.dart", parameterLocations: const$5 || (const$5 = dart.constList([], src__widgets__widget_inspector._Location))})))});
+          return new SkillsPage$.SkillsPage.new({$creationLocationd_0dea112b090073317d4: C4 || CT.C4});
         }
         case 4:
         {
-          return new AwardsPage$.AwardsPage.new({$creationLocationd_0dea112b090073317d4: const$8 || (const$8 = dart.const(new src__widgets__widget_inspector._Location.new({line: 30, column: 16, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/ContentFrame.dart", parameterLocations: const$7 || (const$7 = dart.constList([], src__widgets__widget_inspector._Location))})))});
+          return new AwardsPage$.AwardsPage.new({$creationLocationd_0dea112b090073317d4: C5 || CT.C5});
         }
       }
     }
@@ -69,13 +121,15 @@ define(['dart_sdk', 'packages/takeoffandroid_portfolio/AboutPage', 'packages/flu
     build: dart.fnType(src__widgets__framework.Widget, [src__widgets__framework.BuildContext]),
     getHomeContainer: dart.fnType(src__widgets__framework.Widget, [])
   }));
+  dart.setLibraryUri(components__ContentFrame.ContentFrame, "package:takeoffandroid_portfolio/components/ContentFrame.dart");
   dart.setFieldSignature(components__ContentFrame.ContentFrame, () => ({
     __proto__: dart.getFields(components__ContentFrame.ContentFrame.__proto__),
     drawerPosition: dart.fieldType(core.int)
   }));
   dart.trackLibraries("packages/takeoffandroid_portfolio/components/ContentFrame", {
     "package:takeoffandroid_portfolio/components/ContentFrame.dart": components__ContentFrame
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/components/ContentFrame.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;IASM;;;;;;UAKsB;AACxB,YAAO;IACT;;AAGE,cAAQ;YACD;;AACH,gBAAO;;YACJ;;AACH,gBAAO;;YACJ;;AACH,gBAAO;;YACJ;;AACH,gBAAO;;YACJ;;AACH,gBAAO;;;IAEb;;wDApBkB;;;AAAlB;;EAAiC","file":"ContentFrame.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["ContentFrame.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IASM;;;;;;UAKsB;AACxB,YAAO;IACT;;AAGE,cAAQ;;;AAEJ,gBAAO;;;;AAEP,gBAAO;;;;AAEP,gBAAO;;;;AAEP,gBAAO;;;;AAEP,gBAAO;;;IAEb;;wDApBkB;;;AAAlB;;EAAiC","file":"ContentFrame.ddc.js"}');
   // Exports:
   return {
     components__ContentFrame: components__ContentFrame

@@ -1,1 +1,1 @@
-{"isEntrypoint":true,"deps":[],"parts":[],"conditionalDeps":[],"sdkDeps":["async","convert"]}
+{"isEntrypoint":true,"deps":[],"parts":[],"conditionalDeps":[],"sdkDeps":["async","convert"],"hasMain":false}

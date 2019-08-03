@@ -13,29 +13,209 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
   const components__space__Width36 = Width36.components__space__Width36;
   const components__cards__ThreeRowCardView = Object.create(dart.library);
   let JSArrayOfWidget = () => (JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(src__widgets__framework.Widget)))();
-  let const$;
-  let const$0;
-  let const$1;
-  let const$2;
-  let const$3;
-  let const$4;
-  let const$5;
-  let const$6;
-  let const$7;
-  let const$8;
-  let const$9;
-  let const$10;
-  let const$11;
-  let const$12;
-  let const$13;
-  let const$14;
-  let const$15;
-  let const$16;
-  let const$17;
-  let const$18;
-  let const$19;
-  let const$20;
-  let const$21;
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C2() {
+      return C2 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 20,
+        column: 22,
+        name: "icon",
+        parameterLocations: null
+      });
+    },
+    get C3() {
+      return C3 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 20,
+        column: 29,
+        name: "text",
+        parameterLocations: null
+      });
+    },
+    get C1() {
+      return C1 = dart.constList([C2 || CT.C2, C3 || CT.C3], src__widgets__widget_inspector._Location);
+    },
+    get C0() {
+      return C0 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart",
+        line: 20,
+        column: 9,
+        name: null,
+        parameterLocations: C1 || CT.C1
+      });
+    },
+    get C5() {
+      return C5 = dart.constList([], src__widgets__widget_inspector._Location);
+    },
+    get C4() {
+      return C4 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart",
+        line: 21,
+        column: 9,
+        name: null,
+        parameterLocations: C5 || CT.C5
+      });
+    },
+    get C8() {
+      return C8 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 22,
+        column: 22,
+        name: "icon",
+        parameterLocations: null
+      });
+    },
+    get C9() {
+      return C9 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 22,
+        column: 29,
+        name: "text",
+        parameterLocations: null
+      });
+    },
+    get C7() {
+      return C7 = dart.constList([C8 || CT.C8, C9 || CT.C9], src__widgets__widget_inspector._Location);
+    },
+    get C6() {
+      return C6 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart",
+        line: 22,
+        column: 9,
+        name: null,
+        parameterLocations: C7 || CT.C7
+      });
+    },
+    get C10() {
+      return C10 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart",
+        line: 23,
+        column: 9,
+        name: null,
+        parameterLocations: C5 || CT.C5
+      });
+    },
+    get C13() {
+      return C13 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 24,
+        column: 22,
+        name: "icon",
+        parameterLocations: null
+      });
+    },
+    get C14() {
+      return C14 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 24,
+        column: 29,
+        name: "text",
+        parameterLocations: null
+      });
+    },
+    get C12() {
+      return C12 = dart.constList([C13 || CT.C13, C14 || CT.C14], src__widgets__widget_inspector._Location);
+    },
+    get C11() {
+      return C11 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart",
+        line: 24,
+        column: 9,
+        name: null,
+        parameterLocations: C12 || CT.C12
+      });
+    },
+    get C17() {
+      return C17 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 19,
+        column: 18,
+        name: "children",
+        parameterLocations: null
+      });
+    },
+    get C16() {
+      return C16 = dart.constList([C17 || CT.C17], src__widgets__widget_inspector._Location);
+    },
+    get C15() {
+      return C15 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart",
+        line: 19,
+        column: 14,
+        name: null,
+        parameterLocations: C16 || CT.C16
+      });
+    },
+    get C20() {
+      return C20 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 18,
+        column: 7,
+        name: "scrollDirection",
+        parameterLocations: null
+      });
+    },
+    get C21() {
+      return C21 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: null,
+        line: 19,
+        column: 7,
+        name: "child",
+        parameterLocations: null
+      });
+    },
+    get C19() {
+      return C19 = dart.constList([C20 || CT.C20, C21 || CT.C21], src__widgets__widget_inspector._Location);
+    },
+    get C18() {
+      return C18 = dart.const({
+        __proto__: src__widgets__widget_inspector._Location.prototype,
+        file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart",
+        line: 17,
+        column: 12,
+        name: null,
+        parameterLocations: C19 || CT.C19
+      });
+    }
+  });
+  let C2;
+  let C3;
+  let C1;
+  let C0;
+  let C5;
+  let C4;
+  let C8;
+  let C9;
+  let C7;
+  let C6;
+  let C10;
+  let C13;
+  let C14;
+  let C12;
+  let C11;
+  let C17;
+  let C16;
+  let C15;
+  let C20;
+  let C21;
+  let C19;
+  let C18;
   components__cards__ThreeRowCardView.ThreeRowCardView = class ThreeRowCardView extends src__widgets__framework.StatelessWidget {
     get text1() {
       return this[text1$];
@@ -74,7 +254,7 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
       this[icon3$] = value;
     }
     build(context) {
-      return new src__widgets__single_child_scroll_view.SingleChildScrollView.new({scrollDirection: src__painting__basic_types.Axis.horizontal, child: new src__widgets__basic.Row.new({children: JSArrayOfWidget().of([new components__cards__CardViewIcon.CardViewIcon.new(this.icon1, this.text1, {$creationLocationd_0dea112b090073317d4: const$2 || (const$2 = dart.const(new src__widgets__widget_inspector._Location.new({line: 20, column: 9, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart", parameterLocations: const$1 || (const$1 = dart.constList([const$ || (const$ = dart.const(new src__widgets__widget_inspector._Location.new({line: 20, column: 22, name: "icon"}))), const$0 || (const$0 = dart.const(new src__widgets__widget_inspector._Location.new({line: 20, column: 29, name: "text"})))], src__widgets__widget_inspector._Location))})))}), new components__space__Width36.Width36.new({$creationLocationd_0dea112b090073317d4: const$4 || (const$4 = dart.const(new src__widgets__widget_inspector._Location.new({line: 21, column: 9, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart", parameterLocations: const$3 || (const$3 = dart.constList([], src__widgets__widget_inspector._Location))})))}), new components__cards__CardViewIcon.CardViewIcon.new(this.icon2, this.text2, {$creationLocationd_0dea112b090073317d4: const$8 || (const$8 = dart.const(new src__widgets__widget_inspector._Location.new({line: 22, column: 9, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart", parameterLocations: const$7 || (const$7 = dart.constList([const$5 || (const$5 = dart.const(new src__widgets__widget_inspector._Location.new({line: 22, column: 22, name: "icon"}))), const$6 || (const$6 = dart.const(new src__widgets__widget_inspector._Location.new({line: 22, column: 29, name: "text"})))], src__widgets__widget_inspector._Location))})))}), new components__space__Width36.Width36.new({$creationLocationd_0dea112b090073317d4: const$10 || (const$10 = dart.const(new src__widgets__widget_inspector._Location.new({line: 23, column: 9, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart", parameterLocations: const$9 || (const$9 = dart.constList([], src__widgets__widget_inspector._Location))})))}), new components__cards__CardViewIcon.CardViewIcon.new(this.icon3, this.text3, {$creationLocationd_0dea112b090073317d4: const$14 || (const$14 = dart.const(new src__widgets__widget_inspector._Location.new({line: 24, column: 9, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart", parameterLocations: const$13 || (const$13 = dart.constList([const$11 || (const$11 = dart.const(new src__widgets__widget_inspector._Location.new({line: 24, column: 22, name: "icon"}))), const$12 || (const$12 = dart.const(new src__widgets__widget_inspector._Location.new({line: 24, column: 29, name: "text"})))], src__widgets__widget_inspector._Location))})))})]), $creationLocationd_0dea112b090073317d4: const$17 || (const$17 = dart.const(new src__widgets__widget_inspector._Location.new({line: 19, column: 14, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart", parameterLocations: const$16 || (const$16 = dart.constList([const$15 || (const$15 = dart.const(new src__widgets__widget_inspector._Location.new({line: 19, column: 18, name: "children"})))], src__widgets__widget_inspector._Location))})))}), $creationLocationd_0dea112b090073317d4: const$21 || (const$21 = dart.const(new src__widgets__widget_inspector._Location.new({line: 17, column: 12, file: "org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart", parameterLocations: const$20 || (const$20 = dart.constList([const$18 || (const$18 = dart.const(new src__widgets__widget_inspector._Location.new({line: 18, column: 7, name: "scrollDirection"}))), const$19 || (const$19 = dart.const(new src__widgets__widget_inspector._Location.new({line: 19, column: 7, name: "child"})))], src__widgets__widget_inspector._Location))})))});
+      return new src__widgets__single_child_scroll_view.SingleChildScrollView.new({scrollDirection: src__painting__basic_types.Axis.horizontal, child: new src__widgets__basic.Row.new({children: JSArrayOfWidget().of([new components__cards__CardViewIcon.CardViewIcon.new(this.icon1, this.text1, {$creationLocationd_0dea112b090073317d4: C0 || CT.C0}), new components__space__Width36.Width36.new({$creationLocationd_0dea112b090073317d4: C4 || CT.C4}), new components__cards__CardViewIcon.CardViewIcon.new(this.icon2, this.text2, {$creationLocationd_0dea112b090073317d4: C6 || CT.C6}), new components__space__Width36.Width36.new({$creationLocationd_0dea112b090073317d4: C10 || CT.C10}), new components__cards__CardViewIcon.CardViewIcon.new(this.icon3, this.text3, {$creationLocationd_0dea112b090073317d4: C11 || CT.C11})]), $creationLocationd_0dea112b090073317d4: C15 || CT.C15}), $creationLocationd_0dea112b090073317d4: C18 || CT.C18});
     }
   };
   (components__cards__ThreeRowCardView.ThreeRowCardView.new = function(icon1, text1, icon2, text2, icon3, text3, opts) {
@@ -99,6 +279,7 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
     __proto__: dart.getMethods(components__cards__ThreeRowCardView.ThreeRowCardView.__proto__),
     build: dart.fnType(src__widgets__framework.Widget, [src__widgets__framework.BuildContext])
   }));
+  dart.setLibraryUri(components__cards__ThreeRowCardView.ThreeRowCardView, "package:takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart");
   dart.setFieldSignature(components__cards__ThreeRowCardView.ThreeRowCardView, () => ({
     __proto__: dart.getFields(components__cards__ThreeRowCardView.ThreeRowCardView.__proto__),
     text1: dart.fieldType(core.String),
@@ -110,7 +291,8 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
   }));
   dart.trackLibraries("packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView", {
     "package:takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart": components__cards__ThreeRowCardView
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/takeoffandroid_portfolio/components/cards/ThreeRowCardView.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAQS;;;;;;IAAO;;;;;;IAAO;;;;;;IAEd;;;;;;IAAO;;;;;;IAAO;;;;;;UAKK;AACxB,YAAO,wFACiB,mDACf,2CAAsB,sBAC3B,qDAAa,YAAO,omBACpB,iZACA,qDAAa,YAAO,smBACpB,mZACA,qDAAa,YAAO;IAG1B;;uEAduB,OAAY,OAAY,OAAY,OAAY,OAAY;;IAA5D;IAAY;IAAY;IAAY;IAAY;IAAY;AAAnF;;EAAyF","file":"ThreeRowCardView.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["ThreeRowCardView.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAQS;;;;;;IAAO;;;;;;IAAO;;;;;;IAEd;;;;;;IAAO;;;;;;IAAO;;;;;;UAKK;AACxB,YAAO,wFACiB,mDACf,2CAAsB,sBAC3B,qDAAa,YAAO,oEACpB,mGACA,qDAAa,YAAO,oEACpB,qGACA,qDAAa,YAAO;IAG1B;;uEAduB,OAAY,OAAY,OAAY,OAAY,OAAY;;IAA5D;IAAY;IAAY;IAAY;IAAY;IAAY;AAAnF;;EAAyF","file":"ThreeRowCardView.ddc.js"}');
   // Exports:
   return {
     components__cards__ThreeRowCardView: components__cards__ThreeRowCardView

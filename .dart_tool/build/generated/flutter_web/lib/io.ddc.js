@@ -8,6 +8,13 @@ define(['dart_sdk'], function(dart_sdk) {
   const dartx = dart_sdk.dartx;
   const io = Object.create(dart.library);
   let JSArrayOfString = () => (JSArrayOfString = dart.constFn(_interceptors.JSArray$(core.String)))();
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C0() {
+      return C0 = dart.constMap(core.String, core.String, ["FLUTTER_TEST", "true"]);
+    }
+  });
+  let C0;
   io.Platform = class Platform extends core.Object {
     static get operatingSystem() {
       return io.Platform._operatingSystem;
@@ -17,6 +24,7 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = io.Platform.prototype;
   dart.addTypeTests(io.Platform);
+  dart.setLibraryUri(io.Platform, "package:flutter_web/io.dart");
   dart.defineLazy(io.Platform, {
     /*io.Platform._operatingSystem*/get _operatingSystem() {
       return "android";
@@ -40,7 +48,7 @@ define(['dart_sdk'], function(dart_sdk) {
       return io.Platform._operatingSystem === "fuchsia";
     },
     /*io.Platform.environment*/get environment() {
-      return dart.constMap(core.String, core.String, ["FLUTTER_TEST", "true"]);
+      return C0 || CT.C0;
     }
   });
   io._ProgramExitedError = class _ProgramExitedError extends core.Error {
@@ -53,6 +61,7 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = io._ProgramExitedError.prototype;
   dart.addTypeTests(io._ProgramExitedError);
+  dart.setLibraryUri(io._ProgramExitedError, "package:flutter_web/io.dart");
   dart.defineExtensionMethods(io._ProgramExitedError, ['toString']);
   io.HttpOverrides = class HttpOverrides extends core.Object {
     createHttpClient(_) {
@@ -67,6 +76,7 @@ define(['dart_sdk'], function(dart_sdk) {
     __proto__: dart.getMethods(io.HttpOverrides.__proto__),
     createHttpClient: dart.fnType(io.HttpClient, [io.SecurityContext])
   }));
+  dart.setLibraryUri(io.HttpOverrides, "package:flutter_web/io.dart");
   dart.defineLazy(io.HttpOverrides, {
     /*io.HttpOverrides.global*/get global() {
       return null;
@@ -203,6 +213,7 @@ define(['dart_sdk'], function(dart_sdk) {
     badCertificateCallback: dart.fnType(core.bool, [io.X509Certificate, core.String, core.int]),
     findProxy: dart.fnType(core.String, [core.Uri])
   }));
+  dart.setLibraryUri(io.HttpClient, "package:flutter_web/io.dart");
   dart.setFieldSignature(io.HttpClient, () => ({
     __proto__: dart.getFields(io.HttpClient.__proto__),
     autoUncompress: dart.fieldType(core.bool),
@@ -216,6 +227,7 @@ define(['dart_sdk'], function(dart_sdk) {
     ;
   }).prototype = io.HttpClientCredentials.prototype;
   dart.addTypeTests(io.HttpClientCredentials);
+  dart.setLibraryUri(io.HttpClientCredentials, "package:flutter_web/io.dart");
   io.HttpClientRequest = class HttpClientRequest extends core.Object {
     get encoding() {
       return this[encoding];
@@ -230,6 +242,7 @@ define(['dart_sdk'], function(dart_sdk) {
   }).prototype = io.HttpClientRequest.prototype;
   dart.addTypeTests(io.HttpClientRequest);
   const encoding = Symbol("HttpClientRequest.encoding");
+  dart.setLibraryUri(io.HttpClientRequest, "package:flutter_web/io.dart");
   dart.setFieldSignature(io.HttpClientRequest, () => ({
     __proto__: dart.getFields(io.HttpClientRequest.__proto__),
     encoding: dart.fieldType(convert.Encoding)
@@ -272,52 +285,62 @@ define(['dart_sdk'], function(dart_sdk) {
     set: dart.fnType(dart.void, [core.String, core.Object]),
     value: dart.fnType(core.String, [core.String])
   }));
+  dart.setLibraryUri(io.HttpHeaders, "package:flutter_web/io.dart");
   io.HttpClientResponse = class HttpClientResponse extends core.Object {};
   (io.HttpClientResponse.new = function() {
     ;
   }).prototype = io.HttpClientResponse.prototype;
   dart.addTypeTests(io.HttpClientResponse);
+  dart.setLibraryUri(io.HttpClientResponse, "package:flutter_web/io.dart");
   io.HttpConnectionInfo = class HttpConnectionInfo extends core.Object {};
   (io.HttpConnectionInfo.new = function() {
     ;
   }).prototype = io.HttpConnectionInfo.prototype;
   dart.addTypeTests(io.HttpConnectionInfo);
+  dart.setLibraryUri(io.HttpConnectionInfo, "package:flutter_web/io.dart");
   io.Socket = class Socket extends core.Object {};
   (io.Socket.new = function() {
     ;
   }).prototype = io.Socket.prototype;
   dart.addTypeTests(io.Socket);
+  dart.setLibraryUri(io.Socket, "package:flutter_web/io.dart");
   io.Cookie = class Cookie extends core.Object {};
   (io.Cookie.new = function() {
     ;
   }).prototype = io.Cookie.prototype;
   dart.addTypeTests(io.Cookie);
+  dart.setLibraryUri(io.Cookie, "package:flutter_web/io.dart");
   io.RedirectionInfo = class RedirectionInfo extends core.Object {};
   (io.RedirectionInfo.new = function() {
     ;
   }).prototype = io.RedirectionInfo.prototype;
   dart.addTypeTests(io.RedirectionInfo);
+  dart.setLibraryUri(io.RedirectionInfo, "package:flutter_web/io.dart");
   io.RedirectInfo = class RedirectInfo extends core.Object {};
   (io.RedirectInfo.new = function() {
     ;
   }).prototype = io.RedirectInfo.prototype;
   dart.addTypeTests(io.RedirectInfo);
+  dart.setLibraryUri(io.RedirectInfo, "package:flutter_web/io.dart");
   io.X509Certificate = class X509Certificate extends core.Object {};
   (io.X509Certificate.new = function() {
     ;
   }).prototype = io.X509Certificate.prototype;
   dart.addTypeTests(io.X509Certificate);
+  dart.setLibraryUri(io.X509Certificate, "package:flutter_web/io.dart");
   io.SecurityContext = class SecurityContext extends core.Object {};
   (io.SecurityContext.new = function() {
     ;
   }).prototype = io.SecurityContext.prototype;
   dart.addTypeTests(io.SecurityContext);
-  io.exit = function(exitCode) {
+  dart.setLibraryUri(io.SecurityContext, "package:flutter_web/io.dart");
+  io.exit = function exit(exitCode) {
     dart.throw(new io._ProgramExitedError.new());
   };
   dart.trackLibraries("packages/flutter_web/io", {
     "package:flutter_web/io.dart": io
-  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/flutter_web/io.dart"],"names":[],"mappings":";;;;;;;;;;;;AAkBuC;IAAgB;;;;EA8CvD;;;MAnDe,4BAAgB;YAAG;;MAed,mBAAO;YAAI,AAAiB,kCAAG;;MAM/B,mBAAO;YAAI,AAAiB,kCAAG;;MAM/B,qBAAS;YAAI,AAAiB,kCAAG;;MAMjC,qBAAS;YAAI,AAAiB,kCAAG;;MAMjC,iBAAK;YAAI,AAAiB,kCAAG;;MAM7B,qBAAS;YAAI,AAAiB,kCAAG;;MAElB,uBAAW;YAAmB,0CAE7D,gBAAgB;;;;;AAUG;IAAgB;;;;;EACvC;;;;qBAK8C;AAC1C,YAAO;IACT;;;;EACF;;;;;;;MALuB,uBAAM;;;;;;IAQtB;;;;;;IACI;;;;;;IACA;;;;;;IACL;;;;;;IACG;;;;;;mBAEC,KAAY,OAA6B;IAAc;wBAEpD,MAAU,MAAa,OAA6B;IAAc;qBAEb;IAAI;0BAG5D;IAAI;+BAEmD;IAAW;;UACzD,+CAAQ;IAAS;WACM,MAAU,MAAa;AAC7D,YAAO;IACT;cAEwC;AACtC,YAAO;IACT;kBAEuC;IAAI;QACN,MAAU,MAAa;AAC1D,YAAO;IACT;WAEqC;AACnC,YAAO;IACT;SAEsC,MAAU,MAAa;AAC3D,YAAO;IACT;YAEsC;AACpC,YAAO;IACT;SAGW,QAAe,MAAU,MAAa;AAC/C,YAAO;IACT;YAEyC,QAAY;AACnD,YAAO;IACT;UAEuC,MAAU,MAAa;AAC5D,YAAO;IACT;aAEuC;AACrC,YAAO;IACT;SAEsC,MAAU,MAAa;AAC3D,YAAO;IACT;YAEsC;AACpC,YAAO;IACT;QAEqC,MAAU,MAAa;AAC1D,YAAO;IACT;WAEqC;AACnC,YAAO;IACT;;;IAzEK;IACI;IACA;IACL;IACG;;EAsET;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAE6B;;;IAGlB;;;;;;;;;;EAgBX;;;;;;;;SAGkC;AAAS,YAAQ;IAAE;QACnC,MAAa;IAAQ;;IACvB;YAC+C;IAAI;cAC3C;IAAO;WACV,MAAa;IAAQ;cAClB;IAAO;QACb,MAAa;IAAQ;UACjB;AAAS;IAAI;;;;EACnC;;;;;;;;;;;;;;;;;EAkBA;;;;;EAE0B;;;;;EAEZ;;;;;EAEA;;;;;EAES;;;;;EAEH;;;;;EAEG;;;;;EAEA;;qBA7JT;IACZ,WAAM;EACR","file":"io.ddc.js"}');
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["io.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;AAkBuC;IAAgB;;;;EA8CvD;;;;MAnDe,4BAAgB;YAAG;;MAed,mBAAO;YAAI,AAAiB,kCAAG;;MAM/B,mBAAO;YAAI,AAAiB,kCAAG;;MAM/B,qBAAS;YAAI,AAAiB,kCAAG;;MAMjC,qBAAS;YAAI,AAAiB,kCAAG;;MAMjC,iBAAK;YAAI,AAAiB,kCAAG;;MAM7B,qBAAS;YAAI,AAAiB,kCAAG;;MAElB,uBAAW;;;;;;AAYvB;IAAgB;;;;;EACvC;;;;;qBAK8C;AAC1C,YAAO;IACT;;;;EACF;;;;;;;;MALuB,uBAAM;;;;;;IAQtB;;;;;;IACI;;;;;;IACA;;;;;;IACL;;;;;;IACG;;;;;;mBAEC,KAAY,OAA6B;IAAc;wBAEpD,MAAU,MAAa,OAA6B;IAAc;qBAEb;IAAI;0BAG5D;IAAI;+BAEmD;IAAW;;UACzD;IAAiB;WACM,MAAU,MAAa;AAC7D,YAAO;IACT;cAEwC;AACtC,YAAO;IACT;kBAEuC;IAAI;QACN,MAAU,MAAa;AAC1D,YAAO;IACT;WAEqC;AACnC,YAAO;IACT;SAEsC,MAAU,MAAa;AAC3D,YAAO;IACT;YAEsC;AACpC,YAAO;IACT;SAGW,QAAe,MAAU,MAAa;AAC/C,YAAO;IACT;YAEyC,QAAY;AACnD,YAAO;IACT;UAEuC,MAAU,MAAa;AAC5D,YAAO;IACT;aAEuC;AACrC,YAAO;IACT;SAEsC,MAAU,MAAa;AAC3D,YAAO;IACT;YAEsC;AACpC,YAAO;IACT;QAEqC,MAAU,MAAa;AAC1D,YAAO;IACT;WAEqC;AACnC,YAAO;IACT;;;IAzEK;IACI;IACA;IACL;IACG;;EAsET;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAE6B;;;;IAGlB;;;;;;;;;;EAgBX;;;;;;;;;SAGkC;AAAS,YAAQ;IAAE;QACnC,MAAa;IAAQ;;IACvB;YAC+C;IAAI;cAC3C;IAAO;WACV,MAAa;IAAQ;cAClB;IAAO;QACb,MAAa;IAAQ;UACjB;AAAS;IAAI;;;;EACnC;;;;;;;;;;;;;;;;;;EAkBA;;;;;;EAE0B;;;;;;EAEZ;;;;;;EAEA;;;;;;EAES;;;;;;EAEH;;;;;;EAEG;;;;;;EAEA;;;0BA7JT;IACZ,WAAM;EACR","file":"io.ddc.js"}');
   // Exports:
   return {
     io: io
